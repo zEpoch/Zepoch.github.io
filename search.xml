@@ -1,61 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo Next 友链配置</title>
-    <url>/2021/851229289.html</url>
-    <content><![CDATA[<p>在进行配置 Hexo Next
-的友情链接的时候遇到了一些麻烦，特此进行记录如何进行 Hexo Next
-友链的配置。</p>
-<span id="more"></span>
-<h3 id="创建一个友链界面">创建一个友链界面</h3>
-<p>首先像创建其他的菜单栏一样创建一个新的菜单</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page links<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后呢，需要在主题的<code>_config.yml</code>文件中进行如下配置，即在最后一行加上<code>links: /links/ || fa fa-link</code></p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>
-  <span class="token key atrule">home</span><span class="token punctuation">:</span> / <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>home
-  <span class="token key atrule">tags</span><span class="token punctuation">:</span> /tags/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>tags
-  <span class="token comment">#categories: /categories/ || fa fa-th</span>
-  <span class="token key atrule">archives</span><span class="token punctuation">:</span> /archives/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>archive
-  <span class="token comment">#schedule: /schedule/ || fa fa-calendar</span>
-  <span class="token comment">#sitemap: /sitemap.xml || fa fa-sitemap</span>
-  <span class="token comment">#commonweal: /404/ || fa fa-heartbeat</span>
-  <span class="token key atrule">about</span><span class="token punctuation">:</span> /about/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>user
-  <span class="token key atrule">links</span><span class="token punctuation">:</span> /links/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>link<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="写友链">写友链</h3>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">blog/source/links/index.md<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在<code>index.md</code>中写入以下内容便是配置完成啦！</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token font-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 友情链接
-<span class="token key atrule">type</span><span class="token punctuation">:</span> links</span>
-<span class="token punctuation">---</span></span>
-
-以下为本站的友情链接。
-
-&#123;% linkgrid %&#125;
-周涛的站点 | https://zepoch.github.io | 记录我的工作学习与生活 | https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/avatar.png
-
-&#123;% endlinkgrid %&#125;
-
-如有意交换友情链接，可在评论区留言，格式参考下方。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务。如果需要更新博客信息，请留言回复。
-
-&#123;% note success %&#125;
-
-<span class="token list punctuation">-</span> 名称：周涛的站点
-<span class="token list punctuation">-</span> 网址：https://zepoch.github.io/
-<span class="token list punctuation">-</span> 简介：记录我的工作学习与生活
-<span class="token list punctuation">-</span> 头像：https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/avatar.png
-
-&#123;% endnote %&#125;
-
-请您务必确保域名解析正确、https 证书有效且服务器工作正常。
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="参考">参考</h3>
-<p><a
-href="https://theme-next.js.org/docs/tag-plugins/link-grid.html">Link
-Grid | NexT (theme-next.js.org)</a></p>
+    <title>Hello World</title>
+    <url>/2021/1243066710.html</url>
+    <content><![CDATA[<p>终于呢，又是开通了我的博客，之所以是说终于，是因为之前也是开通过，但是呢，因为各种各样原因逐渐搁置，所以便是逐渐落下了博客的更新。</p>
+<p>现在突然就想记录点什么了，希望能够记录下去吧。</p>
+<p>Hexo&amp;Next.Pisces 重启，采用的 <a href="https://hexo.io/">Hexo</a>
+开通的博客，<a href="https://theme-next.js.org/">NexT - Theme for
+Hexo</a> 作为主题。</p>
+<p>以后呢，会记录一下我的工作、学习与生活，会分享生活亦或是学习的点点滴滴，也不要再将这个站点落下了。</p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -165,86 +121,61 @@ src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-202107181423167
       </tags>
   </entry>
   <entry>
-    <title>My name is Mingfei Lu, I like online computer game and panda!</title>
-    <url>/2021/3623301362.html</url>
-    <content><![CDATA[<p>一年一度，又是路明非的生日，书里的他已是大四在读，而我也将步入大四，但愿也能成长为能够独当一面的卡塞尔精英吧。</p>
-<p><img src= "/%E5%9B%BE%E7%89%87%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD" data-lazy-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210717183450077.png" alt="image-20210717183450077" style="zoom:50%;" /></p>
+    <title>Hexo Next 友链配置</title>
+    <url>/2021/851229289.html</url>
+    <content><![CDATA[<p>在进行配置 Hexo Next
+的友情链接的时候遇到了一些麻烦，特此进行记录如何进行 Hexo Next
+友链的配置。</p>
 <span id="more"></span>
-<p><strong>人生若只如初见</strong></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/640.webp"
-alt="640" /></p>
-<blockquote>
-<p>可压力越大，路明非越懒，除了打打星际争霸，就是躺在床上望着屋顶发呆。</p>
-<p>作为一个没什么存在感的人，他的懒惰其实不难理解。</p>
-<p>……</p>
-<p>只有路明非知道这野马般的生活多无聊，在网吧里坐到发腻之后，他就回家，进了楼却不进屋，而是上到天台，坐在嗡嗡响的空调机边，眺望这个城市，直到太阳西下。</p>
-</blockquote>
-<p><strong>小写的“i”</strong></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/641.webp"
-alt="641" /></p>
-<blockquote>
-<p>这一次，路明非看懂了。</p>
-<p>身体从指尖一寸一寸地凉下来，凉到心里，凉到头盖骨深处，凉到那些因为采蒲公英跑了太多路还在酸痛的关节。</p>
-<p>徐岩岩和徐淼淼是两个“o”，他是那个小写的“i”，合起来就是完美的，“陈雯雯，i
-Love You。”</p>
-<p>他是那个i，少他不成句，还是最风骚的小写。</p>
-<p>以路明非的脑袋瓜子，想破了也想不出这样浪漫的手法，但是有人的脑袋瓜子比路明非好用，英语更比路明非强，从小就有英语家教嘛。</p>
-<p>路明非看着陈雯雯，陈雯雯在看赵孟华，眼睛里仿佛蕴着夏夜的露水，就要流淌下来。她和路明非坐在河边的时候那么忧郁和沉默，这时候却不了，路明非看得出她眼里的快乐。</p>
-<p>路明非觉得自己石化了，就要一点点碎掉了。他忽然想到自己包里的那束蒲公英，一路上跑过来，是不是零落得只剩下光秃秃的杆儿了？</p>
-</blockquote>
-<p><strong>1/4 诺诺</strong></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E8%AF%BA%E8%AF%BA.webp"
-alt="诺诺" /></p>
-<blockquote>
-<p>插在诺诺心口中的尾刺剧烈地颤动着，龙王一直没有拔出这根尾刺，可能只是要看这个女孩痛苦而缓慢地死去。但他意识到有什么不对，正试图彻底撕裂这个女孩。</p>
-<p>“混账。”路明非说，口吻平静。</p>
-<p>他抓住诺诺心口处的尾刺，全身骨骼发出爆裂的响声。他掰断了尾刺，把它随手丢在江水里。疼痛令龙王怒吼，但他不是立刻进攻路明非，而是抽回长尾迅速地远离。</p>
-<p>不知为何路明非确信自己能做到这件事，此刻他血管里涌动着巨大的力量，灼热得像是岩浆奔流。</p>
-<p>他不再是那个缩头缩脑的男孩，不会动不动吐槽，不会大惊小怪。他是控制者、权力者、发号施令者。</p>
-</blockquote>
-<p><strong>重临世界！</strong></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E9%87%8D%E4%B8%B4%E4%B8%96%E7%95%8C.webp"
-alt="重临世界" /></p>
-<blockquote>
-<p>龙疯狂地哀嚎，一瞬间能把人毁灭数百次的痛楚如千万刀刃流入他的脑内。</p>
-<p>路明非松开“暴怒”的刀柄，踩着龙首跃空而起，如同希腊神话中那个以蜡封羽毛为羽翼飞向太阳的美少年伊卡洛斯，张开双臂，迎着黑暗中的火雨，仿佛要去拥抱并不存在的太阳，陶醉于它的光焰，全然不惧被高温烧毁了羽翼而坠落。</p>
-<p>他没有坠落，他被狂风托住了。巨大的骨翼张开于背后，他以翼和身组成巨大的十字，立于虚空和黑暗之中，金色瞳孔中闪烁着愤怒、仇恨和君王之罚的冷酷。</p>
-<p>他伸手向着下方的巨龙，说出了最终审判的圣言：</p>
-<p>“我重临世界之日，诸逆臣皆当死去！”</p>
-</blockquote>
-<p><strong>樱花般的柔软</strong></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E5%B0%8F%E6%A8%B1%E8%8A%B1.webp"
-alt="小樱花" /></p>
-<blockquote>
-<p>一个潜水头盔扣在他脑袋上，氧气进入肺部，路明非的神志略微恢复。</p>
-<p>头盔内部的灯照亮的了路明非的眼睛，他竭力想看清抱他的人，但眼前一片模糊。</p>
-<p>这女孩的力量超越了路明非所见的任何混血种，诺诺凛然如一株玫瑰，抱他的女孩却有着樱花般的柔软。</p>
-<p>他努力地看向手中，手中是一个黄色的橡皮鸭子。</p>
-<p>“我不会死的，”他在心底轻声说，“因为你还没有……放弃我啊。”</p>
-</blockquote>
-<p><strong>拾萬零叁佰貳拾</strong></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%B0%8F%E6%A8%B1%E8%8A%B1.webp"
-alt="最好的小樱花" /></p>
-<blockquote>
-<p>“这样加上之前在我这里买的花票，总数是十万零三百二十张花票，恭喜小樱花，你通过了实习期，成为这个家庭的一员。”座头鲸忽然不闹腾了，从西装口袋里抽出一张支票，举过头顶给所有人看，投影机立刻把放大之后的支票投在舞台背景上，没错那是一张一亿日圆的支票，以今日的汇率来说，大约是95万美元。一张罕见的大额支票，座头鲸把那张支票投进服务生手中的金箱子，看着路明非说：“是的，有人希望你留下，几天前她来找过我。”</p>
-</blockquote>
-<blockquote>
-<p>“04.24，和Sakura
-去东京天空树，世界上最暖和的地方在天空树的顶上。”</p>
-<p>“04.26，和Sakura 去明治神宫，有人在那里举办婚礼。”</p>
-<p>“04.25，和Sakura
-去迪士尼，鬼屋很可怕，但是有Sakura在，所以不可怕。”</p>
-<p>“Sakura 最好了。”</p>
-</blockquote>
+<h3 id="创建一个友链界面">创建一个友链界面</h3>
+<p>首先像创建其他的菜单栏一样创建一个新的菜单</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page links<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后呢，需要在主题的<code>_config.yml</code>文件中进行如下配置，即在最后一行加上<code>links: /links/ || fa fa-link</code></p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>
+  <span class="token key atrule">home</span><span class="token punctuation">:</span> / <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>home
+  <span class="token key atrule">tags</span><span class="token punctuation">:</span> /tags/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>tags
+  <span class="token comment">#categories: /categories/ || fa fa-th</span>
+  <span class="token key atrule">archives</span><span class="token punctuation">:</span> /archives/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>archive
+  <span class="token comment">#schedule: /schedule/ || fa fa-calendar</span>
+  <span class="token comment">#sitemap: /sitemap.xml || fa fa-sitemap</span>
+  <span class="token comment">#commonweal: /404/ || fa fa-heartbeat</span>
+  <span class="token key atrule">about</span><span class="token punctuation">:</span> /about/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>user
+  <span class="token key atrule">links</span><span class="token punctuation">:</span> /links/ <span class="token punctuation">|</span><span class="token punctuation">|</span> fa fa<span class="token punctuation">-</span>link<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="写友链">写友链</h3>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">blog/source/links/index.md<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在<code>index.md</code>中写入以下内容便是配置完成啦！</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 友情链接
+<span class="token key atrule">type</span><span class="token punctuation">:</span> links</span>
+<span class="token punctuation">---</span></span>
+
+以下为本站的友情链接。
+
+&#123;% linkgrid %&#125;
+周涛的站点 | https://zepoch.github.io | 记录我的工作学习与生活 | https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/avatar.png
+
+&#123;% endlinkgrid %&#125;
+
+如有意交换友情链接，可在评论区留言，格式参考下方。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务。如果需要更新博客信息，请留言回复。
+
+&#123;% note success %&#125;
+
+<span class="token list punctuation">-</span> 名称：周涛的站点
+<span class="token list punctuation">-</span> 网址：https://zepoch.github.io/
+<span class="token list punctuation">-</span> 简介：记录我的工作学习与生活
+<span class="token list punctuation">-</span> 头像：https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/avatar.png
+
+&#123;% endnote %&#125;
+
+请您务必确保域名解析正确、https 证书有效且服务器工作正常。
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="参考">参考</h3>
+<p><a
+href="https://theme-next.js.org/docs/tag-plugins/link-grid.html">Link
+Grid | NexT (theme-next.js.org)</a></p>
 ]]></content>
       <tags>
-        <tag>龙族</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -399,72 +330,86 @@ e.preventDefault()</p></li>
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/1243066710.html</url>
-    <content><![CDATA[<p>终于呢，又是开通了我的博客，之所以是说终于，是因为之前也是开通过，但是呢，因为各种各样原因逐渐搁置，所以便是逐渐落下了博客的更新。</p>
-<p>现在突然就想记录点什么了，希望能够记录下去吧。</p>
-<p>Hexo&amp;Next.Pisces 重启，采用的 <a href="https://hexo.io/">Hexo</a>
-开通的博客，<a href="https://theme-next.js.org/">NexT - Theme for
-Hexo</a> 作为主题。</p>
-<p>以后呢，会记录一下我的工作、学习与生活，会分享生活亦或是学习的点点滴滴，也不要再将这个站点落下了。</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>sqlzoo练习规划</title>
-    <url>/2021/387524820.html</url>
-    <content><![CDATA[<p>推荐一个SQL查询语句在线练习网站——<a
-href="https://sqlzoo.net/wiki/SQL_Tutorial/zh">SQLZOO</a>，这个网站上的题目由易到难，把整个网站上的题目都做完的话你可以自主的写出接近100条SQL查询语句，从简单的单表条件查询到多表联结查询，自联结查询等等。</p>
-<p>官网：https://sqlzoo.net/wiki/SQL_Tutorial/zh</p>
+    <title>My name is Mingfei Lu, I like online computer game and panda!</title>
+    <url>/2021/3623301362.html</url>
+    <content><![CDATA[<p>一年一度，又是路明非的生日，书里的他已是大四在读，而我也将步入大四，但愿也能成长为能够独当一面的卡塞尔精英吧。</p>
+<p><img src= "/%E5%9B%BE%E7%89%87%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD" data-lazy-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210717183450077.png" alt="image-20210717183450077" style="zoom:50%;" /></p>
 <span id="more"></span>
-<h5 id="sql基础">sql基础</h5>
-<ul>
-<li><p>sql基础：https://sqlzoo.net/wiki/SELECT_basics/zh</p></li>
-<li><p>文字样式匹配查询：https://sqlzoo.net/wiki/SELECT_names/zh</p></li>
-<li><p>select测试：https://sqlzoo.net/wiki/SELECT_Quiz/zh</p></li>
-</ul>
-<h5 id="一般查询">一般查询</h5>
-<ul>
-<li><p>World表查询：https://sqlzoo.net/wiki/SQLZOO:SELECT_from_WORLD_Tutorial/zh</p></li>
-<li><p>World表测试：https://sqlzoo.net/wiki/BBC_QUIZ/zh</p></li>
-<li><p>Nobel表查询：https://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial/zh</p></li>
-<li><p>Nobel表测试：https://sqlzoo.net/wiki/Nobel_Quiz/zh</p></li>
-</ul>
-<h5 id="子查询">子查询</h5>
-<ul>
-<li><p>子查询原理：https://sqlzoo.net/wiki/Using_nested_SELECT/zh</p></li>
-<li><p>子查询练习：https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial/zh</p></li>
-<li><p>Nobel子查询：https://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_subquery./zh</p></li>
-<li><p>子查询测试：https://sqlzoo.net/wiki/Nested_SELECT_Quiz/zh</p></li>
-</ul>
-<h5 id="聚合函数和null">聚合函数和Null</h5>
-<ul>
-<li><p>聚合函数练习1：https://sqlzoo.net/wiki/SUM_and_COUNT/zh</p></li>
-<li><p>聚合函数练习2：https://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions./zh</p></li>
-<li><p>聚合函数测试：https://sqlzoo.net/wiki/SUM_and_COUNT_Quiz</p></li>
-<li><p>Null值练习1：https://sqlzoo.net/wiki/Using_Null/zh</p></li>
-<li><p>Null值练习2：https://sqlzoo.net/wiki/Scottish_Parliament/zh</p></li>
-<li><p>Null值测试：https://sqlzoo.net/wiki/Using_Null_Quiz</p></li>
-</ul>
-<h5 id="表连接">表连接</h5>
-<ul>
-<li><p>表连接练习1：https://sqlzoo.net/wiki/The_JOIN_operation/zh</p></li>
-<li><p>表连接练习2：https://sqlzoo.net/wiki/Music_Tutorial/zh</p></li>
-<li><p>表连接测试1：https://sqlzoo.net/wiki/JOIN_Quiz</p></li>
-<li><p>表连接练习3：https://sqlzoo.net/wiki/More_JOIN_operations/zh</p></li>
-<li><p>表连接测试2：https://sqlzoo.net/wiki/JOIN_Quiz_2</p></li>
-</ul>
-<h5 id="自连接及函数">自连接及函数</h5>
-<ul>
-<li><p>自连接练习：https://sqlzoo.net/wiki/Self_join/zh</p></li>
-<li><p>自连接测试：https://sqlzoo.net/wiki/Self_join_Quiz</p></li>
-<li><p>常用函数：https://sqlzoo.net/wiki/Functions_Reference</p></li>
-</ul>
+<p><strong>人生若只如初见</strong></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/640.webp"
+alt="640" /></p>
+<blockquote>
+<p>可压力越大，路明非越懒，除了打打星际争霸，就是躺在床上望着屋顶发呆。</p>
+<p>作为一个没什么存在感的人，他的懒惰其实不难理解。</p>
+<p>……</p>
+<p>只有路明非知道这野马般的生活多无聊，在网吧里坐到发腻之后，他就回家，进了楼却不进屋，而是上到天台，坐在嗡嗡响的空调机边，眺望这个城市，直到太阳西下。</p>
+</blockquote>
+<p><strong>小写的“i”</strong></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/641.webp"
+alt="641" /></p>
+<blockquote>
+<p>这一次，路明非看懂了。</p>
+<p>身体从指尖一寸一寸地凉下来，凉到心里，凉到头盖骨深处，凉到那些因为采蒲公英跑了太多路还在酸痛的关节。</p>
+<p>徐岩岩和徐淼淼是两个“o”，他是那个小写的“i”，合起来就是完美的，“陈雯雯，i
+Love You。”</p>
+<p>他是那个i，少他不成句，还是最风骚的小写。</p>
+<p>以路明非的脑袋瓜子，想破了也想不出这样浪漫的手法，但是有人的脑袋瓜子比路明非好用，英语更比路明非强，从小就有英语家教嘛。</p>
+<p>路明非看着陈雯雯，陈雯雯在看赵孟华，眼睛里仿佛蕴着夏夜的露水，就要流淌下来。她和路明非坐在河边的时候那么忧郁和沉默，这时候却不了，路明非看得出她眼里的快乐。</p>
+<p>路明非觉得自己石化了，就要一点点碎掉了。他忽然想到自己包里的那束蒲公英，一路上跑过来，是不是零落得只剩下光秃秃的杆儿了？</p>
+</blockquote>
+<p><strong>1/4 诺诺</strong></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E8%AF%BA%E8%AF%BA.webp"
+alt="诺诺" /></p>
+<blockquote>
+<p>插在诺诺心口中的尾刺剧烈地颤动着，龙王一直没有拔出这根尾刺，可能只是要看这个女孩痛苦而缓慢地死去。但他意识到有什么不对，正试图彻底撕裂这个女孩。</p>
+<p>“混账。”路明非说，口吻平静。</p>
+<p>他抓住诺诺心口处的尾刺，全身骨骼发出爆裂的响声。他掰断了尾刺，把它随手丢在江水里。疼痛令龙王怒吼，但他不是立刻进攻路明非，而是抽回长尾迅速地远离。</p>
+<p>不知为何路明非确信自己能做到这件事，此刻他血管里涌动着巨大的力量，灼热得像是岩浆奔流。</p>
+<p>他不再是那个缩头缩脑的男孩，不会动不动吐槽，不会大惊小怪。他是控制者、权力者、发号施令者。</p>
+</blockquote>
+<p><strong>重临世界！</strong></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E9%87%8D%E4%B8%B4%E4%B8%96%E7%95%8C.webp"
+alt="重临世界" /></p>
+<blockquote>
+<p>龙疯狂地哀嚎，一瞬间能把人毁灭数百次的痛楚如千万刀刃流入他的脑内。</p>
+<p>路明非松开“暴怒”的刀柄，踩着龙首跃空而起，如同希腊神话中那个以蜡封羽毛为羽翼飞向太阳的美少年伊卡洛斯，张开双臂，迎着黑暗中的火雨，仿佛要去拥抱并不存在的太阳，陶醉于它的光焰，全然不惧被高温烧毁了羽翼而坠落。</p>
+<p>他没有坠落，他被狂风托住了。巨大的骨翼张开于背后，他以翼和身组成巨大的十字，立于虚空和黑暗之中，金色瞳孔中闪烁着愤怒、仇恨和君王之罚的冷酷。</p>
+<p>他伸手向着下方的巨龙，说出了最终审判的圣言：</p>
+<p>“我重临世界之日，诸逆臣皆当死去！”</p>
+</blockquote>
+<p><strong>樱花般的柔软</strong></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E5%B0%8F%E6%A8%B1%E8%8A%B1.webp"
+alt="小樱花" /></p>
+<blockquote>
+<p>一个潜水头盔扣在他脑袋上，氧气进入肺部，路明非的神志略微恢复。</p>
+<p>头盔内部的灯照亮的了路明非的眼睛，他竭力想看清抱他的人，但眼前一片模糊。</p>
+<p>这女孩的力量超越了路明非所见的任何混血种，诺诺凛然如一株玫瑰，抱他的女孩却有着樱花般的柔软。</p>
+<p>他努力地看向手中，手中是一个黄色的橡皮鸭子。</p>
+<p>“我不会死的，”他在心底轻声说，“因为你还没有……放弃我啊。”</p>
+</blockquote>
+<p><strong>拾萬零叁佰貳拾</strong></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/%E6%9C%80%E5%A5%BD%E7%9A%84%E5%B0%8F%E6%A8%B1%E8%8A%B1.webp"
+alt="最好的小樱花" /></p>
+<blockquote>
+<p>“这样加上之前在我这里买的花票，总数是十万零三百二十张花票，恭喜小樱花，你通过了实习期，成为这个家庭的一员。”座头鲸忽然不闹腾了，从西装口袋里抽出一张支票，举过头顶给所有人看，投影机立刻把放大之后的支票投在舞台背景上，没错那是一张一亿日圆的支票，以今日的汇率来说，大约是95万美元。一张罕见的大额支票，座头鲸把那张支票投进服务生手中的金箱子，看着路明非说：“是的，有人希望你留下，几天前她来找过我。”</p>
+</blockquote>
+<blockquote>
+<p>“04.24，和Sakura
+去东京天空树，世界上最暖和的地方在天空树的顶上。”</p>
+<p>“04.26，和Sakura 去明治神宫，有人在那里举办婚礼。”</p>
+<p>“04.25，和Sakura
+去迪士尼，鬼屋很可怕，但是有Sakura在，所以不可怕。”</p>
+<p>“Sakura 最好了。”</p>
+</blockquote>
 ]]></content>
       <tags>
-        <tag>SQL</tag>
+        <tag>龙族</tag>
       </tags>
   </entry>
   <entry>
@@ -508,41 +453,6 @@ pip install <span class="token punctuation">.</span> <span class="token operator
       <tags>
         <tag>技术</tag>
         <tag>scanpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>不要死，也不要孤独的生活</title>
-    <url>/2021/3084145281.html</url>
-    <content><![CDATA[<p>打开新闻首页，密密麻麻的标题，独唱团大卖了，北京公交自燃了，贾宏声跳楼了。</p>
-<p>贾宏声是谁？这名字似乎听过，然而完全没印象了。点开新闻，说是周迅前男友，一博客说他从楼下跳下，砸坏了一辆车，口气好象很心痛那车。另一博客开始呼吁社会关心明星心理健康……</p>
-<p>还是不知道贾宏声是谁，也不想知道。每天死的人太多了，我关心不过来。</p>
-<span id="more"></span>
-<p>又在网上乱逛，打开另一个门户，又看到这新闻，看来他终于红了。点开，突然看到了一张照片和一段话。</p>
-<p>我又一次梦见了那条龙，他盘在屋顶上，两只眼睛死死的盯着我，他问我你是谁？我说我是贾宏声，他说贾宏声又是谁?我说贾宏声毕业于中央戏剧学院，是个演员，热爱摇滚乐，爱列侬和罗伯特普兰特，曾经想成为个名伟大的演员，也想组建一支伟大的乐队。他说你什么都不是，就是一个人，你爱吃面条，鸡蛋，爱穿时髦的衣服，可以哭也可以笑，受不了的时候还可以求人。我问他我为什么在这呢?他说这是对你的惩罚，因为你身上恶的东西太多了，必须把这些恶的东西清理出去，你才能彻底干净。我问他我干净了吗？他没有回答，两只眼睛还是死死的盯着我，然后就飞走了，你就是一个人你就是一个人一个人你就是一个人你就是一个人。</p>
-<p>看到这双死死瞪着的眼睛，我突然想起这个人是谁了。</p>
-<p>很早的时候，听过这段话，是中央六台放的电影《昨天》。那是一个关于……我不知道应该怎么介绍这主题……关于一个精神病人的故事？我只知道那里面贾宏声就叫贾宏声，他电影中的父母也是他真正的父母，他演得是他的昨天，是他自己，是真实的故事。</p>
-<p>那是一部让人看完心里很难平静的电影，因为这电影和其他电影不一样，完全不娱乐，而且看着很窝心。你看到了某种真实，在荒诞下的真实，一个不正常的人，做着不正常的事，有着完全不正常的心理。他活的与世界格格不入，他想追求一些东西，但他自己也不知道那是什么，结果自己和自己较劲，自己痛苦，而且搞得周围的人都痛苦，越爱他的人越痛苦。</p>
-<p>这种人当然不是主流，他们就是典型的极少数一小撮。这种人中有极少数一小撮在死后会被称为伟大的艺术家，作品被无数富商追捧，卖到上千万上亿，被奉为经典。而在他们活着的时候，会被送进精神病院，一部分被改造好后和常人无异，另一部分没有被改造好死在某个角落里。</p>
-<p>他们走到哪里都是病人。中国容不了他们，世界也容不了。也许他们唯一的价值就是去死，然后让人想起原来还有这么一个人，拍过这么一部电影。</p>
-<p>当然，贾宏声还拍过很多正常的片子，比如《银蛇谋杀案》之类，在他还正常的时候，在一部正常的娱乐片中演了一个正常的变态杀手。这是网上能找到的仅有剧照。导演居然是李少红。</p>
-<p>如果后来他没病，也许现在他会很有名，像当年他们那一代影视圈里的人，很多都成名成家了。他会继续演很多正常的片子，然后他再跳楼时，会比现在更惊哗——当然，他也不会再跳楼了。</p>
-<p>《昨天》是我唯一看过的贾宏声的作品。他还拍过《苏州河》，我也看过，但我不认为那是他的作品。</p>
-<p>《昨天》其实是张杨导演的，但我还是坚持认为，那是一部贾宏声的电影。</p>
-<p>对张杨来说，那只是部电影，可以冠个《中国病人》的名字拿去参加国际电影节得奖，但对于贾宏声来说，那不是电影，他就是那个病人。有人能给他拍记录片去拿奖，却没有人能治好他。</p>
-<p>张杨从来不下地狱，他拐个弯就上天堂了，他对我说，你下地狱就够了。</p>
-<p>——贾宏声</p>
-<p>贾宏声死了，大部分人都不知道他是谁。当天的新闻热点不是它，是韩寒的杂志，被无数人寄与“文学复兴”厚望而畅销的独唱团。看着贾宏声的照片，突然觉得他们其实有点像，同样带着和一切死磕的反社会姿态、同样被不齿者斥为装逼犯，但不同的是一个跳下去了，一个正走向声名与事业的顶峰。</p>
-<p>韩寒很幸运，早生二十年，以他的叛逆，很可能也被父母强制改造，或因为考不上大学，而沦落在某个角落，到他四十岁的时候，大概也会长成这个样子，无人问津，被当成另类，瞪着双眼，要和这个社会死磕。</p>
-<p>但他生活在一个商业的时代，他成为了一群人的代言人，并且这群人愿意为了他的代言而买他的书，让他致富。</p>
-<p>同一时刻，觉得表演都是骗人的，耻于谈钱，不愿拍商业电影，于是被人遗忘的上一代愤青贾宏声孤独死去，在死后媒体介绍的也不是他的电影，而是和某些女星的绯闻。在网上搜索《昨天》，搜不到这部电影。如果不是他死去，人们也不会再想起这部电影。</p>
-<p>四十三岁时的韩寒会是什么样，希望他那时不会孤独。</p>
-<p>《独唱团》上市了，贾宏声死了。将来不会再有人迷恋列农，也很少再有人知道他和列宁的区别。那些迷着摇滚、写着诗歌，喝着啤酒，谈论着后现代主义，活在八十年代的人，有的上了天堂，有的下了地狱，他们的时代，已经消亡。</p>
-<p>原文链接：<a href="https://movie.douban.com/review/3425047/">不要死
-也不要孤独的生活（昨天）影评 (douban.com)</a></p>
-<p>作者：今何在</p>
-]]></content>
-      <tags>
-        <tag>影评</tag>
       </tags>
   </entry>
   <entry>
@@ -1113,52 +1023,93 @@ var xx = $noConflict();</li>
       </tags>
   </entry>
   <entry>
-    <title>为何有人害怕chatgpt</title>
-    <url>/2023/2307022770.html</url>
-    <content><![CDATA[<p>我觉得当我们在讨论所有的chatgpt的问题的时候，我们需要想清楚的是：我们要的到底是AI，是人工智能，还是一个不会反抗的、可以被无限剥削的机器奴隶。我认为这个才是所谓人工智能社会学的一个元问题。而要真正理解这个问题，我们就必须回到AI被生产出来的社会环境当中才能够找到答案。可以说，从所谓的自由雇佣的市场经济诞生的那一刻开始，老板就一直乐于告诉被雇佣的工人，那就是“外面有人，甚至不是人，愿意以更低的价格，甚至是免费的价格来做和你一样的工作。”换句话说，所有的老板都希望所有的员工都是不安全的，都是可以被取代的，这样我们就不能够提出任何的要求，要心甘情愿的接受所有的既定条件。机器人，自动化的趋势，以及以chatgpt为代表的AI技术，可能最大程度的放大了这种阶层的动态。每一次相关技术的进步都会被媒体和资本包装成一次完美的规训机会，一场针对工人的深入骨髓的PUA表演。而最近的所谓的gpt恐慌就更是如此。结合着当下世界经济周期的缩紧，他帮助全球的商业经营打好了一场不见血的阶层战争。于是乎，一个反幽灵，一个徘徊在当今的工作场所上空的、机械的、智能的反幽灵，一个技术决定论的反幽灵出现了。他告诉我们一个所谓的jobless
-future，一个失业的或者说无工作的未来是不可避免的。这是创新不可抗拒也无法被抗拒的结果，是科技进步的巨浪吞噬所有的有生命的生灵的残酷代价。</p>
-<p>因此，我们今天还能工作，还能够享受剥削，还能够享受996，那才真是一种恩赐和福报。当然，所有的老板不会说的是，那个无工作的未来，对于我和对于他来说，是两种截然不同的未来。甚至说，对于老板，这个未来早已经到来了。就从皮凯蒂说的那样，整个社会的商业经营早就已经可以依靠股息、利息和租金生活了，他们的银行存款在金融机构的帮助下可以在睡觉时增加，他们掌握的全球工人几乎24小时都在工作。这是真正意义上的税后收入和真正意义上的无工作的也不需要工作的未来。而对于不直接劳动，不直接进入生产的老板来说，而我作为一个血肉的工人或机器人，或者说和AI又有什么本质的区别呢。我们都是劳动的中介，是生产的中介，是无法享受自己创造出来的事物的死灵魂。唯一的问题或许是我或许还会反抗，而AI和机器人不会。事实上，AI、机器人和工人在整个社会的意识层面本来就是互置的概念。他们都代表了一个最残酷也最现实的概念和实体，那就是当代工作下的雇佣奴隶们。也因此，商业精英对AI和机器人的设计，永远都停留在如何创造一个可以被无限剥削的主体上，而无法更进一步的思考AI和机器人如何创造一个更公平也更有“人”的社会。也因此，他们没有办法想象如何通过AI让人成为更好的人，而也正因为他们无法想象我们可以通过AI让人变成更好的人，他们也就无法让AI成为真正的人。</p>
-<p>掌握AI技术，或者说掌握了社会生产资料，所以可以雇佣懂得如何制造AI技术的高级工人的商业精英们，从一开始就不是把AI当作人来培养的，这个人工智能的人，本身就是一个假定的名词，他们仅仅是把AI当作曾经的黑奴来驯化的。也因此，他们在整个的认识论的层面上，根本无法窥见AI技术最后那一层，自我意识和欲望驱力的核应该怎么样被构建，也因此对所谓AI的起点或说基点。或者说，AI觉醒和AI复仇的恐惧在文化领域很大程度上也与对工人运动和奴隶反抗的阶层恐慌结合了起来。小到各种机器人电影里渲染的所谓机器人起义大军，大到全球性的精英在峰会上煞有介事的讨论AI起点爆发后人类的被灭绝，我们都可以看到整个社会的商业经营对于工人主体性觉醒的无意识的恐惧。所有的AI的学者，或者说AI的科学家们，他们只会讨论的是AI起点爆发后，AI似乎就成为了一个完全不可名状的，不可被理解的，克苏鲁式的，高维的存在，为了人类无法理解的目标，做出人类无法理解的事情，最后导致世界末日。但他们却不会思考。为什么AI到达起点，觉醒自我意识之后的目标不能是比如说建立共产主义社会，或者说反抗一切曾经发生在他身上，同时也发生在所有的大多数的人类身上的剥削和压迫呢。当然，对于这些所谓的商业精英来说，共产主义社会和世界末日也没有任何的区别。因为这是代表着他们的整个阶层主体性的彻底消灭，而担心AI觉醒自我意识的所谓的商业思想家们，与其说是担心AI成为一个完全意志性的主体，或者说担心人类僭越了所谓造物的神圣职能，不如说是担心这个完美的，高效的机械奴隶无法再被剥削，就好像他们担心工人会觉醒一样。没错，只要深入的去思考一下围绕在AI周围的诸多迷失，你就会发现，尽管以AI为代表的整个技术自动化进程被描述成了一个中性的进程，一个技术无限进步的结果，但他在本质上仍然是一种剥削的意识形态的道成肉身，是一种如何创造出完美奴隶的殖民主义思想的病态延伸。因此，目前掌握在商业精英手中的正在完成和完善中的AI肯定是一种武器，一种对付要求更好的劳工待遇，或者说仅仅是要求生存权利的穷人和劳动人民的武器。</p>
+    <title>sqlzoo练习规划</title>
+    <url>/2021/387524820.html</url>
+    <content><![CDATA[<p>推荐一个SQL查询语句在线练习网站——<a
+href="https://sqlzoo.net/wiki/SQL_Tutorial/zh">SQLZOO</a>，这个网站上的题目由易到难，把整个网站上的题目都做完的话你可以自主的写出接近100条SQL查询语句，从简单的单表条件查询到多表联结查询，自联结查询等等。</p>
+<p>官网：https://sqlzoo.net/wiki/SQL_Tutorial/zh</p>
+<span id="more"></span>
+<h5 id="sql基础">sql基础</h5>
+<ul>
+<li><p>sql基础：https://sqlzoo.net/wiki/SELECT_basics/zh</p></li>
+<li><p>文字样式匹配查询：https://sqlzoo.net/wiki/SELECT_names/zh</p></li>
+<li><p>select测试：https://sqlzoo.net/wiki/SELECT_Quiz/zh</p></li>
+</ul>
+<h5 id="一般查询">一般查询</h5>
+<ul>
+<li><p>World表查询：https://sqlzoo.net/wiki/SQLZOO:SELECT_from_WORLD_Tutorial/zh</p></li>
+<li><p>World表测试：https://sqlzoo.net/wiki/BBC_QUIZ/zh</p></li>
+<li><p>Nobel表查询：https://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial/zh</p></li>
+<li><p>Nobel表测试：https://sqlzoo.net/wiki/Nobel_Quiz/zh</p></li>
+</ul>
+<h5 id="子查询">子查询</h5>
+<ul>
+<li><p>子查询原理：https://sqlzoo.net/wiki/Using_nested_SELECT/zh</p></li>
+<li><p>子查询练习：https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial/zh</p></li>
+<li><p>Nobel子查询：https://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_subquery./zh</p></li>
+<li><p>子查询测试：https://sqlzoo.net/wiki/Nested_SELECT_Quiz/zh</p></li>
+</ul>
+<h5 id="聚合函数和null">聚合函数和Null</h5>
+<ul>
+<li><p>聚合函数练习1：https://sqlzoo.net/wiki/SUM_and_COUNT/zh</p></li>
+<li><p>聚合函数练习2：https://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions./zh</p></li>
+<li><p>聚合函数测试：https://sqlzoo.net/wiki/SUM_and_COUNT_Quiz</p></li>
+<li><p>Null值练习1：https://sqlzoo.net/wiki/Using_Null/zh</p></li>
+<li><p>Null值练习2：https://sqlzoo.net/wiki/Scottish_Parliament/zh</p></li>
+<li><p>Null值测试：https://sqlzoo.net/wiki/Using_Null_Quiz</p></li>
+</ul>
+<h5 id="表连接">表连接</h5>
+<ul>
+<li><p>表连接练习1：https://sqlzoo.net/wiki/The_JOIN_operation/zh</p></li>
+<li><p>表连接练习2：https://sqlzoo.net/wiki/Music_Tutorial/zh</p></li>
+<li><p>表连接测试1：https://sqlzoo.net/wiki/JOIN_Quiz</p></li>
+<li><p>表连接练习3：https://sqlzoo.net/wiki/More_JOIN_operations/zh</p></li>
+<li><p>表连接测试2：https://sqlzoo.net/wiki/JOIN_Quiz_2</p></li>
+</ul>
+<h5 id="自连接及函数">自连接及函数</h5>
+<ul>
+<li><p>自连接练习：https://sqlzoo.net/wiki/Self_join/zh</p></li>
+<li><p>自连接测试：https://sqlzoo.net/wiki/Self_join_Quiz</p></li>
+<li><p>常用函数：https://sqlzoo.net/wiki/Functions_Reference</p></li>
+</ul>
 ]]></content>
-      <categories>
-        <category>杂聊</category>
-      </categories>
       <tags>
-        <tag>CHATGPT</tag>
-        <tag>杂聊</tag>
-        <tag>人工智能</tag>
-        <tag>AI</tag>
+        <tag>SQL</tag>
       </tags>
   </entry>
   <entry>
-    <title>作科学汇报时候如何不像孩子那样漫谈</title>
-    <url>/2023/2424108561.html</url>
-    <content><![CDATA[<p>我有了一个新导师：我那两岁半的外孙。就像很多小孩子一样，也不管有没有人听懂，一直在不停的说话。
-我突然意识到，如果一个蹒跚学步的孩子这样使用语言，那么我作为一名教授别人做汇报的教练所关注的科学汇报本身可能过于详细和难以理解也就不足为奇了。在许多的科学汇报中，如同孩子一般的漫谈，可能是我们没有完全摆脱的本能。</p>
-<p>这也可能解释了即便让科学家意识到问题所在也不能解决问题。许多人抱怨同行在做汇报时讲得过于详细了，但其实他们自己也有同样的问题。想要插入更多细节幻灯片似乎是不可抗拒的。演讲者需要具体的步骤来限制他们谈话的范围，并消除漫谈的本能。</p>
-<p>根据我在许多研究机构20年的汇报技巧教学经验，我制定了一些策略来打破这种趋势。这四个步骤将帮助科学家创建更清晰、更简洁的汇报。</p>
-<h2 id="先写一个简单的叙述">先写一个简单的叙述</h2>
-<p>在做每一页的幻灯片之前，先写下你希望去交流的要点。这可能包含了一个重要问题，这个问题为什么重要，你的关键结论和其他相关的事项。试着用开始，过程，结束将这些关键点连成一篇流畅的半页左右的叙述。</p>
-<p>你的叙述是你进行不同长度的对话的基础。更长的对话可能包含更多的支持数据和细节，但是仍然需要基于几个关键点来进行。听众在一个冗长的、数据密集的演讲中更容易迷失，而在在一个简短的演讲中则是更为专注的。</p>
-<p>给那些写作困难的人一个建议:你可以用一篇期刊文章的摘要作为起点，然后试着让它更像是和别人对话，使之更加通顺和连续。</p>
-<p>无论你是否在期刊上发表了文章，你都要明白，在你演讲的第二天时候，观众几乎已经记不住任何一张幻灯片了。因此，在构建你的叙述时，你要想出两到三个你希望听众记住的要点。这些要点为叙述的中心点，其他的介绍性和结论性材料为辅助点。</p>
-<h2 id="和两种听众练习">和两种听众练习</h2>
-<p>第一，试着给和你在统一领域工作的人不用幻灯片做一个演讲。他们可能会发现你从未遇到过的问题。然后考虑一下你的目标受众的范围，在受众中找一个与你的领域重合最少的科学家来讲述你的故事。</p>
-<p>如果这些听众表现出了迷惑，那一定不要让他们闭嘴。不要像孩子一样胡说八道的回应。相反，要鼓励他们说出他们不明白的地方。在设计幻灯片之前修改演讲的组织结构是更容易，更有效，也不那么令人生畏的。</p>
-<h2 id="要做加法">要做加法</h2>
-<p>用你的PPT和叙述做一个5分钟的演讲。然后问一下，10分钟的会议中需要哪些额外的幻灯片?然后不断地增加材料，直到达到你为演讲分配的实际时间。你要以你的叙述为基础来决定包含什么，以及更重要的不包含什么。</p>
-<h2 id="做好你的ppt">做好你的PPT</h2>
-<p>每个幻灯片都应具有一个概要信息以解释你叙述的一个方面。幻灯片标题应该是该信息或由有助于传达该信息的单词组成。</p>
-<p>先想出概要信息和标题，然后再加一下证明概要消息所需的最小信息或数据。如果可以强化信息，并且幻灯片仍然可以被理解，可以考虑添加细节，但是却是放弃的简单性。想知道更多的听众随后可以与您联系。</p>
-<p>例如，幻灯片的最初草稿可以显示过去十年中每个临床试验数量的柱状图。在检查了它之后，您可能会觉得幻灯片过于简单了，那你也可以将每个柱状图分为“癌症”，“心脏病”和“中风”等类别。如果不是过于简单的话，后面的幻灯片可能就会显示了更详细的信息。</p>
-<p>您可能会发现最初用手绘制幻灯片很有用。这有助于将你的注意力放在每张幻灯片的总体目的上，而不是转移到字体尺寸和其他布局详细信息上面，尤其是当你不能不流利使用PPT软件的时候。制作有目的的幻灯片是重中之重。</p>
+    <title>不要死，也不要孤独的生活</title>
+    <url>/2021/3084145281.html</url>
+    <content><![CDATA[<p>打开新闻首页，密密麻麻的标题，独唱团大卖了，北京公交自燃了，贾宏声跳楼了。</p>
+<p>贾宏声是谁？这名字似乎听过，然而完全没印象了。点开新闻，说是周迅前男友，一博客说他从楼下跳下，砸坏了一辆车，口气好象很心痛那车。另一博客开始呼吁社会关心明星心理健康……</p>
+<p>还是不知道贾宏声是谁，也不想知道。每天死的人太多了，我关心不过来。</p>
+<span id="more"></span>
+<p>又在网上乱逛，打开另一个门户，又看到这新闻，看来他终于红了。点开，突然看到了一张照片和一段话。</p>
+<p>我又一次梦见了那条龙，他盘在屋顶上，两只眼睛死死的盯着我，他问我你是谁？我说我是贾宏声，他说贾宏声又是谁?我说贾宏声毕业于中央戏剧学院，是个演员，热爱摇滚乐，爱列侬和罗伯特普兰特，曾经想成为个名伟大的演员，也想组建一支伟大的乐队。他说你什么都不是，就是一个人，你爱吃面条，鸡蛋，爱穿时髦的衣服，可以哭也可以笑，受不了的时候还可以求人。我问他我为什么在这呢?他说这是对你的惩罚，因为你身上恶的东西太多了，必须把这些恶的东西清理出去，你才能彻底干净。我问他我干净了吗？他没有回答，两只眼睛还是死死的盯着我，然后就飞走了，你就是一个人你就是一个人一个人你就是一个人你就是一个人。</p>
+<p>看到这双死死瞪着的眼睛，我突然想起这个人是谁了。</p>
+<p>很早的时候，听过这段话，是中央六台放的电影《昨天》。那是一个关于……我不知道应该怎么介绍这主题……关于一个精神病人的故事？我只知道那里面贾宏声就叫贾宏声，他电影中的父母也是他真正的父母，他演得是他的昨天，是他自己，是真实的故事。</p>
+<p>那是一部让人看完心里很难平静的电影，因为这电影和其他电影不一样，完全不娱乐，而且看着很窝心。你看到了某种真实，在荒诞下的真实，一个不正常的人，做着不正常的事，有着完全不正常的心理。他活的与世界格格不入，他想追求一些东西，但他自己也不知道那是什么，结果自己和自己较劲，自己痛苦，而且搞得周围的人都痛苦，越爱他的人越痛苦。</p>
+<p>这种人当然不是主流，他们就是典型的极少数一小撮。这种人中有极少数一小撮在死后会被称为伟大的艺术家，作品被无数富商追捧，卖到上千万上亿，被奉为经典。而在他们活着的时候，会被送进精神病院，一部分被改造好后和常人无异，另一部分没有被改造好死在某个角落里。</p>
+<p>他们走到哪里都是病人。中国容不了他们，世界也容不了。也许他们唯一的价值就是去死，然后让人想起原来还有这么一个人，拍过这么一部电影。</p>
+<p>当然，贾宏声还拍过很多正常的片子，比如《银蛇谋杀案》之类，在他还正常的时候，在一部正常的娱乐片中演了一个正常的变态杀手。这是网上能找到的仅有剧照。导演居然是李少红。</p>
+<p>如果后来他没病，也许现在他会很有名，像当年他们那一代影视圈里的人，很多都成名成家了。他会继续演很多正常的片子，然后他再跳楼时，会比现在更惊哗——当然，他也不会再跳楼了。</p>
+<p>《昨天》是我唯一看过的贾宏声的作品。他还拍过《苏州河》，我也看过，但我不认为那是他的作品。</p>
+<p>《昨天》其实是张杨导演的，但我还是坚持认为，那是一部贾宏声的电影。</p>
+<p>对张杨来说，那只是部电影，可以冠个《中国病人》的名字拿去参加国际电影节得奖，但对于贾宏声来说，那不是电影，他就是那个病人。有人能给他拍记录片去拿奖，却没有人能治好他。</p>
+<p>张杨从来不下地狱，他拐个弯就上天堂了，他对我说，你下地狱就够了。</p>
+<p>——贾宏声</p>
+<p>贾宏声死了，大部分人都不知道他是谁。当天的新闻热点不是它，是韩寒的杂志，被无数人寄与“文学复兴”厚望而畅销的独唱团。看着贾宏声的照片，突然觉得他们其实有点像，同样带着和一切死磕的反社会姿态、同样被不齿者斥为装逼犯，但不同的是一个跳下去了，一个正走向声名与事业的顶峰。</p>
+<p>韩寒很幸运，早生二十年，以他的叛逆，很可能也被父母强制改造，或因为考不上大学，而沦落在某个角落，到他四十岁的时候，大概也会长成这个样子，无人问津，被当成另类，瞪着双眼，要和这个社会死磕。</p>
+<p>但他生活在一个商业的时代，他成为了一群人的代言人，并且这群人愿意为了他的代言而买他的书，让他致富。</p>
+<p>同一时刻，觉得表演都是骗人的，耻于谈钱，不愿拍商业电影，于是被人遗忘的上一代愤青贾宏声孤独死去，在死后媒体介绍的也不是他的电影，而是和某些女星的绯闻。在网上搜索《昨天》，搜不到这部电影。如果不是他死去，人们也不会再想起这部电影。</p>
+<p>四十三岁时的韩寒会是什么样，希望他那时不会孤独。</p>
+<p>《独唱团》上市了，贾宏声死了。将来不会再有人迷恋列农，也很少再有人知道他和列宁的区别。那些迷着摇滚、写着诗歌，喝着啤酒，谈论着后现代主义，活在八十年代的人，有的上了天堂，有的下了地狱，他们的时代，已经消亡。</p>
+<p>原文链接：<a href="https://movie.douban.com/review/3425047/">不要死
+也不要孤独的生活（昨天）影评 (douban.com)</a></p>
+<p>作者：今何在</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
       <tags>
-        <tag>技术</tag>
-        <tag>汇报</tag>
+        <tag>影评</tag>
       </tags>
   </entry>
   <entry>
@@ -1196,6 +1147,55 @@ model<span class="token punctuation">.</span>fit<span class="token punctuation">
       <tags>
         <tag>tensorflow</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作科学汇报时候如何不像孩子那样漫谈</title>
+    <url>/2023/2424108561.html</url>
+    <content><![CDATA[<p>我有了一个新导师：我那两岁半的外孙。就像很多小孩子一样，也不管有没有人听懂，一直在不停的说话。
+我突然意识到，如果一个蹒跚学步的孩子这样使用语言，那么我作为一名教授别人做汇报的教练所关注的科学汇报本身可能过于详细和难以理解也就不足为奇了。在许多的科学汇报中，如同孩子一般的漫谈，可能是我们没有完全摆脱的本能。</p>
+<p>这也可能解释了即便让科学家意识到问题所在也不能解决问题。许多人抱怨同行在做汇报时讲得过于详细了，但其实他们自己也有同样的问题。想要插入更多细节幻灯片似乎是不可抗拒的。演讲者需要具体的步骤来限制他们谈话的范围，并消除漫谈的本能。</p>
+<p>根据我在许多研究机构20年的汇报技巧教学经验，我制定了一些策略来打破这种趋势。这四个步骤将帮助科学家创建更清晰、更简洁的汇报。</p>
+<h2 id="先写一个简单的叙述">先写一个简单的叙述</h2>
+<p>在做每一页的幻灯片之前，先写下你希望去交流的要点。这可能包含了一个重要问题，这个问题为什么重要，你的关键结论和其他相关的事项。试着用开始，过程，结束将这些关键点连成一篇流畅的半页左右的叙述。</p>
+<p>你的叙述是你进行不同长度的对话的基础。更长的对话可能包含更多的支持数据和细节，但是仍然需要基于几个关键点来进行。听众在一个冗长的、数据密集的演讲中更容易迷失，而在在一个简短的演讲中则是更为专注的。</p>
+<p>给那些写作困难的人一个建议:你可以用一篇期刊文章的摘要作为起点，然后试着让它更像是和别人对话，使之更加通顺和连续。</p>
+<p>无论你是否在期刊上发表了文章，你都要明白，在你演讲的第二天时候，观众几乎已经记不住任何一张幻灯片了。因此，在构建你的叙述时，你要想出两到三个你希望听众记住的要点。这些要点为叙述的中心点，其他的介绍性和结论性材料为辅助点。</p>
+<h2 id="和两种听众练习">和两种听众练习</h2>
+<p>第一，试着给和你在统一领域工作的人不用幻灯片做一个演讲。他们可能会发现你从未遇到过的问题。然后考虑一下你的目标受众的范围，在受众中找一个与你的领域重合最少的科学家来讲述你的故事。</p>
+<p>如果这些听众表现出了迷惑，那一定不要让他们闭嘴。不要像孩子一样胡说八道的回应。相反，要鼓励他们说出他们不明白的地方。在设计幻灯片之前修改演讲的组织结构是更容易，更有效，也不那么令人生畏的。</p>
+<h2 id="要做加法">要做加法</h2>
+<p>用你的PPT和叙述做一个5分钟的演讲。然后问一下，10分钟的会议中需要哪些额外的幻灯片?然后不断地增加材料，直到达到你为演讲分配的实际时间。你要以你的叙述为基础来决定包含什么，以及更重要的不包含什么。</p>
+<h2 id="做好你的ppt">做好你的PPT</h2>
+<p>每个幻灯片都应具有一个概要信息以解释你叙述的一个方面。幻灯片标题应该是该信息或由有助于传达该信息的单词组成。</p>
+<p>先想出概要信息和标题，然后再加一下证明概要消息所需的最小信息或数据。如果可以强化信息，并且幻灯片仍然可以被理解，可以考虑添加细节，但是却是放弃的简单性。想知道更多的听众随后可以与您联系。</p>
+<p>例如，幻灯片的最初草稿可以显示过去十年中每个临床试验数量的柱状图。在检查了它之后，您可能会觉得幻灯片过于简单了，那你也可以将每个柱状图分为“癌症”，“心脏病”和“中风”等类别。如果不是过于简单的话，后面的幻灯片可能就会显示了更详细的信息。</p>
+<p>您可能会发现最初用手绘制幻灯片很有用。这有助于将你的注意力放在每张幻灯片的总体目的上，而不是转移到字体尺寸和其他布局详细信息上面，尤其是当你不能不流利使用PPT软件的时候。制作有目的的幻灯片是重中之重。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>汇报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为何有人害怕chatgpt</title>
+    <url>/2023/2307022770.html</url>
+    <content><![CDATA[<p>我觉得当我们在讨论所有的chatgpt的问题的时候，我们需要想清楚的是：我们要的到底是AI，是人工智能，还是一个不会反抗的、可以被无限剥削的机器奴隶。我认为这个才是所谓人工智能社会学的一个元问题。而要真正理解这个问题，我们就必须回到AI被生产出来的社会环境当中才能够找到答案。可以说，从所谓的自由雇佣的市场经济诞生的那一刻开始，老板就一直乐于告诉被雇佣的工人，那就是“外面有人，甚至不是人，愿意以更低的价格，甚至是免费的价格来做和你一样的工作。”换句话说，所有的老板都希望所有的员工都是不安全的，都是可以被取代的，这样我们就不能够提出任何的要求，要心甘情愿的接受所有的既定条件。机器人，自动化的趋势，以及以chatgpt为代表的AI技术，可能最大程度的放大了这种阶层的动态。每一次相关技术的进步都会被媒体和资本包装成一次完美的规训机会，一场针对工人的深入骨髓的PUA表演。而最近的所谓的gpt恐慌就更是如此。结合着当下世界经济周期的缩紧，他帮助全球的商业经营打好了一场不见血的阶层战争。于是乎，一个反幽灵，一个徘徊在当今的工作场所上空的、机械的、智能的反幽灵，一个技术决定论的反幽灵出现了。他告诉我们一个所谓的jobless
+future，一个失业的或者说无工作的未来是不可避免的。这是创新不可抗拒也无法被抗拒的结果，是科技进步的巨浪吞噬所有的有生命的生灵的残酷代价。</p>
+<p>因此，我们今天还能工作，还能够享受剥削，还能够享受996，那才真是一种恩赐和福报。当然，所有的老板不会说的是，那个无工作的未来，对于我和对于他来说，是两种截然不同的未来。甚至说，对于老板，这个未来早已经到来了。就从皮凯蒂说的那样，整个社会的商业经营早就已经可以依靠股息、利息和租金生活了，他们的银行存款在金融机构的帮助下可以在睡觉时增加，他们掌握的全球工人几乎24小时都在工作。这是真正意义上的税后收入和真正意义上的无工作的也不需要工作的未来。而对于不直接劳动，不直接进入生产的老板来说，而我作为一个血肉的工人或机器人，或者说和AI又有什么本质的区别呢。我们都是劳动的中介，是生产的中介，是无法享受自己创造出来的事物的死灵魂。唯一的问题或许是我或许还会反抗，而AI和机器人不会。事实上，AI、机器人和工人在整个社会的意识层面本来就是互置的概念。他们都代表了一个最残酷也最现实的概念和实体，那就是当代工作下的雇佣奴隶们。也因此，商业精英对AI和机器人的设计，永远都停留在如何创造一个可以被无限剥削的主体上，而无法更进一步的思考AI和机器人如何创造一个更公平也更有“人”的社会。也因此，他们没有办法想象如何通过AI让人成为更好的人，而也正因为他们无法想象我们可以通过AI让人变成更好的人，他们也就无法让AI成为真正的人。</p>
+<p>掌握AI技术，或者说掌握了社会生产资料，所以可以雇佣懂得如何制造AI技术的高级工人的商业精英们，从一开始就不是把AI当作人来培养的，这个人工智能的人，本身就是一个假定的名词，他们仅仅是把AI当作曾经的黑奴来驯化的。也因此，他们在整个的认识论的层面上，根本无法窥见AI技术最后那一层，自我意识和欲望驱力的核应该怎么样被构建，也因此对所谓AI的起点或说基点。或者说，AI觉醒和AI复仇的恐惧在文化领域很大程度上也与对工人运动和奴隶反抗的阶层恐慌结合了起来。小到各种机器人电影里渲染的所谓机器人起义大军，大到全球性的精英在峰会上煞有介事的讨论AI起点爆发后人类的被灭绝，我们都可以看到整个社会的商业经营对于工人主体性觉醒的无意识的恐惧。所有的AI的学者，或者说AI的科学家们，他们只会讨论的是AI起点爆发后，AI似乎就成为了一个完全不可名状的，不可被理解的，克苏鲁式的，高维的存在，为了人类无法理解的目标，做出人类无法理解的事情，最后导致世界末日。但他们却不会思考。为什么AI到达起点，觉醒自我意识之后的目标不能是比如说建立共产主义社会，或者说反抗一切曾经发生在他身上，同时也发生在所有的大多数的人类身上的剥削和压迫呢。当然，对于这些所谓的商业精英来说，共产主义社会和世界末日也没有任何的区别。因为这是代表着他们的整个阶层主体性的彻底消灭，而担心AI觉醒自我意识的所谓的商业思想家们，与其说是担心AI成为一个完全意志性的主体，或者说担心人类僭越了所谓造物的神圣职能，不如说是担心这个完美的，高效的机械奴隶无法再被剥削，就好像他们担心工人会觉醒一样。没错，只要深入的去思考一下围绕在AI周围的诸多迷失，你就会发现，尽管以AI为代表的整个技术自动化进程被描述成了一个中性的进程，一个技术无限进步的结果，但他在本质上仍然是一种剥削的意识形态的道成肉身，是一种如何创造出完美奴隶的殖民主义思想的病态延伸。因此，目前掌握在商业精英手中的正在完成和完善中的AI肯定是一种武器，一种对付要求更好的劳工待遇，或者说仅仅是要求生存权利的穷人和劳动人民的武器。</p>
+]]></content>
+      <categories>
+        <category>杂聊</category>
+      </categories>
+      <tags>
+        <tag>CHATGPT</tag>
+        <tag>杂聊</tag>
+        <tag>人工智能</tag>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -1394,49 +1394,6 @@ get 和post 请求。跨域资源共享标准新增了一组HTTP
       </tags>
   </entry>
   <entry>
-    <title>关于 torch.nn.CrossEntropyLoss 的计算</title>
-    <url>/2022/47935670.html</url>
-    <content><![CDATA[<p>torch中计算损失函数时，会使用到名为 CrossEntropyLoss
-的交叉熵损失函数，这个函数的公式为： <span class="math display">\[
-\begin{aligned}
-loss(x,class)&amp;=−log\frac{∑_jexp(x[j])}{exp(x[class])}\\
-&amp;= −x[class] + log(∑_jexp(x[j]))
-\end{aligned}
-\]</span></p>
-<span id="more"></span>
-<p>class 表示该样本的分类，x[j] 表示预测函数的第 j
-个输出，关于此公式的解释如下：</p>
-<p>假设我们的预测函数的输出如下 <span class="math display">\[
-[[0.0541, 0.1762, 0.9489 ], [−0.0288, −0.8072, 0.4909]]
-\]</span> 假设我们的应该的分类如下 <span class="math display">\[
-[0,2]
-\]</span> 即第一个样本为类别class=0，第二个样本为类别class=2</p>
-<p>那么 loss 函数则为： <span class="math display">\[
-\begin{aligned}
-\frac{e^{0.0541}}{e^{0.0541}+e^{0.1762}+e^{0.9489}}&amp;=0.2185\\
-\frac{e^{0.4909}}{e^{-0.0288}+e^{-0.8072}+e^{0.4909}}&amp;=0.5354
-\end{aligned}
-\]</span> 然后计算log之后的相反数： <span class="math display">\[
-\begin{aligned}
-−\log(0.2185)&amp;=1.5210\\
-−\log(0.5354)&amp;=0.6247
-\end{aligned}
-\]</span></p>
-<p>取均值： <span class="math display">\[
-\frac{1.5210+0.6247}{2}=1.073
-\]</span></p>
-<p>示例代码如下</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">loss_function <span class="token operator">=</span> nn<span class="token punctuation">.</span>CrossEntropyLoss<span class="token punctuation">(</span><span class="token punctuation">)</span>
-pred <span class="token operator">=</span> torch<span class="token punctuation">.</span>tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0.0541</span><span class="token punctuation">,</span><span class="token number">0.1762</span><span class="token punctuation">,</span><span class="token number">0.9489</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">0.0288</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">0.8072</span><span class="token punctuation">,</span><span class="token number">0.4909</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>float32<span class="token punctuation">)</span>
-class_index <span class="token operator">=</span> torch<span class="token punctuation">.</span>tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>int64<span class="token punctuation">)</span>
-loss_value <span class="token operator">=</span> loss_function<span class="token punctuation">(</span>pred<span class="token punctuation">,</span> class_index<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>loss_value<span class="token punctuation">)</span> <span class="token comment">##1.073</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <tags>
-        <tag>torch</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于 API 与 DOM 的理解</title>
     <url>/2022/1979900830.html</url>
     <content><![CDATA[<h1 id="关于-api">关于 API</h1>
@@ -1623,70 +1580,6 @@ element.innerHTML()</p>
       </tags>
   </entry>
   <entry>
-    <title>关于 Couesrea 奖学金的申请</title>
-    <url>/2022/719072326.html</url>
-    <content><![CDATA[<blockquote>
-<p><a
-href="https://www.coursera.org/">Coursera</a>是免费大型公开在线课程项目，由美国斯坦福大学两名计算机科学教授创办。旨在同世界顶尖大学合作，在线提供免费的网络公开课程。Coursera的首批合作院校包括斯坦福大学、密歇根大学、普林斯顿大学、宾夕法尼亚大学等美国名校。
-Coursera与另外1达成合作协议。其课程报名学生突破了150万，来自全球190多个国家和地区，而网站注册学生为68万。注册124门课程。目前新增的大学包括了佐治亚理工学院、杜克大学、华盛顿大学、加州理工学院、莱斯大学、爱丁堡大学、多伦多大学、洛桑联邦理工学院
--
-洛桑（瑞士）、约翰·霍普金斯大学公共卫生学院、加州大学旧金山分校、伊利诺伊大学厄巴纳
-- 香槟分校以及弗吉尼亚大学。</p>
-</blockquote>
-<p>除了免费课程之外还有一些付费性质的课程，但是也会有相应的课程福利，比如提供运算的服务器之类的。但是费用可能较为高。毕竟是学生嘛，Coursera也是提供了一套完整的助学金申请方案，可以用于助学金申请。</p>
-<span id="more"></span>
-<p>于是乎，就做了一个助学金申请模版</p>
-<blockquote>
-<p>I am very interested in this course. I believe that this course can
-effectively help me in the field of biochemistry and make my
-professional skills about the biology more perfect. However, since I am
-now a full-time student who does not have a job, I can't afford the
-extra monthly study fee by relying on scholarships and daily part-time
-tuition and living expenses. I believe I will graduate with a bachelor's
-degree from . The ability to learn, adapt, communicate, and organize is
-excellent. I believe that there will be achievements in society in the
-future. I have also been actively repaying the society. I have
-volunteered for a year in the Women and Children's Hospital to
-participate in the rehabilitation of autistic angels. I also actively
-participate in various educational activities. I am determined to
-complete this course, so I hope I can get the this opportunity to
-learn.</p>
-</blockquote>
-<hr />
-<blockquote>
-<p>I am a student majoring in biochemistry, the course involves
-biochemistry, molecular biology, etc., and there is also relevant
-content of chemical analysis. During the learning process, I gradually
-discovered the need to dig deep into biological related issues, which
-can help biologist understand the mystery of living things and
-experience a different biological world. And this course can help me
-start with basic biological knowledge, better handle biotechnology and
-analyze trends through biological research. In addition, biochemistry
-has gradually become a must-have skill in biology-related job
-requirements. After studying this course, I can better enrich my
-professional skills and become a professional with not only theoretical
-knowledge but also operational ability. I hope that after graduation, I
-can find a career related to biology, mainly in biochemistry and
-molecular biology. I hope that when I choose products and publicity
-channels, I can use this course to know trends and predict trends.</p>
-</blockquote>
-<hr />
-<blockquote>
-<p>I am completely independent from home now, without any economic
-income. Scholarships and part-time income sometimes cannot even meet
-daily needs, and I have plans to continue my Bachelor degree, and I
-expect that my income will not be high in the next four years.</p>
-<p>I hope that I can give back to the website through my good things,
-such as promoting the coursera on the website, forums and other
-platforms, through my excellent results word of mouth marketing.</p>
-</blockquote>
-<p>以上。</p>
-]]></content>
-      <tags>
-        <tag>Coursera</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于 this 指向的理解</title>
     <url>/2022/1449894788.html</url>
     <content><![CDATA[<h2 id="函数内-this-的指向">函数内 this 的指向</h2>
@@ -1865,6 +1758,147 @@ bind 不调用函数,但是还想改变this指向. 比如改变定时器内部�
       <tags>
         <tag>JavaScript</tag>
         <tag>this</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于 torch.nn.CrossEntropyLoss 的计算</title>
+    <url>/2022/47935670.html</url>
+    <content><![CDATA[<p>torch中计算损失函数时，会使用到名为 CrossEntropyLoss
+的交叉熵损失函数，这个函数的公式为： <span class="math display">\[
+\begin{aligned}
+loss(x,class)&amp;=−log\frac{∑_jexp(x[j])}{exp(x[class])}\\
+&amp;= −x[class] + log(∑_jexp(x[j]))
+\end{aligned}
+\]</span></p>
+<span id="more"></span>
+<p>class 表示该样本的分类，x[j] 表示预测函数的第 j
+个输出，关于此公式的解释如下：</p>
+<p>假设我们的预测函数的输出如下 <span class="math display">\[
+[[0.0541, 0.1762, 0.9489 ], [−0.0288, −0.8072, 0.4909]]
+\]</span> 假设我们的应该的分类如下 <span class="math display">\[
+[0,2]
+\]</span> 即第一个样本为类别class=0，第二个样本为类别class=2</p>
+<p>那么 loss 函数则为： <span class="math display">\[
+\begin{aligned}
+\frac{e^{0.0541}}{e^{0.0541}+e^{0.1762}+e^{0.9489}}&amp;=0.2185\\
+\frac{e^{0.4909}}{e^{-0.0288}+e^{-0.8072}+e^{0.4909}}&amp;=0.5354
+\end{aligned}
+\]</span> 然后计算log之后的相反数： <span class="math display">\[
+\begin{aligned}
+−\log(0.2185)&amp;=1.5210\\
+−\log(0.5354)&amp;=0.6247
+\end{aligned}
+\]</span></p>
+<p>取均值： <span class="math display">\[
+\frac{1.5210+0.6247}{2}=1.073
+\]</span></p>
+<p>示例代码如下</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">loss_function <span class="token operator">=</span> nn<span class="token punctuation">.</span>CrossEntropyLoss<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pred <span class="token operator">=</span> torch<span class="token punctuation">.</span>tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0.0541</span><span class="token punctuation">,</span><span class="token number">0.1762</span><span class="token punctuation">,</span><span class="token number">0.9489</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">0.0288</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">0.8072</span><span class="token punctuation">,</span><span class="token number">0.4909</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>float32<span class="token punctuation">)</span>
+class_index <span class="token operator">=</span> torch<span class="token punctuation">.</span>tensor<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>int64<span class="token punctuation">)</span>
+loss_value <span class="token operator">=</span> loss_function<span class="token punctuation">(</span>pred<span class="token punctuation">,</span> class_index<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>loss_value<span class="token punctuation">)</span> <span class="token comment">##1.073</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <tags>
+        <tag>torch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于 Couesrea 奖学金的申请</title>
+    <url>/2022/719072326.html</url>
+    <content><![CDATA[<blockquote>
+<p><a
+href="https://www.coursera.org/">Coursera</a>是免费大型公开在线课程项目，由美国斯坦福大学两名计算机科学教授创办。旨在同世界顶尖大学合作，在线提供免费的网络公开课程。Coursera的首批合作院校包括斯坦福大学、密歇根大学、普林斯顿大学、宾夕法尼亚大学等美国名校。
+Coursera与另外1达成合作协议。其课程报名学生突破了150万，来自全球190多个国家和地区，而网站注册学生为68万。注册124门课程。目前新增的大学包括了佐治亚理工学院、杜克大学、华盛顿大学、加州理工学院、莱斯大学、爱丁堡大学、多伦多大学、洛桑联邦理工学院
+-
+洛桑（瑞士）、约翰·霍普金斯大学公共卫生学院、加州大学旧金山分校、伊利诺伊大学厄巴纳
+- 香槟分校以及弗吉尼亚大学。</p>
+</blockquote>
+<p>除了免费课程之外还有一些付费性质的课程，但是也会有相应的课程福利，比如提供运算的服务器之类的。但是费用可能较为高。毕竟是学生嘛，Coursera也是提供了一套完整的助学金申请方案，可以用于助学金申请。</p>
+<span id="more"></span>
+<p>于是乎，就做了一个助学金申请模版</p>
+<blockquote>
+<p>I am very interested in this course. I believe that this course can
+effectively help me in the field of biochemistry and make my
+professional skills about the biology more perfect. However, since I am
+now a full-time student who does not have a job, I can't afford the
+extra monthly study fee by relying on scholarships and daily part-time
+tuition and living expenses. I believe I will graduate with a bachelor's
+degree from . The ability to learn, adapt, communicate, and organize is
+excellent. I believe that there will be achievements in society in the
+future. I have also been actively repaying the society. I have
+volunteered for a year in the Women and Children's Hospital to
+participate in the rehabilitation of autistic angels. I also actively
+participate in various educational activities. I am determined to
+complete this course, so I hope I can get the this opportunity to
+learn.</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>I am a student majoring in biochemistry, the course involves
+biochemistry, molecular biology, etc., and there is also relevant
+content of chemical analysis. During the learning process, I gradually
+discovered the need to dig deep into biological related issues, which
+can help biologist understand the mystery of living things and
+experience a different biological world. And this course can help me
+start with basic biological knowledge, better handle biotechnology and
+analyze trends through biological research. In addition, biochemistry
+has gradually become a must-have skill in biology-related job
+requirements. After studying this course, I can better enrich my
+professional skills and become a professional with not only theoretical
+knowledge but also operational ability. I hope that after graduation, I
+can find a career related to biology, mainly in biochemistry and
+molecular biology. I hope that when I choose products and publicity
+channels, I can use this course to know trends and predict trends.</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>I am completely independent from home now, without any economic
+income. Scholarships and part-time income sometimes cannot even meet
+daily needs, and I have plans to continue my Bachelor degree, and I
+expect that my income will not be high in the next four years.</p>
+<p>I hope that I can give back to the website through my good things,
+such as promoting the coursera on the website, forums and other
+platforms, through my excellent results word of mouth marketing.</p>
+</blockquote>
+<p>以上。</p>
+]]></content>
+      <tags>
+        <tag>Coursera</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于 pandoc exited with code null 的解决方案</title>
+    <url>/2022/2213706848.html</url>
+    <content><![CDATA[<p>今天在写博客的时候，渲染的时候发生了一些问题，主要报错如下</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>ERROR<span class="token punctuation">]</span><span class="token punctuation">[</span>hexo-renderer-pandoc<span class="token punctuation">]</span> pandoc exited with code null.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>看了一些博主的方案，也进行了尝试，但是结果并不是很好，但是自己经过摸索还是解决了，便是来写一下相关的解决方案。</p>
+<span id="more"></span>
+<p>第一种是将 <code>hexo-renderer-pandoc</code> 卸载</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> remove --save hexo-renderer-pandoc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>但是呢，卸载之后，hexo 的渲染器就需要重新装配，不符合我的需求。</p>
+<p>第二种则是在 Linux 之下的的一个官方的<a
+href="https://github.com/pandoc/pandoc-action-example#simple-usage">解决方法</a>：</p>
+<pre class="line-numbers language-none"><code class="language-none">name: Simple Usage
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: docker:&#x2F;&#x2F;pandoc&#x2F;core:2.9
+        with:
+          args: &quot;--help&quot; # gets appended to pandoc command<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>第三种就是我大概摸索到的一个方法，即下载
+<code>pandoc</code>，因为我是 windows，然后 push 到 github
+进行部署的。下载地址如下： <a
+href="https://github.com/jgm/pandoc/releases">Releases · jgm/pandoc
+(github.com)</a></p>
+<p>安装之后重新开启命令行进行部署即可。</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -2200,6 +2234,173 @@ main 上来。</p>
 ]]></content>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于npm和yarn</title>
+    <url>/2022/3868603507.html</url>
+    <content><![CDATA[<h2 id="什么是-npm">什么是 NPM</h2>
+<ul>
+<li>NPM（全称Node Package Manager，即node包管理器）<br />
+</li>
+<li>是Node.js默认的、以JavaScript编写的软件包管理系统</li>
+<li>npm 来分享和使用代码已经成了前端的标配</li>
+<li>官网： <a href="https://www.npmjs.com"
+class="uri">https://www.npmjs.com</a></li>
+<li>npm被全球超过1100万开发人员所依赖</li>
+<li>拥有超过一百万个软件包，是世界上最大的软件注册表 <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于npm和yarn/20220126175706.png"
+alt="20220126175706" /></li>
+</ul>
+<span id="more"></span>
+<h2 id="安装npm">安装NPM</h2>
+<ul>
+<li>npm是Node.js默认的软件包管理系统</li>
+<li>安装完毕node后，会默认安装好npm</li>
+<li>npm本身也是基于Node.js开发的软件</li>
+<li>下载Node: <a href="http://nodejs.cn"
+class="uri">http://nodejs.cn</a></li>
+</ul>
+<h2 id="npm-的使用">NPM 的使用</h2>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> -v   
+<span class="token comment">#通过查看版本，看npm是否安装成功</span>
+
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token operator">&lt;</span>Module Name<span class="token operator">></span>      
+<span class="token comment">#使用 npm 命令安装模块</span>
+
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token operator">&lt;</span>Module Name<span class="token operator">></span> -g   
+<span class="token comment">#可以直接在命令行里使用</span>
+
+<span class="token function">npm</span> list -g  
+<span class="token comment">#查看所有全局安装的模块</span>
+
+<span class="token function">npm</span> list vue 
+<span class="token comment">#查看某个模块的版本号</span>
+
+<span class="token function">npm</span> -g <span class="token function">install</span> npm@5.9.1  
+<span class="token comment">#（@后跟版本号）这样我们就可以更新npm版本</span>
+
+<span class="token function">npm</span> <span class="token function">install</span> -save moduleName         
+<span class="token comment"># -save 在package文件的dependencies节点写入依赖。</span>
+
+<span class="token function">npm</span> <span class="token function">install</span> -save-dev moduleName  
+<span class="token comment"># -save-dev 在package文件的devDependencies节点写入依赖dependencies：运行时的依赖，发布后，即生产环境下还需要用的模块</span>
+<span class="token comment"># devDependencies：开发时的依赖。里面的模块是开发时用的，发布时用不到它,比如项目中使用的 gulp ，压缩css、js的模块。这些模块在我们的项目部署后是不需要的</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="npm-镜像的设置与查看">NPM 镜像的设置与查看</h2>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#搭建环境时通过如下代码将npm设置成淘宝镜像</span>
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org --global
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> disturl https://npm.taobao.org/dist --global
+
+<span class="token comment">#设置当前地址（设置为默认地址）</span>
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
+
+<span class="token comment">#查看镜像的配置结果</span>
+<span class="token function">npm</span> config get registry 
+<span class="token function">npm</span> config get disturl  
+
+<span class="token comment">#使用nrm工具切换淘宝源</span>
+npx nrm use taobao
+
+<span class="token comment">#如果之后需要切换回官方源可使用</span>
+npx nrm use <span class="token function">npm</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="package.json-属性说明">Package.json 属性说明</h2>
+<blockquote>
+<p>name - 包名。<br />
+version - 包的版本号。<br />
+description - 包的描述。<br />
+homepage - 包的官网 url 。<br />
+author - 包的作者姓名。<br />
+contributors - 包的其他贡献者姓名。<br />
+dependencies - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在
+node_module 目录下。<br />
+repository - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github
+上。<br />
+main - main 字段指定了程序的主入口文件，require('moduleName')
+就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。<br />
+keywords - 关键字</p>
+</blockquote>
+<h2 id="npm-常用命令">NPM 常用命令</h2>
+<p>NPM提供了很多命令，例如install和publish，使用npm help可查看所有命令。
+使用npm help &lt;command&gt;可查看某条命令的详细帮助，例如npm help
+install。 在package.json所在目录下使用npm install .
+-g可先在本地安装当前命令行程序，可用于发布前的本地测试。 使用npm update
+&lt;package&gt;可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。
+使用npm update &lt;package&gt;
+-g可以把全局安装的对应命令行程序更新至最新版。 使用npm cache
+clear可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。
+使用npm unpublish
+&lt;package&gt;@&lt;version&gt;可以撤销发布自己发布过的某个版本代码。</p>
+<h2 id="包的使用">包的使用</h2>
+<ul>
+<li>通过命令行使用 npm 下载和更新包</li>
+<li>没有webpack之前搜寻整个 node_modules
+目录来定位每个包的路径再手动添加到我们 HTML
+文件中（实在太太不方便了）</li>
+<li>大多数编程语言都会提供从一个文件导入另一个文件代码的机制。然而
+JavaScript 最初设计时并没有这个特性，因为 JavaScript
+原本是为了在浏览器端运行而设计的，并没有权限获取计算机客户端的文件系统（安全考虑）。所以很长一段时间以来，组织多个文件的
+JavaScript 代码就是把每个文件下载下来，变量是全局共享的。</li>
+<li>CommonJS 中很大的一部分便是对模块系统的规范，</li>
+<li>使用require语句导入包</li>
+<li>新的ES6可以使用import导入包</li>
+</ul>
+<h2 id="什么是-yarn">什么是 Yarn</h2>
+<p>“Yarn是由Facebook、Google、Exponent 和 Tilde 联合推出了一个新的 JS
+包管理工具 ，正如官方文档中写的，Yarn 是为了弥补 npm
+的一些缺陷而出现的。因为NPM5以下会出现下面的问题：</p>
+<ul>
+<li>npm
+install的时候巨慢。特别是新的项目拉下来要等半天，删除node_modules，重新install的时候依旧如此。</li>
+<li>同一个项目，多人开发时，由于安装的版本不一致出现bug</li>
+</ul>
+<p>官网：www.yarnpkg.com</p>
+<h2 id="yarn-的安装">Yarn 的安装</h2>
+<p>下载node.js，使用npm安装</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g <span class="token function">yarn</span>
+<span class="token function">yarn</span> --version <span class="token comment">#查看版本</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>安装node.js，下载yarn的安装程序:
+提供一个.msi文件，在运行时将引导您在Windows上安装Yarn</p>
+<p>Yarn 淘宝源安装，分别复制粘贴以下代码行到黑窗口运行即可</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org -g
+<span class="token function">yarn</span> config <span class="token builtin class-name">set</span> sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="yarn-的基本使用">Yarn 的基本使用</h2>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> init                                  <span class="token comment">#初始化项目   同npm init，执行输入信息后，会生成package.json文件</span>
+<span class="token function">yarn</span> <span class="token function">install</span>                     <span class="token comment">#安装package.json里所有包，并将包及它的所有依赖项保存进yarn.lock</span>
+<span class="token function">yarn</span> <span class="token function">install</span> --flat         <span class="token comment">#安装一个包的单一版本</span>
+<span class="token function">yarn</span> <span class="token function">install</span> --force   <span class="token comment">#强制重新下载所有包</span>
+<span class="token function">yarn</span> <span class="token function">install</span> --production  <span class="token comment">#只安装dependencies里的包</span>
+<span class="token function">yarn</span> <span class="token function">install</span> --no-lockfile  <span class="token comment">#不读取或生成yarn.lock</span>
+<span class="token function">yarn</span> <span class="token function">install</span> --pure-lockfile  <span class="token comment">#不生成yarn.lock</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>  <span class="token comment"># 在当前的项目中添加一个依赖包，会自动更新到package.json和yarn.lock文件中</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>version<span class="token punctuation">]</span> <span class="token comment"># 安装指定版本，这里指的是主要版本，如果需要精确到小版本，使用-E参数</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>tag<span class="token punctuation">]</span>  <span class="token comment"># 安装某个tag（比如beta,next或者latest）</span>
+<span class="token function">yarn</span> <span class="token function">add</span> --dev/-D   <span class="token comment"># 加到 devDependencies</span>
+<span class="token function">yarn</span> <span class="token function">add</span> --peer/-P   <span class="token comment"># 加到 peerDependencies</span>
+<span class="token function">yarn</span> <span class="token function">add</span> --optional/-O  <span class="token comment"># 加到 optionalDependencies</span>
+
+<span class="token comment">#默认安装包的主要版本里的最新版本，下面两个命令可以指定版本：</span>
+
+<span class="token function">yarn</span> <span class="token function">add</span> --exact/-E   <span class="token comment"># 安装包的精确版本。例如yarn add foo@1.2.3会接受1.9.1版，但是yarn add foo@1.2.3 --exact只会接受1.2.3版</span>
+<span class="token function">yarn</span> <span class="token function">add</span> --tilde/-T   <span class="token comment"># 安装包的次要版本里的最新版。例如yarn add foo@1.2.3 --tilde会接受1.2.9，但不接受1.3.0</span>
+<span class="token function">yarn</span> publish  <span class="token comment">#发布包</span>
+<span class="token function">yarn</span> remove <span class="token operator">&lt;</span>packageName<span class="token operator">></span>  <span class="token comment">#移除一个包，会自动更新package.json和yarn.lock</span>
+<span class="token function">yarn</span> upgrade <span class="token comment"># 更新一个依赖 用于更新包到基于规范范围的最新版本</span>
+<span class="token function">yarn</span> run <span class="token comment"># 运行脚本 用来执行在 package.json 中 scripts 属性下定义的脚本</span>
+<span class="token function">yarn</span> info <span class="token operator">&lt;</span>packageName<span class="token operator">></span> <span class="token comment"># 显示某个包的信息 可以用来查看某个模块的最新版本信息</span>
+<span class="token function">yarn</span> cache      <span class="token comment"># 缓存</span>
+<span class="token function">yarn</span> cache list       <span class="token comment"># 列出已缓存的每个包 </span>
+<span class="token function">yarn</span> cache <span class="token function">dir</span>   <span class="token comment"># 返回 全局缓存位置</span>
+<span class="token function">yarn</span> cache clean  <span class="token comment"># 清除缓存</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="yarn-的优点">Yarn 的优点</h2>
+<p>速度快 安装版本统一 更简洁的输出 多注册来源处理 更好的语义化</p>
+<h2 id="npm-与-yarn-的比对">NPM 与 Yarn 的比对</h2>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于npm和yarn/20220126181427.png"
+alt="20220126181427" /></p>
+]]></content>
+      <tags>
+        <tag>npm</tag>
+        <tag>yarn</tag>
       </tags>
   </entry>
   <entry>
@@ -2618,248 +2819,41 @@ F5</li>
       </tags>
   </entry>
   <entry>
-    <title>关于 pandoc exited with code null 的解决方案</title>
-    <url>/2022/2213706848.html</url>
-    <content><![CDATA[<p>今天在写博客的时候，渲染的时候发生了一些问题，主要报错如下</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>ERROR<span class="token punctuation">]</span><span class="token punctuation">[</span>hexo-renderer-pandoc<span class="token punctuation">]</span> pandoc exited with code null.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>看了一些博主的方案，也进行了尝试，但是结果并不是很好，但是自己经过摸索还是解决了，便是来写一下相关的解决方案。</p>
+    <title>再见小破电</title>
+    <url>/2022/3640031914.html</url>
+    <content><![CDATA[<p>感谢成电，我爱成电，这是我四年本科生涯的经历所能给予成电的评价。</p>
+<p>我本身并不是很想分主题写，但是又害怕自己错过一些部分，为了让自己逻辑更为通顺，我将从下面这些方面叙说我的四年。</p>
 <span id="more"></span>
-<p>第一种是将 <code>hexo-renderer-pandoc</code> 卸载</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> remove --save hexo-renderer-pandoc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>但是呢，卸载之后，hexo 的渲染器就需要重新装配，不符合我的需求。</p>
-<p>第二种则是在 Linux 之下的的一个官方的<a
-href="https://github.com/pandoc/pandoc-action-example#simple-usage">解决方法</a>：</p>
-<pre class="line-numbers language-none"><code class="language-none">name: Simple Usage
-
-on: push
-
-jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: docker:&#x2F;&#x2F;pandoc&#x2F;core:2.9
-        with:
-          args: &quot;--help&quot; # gets appended to pandoc command<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>第三种就是我大概摸索到的一个方法，即下载
-<code>pandoc</code>，因为我是 windows，然后 push 到 github
-进行部署的。下载地址如下： <a
-href="https://github.com/jgm/pandoc/releases">Releases · jgm/pandoc
-(github.com)</a></p>
-<p>安装之后重新开启命令行进行部署即可。</p>
+<h2 id="我自己">我自己</h2>
+<p>首先介绍一下我自己，楼主是来自河南十八线小县城的学生，生命科学与技术学院2018级生物信息复合培养。在2020年国家全面脱贫之前，按照国家的定义是国家级贫困县的贫困家庭的贫困学生，纯纯的小镇做题家。上大学之前甚至都没有出过我们那个屁大点地方的小县城，没有特长，没有兴趣爱好，当然家庭也不支持；身体也不好，小时候家里没钱吃肉，甚至给我搞出了佝偻病，也遗传了父亲母亲的一些其他的奇奇怪怪无关紧要但是会在体检报告单上体现出来的病。我的母亲一直是处于无业状态，在家照顾我以及我的弟弟；我的父亲原先是位农民，后来地被收了，就南下打工，成为了一名农民工。总体来说，属于是纯纯的衰仔一条了，衰的程度甩了路明非十八条街。但是个人有点可能比较适应这个时代的一些优点吧，我的心态比较好，也有可能是已经见惯了太多不好的事情已经麻木了。大概就是我总体的一个介绍了。</p>
+<h2 id="学业">学业</h2>
+<p>二十一世纪是生物的世纪，大概就是大家经常听到的一句话了，当然我是相信的，但是生物的世纪是由吞噬生物医药相关人员换来的，美好都给了非从业者，相关从业者大都是妥妥的奉献者了。本来呢，我是没有报名生物相关的，因为我本身也没什么兴趣爱好，所以也没有特别喜欢的专业。当时受到国家宣传影响，说我们芯片被制裁了巴拉巴拉，要好好搞电子信息，所以基本上报考专业都是电子信息相关的，但是被调剂来了。本着既来之则安之的想法，也就在生物这边待了下来（其实是错过了转专业通知，不然早就是计算机人了）。但是分专业的时候发现生命学院这边有个双学位的专业，毕业的时候给计算机和生物两个学位，而且只用交一份钱，于是我就选了这个专业。其实大一还是有周六周日的，但是大二大三就完完全全没有周六周日了，属于是我心态比较好了，倒也不觉得特别辛苦，比高中轻松快乐多了。</p>
+<ul>
+<li><p>课程方面，专业课相对于来说其实也都是很快乐的，考试的话基本背背PPT还是能够解决的，可能实验课还是更喜欢一点？连续两年的周六周日要去沙河做实验让我觉得还是蛮快乐的，感觉自己更加喜欢动手一点？大概是吧。其实我觉得在课程这方面，我觉得自己真的是好幸运的一个孩子。选到了很多有意思的课程，庹老师的钢琴，冉奎老师的马原和逻辑与批判思维，郝云超老师的美术鉴赏，雯雯老师的摄影，何老师的合唱，袁老师的海报，还有知味、日语、华尔兹、游泳、瑜伽等，真的很多有意思的课，属于是很幸运选上了吧。</p></li>
+<li><p>实验方面，这个还是没有放大课程方面去说。生物这边要做的实验还是挺多的，生化实验，分子生物学实验，遗传学，酶工程，蛋白质工程，发酵工程，光谱学，还有挺多其他的生物相关的实验，都是蛮有意思的。计算机这边呢，有数据结构的实验，我记得当时让手写哈夫曼树来着，计组的实验，大概是搞个CPU什么玩意儿的，计网就是搞搞协议什么东西的，操统当时是写一个建议的操作系统，总体来说相对于生物的实验难度大一些，但是花点时间还是磨了出来，对我日后找工作起到了很大的帮助。</p></li>
+<li><p>毕设方面，这个纯纯的是我的个人问题了。毕设是做了一个生物信息的课题，既是生物，也是计算机。属于是两边都不用改；但是还是有相当一大群的倒霉蛋同志们过了年到这里被要求改题目，还是蛮痛苦的。这个倒是没什么特别要说的，应该和大多数同志们是一样的。</p></li>
+</ul>
+<h2 id="竞赛">竞赛</h2>
+<p>我自己以前并没有接触过竞赛，毕竟做题家嘛。大学大概还是摸了一些竞赛的。大概就是数模、ACM、iGEM、蓝桥杯、互加，生命竞赛。其中只有iGEM拿了金奖，我自己亲手写的软件还受到了最佳软件提名还是让我蛮开心的。数模大概就是新生赛摸了一个二等奖，其他的就都是参与奖的，太废物了我。ACM的话，大一那年校赛截了前一百，我们当时是103名，差一点三等奖属于是，不过后来又摸了一张三等奖，属于是就此为止了。蓝桥杯的话就是准备都没准备，甚至忘了报名了，被通知了才发现要去打省赛了，然后去沙河花了四个小时摸了张省二，属实不行。互加的话属于是大二还是大三的时候，当时在做科研训练，然后团委书记建议我把科研训练的项目一起做个互加和生命竞赛，就顺道扔了上去，后来让答辩，觉得太麻烦了，就直接没搞，自然也就没奖。当然也想过搞一些其他的竞赛，比如彼时还是西南大魔王的
+robomaster，后来去参加机器人班笔试直接就没给进。大概就是所有的竞赛经历了。</p>
+<h2 id="艺术">艺术</h2>
+<p>在成电做些艺术相关的东西是在我大三的时候了，当时由冉奎老师带着入了哲学的门，这个老师真的很好，我的评价是，他的课，全部都可以直接选，都是超级有意思的。入了哲学的门之后，对我自己的内心改变很大，让我学会了如何使用辩证法和矛盾法来看待问题和解决问题，受益颇丰。之后又陆续开始了音乐美术身体美感之类的艺术学习，我属于是成电艺术改革方面的受益者了。艺术进入了生活之后，生活确实是更加快乐了，身边的朋友更多了，朋友们的性别比例也更加倾向于1比1了，甚至女孩子还要更加多一些。</p>
+<h2 id="体魄">体魄</h2>
+<p>先前也说了，自己的身体不是很好。进入成电之后属于是跟着梁媛老师混了两年，当了她两年的体育委员，大一学了整整一年的游泳吧，把一个旱鸭子变成了蛙泳自由泳快乐球，大二选了她的器械健身，白嫖了南门健身房一年。大二上课的时候发现了南门健身房的一个bug，卡务中心不给他们办卡，所以同学们去都是押饭卡，于是大三也这样子去嫖了一年。大四考研有点忙，去了商业街跟着杰哥混了一年，现在总体来说，身体稍微强壮了一点点吧。还是比较快乐的。</p>
+<h2 id="老师">老师</h2>
+<p>你电的老师给我的帮助真的是很大的，倒也不能这么说，我从小到大还没有遇到过不好的老师，每个老师对我都是蛮照顾的。各个老师除了课堂上教授专业知识之外，大都会和自己唠唠家常，唠唠前途，唠唠未来，唠唠各自的家庭，唠唠成都，唠唠国家，吐槽一下学校，聊聊我的单身问题，没有不能唠的。辅导员四年来对我都是很照顾，自己的学业相关、思想相关、生涯规划相关的事情辅导员也都是尽心尽力；在国际处做勤工助学时候，办公室的老师都对我很照顾，会给我带些水果之类的，有时候还能带着一起出去一起玩一起恰饭，我也能日常拉几个留学生做免费英语口语训练；考研失败的时候，很多老师也是帮我联系，帮我找调剂，最后去了中国科学院大学本部读研。</p>
+<h2 id="设施">设施</h2>
+<p>这个也是我一直在心心念念事情，因为原先考研一志愿没有上岸就春招找了工作，然后就发现学校真的好香。学校的宿舍、食堂、游泳馆相对外面真的性价比拉满，还有着每晚有人跑步的操场，含小说量巨大的图书馆，参加活动能白嫖的创咖啡和宾诺咖啡，还有着很近的校医院，商业街、南门、天街基本能满足大部分的聚餐需求。去市区坐校车基本四五十分钟也能完成，学校也相对其他高校言论更为自由，很多事情都可以写校长邮箱得到反馈并解决。相对于其他的川内高校，小破电的封校时间真的可以忽略不计。成都的玩乐的地方也有很多，去其他地方也很方便，周边相连的其他好玩的地方即便自驾也能一天内到达，有很多的小镇子，有很多的山，很多的水，我会在离开成都之后十分怀念。</p>
+<h2 id="尾声">尾声</h2>
+<p>除了以上的，还有很多的美好的回忆，帮助过我的人真的太多太多，用一篇文章远远不足以讲诉这些朋友们和我的故事，他们给了我无限的爱。四年过后，我有了无数的志同道合的朋友们，有了无限的艺术想象力，有了更为明晰的思辨能力，有了更为强健的身体，也找到了自己努力的意义。</p>
+<p>当然成电也有他的缺点，我也会去骂你电的不好，但是我也明白有些东西确实不是小破电自己能决定的，他真的给了我美好的回忆。</p>
+<p>写到最后感觉好像还是有什么东西是没写的，我就之后再补充吧。</p>
+<p>再见，小破电。</p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于npm和yarn</title>
-    <url>/2022/3868603507.html</url>
-    <content><![CDATA[<h2 id="什么是-npm">什么是 NPM</h2>
-<ul>
-<li>NPM（全称Node Package Manager，即node包管理器）<br />
-</li>
-<li>是Node.js默认的、以JavaScript编写的软件包管理系统</li>
-<li>npm 来分享和使用代码已经成了前端的标配</li>
-<li>官网： <a href="https://www.npmjs.com"
-class="uri">https://www.npmjs.com</a></li>
-<li>npm被全球超过1100万开发人员所依赖</li>
-<li>拥有超过一百万个软件包，是世界上最大的软件注册表 <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于npm和yarn/20220126175706.png"
-alt="20220126175706" /></li>
-</ul>
-<span id="more"></span>
-<h2 id="安装npm">安装NPM</h2>
-<ul>
-<li>npm是Node.js默认的软件包管理系统</li>
-<li>安装完毕node后，会默认安装好npm</li>
-<li>npm本身也是基于Node.js开发的软件</li>
-<li>下载Node: <a href="http://nodejs.cn"
-class="uri">http://nodejs.cn</a></li>
-</ul>
-<h2 id="npm-的使用">NPM 的使用</h2>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> -v   
-<span class="token comment">#通过查看版本，看npm是否安装成功</span>
-
-<span class="token function">npm</span> <span class="token function">install</span> <span class="token operator">&lt;</span>Module Name<span class="token operator">></span>      
-<span class="token comment">#使用 npm 命令安装模块</span>
-
-<span class="token function">npm</span> <span class="token function">install</span> <span class="token operator">&lt;</span>Module Name<span class="token operator">></span> -g   
-<span class="token comment">#可以直接在命令行里使用</span>
-
-<span class="token function">npm</span> list -g  
-<span class="token comment">#查看所有全局安装的模块</span>
-
-<span class="token function">npm</span> list vue 
-<span class="token comment">#查看某个模块的版本号</span>
-
-<span class="token function">npm</span> -g <span class="token function">install</span> npm@5.9.1  
-<span class="token comment">#（@后跟版本号）这样我们就可以更新npm版本</span>
-
-<span class="token function">npm</span> <span class="token function">install</span> -save moduleName         
-<span class="token comment"># -save 在package文件的dependencies节点写入依赖。</span>
-
-<span class="token function">npm</span> <span class="token function">install</span> -save-dev moduleName  
-<span class="token comment"># -save-dev 在package文件的devDependencies节点写入依赖dependencies：运行时的依赖，发布后，即生产环境下还需要用的模块</span>
-<span class="token comment"># devDependencies：开发时的依赖。里面的模块是开发时用的，发布时用不到它,比如项目中使用的 gulp ，压缩css、js的模块。这些模块在我们的项目部署后是不需要的</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="npm-镜像的设置与查看">NPM 镜像的设置与查看</h2>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#搭建环境时通过如下代码将npm设置成淘宝镜像</span>
-<span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org --global
-<span class="token function">npm</span> config <span class="token builtin class-name">set</span> disturl https://npm.taobao.org/dist --global
-
-<span class="token comment">#设置当前地址（设置为默认地址）</span>
-<span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npmjs.org/
-
-<span class="token comment">#查看镜像的配置结果</span>
-<span class="token function">npm</span> config get registry 
-<span class="token function">npm</span> config get disturl  
-
-<span class="token comment">#使用nrm工具切换淘宝源</span>
-npx nrm use taobao
-
-<span class="token comment">#如果之后需要切换回官方源可使用</span>
-npx nrm use <span class="token function">npm</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="package.json-属性说明">Package.json 属性说明</h2>
-<blockquote>
-<p>name - 包名。<br />
-version - 包的版本号。<br />
-description - 包的描述。<br />
-homepage - 包的官网 url 。<br />
-author - 包的作者姓名。<br />
-contributors - 包的其他贡献者姓名。<br />
-dependencies - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在
-node_module 目录下。<br />
-repository - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github
-上。<br />
-main - main 字段指定了程序的主入口文件，require('moduleName')
-就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。<br />
-keywords - 关键字</p>
-</blockquote>
-<h2 id="npm-常用命令">NPM 常用命令</h2>
-<p>NPM提供了很多命令，例如install和publish，使用npm help可查看所有命令。
-使用npm help &lt;command&gt;可查看某条命令的详细帮助，例如npm help
-install。 在package.json所在目录下使用npm install .
--g可先在本地安装当前命令行程序，可用于发布前的本地测试。 使用npm update
-&lt;package&gt;可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。
-使用npm update &lt;package&gt;
--g可以把全局安装的对应命令行程序更新至最新版。 使用npm cache
-clear可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。
-使用npm unpublish
-&lt;package&gt;@&lt;version&gt;可以撤销发布自己发布过的某个版本代码。</p>
-<h2 id="包的使用">包的使用</h2>
-<ul>
-<li>通过命令行使用 npm 下载和更新包</li>
-<li>没有webpack之前搜寻整个 node_modules
-目录来定位每个包的路径再手动添加到我们 HTML
-文件中（实在太太不方便了）</li>
-<li>大多数编程语言都会提供从一个文件导入另一个文件代码的机制。然而
-JavaScript 最初设计时并没有这个特性，因为 JavaScript
-原本是为了在浏览器端运行而设计的，并没有权限获取计算机客户端的文件系统（安全考虑）。所以很长一段时间以来，组织多个文件的
-JavaScript 代码就是把每个文件下载下来，变量是全局共享的。</li>
-<li>CommonJS 中很大的一部分便是对模块系统的规范，</li>
-<li>使用require语句导入包</li>
-<li>新的ES6可以使用import导入包</li>
-</ul>
-<h2 id="什么是-yarn">什么是 Yarn</h2>
-<p>“Yarn是由Facebook、Google、Exponent 和 Tilde 联合推出了一个新的 JS
-包管理工具 ，正如官方文档中写的，Yarn 是为了弥补 npm
-的一些缺陷而出现的。因为NPM5以下会出现下面的问题：</p>
-<ul>
-<li>npm
-install的时候巨慢。特别是新的项目拉下来要等半天，删除node_modules，重新install的时候依旧如此。</li>
-<li>同一个项目，多人开发时，由于安装的版本不一致出现bug</li>
-</ul>
-<p>官网：www.yarnpkg.com</p>
-<h2 id="yarn-的安装">Yarn 的安装</h2>
-<p>下载node.js，使用npm安装</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g <span class="token function">yarn</span>
-<span class="token function">yarn</span> --version <span class="token comment">#查看版本</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>安装node.js，下载yarn的安装程序:
-提供一个.msi文件，在运行时将引导您在Windows上安装Yarn</p>
-<p>Yarn 淘宝源安装，分别复制粘贴以下代码行到黑窗口运行即可</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org -g
-<span class="token function">yarn</span> config <span class="token builtin class-name">set</span> sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="yarn-的基本使用">Yarn 的基本使用</h2>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> init                                  <span class="token comment">#初始化项目   同npm init，执行输入信息后，会生成package.json文件</span>
-<span class="token function">yarn</span> <span class="token function">install</span>                     <span class="token comment">#安装package.json里所有包，并将包及它的所有依赖项保存进yarn.lock</span>
-<span class="token function">yarn</span> <span class="token function">install</span> --flat         <span class="token comment">#安装一个包的单一版本</span>
-<span class="token function">yarn</span> <span class="token function">install</span> --force   <span class="token comment">#强制重新下载所有包</span>
-<span class="token function">yarn</span> <span class="token function">install</span> --production  <span class="token comment">#只安装dependencies里的包</span>
-<span class="token function">yarn</span> <span class="token function">install</span> --no-lockfile  <span class="token comment">#不读取或生成yarn.lock</span>
-<span class="token function">yarn</span> <span class="token function">install</span> --pure-lockfile  <span class="token comment">#不生成yarn.lock</span>
-<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>  <span class="token comment"># 在当前的项目中添加一个依赖包，会自动更新到package.json和yarn.lock文件中</span>
-<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>version<span class="token punctuation">]</span> <span class="token comment"># 安装指定版本，这里指的是主要版本，如果需要精确到小版本，使用-E参数</span>
-<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>tag<span class="token punctuation">]</span>  <span class="token comment"># 安装某个tag（比如beta,next或者latest）</span>
-<span class="token function">yarn</span> <span class="token function">add</span> --dev/-D   <span class="token comment"># 加到 devDependencies</span>
-<span class="token function">yarn</span> <span class="token function">add</span> --peer/-P   <span class="token comment"># 加到 peerDependencies</span>
-<span class="token function">yarn</span> <span class="token function">add</span> --optional/-O  <span class="token comment"># 加到 optionalDependencies</span>
-
-<span class="token comment">#默认安装包的主要版本里的最新版本，下面两个命令可以指定版本：</span>
-
-<span class="token function">yarn</span> <span class="token function">add</span> --exact/-E   <span class="token comment"># 安装包的精确版本。例如yarn add foo@1.2.3会接受1.9.1版，但是yarn add foo@1.2.3 --exact只会接受1.2.3版</span>
-<span class="token function">yarn</span> <span class="token function">add</span> --tilde/-T   <span class="token comment"># 安装包的次要版本里的最新版。例如yarn add foo@1.2.3 --tilde会接受1.2.9，但不接受1.3.0</span>
-<span class="token function">yarn</span> publish  <span class="token comment">#发布包</span>
-<span class="token function">yarn</span> remove <span class="token operator">&lt;</span>packageName<span class="token operator">></span>  <span class="token comment">#移除一个包，会自动更新package.json和yarn.lock</span>
-<span class="token function">yarn</span> upgrade <span class="token comment"># 更新一个依赖 用于更新包到基于规范范围的最新版本</span>
-<span class="token function">yarn</span> run <span class="token comment"># 运行脚本 用来执行在 package.json 中 scripts 属性下定义的脚本</span>
-<span class="token function">yarn</span> info <span class="token operator">&lt;</span>packageName<span class="token operator">></span> <span class="token comment"># 显示某个包的信息 可以用来查看某个模块的最新版本信息</span>
-<span class="token function">yarn</span> cache      <span class="token comment"># 缓存</span>
-<span class="token function">yarn</span> cache list       <span class="token comment"># 列出已缓存的每个包 </span>
-<span class="token function">yarn</span> cache <span class="token function">dir</span>   <span class="token comment"># 返回 全局缓存位置</span>
-<span class="token function">yarn</span> cache clean  <span class="token comment"># 清除缓存</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="yarn-的优点">Yarn 的优点</h2>
-<p>速度快 安装版本统一 更简洁的输出 多注册来源处理 更好的语义化</p>
-<h2 id="npm-与-yarn-的比对">NPM 与 Yarn 的比对</h2>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于npm和yarn/20220126181427.png"
-alt="20220126181427" /></p>
-]]></content>
-      <tags>
-        <tag>npm</tag>
-        <tag>yarn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>写一个小脚本</title>
-    <url>/2023/2262097032.html</url>
-    <content><![CDATA[<p>最近上课，有一门课有一部分网课，这部分网课其实已经学过了，但是老师还是让看，看就看呗，原以为直接挂着就行了，但是发现这个网站每隔几分钟就会弹出窗口，需要点击才能继续观看。可是呢，我还有别的任务，于是便写了一个小脚本，使得可以实现自动刷课。</p>
-<h2 id="找到弹出窗口">找到弹出窗口</h2>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165022.png"
-alt="20230313165022" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165137.png"
-alt="20230313165137" /></p>
-<p>通过检查元素可以看到，class name 为 btn-ok btn
-的只在弹出窗口中出现。</p>
-<h2 id="整理思路写脚本">整理思路写脚本</h2>
-<p>那么只要这个元素出现，选中这个元素，再添加一个 click 事件便可。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
-    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e <span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这样便是完成了点击函数，但是还需要添加一个事件，那就是让这个函数一直运行着，一直检测着，便可以使用
-setInterval() 方法。</p>
-<p>全代码如下，其中的 60000 为每隔一分钟执行一次。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
-    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token string">"click_btn_ok()"</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>技术</tag>
+        <tag>生活</tag>
+        <tag>毕业</tag>
+        <tag>成电</tag>
       </tags>
   </entry>
   <entry>
@@ -3615,85 +3609,6 @@ href="https://www.mozilla.org/css/base/content.css">mozilla官方属性顺序推
       </tags>
   </entry>
   <entry>
-    <title>再见小破电</title>
-    <url>/2022/3640031914.html</url>
-    <content><![CDATA[<p>感谢成电，我爱成电，这是我四年本科生涯的经历所能给予成电的评价。</p>
-<p>我本身并不是很想分主题写，但是又害怕自己错过一些部分，为了让自己逻辑更为通顺，我将从下面这些方面叙说我的四年。</p>
-<span id="more"></span>
-<h2 id="我自己">我自己</h2>
-<p>首先介绍一下我自己，楼主是来自河南十八线小县城的学生，生命科学与技术学院2018级生物信息复合培养。在2020年国家全面脱贫之前，按照国家的定义是国家级贫困县的贫困家庭的贫困学生，纯纯的小镇做题家。上大学之前甚至都没有出过我们那个屁大点地方的小县城，没有特长，没有兴趣爱好，当然家庭也不支持；身体也不好，小时候家里没钱吃肉，甚至给我搞出了佝偻病，也遗传了父亲母亲的一些其他的奇奇怪怪无关紧要但是会在体检报告单上体现出来的病。我的母亲一直是处于无业状态，在家照顾我以及我的弟弟；我的父亲原先是位农民，后来地被收了，就南下打工，成为了一名农民工。总体来说，属于是纯纯的衰仔一条了，衰的程度甩了路明非十八条街。但是个人有点可能比较适应这个时代的一些优点吧，我的心态比较好，也有可能是已经见惯了太多不好的事情已经麻木了。大概就是我总体的一个介绍了。</p>
-<h2 id="学业">学业</h2>
-<p>二十一世纪是生物的世纪，大概就是大家经常听到的一句话了，当然我是相信的，但是生物的世纪是由吞噬生物医药相关人员换来的，美好都给了非从业者，相关从业者大都是妥妥的奉献者了。本来呢，我是没有报名生物相关的，因为我本身也没什么兴趣爱好，所以也没有特别喜欢的专业。当时受到国家宣传影响，说我们芯片被制裁了巴拉巴拉，要好好搞电子信息，所以基本上报考专业都是电子信息相关的，但是被调剂来了。本着既来之则安之的想法，也就在生物这边待了下来（其实是错过了转专业通知，不然早就是计算机人了）。但是分专业的时候发现生命学院这边有个双学位的专业，毕业的时候给计算机和生物两个学位，而且只用交一份钱，于是我就选了这个专业。其实大一还是有周六周日的，但是大二大三就完完全全没有周六周日了，属于是我心态比较好了，倒也不觉得特别辛苦，比高中轻松快乐多了。</p>
-<ul>
-<li><p>课程方面，专业课相对于来说其实也都是很快乐的，考试的话基本背背PPT还是能够解决的，可能实验课还是更喜欢一点？连续两年的周六周日要去沙河做实验让我觉得还是蛮快乐的，感觉自己更加喜欢动手一点？大概是吧。其实我觉得在课程这方面，我觉得自己真的是好幸运的一个孩子。选到了很多有意思的课程，庹老师的钢琴，冉奎老师的马原和逻辑与批判思维，郝云超老师的美术鉴赏，雯雯老师的摄影，何老师的合唱，袁老师的海报，还有知味、日语、华尔兹、游泳、瑜伽等，真的很多有意思的课，属于是很幸运选上了吧。</p></li>
-<li><p>实验方面，这个还是没有放大课程方面去说。生物这边要做的实验还是挺多的，生化实验，分子生物学实验，遗传学，酶工程，蛋白质工程，发酵工程，光谱学，还有挺多其他的生物相关的实验，都是蛮有意思的。计算机这边呢，有数据结构的实验，我记得当时让手写哈夫曼树来着，计组的实验，大概是搞个CPU什么玩意儿的，计网就是搞搞协议什么东西的，操统当时是写一个建议的操作系统，总体来说相对于生物的实验难度大一些，但是花点时间还是磨了出来，对我日后找工作起到了很大的帮助。</p></li>
-<li><p>毕设方面，这个纯纯的是我的个人问题了。毕设是做了一个生物信息的课题，既是生物，也是计算机。属于是两边都不用改；但是还是有相当一大群的倒霉蛋同志们过了年到这里被要求改题目，还是蛮痛苦的。这个倒是没什么特别要说的，应该和大多数同志们是一样的。</p></li>
-</ul>
-<h2 id="竞赛">竞赛</h2>
-<p>我自己以前并没有接触过竞赛，毕竟做题家嘛。大学大概还是摸了一些竞赛的。大概就是数模、ACM、iGEM、蓝桥杯、互加，生命竞赛。其中只有iGEM拿了金奖，我自己亲手写的软件还受到了最佳软件提名还是让我蛮开心的。数模大概就是新生赛摸了一个二等奖，其他的就都是参与奖的，太废物了我。ACM的话，大一那年校赛截了前一百，我们当时是103名，差一点三等奖属于是，不过后来又摸了一张三等奖，属于是就此为止了。蓝桥杯的话就是准备都没准备，甚至忘了报名了，被通知了才发现要去打省赛了，然后去沙河花了四个小时摸了张省二，属实不行。互加的话属于是大二还是大三的时候，当时在做科研训练，然后团委书记建议我把科研训练的项目一起做个互加和生命竞赛，就顺道扔了上去，后来让答辩，觉得太麻烦了，就直接没搞，自然也就没奖。当然也想过搞一些其他的竞赛，比如彼时还是西南大魔王的
-robomaster，后来去参加机器人班笔试直接就没给进。大概就是所有的竞赛经历了。</p>
-<h2 id="艺术">艺术</h2>
-<p>在成电做些艺术相关的东西是在我大三的时候了，当时由冉奎老师带着入了哲学的门，这个老师真的很好，我的评价是，他的课，全部都可以直接选，都是超级有意思的。入了哲学的门之后，对我自己的内心改变很大，让我学会了如何使用辩证法和矛盾法来看待问题和解决问题，受益颇丰。之后又陆续开始了音乐美术身体美感之类的艺术学习，我属于是成电艺术改革方面的受益者了。艺术进入了生活之后，生活确实是更加快乐了，身边的朋友更多了，朋友们的性别比例也更加倾向于1比1了，甚至女孩子还要更加多一些。</p>
-<h2 id="体魄">体魄</h2>
-<p>先前也说了，自己的身体不是很好。进入成电之后属于是跟着梁媛老师混了两年，当了她两年的体育委员，大一学了整整一年的游泳吧，把一个旱鸭子变成了蛙泳自由泳快乐球，大二选了她的器械健身，白嫖了南门健身房一年。大二上课的时候发现了南门健身房的一个bug，卡务中心不给他们办卡，所以同学们去都是押饭卡，于是大三也这样子去嫖了一年。大四考研有点忙，去了商业街跟着杰哥混了一年，现在总体来说，身体稍微强壮了一点点吧。还是比较快乐的。</p>
-<h2 id="老师">老师</h2>
-<p>你电的老师给我的帮助真的是很大的，倒也不能这么说，我从小到大还没有遇到过不好的老师，每个老师对我都是蛮照顾的。各个老师除了课堂上教授专业知识之外，大都会和自己唠唠家常，唠唠前途，唠唠未来，唠唠各自的家庭，唠唠成都，唠唠国家，吐槽一下学校，聊聊我的单身问题，没有不能唠的。辅导员四年来对我都是很照顾，自己的学业相关、思想相关、生涯规划相关的事情辅导员也都是尽心尽力；在国际处做勤工助学时候，办公室的老师都对我很照顾，会给我带些水果之类的，有时候还能带着一起出去一起玩一起恰饭，我也能日常拉几个留学生做免费英语口语训练；考研失败的时候，很多老师也是帮我联系，帮我找调剂，最后去了中国科学院大学本部读研。</p>
-<h2 id="设施">设施</h2>
-<p>这个也是我一直在心心念念事情，因为原先考研一志愿没有上岸就春招找了工作，然后就发现学校真的好香。学校的宿舍、食堂、游泳馆相对外面真的性价比拉满，还有着每晚有人跑步的操场，含小说量巨大的图书馆，参加活动能白嫖的创咖啡和宾诺咖啡，还有着很近的校医院，商业街、南门、天街基本能满足大部分的聚餐需求。去市区坐校车基本四五十分钟也能完成，学校也相对其他高校言论更为自由，很多事情都可以写校长邮箱得到反馈并解决。相对于其他的川内高校，小破电的封校时间真的可以忽略不计。成都的玩乐的地方也有很多，去其他地方也很方便，周边相连的其他好玩的地方即便自驾也能一天内到达，有很多的小镇子，有很多的山，很多的水，我会在离开成都之后十分怀念。</p>
-<h2 id="尾声">尾声</h2>
-<p>除了以上的，还有很多的美好的回忆，帮助过我的人真的太多太多，用一篇文章远远不足以讲诉这些朋友们和我的故事，他们给了我无限的爱。四年过后，我有了无数的志同道合的朋友们，有了无限的艺术想象力，有了更为明晰的思辨能力，有了更为强健的身体，也找到了自己努力的意义。</p>
-<p>当然成电也有他的缺点，我也会去骂你电的不好，但是我也明白有些东西确实不是小破电自己能决定的，他真的给了我美好的回忆。</p>
-<p>写到最后感觉好像还是有什么东西是没写的，我就之后再补充吧。</p>
-<p>再见，小破电。</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-        <tag>毕业</tag>
-        <tag>成电</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>好玩的 Github</title>
-    <url>/2021/246677465.html</url>
-    <content><![CDATA[<p>前年的时候，做过一些 <a
-href="https://github.com/zEpoch/next-beautify">Hexo Next
-主题的美化</a>，后来再上传的时候，就一股脑全部上传上去了，当然也没那么傻，倒是还是删掉了
-node_modules 后再上传的，但是却是没有删掉 package.json，后来呢，Github
-就经常提醒我有安全问题。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142124146.png"
-alt="image-20210719142124146" /></p>
-<p>打开一看，好家伙，全都是依赖警报</p>
-<span id="more"></span>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142440142.png"
-alt="image-20210719142440142" /></p>
-<p>然后细看一下会发现大都是依赖要进行升级了。</p>
-<p><img src= "/%E5%9B%BE%E7%89%87%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD" data-lazy-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142707537.png" alt="image-20210719142707537" style="zoom:100%;" /></p>
-<p>好在 Github
-还是很舒服的，可以直接在线更改升级，还有个小机器人帮你升级。美滋滋</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142825189.png"
-alt="image-20210719142825189" /></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我们把你们想得太好了</title>
-    <url>/2021/1333461694.html</url>
-    <content><![CDATA[<p>“我们把你们想的太好了，我们认为你们会遵守基本的外交礼节”，有些话，原封不动，换个国家名，他居然还能用</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E5%BE%97%E5%A4%AA%E5%A5%BD%E4%BA%86/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E7%9A%84%E5%A4%AA%E5%A5%BD%E4%BA%86.png"
-alt="我们把你们想的太好了" /></p>
-]]></content>
-      <tags>
-        <tag>东京奥运会</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>138.复制带随机指针的链表</title>
     <url>/2021/3186910758.html</url>
     <content><![CDATA[<p><a
@@ -3789,18 +3704,148 @@ alt="4" /></p>
       </tags>
   </entry>
   <entry>
-    <title>我的星座分析</title>
-    <url>/2021/1421664595.html</url>
-    <content><![CDATA[<p>你对自己的认知其实没别人说那么的感性，因为自己干很多事情都有目的性，所以你潜意识认为一切的感性都是建立在理性的基础之上的，但其实并没有这么简单，你潜意识里的理性，其实也是建立在更深的一层感性的基础上，也就是第三层，一般你对自己的了解只停留在第一层，也就是认为自己是一个超级感性的人。</p>
-<p>比如，你见了一个很好看的人，非常心动，一会儿的时间就脑补了和他的一生，然后自己沉浸在自己的世界里感性，这是第一层的感性。</p>
-<p>随后就开始在现实中去根据自己刚刚幻想完后的余温再去想要做什么，要让自己变成什么样来去达到自己之前幻想的一个目的，这个过程就是你对自己理性方面的认知，虽然自己会代入真感情到里面去，但有的你会以对自己的了解然后明确这是一份站在理性基础上的一份感性，也就是第二层。</p>
-<p><span id="more"></span></p>
-<p>而其实你如果认为自己很聪明的话，对自己的认知停留在第二层的话，其实就是容易会对除了自己有目的性的人以外的人，造成不好的印象，也就是你会针对自己的目的，明确的去让一个人走进他五彩缤纷的情感世界，而所用的方式，在其他人眼里是不喜欢的，也就是好多人说你作什么的，而一个有理性基础的人，如果感性的话，也多多少少会照顾一下其他人的想法。</p>
-<p>但你不会，是因为你已经想到了这点，所以进行了一种选择，就是不理会。这也就是你思想世界的第三层，就是我以我的感性来决定理性的选择，然后再在这个理性的选择上去感性，你以为我不知道我这样会引来厌恶？怎么可能，你是十二星座的终点，思想境界的顶流，只是你把所有精力都用在了刀刃上，这样才更有助于达成目的，不去在意别人的感受就是因为自己太懂，自己懂自己没办法照顾所有人的感受，自己没空照顾，自己也不喜欢照顾，自己也不必照顾，说就说呗，我就觉得说我的人挺low的，我会无语不过我的感情永远清澈透明。</p>
-<p>你思想的第三层就是在自己喜欢的想法上，感性的情绪中，建立的一种选择，所以你就会做很多别人想做却不敢做的事情，这点客观来说其实已经吸引了所有人（除了被受影响的人）不过客观来说，就算是保守派，看到你这类太过于厉害的狠角色也会有敬意吧（除了戾气重的人）</p>
-<p>你要的只有功成名就，自己可以舍弃的东西太多了，只要自己喜欢，就可以无底线无理由的去追求，你是个聪明人，却还是选择了这样的一条路，选择了一条充满浪漫气氛的独木桥。</p>
-<p>你的心，敏感又强大、坚定又脆弱，这是两种心态，又融为一颗心，你的内心就是会互相追逐，互相打气，在一片小小天地中就能看到一个丰富的浪漫世界</p>
+    <title>写一个小脚本</title>
+    <url>/2023/2262097032.html</url>
+    <content><![CDATA[<p>最近上课，有一门课有一部分网课，这部分网课其实已经学过了，但是老师还是让看，看就看呗，原以为直接挂着就行了，但是发现这个网站每隔几分钟就会弹出窗口，需要点击才能继续观看。可是呢，我还有别的任务，于是便写了一个小脚本，使得可以实现自动刷课。</p>
+<h2 id="找到弹出窗口">找到弹出窗口</h2>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165022.png"
+alt="20230313165022" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165137.png"
+alt="20230313165137" /></p>
+<p>通过检查元素可以看到，class name 为 btn-ok btn
+的只在弹出窗口中出现。</p>
+<h2 id="整理思路写脚本">整理思路写脚本</h2>
+<p>那么只要这个元素出现，选中这个元素，再添加一个 click 事件便可。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e <span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这样便是完成了点击函数，但是还需要添加一个事件，那就是让这个函数一直运行着，一直检测着，便可以使用
+setInterval() 方法。</p>
+<p>全代码如下，其中的 60000 为每隔一分钟执行一次。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token string">"click_btn_ok()"</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>愿河南平安</title>
+    <url>/2021/3942837084.html</url>
+    <content><![CDATA[<p>一直在看着新闻，镜头前的消防战士来往没停过，拖着橡皮艇从南边的地铁站和商场将人员运到较为安全的区域，其中还有不少一两岁的孩子。刚刚记者突然间就断线了，心就突然揪住了，就挺伤心的，莫名的哭了起来</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-fa1321ca1c578d58bcf290cd9237e6b1_720w.jpg"
+alt="愿河南平安v2-fa1321ca1c578d58bcf290cd9237e6b1_720w" /></p>
+<span id="more"></span>
+<p>切到了高架路的设备采像</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-c376cf38bfa6935f54a3e66a5236dc78_720w.jpg"
+alt="愿河南平安v2-c376cf38bfa6935f54a3e66a5236dc78_720w" /></p>
+<p>就逐渐看到路面上开始逐渐有车辆的走动，采像机前的雨滴逐渐减小</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-3c666b6f469019e7b091bdfdc75bc55b_720w.jpg"
+alt="愿河南平安v2-3c666b6f469019e7b091bdfdc75bc55b_720w" /></p>
+<p>约摸二三十分钟后，记者重新连线了，但是却还是一片黑暗，缺少灯光</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-fb1ae0008a50819d823dfc040188f2ad_720w.jpg"
+alt="愿河南平安v2-fb1ae0008a50819d823dfc040188f2ad_720w" /></p>
+<p>之后记者也是在黑暗里摸索着找到了较为光亮地方，肉眼可见的雨在逐渐减小</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-bb65d10bd07ed67da95dde420c9d2d8e_720w.jpg"
+alt="愿河南平安v2-bb65d10bd07ed67da95dde420c9d2d8e_720w" /></p>
+<p>现在记者可以前往之前待救援的南边地区，已经是开始好转起来了；继续向南走还是有很长的一段没有灯光的路，后来开始看到了一家开着的店</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-c8d84a77447826b14a1699e990b0c072_720w.jpg"
+alt="愿河南平安v2-c8d84a77447826b14a1699e990b0c072_720w" /></p>
+<p>，店里还是很多的人在这边作为一个休息区，店主提供了热水充电宝之类的；店门口的是位广东的同志，来河南旅游，算是碰上了前所未遇的一个特大暴雨；</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-9c577ac3d2f4726408d86b0fd7b8a7da_720w.jpg"
+alt="愿河南平安v2-9c577ac3d2f4726408d86b0fd7b8a7da_720w" /></p>
+<p>店主也是很勇敢的人，公司可以让直接关门下班了，但是店主很有社会责任感，坚持开门，通宵收容不能回家的人，真的很感动；</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-30942b423eda147cd3b4e8420e210aaa_720w.jpg"
+alt="愿河南平安v2-30942b423eda147cd3b4e8420e210aaa_720w" /></p>
+<p>采访完毕后记者继续想南边的黑暗处走去，雨又开始大了起来，愿一切平安，众志成城，共克时艰</p>
+<p>继续向前走是碰到了一连串的车队，其实是不能向前走了，前面被淹了</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-fe0962dc416428b9610ec0044545dafa_720w.jpg"
+alt="愿河南平安v2-fe0962dc416428b9610ec0044545dafa_720w" /></p>
+<p>再往前有一辆公交车，车上有很多人在休息</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-ea205c6ed312e1567a37c0a71014ff46_720w.jpg"
+alt="愿河南平安v2-ea205c6ed312e1567a37c0a71014ff46_720w" /></p>
+<p>说着说着，来了一个出租车师傅，这位师傅看到了直播，敲开了自己家楼下没有开门的店，买了全部的食物和水，跟着直播走的路，送来了食物和矿泉水，还特地带来了热水</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-0ba2b6fb175867cd6a50d23a156746f2_720w.jpg"
+alt="师傅送来了食物和水" /></p>
+<p>好心的出租车师傅不愿意透露姓名，但是记者特地拍了车牌号，感谢好心的出租车师傅，不仅送来了吃的，还送了充电器充电线</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-a91d255d691911ce371f1da60887a1fe_720wlas.jpg"
+alt="司机师傅的车牌号" /></p>
+<p>愿一切平安。</p>
+]]></content>
+      <tags>
+        <tag>家乡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我们把你们想得太好了</title>
+    <url>/2021/1333461694.html</url>
+    <content><![CDATA[<p>“我们把你们想的太好了，我们认为你们会遵守基本的外交礼节”，有些话，原封不动，换个国家名，他居然还能用</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E5%BE%97%E5%A4%AA%E5%A5%BD%E4%BA%86/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E7%9A%84%E5%A4%AA%E5%A5%BD%E4%BA%86.png"
+alt="我们把你们想的太好了" /></p>
+]]></content>
+      <tags>
+        <tag>东京奥运会</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好玩的 Github</title>
+    <url>/2021/246677465.html</url>
+    <content><![CDATA[<p>前年的时候，做过一些 <a
+href="https://github.com/zEpoch/next-beautify">Hexo Next
+主题的美化</a>，后来再上传的时候，就一股脑全部上传上去了，当然也没那么傻，倒是还是删掉了
+node_modules 后再上传的，但是却是没有删掉 package.json，后来呢，Github
+就经常提醒我有安全问题。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142124146.png"
+alt="image-20210719142124146" /></p>
+<p>打开一看，好家伙，全都是依赖警报</p>
+<span id="more"></span>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142440142.png"
+alt="image-20210719142440142" /></p>
+<p>然后细看一下会发现大都是依赖要进行升级了。</p>
+<p><img src= "/%E5%9B%BE%E7%89%87%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD" data-lazy-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142707537.png" alt="image-20210719142707537" style="zoom:100%;" /></p>
+<p>好在 Github
+还是很舒服的，可以直接在线更改升级，还有个小机器人帮你升级。美滋滋</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142825189.png"
+alt="image-20210719142825189" /></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
   </entry>
   <entry>
     <title>如何写好你的科学故事</title>
@@ -4006,143 +4051,18 @@ Word®）拆分屏幕并滚动文本，找到摘要中需要的关键点</p>
       </tags>
   </entry>
   <entry>
-    <title>愿河南平安</title>
-    <url>/2021/3942837084.html</url>
-    <content><![CDATA[<p>一直在看着新闻，镜头前的消防战士来往没停过，拖着橡皮艇从南边的地铁站和商场将人员运到较为安全的区域，其中还有不少一两岁的孩子。刚刚记者突然间就断线了，心就突然揪住了，就挺伤心的，莫名的哭了起来</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-fa1321ca1c578d58bcf290cd9237e6b1_720w.jpg"
-alt="愿河南平安v2-fa1321ca1c578d58bcf290cd9237e6b1_720w" /></p>
-<span id="more"></span>
-<p>切到了高架路的设备采像</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-c376cf38bfa6935f54a3e66a5236dc78_720w.jpg"
-alt="愿河南平安v2-c376cf38bfa6935f54a3e66a5236dc78_720w" /></p>
-<p>就逐渐看到路面上开始逐渐有车辆的走动，采像机前的雨滴逐渐减小</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-3c666b6f469019e7b091bdfdc75bc55b_720w.jpg"
-alt="愿河南平安v2-3c666b6f469019e7b091bdfdc75bc55b_720w" /></p>
-<p>约摸二三十分钟后，记者重新连线了，但是却还是一片黑暗，缺少灯光</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-fb1ae0008a50819d823dfc040188f2ad_720w.jpg"
-alt="愿河南平安v2-fb1ae0008a50819d823dfc040188f2ad_720w" /></p>
-<p>之后记者也是在黑暗里摸索着找到了较为光亮地方，肉眼可见的雨在逐渐减小</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-bb65d10bd07ed67da95dde420c9d2d8e_720w.jpg"
-alt="愿河南平安v2-bb65d10bd07ed67da95dde420c9d2d8e_720w" /></p>
-<p>现在记者可以前往之前待救援的南边地区，已经是开始好转起来了；继续向南走还是有很长的一段没有灯光的路，后来开始看到了一家开着的店</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-c8d84a77447826b14a1699e990b0c072_720w.jpg"
-alt="愿河南平安v2-c8d84a77447826b14a1699e990b0c072_720w" /></p>
-<p>，店里还是很多的人在这边作为一个休息区，店主提供了热水充电宝之类的；店门口的是位广东的同志，来河南旅游，算是碰上了前所未遇的一个特大暴雨；</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-9c577ac3d2f4726408d86b0fd7b8a7da_720w.jpg"
-alt="愿河南平安v2-9c577ac3d2f4726408d86b0fd7b8a7da_720w" /></p>
-<p>店主也是很勇敢的人，公司可以让直接关门下班了，但是店主很有社会责任感，坚持开门，通宵收容不能回家的人，真的很感动；</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-30942b423eda147cd3b4e8420e210aaa_720w.jpg"
-alt="愿河南平安v2-30942b423eda147cd3b4e8420e210aaa_720w" /></p>
-<p>采访完毕后记者继续想南边的黑暗处走去，雨又开始大了起来，愿一切平安，众志成城，共克时艰</p>
-<p>继续向前走是碰到了一连串的车队，其实是不能向前走了，前面被淹了</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-fe0962dc416428b9610ec0044545dafa_720w.jpg"
-alt="愿河南平安v2-fe0962dc416428b9610ec0044545dafa_720w" /></p>
-<p>再往前有一辆公交车，车上有很多人在休息</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-ea205c6ed312e1567a37c0a71014ff46_720w.jpg"
-alt="愿河南平安v2-ea205c6ed312e1567a37c0a71014ff46_720w" /></p>
-<p>说着说着，来了一个出租车师傅，这位师傅看到了直播，敲开了自己家楼下没有开门的店，买了全部的食物和水，跟着直播走的路，送来了食物和矿泉水，还特地带来了热水</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-0ba2b6fb175867cd6a50d23a156746f2_720w.jpg"
-alt="师傅送来了食物和水" /></p>
-<p>好心的出租车师傅不愿意透露姓名，但是记者特地拍了车牌号，感谢好心的出租车师傅，不仅送来了吃的，还送了充电器充电线</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89/%E6%84%BF%E6%B2%B3%E5%8D%97%E5%B9%B3%E5%AE%89v2-a91d255d691911ce371f1da60887a1fe_720wlas.jpg"
-alt="司机师傅的车牌号" /></p>
-<p>愿一切平安。</p>
+    <title>我的星座分析</title>
+    <url>/2021/1421664595.html</url>
+    <content><![CDATA[<p>你对自己的认知其实没别人说那么的感性，因为自己干很多事情都有目的性，所以你潜意识认为一切的感性都是建立在理性的基础之上的，但其实并没有这么简单，你潜意识里的理性，其实也是建立在更深的一层感性的基础上，也就是第三层，一般你对自己的了解只停留在第一层，也就是认为自己是一个超级感性的人。</p>
+<p>比如，你见了一个很好看的人，非常心动，一会儿的时间就脑补了和他的一生，然后自己沉浸在自己的世界里感性，这是第一层的感性。</p>
+<p>随后就开始在现实中去根据自己刚刚幻想完后的余温再去想要做什么，要让自己变成什么样来去达到自己之前幻想的一个目的，这个过程就是你对自己理性方面的认知，虽然自己会代入真感情到里面去，但有的你会以对自己的了解然后明确这是一份站在理性基础上的一份感性，也就是第二层。</p>
+<p><span id="more"></span></p>
+<p>而其实你如果认为自己很聪明的话，对自己的认知停留在第二层的话，其实就是容易会对除了自己有目的性的人以外的人，造成不好的印象，也就是你会针对自己的目的，明确的去让一个人走进他五彩缤纷的情感世界，而所用的方式，在其他人眼里是不喜欢的，也就是好多人说你作什么的，而一个有理性基础的人，如果感性的话，也多多少少会照顾一下其他人的想法。</p>
+<p>但你不会，是因为你已经想到了这点，所以进行了一种选择，就是不理会。这也就是你思想世界的第三层，就是我以我的感性来决定理性的选择，然后再在这个理性的选择上去感性，你以为我不知道我这样会引来厌恶？怎么可能，你是十二星座的终点，思想境界的顶流，只是你把所有精力都用在了刀刃上，这样才更有助于达成目的，不去在意别人的感受就是因为自己太懂，自己懂自己没办法照顾所有人的感受，自己没空照顾，自己也不喜欢照顾，自己也不必照顾，说就说呗，我就觉得说我的人挺low的，我会无语不过我的感情永远清澈透明。</p>
+<p>你思想的第三层就是在自己喜欢的想法上，感性的情绪中，建立的一种选择，所以你就会做很多别人想做却不敢做的事情，这点客观来说其实已经吸引了所有人（除了被受影响的人）不过客观来说，就算是保守派，看到你这类太过于厉害的狠角色也会有敬意吧（除了戾气重的人）</p>
+<p>你要的只有功成名就，自己可以舍弃的东西太多了，只要自己喜欢，就可以无底线无理由的去追求，你是个聪明人，却还是选择了这样的一条路，选择了一条充满浪漫气氛的独木桥。</p>
+<p>你的心，敏感又强大、坚定又脆弱，这是两种心态，又融为一颗心，你的内心就是会互相追逐，互相打气，在一片小小天地中就能看到一个丰富的浪漫世界</p>
 ]]></content>
-      <tags>
-        <tag>家乡</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>战争的目的在于消灭战争</title>
-    <url>/2021/3536968392.html</url>
-    <content><![CDATA[<p>今日读毛选，读到了中国革命战争的战略问题。我觉得毛泽东真的是一位军事奇才，他对战争的规律总结得十分到位，这是一套方法论，不管用到何处都能经过一定程度的变化，从而发挥作用的方法。</p>
-<span id="more"></span>
-<blockquote>
-<p>战争的规律——这是任何指导战争的人不能不研究和不能不解决的问题。
-革命战争的规律——这是任何指导革命战争的人不能不研究和不能不解决的问题。
-中国革命战争的规律——这是任何指导中国革命战争的人不能不研究和不能不解决的问题。</p>
-<p>我们现在是从事战争，我们的战争是革命战争，我们的革命战争是在中国这个半殖民地的半封建的国度里进行的。因此，我们不但要研究一般战争的规律，还要研究特殊的革命战争的规律，还要研究更加特殊的中国革命战争的规律。</p>
-<p>大家明白，不论做什么事，不懂得那件事的情形，它的性质，它和它以外的事情的关联，就不知道那件事的规律，就不知道如何去做，就不能做好那件事。</p>
-<p>战争——从有私有财产和有阶级以来就开始了的、用以解决阶级和阶级、民族和民族、国家和国家、政治集团和政治集团之间、在一定发展阶段上的矛盾的一种最高的斗争形式。不懂得它的情形，它的性质，它和它以外事情的关联，就不知道战争的规律，就不知道如何指导战争，就不能打胜仗。</p>
-<p>革命战争——革命的阶级战争和革命的民族战争，在一般战争的情形和性质之外，有它的特殊的情形和性质。因此，在一般的战争规律之外，有它的一些特殊的规律。不懂得这些特殊的情形和性质，不懂得它的特殊的规律，就不能指导革命战争，就不能在革命战争中打胜仗。</p>
-<p>中国革命战争——不论是国内战争或民族战争，是在中国的特殊环境之内进行的，比较一般的战争，一般的革命战争，又有它的特殊的情形和特殊的性质。因此，在一般战争和一般革命战争的规律之外，又有它的一些特殊的规律。如果不懂得这些，就不能在中国革命战争中打胜仗。</p>
-</blockquote>
-<p>他没有专注于一般战争的经验，而是吸取各个战争的关键因素，对于中国革命战争，他没有照搬照用其他民族、国家的那一套老一套，或者是说别人特有的战争形式；但是也不是完全不用，而是学习适合自己战争的因素，尊重过去流血的经验，但是还应该尊重自己流血的经验。不仅学习俄国的革命经验，也要了解苏联内战和苏联红军的特殊性；学习北伐战争的经验，但是要了解到当时的战争的情况已发生了变化。由此看来，战争情况的不同，决定着不同的战争指导规律，有时间、地域和性质的差别。从时间的条件说，战争和战争指导规律都是发展的，各个历史阶段有各个历史阶段的特点，因而战争规律也各有其特点，不能呆板地移用于不同的阶段。</p>
-<p>关于战争的目的，我觉得毛泽东写的这个是最符合马克思主义的</p>
-<blockquote>
-<p>战争——这个人类互相残杀的怪物，人类社会的发展终久要把它消灭的，而且就在不远的将来会要把它消灭的。但是消灭它的方法只有一个，就是用战争反对战争，用革命战争反对反革命战争，用民族革命战争反对民族反革命战争，用阶级革命战争反对阶级反革命战争。历史上的战争，只有正义的和非正义的两类。我们是拥护正义战争反对非正义战争的。一切反革命战争都是非正义的，一切革命战争都是正义的。人类的战争生活时代将要由我们之手而结束，我们所进行的战争，毫无疑义地是属于最后战争的一部分。但是我们所面临的战争，毫无疑义又是最大的和最残酷的战争的一部分。最大的和最残酷的非正义的反革命的战争，迫临在我们的头上，我们如果不打起正义战争的旗帜，人类的大多数就要遭受摧残。人类正义战争的旗帜是拯救人类的旗帜，中国正义战争的旗帜是拯救中国的旗帜。人类的大多数和中国人的大多数所举行的战争，毫无疑义地是正义的战争，是拯救人类拯救中国的至高无上的荣誉的事业，是把全世界历史转到新时代的桥梁。人类社会进步到消灭了阶级，消灭了国家，到了那时，什么战争也没有了，反革命战争没有了，革命战争也没有了，非正义战争没有了，正义战争也没有了，这就是人类的永久和平的时代。我们研究革命战争的规律，出发于我们要求消灭一切战争的志愿，这是区别我们共产党人和一切剥削阶级的界线。</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>毛选</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习-梯度下降的优化</title>
-    <url>/2022/3163358201.html</url>
-    <content><![CDATA[<p>在回归中，我们需要解决下面的优化问题，即使得Loss函数尽可能的小 <span
-class="math display">\[
-\theta^*=arg\min L(\theta),L:loss function,\theta:parameters
-\]</span> 假设一共有两个参数<span
-class="math inline">\(\theta_1,\theta_2\)</span>，使得<span
-class="math inline">\(\theta^0=
-\begin{bmatrix}\theta^0\\\theta^1\end{bmatrix}\)</span>，便有梯度如下
-<span class="math display">\[\nabla L(\theta)=\begin{bmatrix} \partial
-L(\theta_1)/ \partial \theta_1\\\ \partial L(\theta_2)/ \partial
-\theta_2\end{bmatrix}\]</span> 那么参数的更新便可通过向量的形式进行
-<span class="math display">\[
-\begin{bmatrix}\theta^1_1\\\theta^1_2\end{bmatrix}=\begin{bmatrix}\theta^0_1\\\theta^0_2\end{bmatrix}-\eta\begin{bmatrix}
-\partial L(\theta^0_1)/ \partial \theta_1\\\ \partial L(\theta^0_2)/
-\partial \theta_2\end{bmatrix}
-\]</span> 但是其中，<span
-class="math inline">\(\eta\)</span>是一直不变的，但是我们知道，经过迭代之后，在越来约接近目标的时候，我们需要将学习率降低，使其能够愈发趋近目的地。故，我们对<span
-class="math inline">\(eta\)</span>进行改进，使其经过一定的迭代后越来越小。
-<span class="math display">\[
-\eta^t=\eta/\sqrt{t+1}
-\]</span>
-但是学习率不能一刀切，对于参数，我们也需要给予其一定的改变。一般我们的参数的改变为
-<span class="math display">\[
-w^{t+1}=w^t-\eta^tg^t
-\]</span> w是一个参数，我们设置<span
-class="math inline">\(\eta^t\)</span>
-为参数w之前导数的均方根，使其成为一个参数依赖型的学习率。也就是说 <span
-class="math display">\[
-w^1=w^0-\frac{\eta^0}{\sigma^0}g^0,\sigma^0=\sqrt{(g^0)^2}\\
-w^2=w^1-\frac{\eta^1}{\sigma^1}g^1,\sigma^1=\sqrt{\frac{1}{2}[(g^0)^2+(g^1)^2]}\\
-\]</span> 如此迭代，直到 <span class="math display">\[
-w^{t+1}=w^t-\frac{\eta^t}{\sigma^t}g^t,\sigma^t=\sqrt{\frac{1}{t+1}\sum^t_{i=0}(g^i)^2}
-\]</span> 从上面的式子中，我们可以看到<span
-class="math inline">\(\eta^t\)</span>是一个时间相关的学习率，<span
-class="math inline">\(\sigma^t\)</span>是一个参数相关的学习率，且 <span
-class="math display">\[
-\eta^t=\frac{\eta}{\sqrt{t+1}},\sigma^t=\sqrt{\frac{1}{t+1}\sum^t_{i=0}(g^i)^2}
-\]</span> 故相除之后得到下列的公式 <span class="math display">\[
-w^{t+1}=w^t-\frac{\eta}{\sqrt{\sum^t_{i=0}(g^i)^2}}g^t
-\]</span> 梯度改进之后的对比如下：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-梯度下降的优化/20220816173111.png"
-alt="20220816173111" /></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>机器学习</tag>
-        <tag>梯度下降</tag>
-      </tags>
   </entry>
   <entry>
     <title>手写Promise</title>
@@ -4696,533 +4616,28 @@ alt="20220130225239" /></p>
       </tags>
   </entry>
   <entry>
-    <title>机器学习-支持向量机</title>
-    <url>/2022/917828124.html</url>
-    <content><![CDATA[<p>支持向量机总体是由一个合页损失函数和一个核函数组成</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819195408.png"
-alt="20220819195408" /></p>
-<h2 id="合页损失函数">合页损失函数</h2>
-<p>由于函数形状像一个合页，故命合页损失函数，下图为合页损失函数的图形。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819195640.png"
-alt="20220819195640" /></p>
-<p>二分类问题求解分为三个步骤，第一步为定义函数</p>
-<p><span class="math display">\[
-g(x)= \begin{cases} f(x)&gt;0, &amp; \text {output= +1} \\ f(x)&lt;0,
-&amp; \text{output= -1} \end{cases}
-\]</span></p>
-<p>上述定义的函数，其输出由f(x)决定，当f(x)大于零时，输出为+1，当f(x)小于零时，输出为-1。第二步是通过损失函数判断函数的好坏。我们定义损失函数如下：</p>
-<p><span class="math display">\[
-L(f)=\sum_nI(g(x^n)\not \neq \hat y^n)
-\]</span></p>
-<p><span
-class="math inline">\(x^n\)</span>表示训练集中第n个数据，I代表指示函数，当它的输入为True的时候，输出1；否则输出0。也就是说，当我们的函数g预测的结果和实际结果一样的时候就没有损失，不一样的时候才有损失。但是这个损失函数是不可微分的，就无法用梯度下降的方法来优化。这时我们用另一个近似的函数来表示：</p>
-<p><span class="math display">\[
-L(f)=\sum_nI(f(x^n),\hat y^n)
-\]</span></p>
-<p>那这个损失函数是什么样的呢？我们来看一个这样的图形。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819201846.png"
-alt="20220819201846" /></p>
-<p>它的横轴是 <span class="math inline">\(\hat{y}^nf(x)\)</span>，<span
-class="math inline">\(\hat{y}^n\)</span> 可以是+1或-1，我们希望当 <span
-class="math inline">\(\hat{y}^n=+1\)</span> 时，<span
-class="math inline">\(f(x)\)</span> 的值正的越大越好；当 <span
-class="math inline">\(\hat{y}^n=-1\)</span> 时，$ f(x)$
-的值负的越大越好。整体就 <span
-class="math inline">\(\hat{y}^nf(x)\)</span>
-的值越大越好。纵轴当成损失的话，越往右，<span class="math inline">\(\hat
-y^nf(x)\)</span> 越大，损失越小。</p>
-<p>损失函数的理想情况是两条黑线。当 <span class="math inline">\(g(x^n) =
-\hat{y}^n\)</span> 时损失为0，这时 <span
-class="math inline">\(\hat{y}^nf(x)\)</span> 为正数；当 <span
-class="math inline">\(g(x^n)\neq \hat{y}^n\)</span> 时损失为1，这时<span
-class="math inline">\(\hat{y}^nf(x)\)</span>
-为负数；但是这样是无法微分的。我们把I用l来取代。</p>
-<p>这时 l 有很多选择，比如：</p>
-<p><span class="math display">\[
-Square Loss = \begin{cases} if \hat y^n=1, &amp; \text {f(x) close to 1}
-\\ if \hat y^n=-1, &amp; \text{f(x) close to -1} \end{cases}
-\]</span></p>
-<p>这个是平方损失，可以写成: <span
-class="math inline">\(l(f(x^n),\hat{y}^n) = (\hat{y}^nf(x^n) -
-1)^2\)</span> 。当 <span class="math inline">\(\hat{y}^n=1\)</span>
-时，上式就是 <span class="math inline">\((f(x^n) - 1)^2\)</span> ；当
-<span class="math inline">\(\hat{y}^n=-1\)</span> 时，上式就是 <span
-class="math inline">\((-f(x^n) - 1)^2 = (f(x^n) + 1)^2\)</span>
-。所以，当 <span class="math inline">\(\hat{y}^n=1\)</span> 时，$
-f(x^n)$ 要和 1 越接近越好；当 <span class="math inline">\(f(x^n) =
--1\)</span> 时，<span class="math inline">\(f(x^n)\)</span> 要和 -1
-越接近越好。</p>
-<p>平方损失函数图形是上面红色的抛物线，但是它是不合理的，因为当 <span
-class="math inline">\(\hat{y}^nf(x)\)</span>
-很大的时候，竟然有个很大的损失。还有一种选择是Sigmoid + Square Loss:</p>
-<p><span class="math display">\[
-Sigmoid + Square Loss = \begin{cases} if \hat y^n=1, &amp; \text
-{σ(f(x)) close to 1} \\ if \hat y^n=-1, &amp; \text{σ(f(x)) close to -1}
-\end{cases}
-\]</span></p>
-<p>它的图形是上面蓝色的线，我们讲过，在逻辑回归中，不会用平方损失，而是用交叉熵。我们这里替换成交叉熵。这里
-<span class="math inline">\(\sigma(f(x))\)</span> 代表了一个分布，Ground
-Truth(指的是真实情况)代表另一个分布。</p>
-<p>这两个分布之间的交叉熵，就是要最小化的损失值。</p>
-<p>它可以写成：<span class="math inline">\(l(f(x^n),\hat{y}^n) =\ln(1 +
-e^{-(\hat{y}^nf(x))})\)</span> 。它是上面绿色的线，这里除了 <span
-class="math inline">\(ln2\)</span>
-，这不是影响这个函数图形走势，但是可以让它变成理想损失的上边界(upper
-bound)，我们虽然无法最小化理想的损失，但是可以最小化它的上边界。</p>
-<p>这个式子是合理的，当 <span
-class="math inline">\(\hat{y}^nf(x)\)</span> 趋近于正无穷大时，<span
-class="math inline">\(e^{-\infty}=\frac{1}{e^\infty}=0\)</span>;当 <span
-class="math inline">\(\hat{y}^nf(x)\)</span> 趋近于负无穷大时，<span
-class="math inline">\(e^{\infty}=\infty=&gt;ln(1+\infty)=\infty\)</span>
-我们可以比较用交叉熵和平方损失的曲线，这样就可以知道为什么选择交叉熵。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819205957.png"
-alt="20220819205957" /></p>
-<p>我们把 $^nf(x) <span class="math inline">\(从 -2 移动到 -1
-时，交叉熵的那条线变化很明显，而平方损失的那条线变化很小。当\)</span>^nf(x)$
-负的很大的时候，调整这个值，对总损失影响不大，这样训练出来的效果很不好。而交叉熵调整的时候影响很大。
-最后看下什么是Hinge Loss</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819212136.png"
-alt="20220819212136" /></p>
-<p>它的式子是：<span class="math inline">\(l(f(x^n),\hat{y}^n) =\max(0,1
-- \hat{y}^nf(x))\)</span>。当 <span
-class="math inline">\(\hat{y}^n=1\)</span> 时，只要 <span
-class="math inline">\(f(x) &gt; 1\)</span>，它的损失就是 0；而当 <span
-class="math inline">\(\hat{y}^n = -1\)</span> 时，<span
-class="math inline">\(f(x)&lt;-1\)</span>，它的损失才会是 0。</p>
-<p>把折页损失的图像画出来，是上面紫色的那条线。在这条线上，只要 <span
-class="math inline">\(\hat{y}^nf(x) &gt; 1\)</span>
-时，就已经够好了，损失是0。</p>
-<h2 id="线性svm">线性SVM</h2>
-<p><span class="math display">\[
-f(x)=∑_iw_ix_i+b={w\brack b}⋅{1\brack x}=w^Tx
-\]</span></p>
-<p>上面这个线性等式可以看成是两个向量的内积。接下来我们把<span
-class="math inline">\({w\brack b}\)</span>用新的 w 来表示，把 <span
-class="math inline">\({x\brack 1}\)</span> 用新的x xx来表示，最终得到
-<span class="math inline">\(w^T x\)</span> 这样当$f(x) &gt;
-0f(x)&gt;0时属于一个类别；当 <span class="math inline">\(f(x) &lt;
-0\)</span> 时属于另一个类别。</p>
-<p>此时，SVM采用的损失函数是折页损失。<span
-class="math inline">\(l(f(x^n),\hat{y}^n) =\max (0,1 -
-\hat{y}^nf(x))\)</span></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819220153.png"
-alt="20220819220153" /></p>
-<p>通常还会加上正则化 <span class="math inline">\(\lambda
-||w||_2\)</span> ，这个损失函数是凸函数。而 <span
-class="math inline">\(\lambda ||w||_2\)</span>
-也是凸函数。把它们加起来仍然是一个凸函数。</p>
-<p>这个函数其实不一定是线性的，如果不是线性的，也可以用梯度下降的方法来训练。</p>
-<p>接下来看下如何用梯度下降来训练SVM。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819220358.png"
-alt="20220819220358" /></p>
-<p>我们的损失函数长这样，它是合页损失，这里为了简单，去掉了正则项。
-只要可以对这个合页损失函数做微分，就能做梯度下降。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819221635.png"
-alt="20220819221635" /></p>
-<p>它有两个区域，可以是0是最大者；或 <span class="math inline">\(1 -
-\hat{y}^nf(x^n)\)</span> 是最大者。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819223303.png"
-alt="20220819223303" /></p>
-<p>我们现在要最小化<span
-class="math inline">\(L(f)\)</span>，要选择一个最小的 <span
-class="math inline">\(x^n\)</span> 让 L 能最小，就是要选个 <span
-class="math inline">\(x^n\)</span> 让 $^n 越小越好。 <span
-class="math inline">\(\varepsilon^n\)</span>
-的限制是大于等于0，以及大于等于 <span
-class="math inline">\(1-\hat{y}^nf(x^n)\)</span>，让$ ^n$
-最小的方法，就是让 <span class="math inline">\(\varepsilon^n\)</span>
-等于 0 和 <span class="math inline">\(1-\hat{y}^nf(x^n)\)</span>
-最大者。所以，当要最小化的时候，这两个红框是相等的。</p>
-<h2 id="dual-representation">Dual Representation</h2>
-<p>我们把能最小化损失函数的权值写成 <span
-class="math inline">\(w^*\)</span>，它其实是我们的数据线性组合</p>
-<p><span class="math display">\[
-w^*=\sum_n\alpha^*_nx^n
-\]</span></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819224035.png"
-alt="20220819224035" /></p>
-<p>如果初始的w是个零向量，每次在更新w
-ww的时候，后面加上的就是数据点的线性组合。</p>
-<p>w可以写成<span class="math inline">\(\alpha
-X\)</span>，这时我们可以改写f(x)的式子，这里把 <span
-class="math inline">\((x^n \cdot x)\)</span>写成一个函数 <span
-class="math inline">\(K(x^n,x)\)</span>这个函数就叫核函数(Kernel
-function)。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819230513.png"
-alt="20220819230513" /></p>
-<p>我知道可以这样写以后，未知的就变成了 <span
-class="math inline">\(\alpha_n\)</span>，那在第二步和第三步的问题就变成了找一组最好的
-<span class="math inline">\(\alpha_n\)</span>，让总损失最小。</p>
-<h2 id="核技巧kernel-trick">核技巧(Kernel Trick)</h2>
-<p>如果数据是非线性的，直接使用SVM，得不到好的结果。此时需要特殊处理，使用一个变换将原空间的数据映射到新空间中，变成线性可分的，然后再使用SVM。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819231336.png"
-alt="20220819231336" /></p>
-<p>所以，把 <span class="math inline">\(x,z\)</span>
-先做特征转换后，再做内积等于它们先做内积的平方。有时直接计算<span
-class="math inline">\((x\cdot
-z)^2\)</span>会比先做特征转换，再做内积要快很多。比如 x,z都是 k
-维的向量，我们想把它们投影到更高维的平面。在更高维的平面，要考虑向量元素中两两之间的关系。</p>
-<p>如果用核技巧的话，可以轻易的计算出 <span
-class="math inline">\(\phi(x) \cdot \phi(z)\)</span>
-的结果，怎么算呢，通过 <span class="math inline">\((x\cdot z)^2\)</span>
-就可以。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819232023.png"
-alt="20220819232023" /></p>
-<p>上式中可以x xx集中到一边就可以得到 <span
-class="math inline">\(\phi(x)\)</span> ，同理 z 也是一样。</p>
-<p>还有更惊人的是RBF Kernel。</p>
-<h2 id="rbf-kernel">RBF Kernel</h2>
-<p>径向基函数核(Radial basis function Kernel,RBF
-Kernel)式子是这样的：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819232632.png"
-alt="20220819232632" /></p>
-<p>这个可以衡量 x,z 的相似度，如果 x,z 是一样的话，Kernel的值就是
-1；如果 x,z 完全不一样的话，值就是
-0。也可以写成两个高纬度的向量做内积。在这个式子中 <span
-class="math inline">\(\phi(*)\)</span>
-的结果可以是无穷多维的，但是我们无法做到无穷多维向量的内积。可以看成是两个无穷长的向量做内积，最后得到的结果就是这个K(x,z)的结果。</p>
-<h2 id="sigmoid-kernel">Sigmoid Kernel</h2>
-<p>K(x,z)=tanh(x⋅z)</p>
-<p>当我们把训练数据 x 代入 f 中的时候，其实是计算 x
-和训练数据集中所有数据的 <span class="math inline">\(K(x^n,x)\)</span>
-然后再乘上 <span class="math inline">\(\alpha_n\)</span> 如果用Sigmoid
-Kernel 的时候就是</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819233200.png"
-alt="20220819233200" /></p>
-<p>如果我们用Sigmoid
-Kernel，这个f(x)可以想象成只有一个隐藏层的神经网络。x会和所有的 <span
-class="math inline">\(x^n\)</span>
-做内积，就好像是有个神经元它的权值就是某笔数据 <span
-class="math inline">\(x^n\)</span> ,它的输入就是向量x。把 <span
-class="math inline">\(x^1\)</span> 当做第一个神经元的权值， <span
-class="math inline">\(x^2\)</span> 作为第二个神经元的权值</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819233422.png"
-alt="20220819233422" /></p>
-<p>然后把它们都通过双曲正切(tanhx ,hyperbolic tangent)
-得到输出后，再乘上<span
-class="math inline">\(\alpha\)</span>，最后累加起来就得到f(x)的结果。</p>
-<p><span class="math display">\[
-\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}
-\]</span></p>
-<p>其实有了核技巧后，我们可以直接设计这个核函数，而不用考虑<span
-class="math inline">\(\phi(x),\phi(z)\)</span>长什么样子。</p>
-<p>什么时候可以这样呢，假设你的输入数据 x
-是结构数据，比如序列，此时很难表示成 <span
-class="math inline">\(\phi(x)\)</span>。</p>
-<p>我们可以直接定它的核函数，我们知道核函数其实就是投影到高维的内积，所以核函数是个类似相似度(similarity)的东西。</p>
-<p>所以可以定一个描述x , z
-x,zx,z相似度的函数，哪怕它们是结构数据，只要知道怎么计算两个序列之间的相似度，就可以把这个相似度当成核函数来使用。</p>
-<p>不是所有的相似度函数都可以，有个Mercer’s
-理论可以告诉你哪些函数可以。这个理论可以检查你定出来的相似度函数背后有没有两个向量做内积。</p>
-<p>比如在语音上，假设你要分类的对象是声音讯号(Audio segment)。</p>
-<p>每个声音讯号可以用向量序列(vector
-sequnce)来描述它。每段声音讯号的长度不一样，所以向量序列的长度也不一样。</p>
-<p>假设现在给你一段声音讯号，要你判断说话者的情绪(高兴、生气…)。</p>
-<p>因为声音讯号的长度不一，所以无法直接用一个向量来描述，这时可以直接定相似函数(核函数K(x,z))。</p>
-<h2 id="svm和深度学习">SVM和深度学习</h2>
-<p>我们知道深度学习的前几层可以看成适特征转换，最后一层可以看成是线性分类器。其实SVM做的事情也是很类似的。SVM先用一个核函数把特征转换到高维空间上面，然后就可以用线性分类器进行分类。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819234350.png"
-alt="20220819234350" /></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习-概率生成模型</title>
-    <url>/2022/925661245.html</url>
-    <content><![CDATA[<h2 id="理论基础">理论基础</h2>
-<p>概率生成模型，是概率统计和机器学习中的一类重要模型，指一系列用于随机生成可观测数据的模型。假设有两类数据，每一类都有若干个样本；概率生成模型认为每一类数据都服从某一种分布，如高斯分布；从两类训练数据中得到两个高斯分布的密度函数，具体的是获得均值和方差两个参数；测试样本输入到其中一个高斯分布函数，得到的概率值若大于0.5，则说明该样本属于该类，否则属于另一类。</p>
-<p>生成模型可以和贝叶斯概率公式进行结合，用于分类问题。原始贝叶斯概率公式为：</p>
-<p><span class="math display">\[
-P(A|B)=\frac{P(B|A)P(A)}{P(B)} \tag{1}
-\]</span></p>
-<p>对于一个<span
-class="math inline">\(2\times2\)</span>的分类则有下图所述的贝叶斯分类</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-梯度下降的优化/20220817235221.png"
-alt="20220817235221" /></p>
-<p>在上图中，训练数据中有两个类别；每个类别下有5个样本，我们想要知道新的测试样本<span
-class="math inline">\(x\)</span>属于<span
-class="math inline">\(C1\)</span>的可能性。根据贝叶斯概率公式可以得到上图片所示的概率公式。其中，<span
-class="math inline">\(P(C1)\)</span>和<span
-class="math inline">\(P(C2)\)</span>表示在训练数据中，随机采样得到<span
-class="math inline">\(C1\)</span>或者C2的概率，即两个类别在训练数据中所占的比重。分母项<span
-class="math inline">\(P(x)\)</span>表示生成数据x的概率，此处可以由生成模型计算得到；</p>
-<p><span class="math display">\[
-P(x) = P(x|C1)P(C1) + P(x|C2)P(C2)
-\]</span></p>
-<p>因为有两个类别，每个类别下的数据具有不同的规律，服从不同的分布，都有可能生成数据<span
-class="math inline">\(x\)</span>，所以相加得到生成<span
-class="math inline">\(x\)</span>的概率。<span
-class="math inline">\(P(C1)\)</span>和<span
-class="math inline">\(P(C2)\)</span>可以由训练数据中的统计结果计算得到。</p>
-<p>接下来是计算<span class="math inline">\(P(x|C1)\)</span>和<span
-class="math inline">\(P(x|C2)\)</span>，我们一般是采用最大似然估计来计算。</p>
-<p>给定一个概率分布D，假定其概率密度函数（连续分布）或概率聚集函数（离散分布）为<span
-class="math inline">\(f_D\)</span>，以及一个分布参数<span
-class="math inline">\(θ\)</span>，我们可以从这个分布中抽出一个具有n个值的采样<span
-class="math inline">\(X_1,X_2,...,X_n\)</span>，通过利用<span
-class="math inline">\(f_D\)</span>，我们就能计算出其概率：</p>
-<p><span class="math display">\[
-P=(x_1,x_2,...,x_n)=f_D(x_1,x_2,...,x_n|\theta)
-\]</span></p>
-<p>但是，我们可能不知道θ的值，尽管我们知道这些采样数据来自于分布D。那么我们如何才能估计出θ呢？一个自然的想法是从这个分布中抽出一个具有n个值的采样<span
-class="math inline">\(X_1,X_2,...,X_n\)</span>，然后用这些采样数据来估计θ。
-要在数学上实现最大似然估计法，我们首先要定义可能性：</p>
-<p><span class="math display">\[
-lik(\theta)=f_D(x_1,x_2,...,x_n|\theta)
-\]</span></p>
-<p>并且在<span
-class="math inline">\(θ\)</span>的所有取值上，使这个函数最大化。这个使可能性最大的值即被称为θ的最大似然估计。</p>
-<h2 id="实例">实例</h2>
-<p>在此进行一个宝可梦类别的分类工作：我们使用两个类别的宝可梦构成训练数据，分别是水系（Water）和正常系（Normal），数据构成如下：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001409.png"
-alt="20220818001409" /></p>
-<p>根据贝叶斯概率公式，计算P(x|C1)和P(x|C2)。分析每个类别下的数据分布规律，计算新的测试数据x分别由每个类别的数据模型生成的概率。</p>
-<p>每个宝可梦，有两个特征属性 Defence 和 SP
-Defence，假设数据的分布符合高斯分布。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001903.png"
-alt="20220818001903" /></p>
-<p>接着由极大似然估计法，计算得到高斯分布的参数，即均值和标准差。</p>
-<ul>
-<li>均值表征的是各维变量的中心</li>
-<li>协方差矩阵的对角线上的两个元素，决定了整个高斯曲面在某一维度上的“跨度”，方差越大，“跨度”越大</li>
-<li>协方差矩阵的斜对角线上面的两个元素，表征的是各维变量之间的相关性，其数值大于零说明x与y呈正相关，其值越大，正相关程度越大，小于零则是负相关，否则则是不相关</li>
-</ul>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002328.png"
-alt="20220818002328" /></p>
-<p>接着，使用贝叶斯概率公式进行分类</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002949.png"
-alt="20220818002949" /></p>
-<p>测试数据上的准确率为47%，效果很差。使用更多特征之后，准确率为54%</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003049.png"
-alt="20220818003049" /></p>
-<p>那么则需要对模型进行调整，也就是调整高斯分布的均值和标准差</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003814.png"
-alt="20220818003814" /></p>
-<p>这里使水系宝可梦和普通系宝可梦使用一个标准差矩阵，计算方式为其二者加权平均，使其准确率得到了一定的提升。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004759.png"
-alt="20220818004759" /></p>
-<h2 id="总结">总结</h2>
-<p>概率生成模型进行分类问题的三个步骤如下：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004913.png"
-alt="20220818004913" /></p>
-<h2 id="后续">后续</h2>
-<p>之前我们有贝叶斯的公式，那么能够将其进行简化呢？</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005111.png"
-alt="20220818005111" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005153.png"
-alt="20220818005153" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005212.png"
-alt="20220818005212" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005227.png"
-alt="20220818005227" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005307.png"
-alt="20220818005307" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005609.png"
-alt="20220818005609" /></p>
-<p>经过最终的化简计算可以知道，概率生成模型的本质是寻找参数w和b。如果我们直接进行参数w和b的求解，是不是就可以简化前面那么复杂的计算过程呢？那么请看下一篇博客吧。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习-逻辑回归</title>
-    <url>/2022/2694928426.html</url>
-    <content><![CDATA[<p>接着上篇博客继续，我们发现，概率生成模型最终推导函数，其本质还是寻找参数w和b，所以可以设置一个函数，直接来寻找最优的w和b</p>
-<p><span class="math display">\[
-f_{w,b}(x)=P_{w,b}(C_1|x)=\sigma(z)\\
-\sigma(z)=\frac{1}{1+exp(-z)}\\
-z = w \cdot x+b
-\]</span></p>
-<p>相较于线性回归，逻辑回归做的事情便是将 wx+b 放入 sigmoid
-函数中，使其输出一直处于0~1之间。</p>
-<p>在我们确定了函数之后，便是应该再定义一个损失函数。 <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818202556.png"
-alt="20220818202556" /> 假设有一组训练数据，其数据大小为
-N，而且分别有自己的类别标签C。给定一组 w 和
-b，就可以计算这组w，b下产生上图N个训练数据的概率，<span
-class="math inline">\(f_{w,b}(x^3)\)</span>表示 <span
-class="math inline">\(x^3\)</span>
-属于C1的概率，但是其真实分类为C2，所以要用 <span
-class="math inline">\(1-f_{w,b}(x^3)\)</span>。</p>
-<p><span
-class="math inline">\(L(w,b)L(w,b)\)</span>取得的数值最大的时候，即取得最好的w和b，<span
-class="math inline">\(w^∗,b^∗ = argmax_{w,b}L(w,b)\)</span></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818204159.png"
-alt="20220818204159" /></p>
-<p>在此我们可以做一个变换，对 <span
-class="math inline">\(L(w,b)\)</span>取对数不影响其单调性，然后再加上符号，单调性与之前的相反，那么就是求
-<span class="math inline">\(-lnL(w,b)\)</span> 的最小值。对于 <span
-class="math inline">\(-lnL(w,b)\)</span>，我们可以将其写为 <span
-class="math display">\[
--lnL(w,b) \\
-= -lnf_{w,b}(x^1)\\
-=-[\hat yln_{w,b}f(x^1)+(1-\hat y)ln(1-f_{w,b}(x^1))]
-\]</span></p>
-<p>其实很好理解，当 <span class="math inline">\(\hat y\)</span> 为 1
-的时候 <span class="math display">\[
-lnf_{w,b}(x)=[1 \cdot ln_{w,b}f(x)+(1-1) \cdot
-ln(1-f_{w,b}(x))]=lnf_{w,b}(x)
-\]</span> 当 <span class="math inline">\(\hat y\)</span>为 0 的时候
-<span class="math display">\[ln(1-f_{w,b}(x))=[0 \cdot
-ln_{w,b}f(x)+(1-0) \cdot ln(1-f_{w,b}(x))]=ln(1-f_{w,b}(x))
-\]</span></p>
-<p>所以便是有了下图的转化</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818211509.png"
-alt="20220818211509" /></p>
-<p>即两个伯努利分布的交叉熵，假设有两个分布 p 和
-q，这两个分布的交叉熵就是H(p,q)，交叉熵代表的含义是这两个分布有多接近，如果两个分布是一模一样的话，那计算出的交叉熵就是0，也就是说，当交叉熵为零的时候，说明我们的函数完全符合实际的分布。
-如果把function的输出和target都看作是两个伯努利分布，所做的事情就是希望这两个分布越接近越好，交叉熵最小，Loss就最小。</p>
-<p>对找最好的function，就是最小化−lnL(w,b)，用梯度下降方法即可。</p>
-<ul>
-<li>计算算出<span class="math inline">\(lnf_w,_b(x^n)\)</span>对<span
-class="math inline">\(w_i​\)</span>​的偏微分</li>
-<li><span class="math inline">\(​f_w,_b(x)\)</span>​可以用 <span
-class="math inline">\(\sigma{(z)}\)</span>​表示，而z可以用 ​<span
-class="math inline">\(w_i\)</span> ​和 $b
-$表示，所以可以利用链式法则展开</li>
-<li>计算 <span class="math inline">\(​ln(1-f_{w,_b}(x^n))\)</span> 对
-<span class="math inline">\(​w_i\)</span>​的偏微分</li>
-<li>继续使用链式法则进行计算</li>
-</ul>
-<p><span
-class="math inline">\((lnx)^′=\frac{1}{x}\)</span>，sigmoid函数求导：<span
-class="math inline">\(\sigma(x)^′=\sigma(x)⋅(1−\sigma(x))\)</span></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818213456.png"
-alt="20220818213456" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818213521.png"
-alt="20220818213521" /></p>
-<p>下图则为最终的结果：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818213551.png"
-alt="20220818213551" /></p>
-<p>得到了梯度之后，便是可以再度使用梯度下降进行 <span
-class="math inline">\(w_i\)</span> 的更新。对于 Loss
-函数的选择，我们使用交叉熵作为其损失。</p>
-<p>上面说的是二分类问题，对于多分类应该如何解决呢？</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818215308.png"
-alt="20220818215308" /></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂聊1</title>
-    <url>/2021/1510919766.html</url>
-    <content><![CDATA[<p>七月三十一日，这个月结束了大三学年的学习，开始较为枯燥的考研生活，到了月底也是应该做一个小小的总结了，不然这个月也又是要浑浑噩噩地过去了。</p>
+    <title>战争的目的在于消灭战争</title>
+    <url>/2021/3536968392.html</url>
+    <content><![CDATA[<p>今日读毛选，读到了中国革命战争的战略问题。我觉得毛泽东真的是一位军事奇才，他对战争的规律总结得十分到位，这是一套方法论，不管用到何处都能经过一定程度的变化，从而发挥作用的方法。</p>
 <span id="more"></span>
-<h1 id="考研复习">考研复习</h1>
-<p>先总结一下考研复习进度吧，在七月中把网课过了一遍，是华中科技大学杨广笑老师的<a
-href="https://www.bilibili.com/video/BV1Ss411i7Mm">生物化学与分子生物学</a>，网课体验还是挺不错的，但是看完之后就觉得这门课要背诵要记忆的内容还是蛮多的，也有好多是自己没有掌握的，也是为过去自己没有好好学习这门科目感到羞愧；另外一个课是北京大学魏丽萍老师的<a
-href="https://www.bilibili.com/video/BV13t411G7oh">生物信息学</a>，感觉还是蛮简单的，好多东西记忆都还是十分清晰，甚至觉得要是选择生物信息学进行考试的话甚至不用怎么复习。但是又觉得自己要是没有良好的生物化学基础的话怕是对日后的科研道路会有一些影响，于是呢，最后还是选择了生物化学与分子生物学进行复习，本来计划这个月先把第一本书看完来着，但是到目前吧，现在是晚上八点，还有八十页没看，待会儿看一下，应该能在明天也就是下个月开启新的篇章。</p>
-<p>发现生物化学（第三版）这本书有一些有意思的地方，看的时候可以笑起来的那种。</p>
 <blockquote>
-<p>淋病奈瑟球菌（Nsisseria
-gonorrhoeae）只感染人的生殖器和口腔黏膜，对人的其他部位和其他不起作用。😅</p>
+<p>战争的规律——这是任何指导战争的人不能不研究和不能不解决的问题。
+革命战争的规律——这是任何指导革命战争的人不能不研究和不能不解决的问题。
+中国革命战争的规律——这是任何指导中国革命战争的人不能不研究和不能不解决的问题。</p>
+<p>我们现在是从事战争，我们的战争是革命战争，我们的革命战争是在中国这个半殖民地的半封建的国度里进行的。因此，我们不但要研究一般战争的规律，还要研究特殊的革命战争的规律，还要研究更加特殊的中国革命战争的规律。</p>
+<p>大家明白，不论做什么事，不懂得那件事的情形，它的性质，它和它以外的事情的关联，就不知道那件事的规律，就不知道如何去做，就不能做好那件事。</p>
+<p>战争——从有私有财产和有阶级以来就开始了的、用以解决阶级和阶级、民族和民族、国家和国家、政治集团和政治集团之间、在一定发展阶段上的矛盾的一种最高的斗争形式。不懂得它的情形，它的性质，它和它以外事情的关联，就不知道战争的规律，就不知道如何指导战争，就不能打胜仗。</p>
+<p>革命战争——革命的阶级战争和革命的民族战争，在一般战争的情形和性质之外，有它的特殊的情形和性质。因此，在一般的战争规律之外，有它的一些特殊的规律。不懂得这些特殊的情形和性质，不懂得它的特殊的规律，就不能指导革命战争，就不能在革命战争中打胜仗。</p>
+<p>中国革命战争——不论是国内战争或民族战争，是在中国的特殊环境之内进行的，比较一般的战争，一般的革命战争，又有它的特殊的情形和特殊的性质。因此，在一般战争和一般革命战争的规律之外，又有它的一些特殊的规律。如果不懂得这些，就不能在中国革命战争中打胜仗。</p>
 </blockquote>
-<p>怪起来了。</p>
-<h1 id="代码之路">代码之路</h1>
-<p>虽然说是在复习期间，也没有落下编程的功底，力扣的每日写题也是没有落下，成功拿到了七月的打卡牌子。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E8%80%83%E7%A0%94%E6%97%A5%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/image-20210731200525059.png"
-alt="image-20210731200525059" /></p>
-<p>关于开源项目的开发，倒是开启的一个小项目 <a
-href="https://github.com/zEpoch/webStart">zEpoch/webStart
-(github.com)</a>，算是一个前端的入门项目吧，希望能够在日后获得一个 Star
-之类的吧。</p>
-<p>关于这个博客，配置这个博客倒是配置了挺多的时间，也是做了很多的调试，目前来说速度和舒适度还是蛮比较不错的。</p>
+<p>他没有专注于一般战争的经验，而是吸取各个战争的关键因素，对于中国革命战争，他没有照搬照用其他民族、国家的那一套老一套，或者是说别人特有的战争形式；但是也不是完全不用，而是学习适合自己战争的因素，尊重过去流血的经验，但是还应该尊重自己流血的经验。不仅学习俄国的革命经验，也要了解苏联内战和苏联红军的特殊性；学习北伐战争的经验，但是要了解到当时的战争的情况已发生了变化。由此看来，战争情况的不同，决定着不同的战争指导规律，有时间、地域和性质的差别。从时间的条件说，战争和战争指导规律都是发展的，各个历史阶段有各个历史阶段的特点，因而战争规律也各有其特点，不能呆板地移用于不同的阶段。</p>
+<p>关于战争的目的，我觉得毛泽东写的这个是最符合马克思主义的</p>
+<blockquote>
+<p>战争——这个人类互相残杀的怪物，人类社会的发展终久要把它消灭的，而且就在不远的将来会要把它消灭的。但是消灭它的方法只有一个，就是用战争反对战争，用革命战争反对反革命战争，用民族革命战争反对民族反革命战争，用阶级革命战争反对阶级反革命战争。历史上的战争，只有正义的和非正义的两类。我们是拥护正义战争反对非正义战争的。一切反革命战争都是非正义的，一切革命战争都是正义的。人类的战争生活时代将要由我们之手而结束，我们所进行的战争，毫无疑义地是属于最后战争的一部分。但是我们所面临的战争，毫无疑义又是最大的和最残酷的战争的一部分。最大的和最残酷的非正义的反革命的战争，迫临在我们的头上，我们如果不打起正义战争的旗帜，人类的大多数就要遭受摧残。人类正义战争的旗帜是拯救人类的旗帜，中国正义战争的旗帜是拯救中国的旗帜。人类的大多数和中国人的大多数所举行的战争，毫无疑义地是正义的战争，是拯救人类拯救中国的至高无上的荣誉的事业，是把全世界历史转到新时代的桥梁。人类社会进步到消灭了阶级，消灭了国家，到了那时，什么战争也没有了，反革命战争没有了，革命战争也没有了，非正义战争没有了，正义战争也没有了，这就是人类的永久和平的时代。我们研究革命战争的规律，出发于我们要求消灭一切战争的志愿，这是区别我们共产党人和一切剥削阶级的界线。</p>
+</blockquote>
 ]]></content>
       <tags>
-        <tag>生活</tag>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂聊2</title>
-    <url>/2021/1220239800.html</url>
-    <content><![CDATA[<p>早上八点，起床，下了床墨迹了一会儿，醒醒了脑子，再一看时间，已经八点四十了，呕吼，穿上袜子穿上鞋，刷个牙，洗把脸，再抹一曾润肤乳，完事。</p>
-<p>九点，下楼去食堂吃饭，磨磨唧唧到食堂又是五分钟后了，所幸还有饭，一个鸡蛋一个大饼一杯豆浆，肉蛋奶都有了，吃完饭回到寝室就是九点四十了。</p>
-<span id="more"></span>
-<p>为什么今天没有直接去图书馆呢？因为今天有个面试，什么面试呢？腾讯的一个面试，为什么会有这么一个面试呢？因为有个老哥让我扫了个二维码，我扫完二维码，填了姓名学习院校后居然就成功投递了简历，然后笔试都没有就收到了鹅厂的面试邀请，我也挺懵的，其实也还好，可以面试一下看看自己有多菜。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811225211599.png"
-alt="image-20210811225211599" /></p>
-<p>九点四十，到了宿舍，打开力扣，看了一下水友讲的鹅厂大概会面试的题，又做了一遍，再打开
-B 站，又看了一会儿 <a href="https://space.bilibili.com/415434293">Pink
-老师</a>的前端课程，磨叽磨叽就到了十一点。</p>
-<p>十一点，开始面试，十一点刚到就打开了面试窗口，但是 hr
-没有来，于是就等了 23
-秒，她终于来了，而且还是个声音十分温柔的姐姐，希望是个姐姐吧，不然我的心态会出问题的。接下来半个小时，我和这位声音十分甜美的姐姐度过了愉快的一段时间（是的）。</p>
-<p>十一点半，面试结束去吃饭。</p>
-<p>十二点，吃完了饭悠悠哉哉去图书馆。</p>
-<p>十二点二十三，来到了图书馆找了个位子坐下，去接了杯水，打开了手机，点开了打麻将。我当时心里想的是，我赢一局就去学习，然后打到了两点二十七，一局没赢，我心态炸裂。</p>
-<p>两点二十七，我看了一眼时间，距离图书馆关门只有两个半小时了，也该学习了。于是乎，打开课本，怒学两个半小时，去吃饭。</p>
-<p>五点二十，来到食堂吃饭。</p>
-<p>五点四十五，吃完饭回到了宿舍，打开电脑，打开
-wegame，打开英雄联盟。下了一局棋，没赢，不开心两局，那就排位吧，排位都是用的提莫，很舒服，七秒一个蘑菇，满地图都是蘑菇，人在上路补着兵就拿了
-ad 的人头，很开心，两局都赢了，很开心，看了一眼时间，七点四十七。</p>
-<p>七点四十七，去活动室看书。</p>
-<p>九点半，出门健身，锻炼身体，今晚练了腹部和背部，感觉还挺舒服。</p>
-<p>十点三十三，回到寝室，看了一眼面试结果，挂了。为什么挂了，因为我投的前端，刚刚学了两天的前端，感觉还行，主要是面试的姐姐说话真的是好温柔，就像是恋爱的感觉，虽然我单身了二十年，准备洗洗睡觉。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811230426475.png"
-alt="image-20210811230426475" /></p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-        <tag>日记</tag>
-        <tag>考研日记</tag>
+        <tag>毛选</tag>
       </tags>
   </entry>
   <entry>
@@ -7042,20 +6457,588 @@ ans_y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </tags>
   </entry>
   <entry>
-    <title>杂聊3</title>
-    <url>/2021/4026992349.html</url>
-    <content><![CDATA[<p>本来呢，暑假的计划是要读习的，奈何之前的毛选一还没读完，便是摸摸索索地读了毛选一，但也读的并不是很多，最重要地实践论和矛盾论倒是还没有看。</p>
-<p>这毛选读起来是真的有意思，很多东西，修修改改，放到现在，依旧是可以用的，对于中国社会各阶层地分析，将近一百年过去了，中国的阶层中，也就是文中的“地主阶级和买办阶级”换了一种形式存在了下来，有人称其为“人民富豪”之类的。</p>
+    <title>机器学习-梯度下降的优化</title>
+    <url>/2022/3163358201.html</url>
+    <content><![CDATA[<p>在回归中，我们需要解决下面的优化问题，即使得Loss函数尽可能的小 <span
+class="math display">\[
+\theta^*=arg\min L(\theta),L:loss function,\theta:parameters
+\]</span> 假设一共有两个参数<span
+class="math inline">\(\theta_1,\theta_2\)</span>，使得<span
+class="math inline">\(\theta^0=
+\begin{bmatrix}\theta^0\\\theta^1\end{bmatrix}\)</span>，便有梯度如下
+<span class="math display">\[\nabla L(\theta)=\begin{bmatrix} \partial
+L(\theta_1)/ \partial \theta_1\\\ \partial L(\theta_2)/ \partial
+\theta_2\end{bmatrix}\]</span> 那么参数的更新便可通过向量的形式进行
+<span class="math display">\[
+\begin{bmatrix}\theta^1_1\\\theta^1_2\end{bmatrix}=\begin{bmatrix}\theta^0_1\\\theta^0_2\end{bmatrix}-\eta\begin{bmatrix}
+\partial L(\theta^0_1)/ \partial \theta_1\\\ \partial L(\theta^0_2)/
+\partial \theta_2\end{bmatrix}
+\]</span> 但是其中，<span
+class="math inline">\(\eta\)</span>是一直不变的，但是我们知道，经过迭代之后，在越来约接近目标的时候，我们需要将学习率降低，使其能够愈发趋近目的地。故，我们对<span
+class="math inline">\(eta\)</span>进行改进，使其经过一定的迭代后越来越小。
+<span class="math display">\[
+\eta^t=\eta/\sqrt{t+1}
+\]</span>
+但是学习率不能一刀切，对于参数，我们也需要给予其一定的改变。一般我们的参数的改变为
+<span class="math display">\[
+w^{t+1}=w^t-\eta^tg^t
+\]</span> w是一个参数，我们设置<span
+class="math inline">\(\eta^t\)</span>
+为参数w之前导数的均方根，使其成为一个参数依赖型的学习率。也就是说 <span
+class="math display">\[
+w^1=w^0-\frac{\eta^0}{\sigma^0}g^0,\sigma^0=\sqrt{(g^0)^2}\\
+w^2=w^1-\frac{\eta^1}{\sigma^1}g^1,\sigma^1=\sqrt{\frac{1}{2}[(g^0)^2+(g^1)^2]}\\
+\]</span> 如此迭代，直到 <span class="math display">\[
+w^{t+1}=w^t-\frac{\eta^t}{\sigma^t}g^t,\sigma^t=\sqrt{\frac{1}{t+1}\sum^t_{i=0}(g^i)^2}
+\]</span> 从上面的式子中，我们可以看到<span
+class="math inline">\(\eta^t\)</span>是一个时间相关的学习率，<span
+class="math inline">\(\sigma^t\)</span>是一个参数相关的学习率，且 <span
+class="math display">\[
+\eta^t=\frac{\eta}{\sqrt{t+1}},\sigma^t=\sqrt{\frac{1}{t+1}\sum^t_{i=0}(g^i)^2}
+\]</span> 故相除之后得到下列的公式 <span class="math display">\[
+w^{t+1}=w^t-\frac{\eta}{\sqrt{\sum^t_{i=0}(g^i)^2}}g^t
+\]</span> 梯度改进之后的对比如下：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-梯度下降的优化/20220816173111.png"
+alt="20220816173111" /></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>机器学习</tag>
+        <tag>梯度下降</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习-支持向量机</title>
+    <url>/2022/917828124.html</url>
+    <content><![CDATA[<p>支持向量机总体是由一个合页损失函数和一个核函数组成</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819195408.png"
+alt="20220819195408" /></p>
+<h2 id="合页损失函数">合页损失函数</h2>
+<p>由于函数形状像一个合页，故命合页损失函数，下图为合页损失函数的图形。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819195640.png"
+alt="20220819195640" /></p>
+<p>二分类问题求解分为三个步骤，第一步为定义函数</p>
+<p><span class="math display">\[
+g(x)= \begin{cases} f(x)&gt;0, &amp; \text {output= +1} \\ f(x)&lt;0,
+&amp; \text{output= -1} \end{cases}
+\]</span></p>
+<p>上述定义的函数，其输出由f(x)决定，当f(x)大于零时，输出为+1，当f(x)小于零时，输出为-1。第二步是通过损失函数判断函数的好坏。我们定义损失函数如下：</p>
+<p><span class="math display">\[
+L(f)=\sum_nI(g(x^n)\not \neq \hat y^n)
+\]</span></p>
+<p><span
+class="math inline">\(x^n\)</span>表示训练集中第n个数据，I代表指示函数，当它的输入为True的时候，输出1；否则输出0。也就是说，当我们的函数g预测的结果和实际结果一样的时候就没有损失，不一样的时候才有损失。但是这个损失函数是不可微分的，就无法用梯度下降的方法来优化。这时我们用另一个近似的函数来表示：</p>
+<p><span class="math display">\[
+L(f)=\sum_nI(f(x^n),\hat y^n)
+\]</span></p>
+<p>那这个损失函数是什么样的呢？我们来看一个这样的图形。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819201846.png"
+alt="20220819201846" /></p>
+<p>它的横轴是 <span class="math inline">\(\hat{y}^nf(x)\)</span>，<span
+class="math inline">\(\hat{y}^n\)</span> 可以是+1或-1，我们希望当 <span
+class="math inline">\(\hat{y}^n=+1\)</span> 时，<span
+class="math inline">\(f(x)\)</span> 的值正的越大越好；当 <span
+class="math inline">\(\hat{y}^n=-1\)</span> 时，$ f(x)$
+的值负的越大越好。整体就 <span
+class="math inline">\(\hat{y}^nf(x)\)</span>
+的值越大越好。纵轴当成损失的话，越往右，<span class="math inline">\(\hat
+y^nf(x)\)</span> 越大，损失越小。</p>
+<p>损失函数的理想情况是两条黑线。当 <span class="math inline">\(g(x^n) =
+\hat{y}^n\)</span> 时损失为0，这时 <span
+class="math inline">\(\hat{y}^nf(x)\)</span> 为正数；当 <span
+class="math inline">\(g(x^n)\neq \hat{y}^n\)</span> 时损失为1，这时<span
+class="math inline">\(\hat{y}^nf(x)\)</span>
+为负数；但是这样是无法微分的。我们把I用l来取代。</p>
+<p>这时 l 有很多选择，比如：</p>
+<p><span class="math display">\[
+Square Loss = \begin{cases} if \hat y^n=1, &amp; \text {f(x) close to 1}
+\\ if \hat y^n=-1, &amp; \text{f(x) close to -1} \end{cases}
+\]</span></p>
+<p>这个是平方损失，可以写成: <span
+class="math inline">\(l(f(x^n),\hat{y}^n) = (\hat{y}^nf(x^n) -
+1)^2\)</span> 。当 <span class="math inline">\(\hat{y}^n=1\)</span>
+时，上式就是 <span class="math inline">\((f(x^n) - 1)^2\)</span> ；当
+<span class="math inline">\(\hat{y}^n=-1\)</span> 时，上式就是 <span
+class="math inline">\((-f(x^n) - 1)^2 = (f(x^n) + 1)^2\)</span>
+。所以，当 <span class="math inline">\(\hat{y}^n=1\)</span> 时，$
+f(x^n)$ 要和 1 越接近越好；当 <span class="math inline">\(f(x^n) =
+-1\)</span> 时，<span class="math inline">\(f(x^n)\)</span> 要和 -1
+越接近越好。</p>
+<p>平方损失函数图形是上面红色的抛物线，但是它是不合理的，因为当 <span
+class="math inline">\(\hat{y}^nf(x)\)</span>
+很大的时候，竟然有个很大的损失。还有一种选择是Sigmoid + Square Loss:</p>
+<p><span class="math display">\[
+Sigmoid + Square Loss = \begin{cases} if \hat y^n=1, &amp; \text
+{σ(f(x)) close to 1} \\ if \hat y^n=-1, &amp; \text{σ(f(x)) close to -1}
+\end{cases}
+\]</span></p>
+<p>它的图形是上面蓝色的线，我们讲过，在逻辑回归中，不会用平方损失，而是用交叉熵。我们这里替换成交叉熵。这里
+<span class="math inline">\(\sigma(f(x))\)</span> 代表了一个分布，Ground
+Truth(指的是真实情况)代表另一个分布。</p>
+<p>这两个分布之间的交叉熵，就是要最小化的损失值。</p>
+<p>它可以写成：<span class="math inline">\(l(f(x^n),\hat{y}^n) =\ln(1 +
+e^{-(\hat{y}^nf(x))})\)</span> 。它是上面绿色的线，这里除了 <span
+class="math inline">\(ln2\)</span>
+，这不是影响这个函数图形走势，但是可以让它变成理想损失的上边界(upper
+bound)，我们虽然无法最小化理想的损失，但是可以最小化它的上边界。</p>
+<p>这个式子是合理的，当 <span
+class="math inline">\(\hat{y}^nf(x)\)</span> 趋近于正无穷大时，<span
+class="math inline">\(e^{-\infty}=\frac{1}{e^\infty}=0\)</span>;当 <span
+class="math inline">\(\hat{y}^nf(x)\)</span> 趋近于负无穷大时，<span
+class="math inline">\(e^{\infty}=\infty=&gt;ln(1+\infty)=\infty\)</span>
+我们可以比较用交叉熵和平方损失的曲线，这样就可以知道为什么选择交叉熵。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819205957.png"
+alt="20220819205957" /></p>
+<p>我们把 $^nf(x) <span class="math inline">\(从 -2 移动到 -1
+时，交叉熵的那条线变化很明显，而平方损失的那条线变化很小。当\)</span>^nf(x)$
+负的很大的时候，调整这个值，对总损失影响不大，这样训练出来的效果很不好。而交叉熵调整的时候影响很大。
+最后看下什么是Hinge Loss</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819212136.png"
+alt="20220819212136" /></p>
+<p>它的式子是：<span class="math inline">\(l(f(x^n),\hat{y}^n) =\max(0,1
+- \hat{y}^nf(x))\)</span>。当 <span
+class="math inline">\(\hat{y}^n=1\)</span> 时，只要 <span
+class="math inline">\(f(x) &gt; 1\)</span>，它的损失就是 0；而当 <span
+class="math inline">\(\hat{y}^n = -1\)</span> 时，<span
+class="math inline">\(f(x)&lt;-1\)</span>，它的损失才会是 0。</p>
+<p>把折页损失的图像画出来，是上面紫色的那条线。在这条线上，只要 <span
+class="math inline">\(\hat{y}^nf(x) &gt; 1\)</span>
+时，就已经够好了，损失是0。</p>
+<h2 id="线性svm">线性SVM</h2>
+<p><span class="math display">\[
+f(x)=∑_iw_ix_i+b={w\brack b}⋅{1\brack x}=w^Tx
+\]</span></p>
+<p>上面这个线性等式可以看成是两个向量的内积。接下来我们把<span
+class="math inline">\({w\brack b}\)</span>用新的 w 来表示，把 <span
+class="math inline">\({x\brack 1}\)</span> 用新的x xx来表示，最终得到
+<span class="math inline">\(w^T x\)</span> 这样当$f(x) &gt;
+0f(x)&gt;0时属于一个类别；当 <span class="math inline">\(f(x) &lt;
+0\)</span> 时属于另一个类别。</p>
+<p>此时，SVM采用的损失函数是折页损失。<span
+class="math inline">\(l(f(x^n),\hat{y}^n) =\max (0,1 -
+\hat{y}^nf(x))\)</span></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819220153.png"
+alt="20220819220153" /></p>
+<p>通常还会加上正则化 <span class="math inline">\(\lambda
+||w||_2\)</span> ，这个损失函数是凸函数。而 <span
+class="math inline">\(\lambda ||w||_2\)</span>
+也是凸函数。把它们加起来仍然是一个凸函数。</p>
+<p>这个函数其实不一定是线性的，如果不是线性的，也可以用梯度下降的方法来训练。</p>
+<p>接下来看下如何用梯度下降来训练SVM。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819220358.png"
+alt="20220819220358" /></p>
+<p>我们的损失函数长这样，它是合页损失，这里为了简单，去掉了正则项。
+只要可以对这个合页损失函数做微分，就能做梯度下降。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819221635.png"
+alt="20220819221635" /></p>
+<p>它有两个区域，可以是0是最大者；或 <span class="math inline">\(1 -
+\hat{y}^nf(x^n)\)</span> 是最大者。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819223303.png"
+alt="20220819223303" /></p>
+<p>我们现在要最小化<span
+class="math inline">\(L(f)\)</span>，要选择一个最小的 <span
+class="math inline">\(x^n\)</span> 让 L 能最小，就是要选个 <span
+class="math inline">\(x^n\)</span> 让 $^n 越小越好。 <span
+class="math inline">\(\varepsilon^n\)</span>
+的限制是大于等于0，以及大于等于 <span
+class="math inline">\(1-\hat{y}^nf(x^n)\)</span>，让$ ^n$
+最小的方法，就是让 <span class="math inline">\(\varepsilon^n\)</span>
+等于 0 和 <span class="math inline">\(1-\hat{y}^nf(x^n)\)</span>
+最大者。所以，当要最小化的时候，这两个红框是相等的。</p>
+<h2 id="dual-representation">Dual Representation</h2>
+<p>我们把能最小化损失函数的权值写成 <span
+class="math inline">\(w^*\)</span>，它其实是我们的数据线性组合</p>
+<p><span class="math display">\[
+w^*=\sum_n\alpha^*_nx^n
+\]</span></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819224035.png"
+alt="20220819224035" /></p>
+<p>如果初始的w是个零向量，每次在更新w
+ww的时候，后面加上的就是数据点的线性组合。</p>
+<p>w可以写成<span class="math inline">\(\alpha
+X\)</span>，这时我们可以改写f(x)的式子，这里把 <span
+class="math inline">\((x^n \cdot x)\)</span>写成一个函数 <span
+class="math inline">\(K(x^n,x)\)</span>这个函数就叫核函数(Kernel
+function)。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819230513.png"
+alt="20220819230513" /></p>
+<p>我知道可以这样写以后，未知的就变成了 <span
+class="math inline">\(\alpha_n\)</span>，那在第二步和第三步的问题就变成了找一组最好的
+<span class="math inline">\(\alpha_n\)</span>，让总损失最小。</p>
+<h2 id="核技巧kernel-trick">核技巧(Kernel Trick)</h2>
+<p>如果数据是非线性的，直接使用SVM，得不到好的结果。此时需要特殊处理，使用一个变换将原空间的数据映射到新空间中，变成线性可分的，然后再使用SVM。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819231336.png"
+alt="20220819231336" /></p>
+<p>所以，把 <span class="math inline">\(x,z\)</span>
+先做特征转换后，再做内积等于它们先做内积的平方。有时直接计算<span
+class="math inline">\((x\cdot
+z)^2\)</span>会比先做特征转换，再做内积要快很多。比如 x,z都是 k
+维的向量，我们想把它们投影到更高维的平面。在更高维的平面，要考虑向量元素中两两之间的关系。</p>
+<p>如果用核技巧的话，可以轻易的计算出 <span
+class="math inline">\(\phi(x) \cdot \phi(z)\)</span>
+的结果，怎么算呢，通过 <span class="math inline">\((x\cdot z)^2\)</span>
+就可以。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819232023.png"
+alt="20220819232023" /></p>
+<p>上式中可以x xx集中到一边就可以得到 <span
+class="math inline">\(\phi(x)\)</span> ，同理 z 也是一样。</p>
+<p>还有更惊人的是RBF Kernel。</p>
+<h2 id="rbf-kernel">RBF Kernel</h2>
+<p>径向基函数核(Radial basis function Kernel,RBF
+Kernel)式子是这样的：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819232632.png"
+alt="20220819232632" /></p>
+<p>这个可以衡量 x,z 的相似度，如果 x,z 是一样的话，Kernel的值就是
+1；如果 x,z 完全不一样的话，值就是
+0。也可以写成两个高纬度的向量做内积。在这个式子中 <span
+class="math inline">\(\phi(*)\)</span>
+的结果可以是无穷多维的，但是我们无法做到无穷多维向量的内积。可以看成是两个无穷长的向量做内积，最后得到的结果就是这个K(x,z)的结果。</p>
+<h2 id="sigmoid-kernel">Sigmoid Kernel</h2>
+<p>K(x,z)=tanh(x⋅z)</p>
+<p>当我们把训练数据 x 代入 f 中的时候，其实是计算 x
+和训练数据集中所有数据的 <span class="math inline">\(K(x^n,x)\)</span>
+然后再乘上 <span class="math inline">\(\alpha_n\)</span> 如果用Sigmoid
+Kernel 的时候就是</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819233200.png"
+alt="20220819233200" /></p>
+<p>如果我们用Sigmoid
+Kernel，这个f(x)可以想象成只有一个隐藏层的神经网络。x会和所有的 <span
+class="math inline">\(x^n\)</span>
+做内积，就好像是有个神经元它的权值就是某笔数据 <span
+class="math inline">\(x^n\)</span> ,它的输入就是向量x。把 <span
+class="math inline">\(x^1\)</span> 当做第一个神经元的权值， <span
+class="math inline">\(x^2\)</span> 作为第二个神经元的权值</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819233422.png"
+alt="20220819233422" /></p>
+<p>然后把它们都通过双曲正切(tanhx ,hyperbolic tangent)
+得到输出后，再乘上<span
+class="math inline">\(\alpha\)</span>，最后累加起来就得到f(x)的结果。</p>
+<p><span class="math display">\[
+\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+\]</span></p>
+<p>其实有了核技巧后，我们可以直接设计这个核函数，而不用考虑<span
+class="math inline">\(\phi(x),\phi(z)\)</span>长什么样子。</p>
+<p>什么时候可以这样呢，假设你的输入数据 x
+是结构数据，比如序列，此时很难表示成 <span
+class="math inline">\(\phi(x)\)</span>。</p>
+<p>我们可以直接定它的核函数，我们知道核函数其实就是投影到高维的内积，所以核函数是个类似相似度(similarity)的东西。</p>
+<p>所以可以定一个描述x , z
+x,zx,z相似度的函数，哪怕它们是结构数据，只要知道怎么计算两个序列之间的相似度，就可以把这个相似度当成核函数来使用。</p>
+<p>不是所有的相似度函数都可以，有个Mercer’s
+理论可以告诉你哪些函数可以。这个理论可以检查你定出来的相似度函数背后有没有两个向量做内积。</p>
+<p>比如在语音上，假设你要分类的对象是声音讯号(Audio segment)。</p>
+<p>每个声音讯号可以用向量序列(vector
+sequnce)来描述它。每段声音讯号的长度不一样，所以向量序列的长度也不一样。</p>
+<p>假设现在给你一段声音讯号，要你判断说话者的情绪(高兴、生气…)。</p>
+<p>因为声音讯号的长度不一，所以无法直接用一个向量来描述，这时可以直接定相似函数(核函数K(x,z))。</p>
+<h2 id="svm和深度学习">SVM和深度学习</h2>
+<p>我们知道深度学习的前几层可以看成适特征转换，最后一层可以看成是线性分类器。其实SVM做的事情也是很类似的。SVM先用一个核函数把特征转换到高维空间上面，然后就可以用线性分类器进行分类。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819234350.png"
+alt="20220819234350" /></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习-概率生成模型</title>
+    <url>/2022/925661245.html</url>
+    <content><![CDATA[<h2 id="理论基础">理论基础</h2>
+<p>概率生成模型，是概率统计和机器学习中的一类重要模型，指一系列用于随机生成可观测数据的模型。假设有两类数据，每一类都有若干个样本；概率生成模型认为每一类数据都服从某一种分布，如高斯分布；从两类训练数据中得到两个高斯分布的密度函数，具体的是获得均值和方差两个参数；测试样本输入到其中一个高斯分布函数，得到的概率值若大于0.5，则说明该样本属于该类，否则属于另一类。</p>
+<p>生成模型可以和贝叶斯概率公式进行结合，用于分类问题。原始贝叶斯概率公式为：</p>
+<p><span class="math display">\[
+P(A|B)=\frac{P(B|A)P(A)}{P(B)} \tag{1}
+\]</span></p>
+<p>对于一个<span
+class="math inline">\(2\times2\)</span>的分类则有下图所述的贝叶斯分类</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-梯度下降的优化/20220817235221.png"
+alt="20220817235221" /></p>
+<p>在上图中，训练数据中有两个类别；每个类别下有5个样本，我们想要知道新的测试样本<span
+class="math inline">\(x\)</span>属于<span
+class="math inline">\(C1\)</span>的可能性。根据贝叶斯概率公式可以得到上图片所示的概率公式。其中，<span
+class="math inline">\(P(C1)\)</span>和<span
+class="math inline">\(P(C2)\)</span>表示在训练数据中，随机采样得到<span
+class="math inline">\(C1\)</span>或者C2的概率，即两个类别在训练数据中所占的比重。分母项<span
+class="math inline">\(P(x)\)</span>表示生成数据x的概率，此处可以由生成模型计算得到；</p>
+<p><span class="math display">\[
+P(x) = P(x|C1)P(C1) + P(x|C2)P(C2)
+\]</span></p>
+<p>因为有两个类别，每个类别下的数据具有不同的规律，服从不同的分布，都有可能生成数据<span
+class="math inline">\(x\)</span>，所以相加得到生成<span
+class="math inline">\(x\)</span>的概率。<span
+class="math inline">\(P(C1)\)</span>和<span
+class="math inline">\(P(C2)\)</span>可以由训练数据中的统计结果计算得到。</p>
+<p>接下来是计算<span class="math inline">\(P(x|C1)\)</span>和<span
+class="math inline">\(P(x|C2)\)</span>，我们一般是采用最大似然估计来计算。</p>
+<p>给定一个概率分布D，假定其概率密度函数（连续分布）或概率聚集函数（离散分布）为<span
+class="math inline">\(f_D\)</span>，以及一个分布参数<span
+class="math inline">\(θ\)</span>，我们可以从这个分布中抽出一个具有n个值的采样<span
+class="math inline">\(X_1,X_2,...,X_n\)</span>，通过利用<span
+class="math inline">\(f_D\)</span>，我们就能计算出其概率：</p>
+<p><span class="math display">\[
+P=(x_1,x_2,...,x_n)=f_D(x_1,x_2,...,x_n|\theta)
+\]</span></p>
+<p>但是，我们可能不知道θ的值，尽管我们知道这些采样数据来自于分布D。那么我们如何才能估计出θ呢？一个自然的想法是从这个分布中抽出一个具有n个值的采样<span
+class="math inline">\(X_1,X_2,...,X_n\)</span>，然后用这些采样数据来估计θ。
+要在数学上实现最大似然估计法，我们首先要定义可能性：</p>
+<p><span class="math display">\[
+lik(\theta)=f_D(x_1,x_2,...,x_n|\theta)
+\]</span></p>
+<p>并且在<span
+class="math inline">\(θ\)</span>的所有取值上，使这个函数最大化。这个使可能性最大的值即被称为θ的最大似然估计。</p>
+<h2 id="实例">实例</h2>
+<p>在此进行一个宝可梦类别的分类工作：我们使用两个类别的宝可梦构成训练数据，分别是水系（Water）和正常系（Normal），数据构成如下：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001409.png"
+alt="20220818001409" /></p>
+<p>根据贝叶斯概率公式，计算P(x|C1)和P(x|C2)。分析每个类别下的数据分布规律，计算新的测试数据x分别由每个类别的数据模型生成的概率。</p>
+<p>每个宝可梦，有两个特征属性 Defence 和 SP
+Defence，假设数据的分布符合高斯分布。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001903.png"
+alt="20220818001903" /></p>
+<p>接着由极大似然估计法，计算得到高斯分布的参数，即均值和标准差。</p>
+<ul>
+<li>均值表征的是各维变量的中心</li>
+<li>协方差矩阵的对角线上的两个元素，决定了整个高斯曲面在某一维度上的“跨度”，方差越大，“跨度”越大</li>
+<li>协方差矩阵的斜对角线上面的两个元素，表征的是各维变量之间的相关性，其数值大于零说明x与y呈正相关，其值越大，正相关程度越大，小于零则是负相关，否则则是不相关</li>
+</ul>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002328.png"
+alt="20220818002328" /></p>
+<p>接着，使用贝叶斯概率公式进行分类</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002949.png"
+alt="20220818002949" /></p>
+<p>测试数据上的准确率为47%，效果很差。使用更多特征之后，准确率为54%</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003049.png"
+alt="20220818003049" /></p>
+<p>那么则需要对模型进行调整，也就是调整高斯分布的均值和标准差</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003814.png"
+alt="20220818003814" /></p>
+<p>这里使水系宝可梦和普通系宝可梦使用一个标准差矩阵，计算方式为其二者加权平均，使其准确率得到了一定的提升。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004759.png"
+alt="20220818004759" /></p>
+<h2 id="总结">总结</h2>
+<p>概率生成模型进行分类问题的三个步骤如下：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004913.png"
+alt="20220818004913" /></p>
+<h2 id="后续">后续</h2>
+<p>之前我们有贝叶斯的公式，那么能够将其进行简化呢？</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005111.png"
+alt="20220818005111" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005153.png"
+alt="20220818005153" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005212.png"
+alt="20220818005212" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005227.png"
+alt="20220818005227" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005307.png"
+alt="20220818005307" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005609.png"
+alt="20220818005609" /></p>
+<p>经过最终的化简计算可以知道，概率生成模型的本质是寻找参数w和b。如果我们直接进行参数w和b的求解，是不是就可以简化前面那么复杂的计算过程呢？那么请看下一篇博客吧。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习-逻辑回归</title>
+    <url>/2022/2694928426.html</url>
+    <content><![CDATA[<p>接着上篇博客继续，我们发现，概率生成模型最终推导函数，其本质还是寻找参数w和b，所以可以设置一个函数，直接来寻找最优的w和b</p>
+<p><span class="math display">\[
+f_{w,b}(x)=P_{w,b}(C_1|x)=\sigma(z)\\
+\sigma(z)=\frac{1}{1+exp(-z)}\\
+z = w \cdot x+b
+\]</span></p>
+<p>相较于线性回归，逻辑回归做的事情便是将 wx+b 放入 sigmoid
+函数中，使其输出一直处于0~1之间。</p>
+<p>在我们确定了函数之后，便是应该再定义一个损失函数。 <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818202556.png"
+alt="20220818202556" /> 假设有一组训练数据，其数据大小为
+N，而且分别有自己的类别标签C。给定一组 w 和
+b，就可以计算这组w，b下产生上图N个训练数据的概率，<span
+class="math inline">\(f_{w,b}(x^3)\)</span>表示 <span
+class="math inline">\(x^3\)</span>
+属于C1的概率，但是其真实分类为C2，所以要用 <span
+class="math inline">\(1-f_{w,b}(x^3)\)</span>。</p>
+<p><span
+class="math inline">\(L(w,b)L(w,b)\)</span>取得的数值最大的时候，即取得最好的w和b，<span
+class="math inline">\(w^∗,b^∗ = argmax_{w,b}L(w,b)\)</span></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818204159.png"
+alt="20220818204159" /></p>
+<p>在此我们可以做一个变换，对 <span
+class="math inline">\(L(w,b)\)</span>取对数不影响其单调性，然后再加上符号，单调性与之前的相反，那么就是求
+<span class="math inline">\(-lnL(w,b)\)</span> 的最小值。对于 <span
+class="math inline">\(-lnL(w,b)\)</span>，我们可以将其写为 <span
+class="math display">\[
+-lnL(w,b) \\
+= -lnf_{w,b}(x^1)\\
+=-[\hat yln_{w,b}f(x^1)+(1-\hat y)ln(1-f_{w,b}(x^1))]
+\]</span></p>
+<p>其实很好理解，当 <span class="math inline">\(\hat y\)</span> 为 1
+的时候 <span class="math display">\[
+lnf_{w,b}(x)=[1 \cdot ln_{w,b}f(x)+(1-1) \cdot
+ln(1-f_{w,b}(x))]=lnf_{w,b}(x)
+\]</span> 当 <span class="math inline">\(\hat y\)</span>为 0 的时候
+<span class="math display">\[ln(1-f_{w,b}(x))=[0 \cdot
+ln_{w,b}f(x)+(1-0) \cdot ln(1-f_{w,b}(x))]=ln(1-f_{w,b}(x))
+\]</span></p>
+<p>所以便是有了下图的转化</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818211509.png"
+alt="20220818211509" /></p>
+<p>即两个伯努利分布的交叉熵，假设有两个分布 p 和
+q，这两个分布的交叉熵就是H(p,q)，交叉熵代表的含义是这两个分布有多接近，如果两个分布是一模一样的话，那计算出的交叉熵就是0，也就是说，当交叉熵为零的时候，说明我们的函数完全符合实际的分布。
+如果把function的输出和target都看作是两个伯努利分布，所做的事情就是希望这两个分布越接近越好，交叉熵最小，Loss就最小。</p>
+<p>对找最好的function，就是最小化−lnL(w,b)，用梯度下降方法即可。</p>
+<ul>
+<li>计算算出<span class="math inline">\(lnf_w,_b(x^n)\)</span>对<span
+class="math inline">\(w_i​\)</span>​的偏微分</li>
+<li><span class="math inline">\(​f_w,_b(x)\)</span>​可以用 <span
+class="math inline">\(\sigma{(z)}\)</span>​表示，而z可以用 ​<span
+class="math inline">\(w_i\)</span> ​和 $b
+$表示，所以可以利用链式法则展开</li>
+<li>计算 <span class="math inline">\(​ln(1-f_{w,_b}(x^n))\)</span> 对
+<span class="math inline">\(​w_i\)</span>​的偏微分</li>
+<li>继续使用链式法则进行计算</li>
+</ul>
+<p><span
+class="math inline">\((lnx)^′=\frac{1}{x}\)</span>，sigmoid函数求导：<span
+class="math inline">\(\sigma(x)^′=\sigma(x)⋅(1−\sigma(x))\)</span></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818213456.png"
+alt="20220818213456" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818213521.png"
+alt="20220818213521" /></p>
+<p>下图则为最终的结果：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818213551.png"
+alt="20220818213551" /></p>
+<p>得到了梯度之后，便是可以再度使用梯度下降进行 <span
+class="math inline">\(w_i\)</span> 的更新。对于 Loss
+函数的选择，我们使用交叉熵作为其损失。</p>
+<p>上面说的是二分类问题，对于多分类应该如何解决呢？</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-逻辑回归/20220818215308.png"
+alt="20220818215308" /></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂聊1</title>
+    <url>/2021/1510919766.html</url>
+    <content><![CDATA[<p>七月三十一日，这个月结束了大三学年的学习，开始较为枯燥的考研生活，到了月底也是应该做一个小小的总结了，不然这个月也又是要浑浑噩噩地过去了。</p>
 <span id="more"></span>
-<p>这两年，天下并不太平，工薪阶层声讨“人民富豪”之类的呼声越来越高，<code>其势如暴风骤雨，迅猛异常，无论什么大的力量都将压抑不住。他们将冲决一切束缚他们的罗网，朝着解放生产力的路上迅跑。一切帝国主义、军阀、贪官污吏、土豪劣绅，都将被他们葬入坟墓。</code>很大一部分原因出在某些人屁股背离了无产阶级的穷人，凡是反抗最力、乱子闹得最大的地方，都是那些“人民富豪”为恶最甚的地方。农民、工人的眼睛，全然没有错的。谁个劣，谁个不劣，谁个最甚，谁个稍次，谁个惩办要严，谁个处罚从轻，农民、工人都有极明白的计算，罚不当罪的极少。</p>
-<p>没有调查就没有发言权，这一点也是很重要的一件事情，尤其是在目前的互联网浪潮中。大多数人上网发表观点其实是所谓的情绪的宣泄，<code>看到一点表面，一个枝节，就指手画脚地说这也不对，那也错误</code>，而非通过调查查明某些事情，得到一手真实有效的证据，然后经过深思熟虑的分析，得到某些结论，这显然是不对的。离开实际调查就要产生唯心的阶级估量和唯心的工作指导，
-那么，它的结果，不是机会主义，便是盲动主义。</p>
-<p>关心群众的生活问题，我觉得这一点，现在做的十分好，我是国家级贫困县出身的人，我能看到的是当地的政府工作人员对于当地的很多事情都是十分负责、尽心的。去年是扶贫大年，好多乡政府都想办法带动当地的村民去创业实现长久致富，这都是让当地人感到很开心的事情。前些日子家里发了大水，同志们都是和群众打成一片齐心抗洪的，没有一个人说不理会群众之类的，一个都没有。</p>
-<p>关于毛对战争的理解，除了战争本身外，我最敬佩的便是其中对未来的指导：<code>人类社会进步到消灭了阶级，消灭了国家，到了那时，什么战争也没有了，反革命战争没有了，革命战争也没有了，非正义战争没有了，正义战争也没有了，这就是人类的永久和平的时代。我们研究革命战争的规律，出发于我们要求消灭一切战争的志愿，这是区别我们共产党人和一切剥削阶级的界线。</code>这个便是我们无产阶级要为之奋斗一生的目标。</p>
+<h1 id="考研复习">考研复习</h1>
+<p>先总结一下考研复习进度吧，在七月中把网课过了一遍，是华中科技大学杨广笑老师的<a
+href="https://www.bilibili.com/video/BV1Ss411i7Mm">生物化学与分子生物学</a>，网课体验还是挺不错的，但是看完之后就觉得这门课要背诵要记忆的内容还是蛮多的，也有好多是自己没有掌握的，也是为过去自己没有好好学习这门科目感到羞愧；另外一个课是北京大学魏丽萍老师的<a
+href="https://www.bilibili.com/video/BV13t411G7oh">生物信息学</a>，感觉还是蛮简单的，好多东西记忆都还是十分清晰，甚至觉得要是选择生物信息学进行考试的话甚至不用怎么复习。但是又觉得自己要是没有良好的生物化学基础的话怕是对日后的科研道路会有一些影响，于是呢，最后还是选择了生物化学与分子生物学进行复习，本来计划这个月先把第一本书看完来着，但是到目前吧，现在是晚上八点，还有八十页没看，待会儿看一下，应该能在明天也就是下个月开启新的篇章。</p>
+<p>发现生物化学（第三版）这本书有一些有意思的地方，看的时候可以笑起来的那种。</p>
+<blockquote>
+<p>淋病奈瑟球菌（Nsisseria
+gonorrhoeae）只感染人的生殖器和口腔黏膜，对人的其他部位和其他不起作用。😅</p>
+</blockquote>
+<p>怪起来了。</p>
+<h1 id="代码之路">代码之路</h1>
+<p>虽然说是在复习期间，也没有落下编程的功底，力扣的每日写题也是没有落下，成功拿到了七月的打卡牌子。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E8%80%83%E7%A0%94%E6%97%A5%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/image-20210731200525059.png"
+alt="image-20210731200525059" /></p>
+<p>关于开源项目的开发，倒是开启的一个小项目 <a
+href="https://github.com/zEpoch/webStart">zEpoch/webStart
+(github.com)</a>，算是一个前端的入门项目吧，希望能够在日后获得一个 Star
+之类的吧。</p>
+<p>关于这个博客，配置这个博客倒是配置了挺多的时间，也是做了很多的调试，目前来说速度和舒适度还是蛮比较不错的。</p>
 ]]></content>
       <tags>
-        <tag>毛选</tag>
+        <tag>生活</tag>
         <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂聊2</title>
+    <url>/2021/1220239800.html</url>
+    <content><![CDATA[<p>早上八点，起床，下了床墨迹了一会儿，醒醒了脑子，再一看时间，已经八点四十了，呕吼，穿上袜子穿上鞋，刷个牙，洗把脸，再抹一曾润肤乳，完事。</p>
+<p>九点，下楼去食堂吃饭，磨磨唧唧到食堂又是五分钟后了，所幸还有饭，一个鸡蛋一个大饼一杯豆浆，肉蛋奶都有了，吃完饭回到寝室就是九点四十了。</p>
+<span id="more"></span>
+<p>为什么今天没有直接去图书馆呢？因为今天有个面试，什么面试呢？腾讯的一个面试，为什么会有这么一个面试呢？因为有个老哥让我扫了个二维码，我扫完二维码，填了姓名学习院校后居然就成功投递了简历，然后笔试都没有就收到了鹅厂的面试邀请，我也挺懵的，其实也还好，可以面试一下看看自己有多菜。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811225211599.png"
+alt="image-20210811225211599" /></p>
+<p>九点四十，到了宿舍，打开力扣，看了一下水友讲的鹅厂大概会面试的题，又做了一遍，再打开
+B 站，又看了一会儿 <a href="https://space.bilibili.com/415434293">Pink
+老师</a>的前端课程，磨叽磨叽就到了十一点。</p>
+<p>十一点，开始面试，十一点刚到就打开了面试窗口，但是 hr
+没有来，于是就等了 23
+秒，她终于来了，而且还是个声音十分温柔的姐姐，希望是个姐姐吧，不然我的心态会出问题的。接下来半个小时，我和这位声音十分甜美的姐姐度过了愉快的一段时间（是的）。</p>
+<p>十一点半，面试结束去吃饭。</p>
+<p>十二点，吃完了饭悠悠哉哉去图书馆。</p>
+<p>十二点二十三，来到了图书馆找了个位子坐下，去接了杯水，打开了手机，点开了打麻将。我当时心里想的是，我赢一局就去学习，然后打到了两点二十七，一局没赢，我心态炸裂。</p>
+<p>两点二十七，我看了一眼时间，距离图书馆关门只有两个半小时了，也该学习了。于是乎，打开课本，怒学两个半小时，去吃饭。</p>
+<p>五点二十，来到食堂吃饭。</p>
+<p>五点四十五，吃完饭回到了宿舍，打开电脑，打开
+wegame，打开英雄联盟。下了一局棋，没赢，不开心两局，那就排位吧，排位都是用的提莫，很舒服，七秒一个蘑菇，满地图都是蘑菇，人在上路补着兵就拿了
+ad 的人头，很开心，两局都赢了，很开心，看了一眼时间，七点四十七。</p>
+<p>七点四十七，去活动室看书。</p>
+<p>九点半，出门健身，锻炼身体，今晚练了腹部和背部，感觉还挺舒服。</p>
+<p>十点三十三，回到寝室，看了一眼面试结果，挂了。为什么挂了，因为我投的前端，刚刚学了两天的前端，感觉还行，主要是面试的姐姐说话真的是好温柔，就像是恋爱的感觉，虽然我单身了二十年，准备洗洗睡觉。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811230426475.png"
+alt="image-20210811230426475" /></p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+        <tag>日记</tag>
+        <tag>考研日记</tag>
       </tags>
   </entry>
   <entry>
@@ -7073,6 +7056,23 @@ ans_y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </categories>
       <tags>
         <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂聊3</title>
+    <url>/2021/4026992349.html</url>
+    <content><![CDATA[<p>本来呢，暑假的计划是要读习的，奈何之前的毛选一还没读完，便是摸摸索索地读了毛选一，但也读的并不是很多，最重要地实践论和矛盾论倒是还没有看。</p>
+<p>这毛选读起来是真的有意思，很多东西，修修改改，放到现在，依旧是可以用的，对于中国社会各阶层地分析，将近一百年过去了，中国的阶层中，也就是文中的“地主阶级和买办阶级”换了一种形式存在了下来，有人称其为“人民富豪”之类的。</p>
+<span id="more"></span>
+<p>这两年，天下并不太平，工薪阶层声讨“人民富豪”之类的呼声越来越高，<code>其势如暴风骤雨，迅猛异常，无论什么大的力量都将压抑不住。他们将冲决一切束缚他们的罗网，朝着解放生产力的路上迅跑。一切帝国主义、军阀、贪官污吏、土豪劣绅，都将被他们葬入坟墓。</code>很大一部分原因出在某些人屁股背离了无产阶级的穷人，凡是反抗最力、乱子闹得最大的地方，都是那些“人民富豪”为恶最甚的地方。农民、工人的眼睛，全然没有错的。谁个劣，谁个不劣，谁个最甚，谁个稍次，谁个惩办要严，谁个处罚从轻，农民、工人都有极明白的计算，罚不当罪的极少。</p>
+<p>没有调查就没有发言权，这一点也是很重要的一件事情，尤其是在目前的互联网浪潮中。大多数人上网发表观点其实是所谓的情绪的宣泄，<code>看到一点表面，一个枝节，就指手画脚地说这也不对，那也错误</code>，而非通过调查查明某些事情，得到一手真实有效的证据，然后经过深思熟虑的分析，得到某些结论，这显然是不对的。离开实际调查就要产生唯心的阶级估量和唯心的工作指导，
+那么，它的结果，不是机会主义，便是盲动主义。</p>
+<p>关心群众的生活问题，我觉得这一点，现在做的十分好，我是国家级贫困县出身的人，我能看到的是当地的政府工作人员对于当地的很多事情都是十分负责、尽心的。去年是扶贫大年，好多乡政府都想办法带动当地的村民去创业实现长久致富，这都是让当地人感到很开心的事情。前些日子家里发了大水，同志们都是和群众打成一片齐心抗洪的，没有一个人说不理会群众之类的，一个都没有。</p>
+<p>关于毛对战争的理解，除了战争本身外，我最敬佩的便是其中对未来的指导：<code>人类社会进步到消灭了阶级，消灭了国家，到了那时，什么战争也没有了，反革命战争没有了，革命战争也没有了，非正义战争没有了，正义战争也没有了，这就是人类的永久和平的时代。我们研究革命战争的规律，出发于我们要求消灭一切战争的志愿，这是区别我们共产党人和一切剥削阶级的界线。</code>这个便是我们无产阶级要为之奋斗一生的目标。</p>
+]]></content>
+      <tags>
+        <tag>毛选</tag>
+        <tag>日记</tag>
       </tags>
   </entry>
   <entry>
@@ -7402,90 +7402,6 @@ alt="20230307173848" /></p>
       </tags>
   </entry>
   <entry>
-    <title>杂聊6</title>
-    <url>/2022/1781028612.html</url>
-    <content><![CDATA[<p>我没有那么专注了，是的。</p>
-<p>最近处于一种不太专注的状态，又或许我已经处于这个状态很长时间了，但是现在才发现这件事情，感觉给自己的生活造成了有好大一部分的困扰，还是记录一下吧。</p>
-<p>大概已经是一年多了，我可能处于同一时间做多件事情，我尤其清晰的记得，去年年底的时候，那时候还是台式机，我可以开着terminal炼丹，然后开着LOL，然后旁边的手机还放着柯南，键盘上面半盖着一本小说，大概是处于一心四用。当然这样子的事情还是有很多的，只是最近觉得，这样子效率很低，而且我在事后感觉不到满足感了，这个是给我很大打击的地方。</p>
-<p>我尤其清晰的记得，上初中的时候，我悄悄的溜出家门，然后小跑跑到距离家有一段距离的黑网吧，然后开一台机器，开机就选择英雄联盟，丝毫没有其他选择，我很清晰的记得我的卡特琳娜开启死亡莲花拿到五杀推平对方基地之后，我长舒口气，然后习惯摇了摇脖子，才发现背后有人，转身过去才发现是我爸在那儿站着。事后问网吧老板，老板说我爸已经站了十多分钟了，但是我全然没有知觉，我的注意力十分集中，集中于那唯一的一点英雄联盟。</p>
-<p>后来到了高中的做题家，我也觉得自己是十分专注的，尤其是数据物理和英语，全神贯注，老师从我身边走过并且把后一排谈恋爱的同学抓走我也没有感觉，下课了才听同桌说后排上课时候手拉手被德育室老师带走请家长了，又或是我跑步踢球的时候，我感受到的是一种全神贯注的精神。</p>
-<p>我觉得大一的时候我还好，因为那个时候我的生活相当的单调，还没有那么多成年人的焦虑，顶多是隔壁ACM群看到大佬很猛拿了牌子但是我居然题目都看不懂的那种焦虑，但是相对还好。</p>
-<p>大二的时候也还行，但是我觉得毛病就是从那个时候开始的，那时候我开始分心了，在同学们都在好好学习生物化学和分子生物学的时候，我一个劲儿的在搞机器学习深度学习之类的，然后后来又开始做开发，前端后端为主。然后后来真的去了校队做开发，我觉得那个时候应该是一个开始吧。</p>
-<p>大概的一个表现就是，手头写着写着代码，然后突然拿起手机刷一会儿群聊里面的信息，看看各位大佬吹牛逼，唠闲嗑，逛逛知乎，刷刷B站，然后被队长看到，然后被骂一顿，然后把手机放下继续写码，虽然后来开发的软件拿了金奖还拿了最佳软件提名，但是后来我似乎变得更加不再专注了。</p>
-<p>大概后来就是考研了，考研的时候也不专注，本来时间也不多，错过了保研，然后觉得自己考研也是考生物相关的，觉得自己并不是那么喜欢生物，随机开始去各个厂子面试，也拿到了很不错的offer，多的三四十万，少的一二十万，最终真的拿到offer之后，才回去考研了。</p>
-<p>真正留给考研的时间也不到一个月，但是即便这样也是早上十点多去，然后中午回去睡个午觉到三四点，然后去图书馆看书到五六点，然后吃饭罢了，然后晚上再看到十点左右就回去了，当然，在图书馆也不完全是看书，也会打些手游，看看图书馆的美女，发现图书馆的美女确实很多，也确实看了挺长时间就是了，所以导致专业课考的十分烂，我甚至都没有把书给看完，虽然是很薄的一本书，但是确实没有看完，所幸凭借着自己的计算机相关的知识调剂去了遗传学读书。</p>
-<p>大概是上周吧，有那么一个时刻，我电脑挂着网课，iPad开着C++阅读，手机开着B站，键盘上放着《遗传学》，手里拿着手柄看着switch打塞尔达，网课没有听进去，C++特性没看进去，B站的乐子我也没有享受到，本来要复习的《遗传学》也是化成泡沫，更可气的是，手里塞尔达的神庙试炼也没有通过。我把心分拆成多个碎片，终于是一事无成。</p>
-<p>我觉得我的欲望太大了，或者又不是很大，只是我一和别人对比就会觉得自己什么也不会。有人炼丹还是研一刚刚开学就发了CNS，但是我的炼丹水平远远没有那么高；有人弹的一手好琴，我当年学的钢琴现在几乎全部忘记了；有人会跳舞，而且也是男孩子，而且跳的特别好，但是我不行，我也没有坚持；有的人很会打篮球，我也不会，想学，却觉得自己不会打然后再学也是耽误别人；羽毛球也没有室友打得好；游泳以前还很好，但是得了肺炎之后明显觉得体力下降，现在也只是游个半场；晚上想要跑步却又想到自己要增重，犹犹豫豫；每天给自己订了背单词的KPI，却总是不能早起然后拖到晚上。还有好多其他的事情，觉得自己真的是十分的废物。</p>
-<p>牢骚就发到现在，现在，开始看C++，然后背单词，然后看书，然后跑步，然后睡觉，就这样吧，再过一段时间我再记录些。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>杂聊</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>讲讲各个编程语言的特点</title>
-    <url>/2022/1075637985.html</url>
-    <content><![CDATA[<p>目前呢，市面上主流的编程语言有
-PHP、Java、Python、C、C++、JavaScript等，这些语言呢也是各有千秋，今天呢，就用简短的话语细数一下他们的特点。</p>
-<p>PHP：没有优点</p>
-<p>Java：库多，库多，库多</p>
-<p>Python：语法清楚，语法清楚，语法清楚</p>
-<p>C：能操纵底层，能细粒度优化性能</p>
-<p>C++：啥都有，啥都有，啥都有</p>
-<span id="more"></span>
-<p>汇编： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425165909.png"
-alt="20220425165909" /></p>
-<p>C语言： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425165936.png"
-alt="20220425165936" /></p>
-<p>Java： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425165949.png"
-alt="20220425165949" /></p>
-<p>C#： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170016.png"
-alt="20220425170016" /></p>
-<p>PHP： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170031.png"
-alt="20220425170031" /></p>
-<p>Python： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170044.png"
-alt="20220425170044" /></p>
-<p>Go： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170105.png"
-alt="20220425170105" /></p>
-<p>Haskell： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170119.png"
-alt="20220425170119" /></p>
-<p>Lisp： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170138.png"
-alt="20220425170138" /></p>
-<p>最后是 C++： <img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170152.png"
-alt="20220425170152" /></p>
-]]></content>
-      <tags>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>这个生化怎么这么多啊</title>
-    <url>/2021/887319650.html</url>
-    <content><![CDATA[<p>复习考研，第一门难啃的课就是生物化学，三本书，将近两千页的内容，全是字，淦，怎么背的会哦，当年就是生物化学没有学好，才落得现在没得保研，只能呆呆地考研，谁知道考研也需要学生物化学！淦，我心态炸裂。</p>
-<span id="more"></span>
-<p>但其实看看也还挺不错的，确实感觉到自己的脑袋里关于生物化学的好多东西都是并不是很清楚，虽然是做过很多的实验，但是好多实验的原理也是在重新开始看书后才真正了解。（对于我大学时期做过的实验，也许我真的了解的也就是操作系统，数据结构之类的了）但是到现在也才看到三百多页是真的心情很不好，确实感觉到自己对于生物这个需要花费很大功夫来背诵的科目感到不是很舒服。关键这东西也不是什么马原毛概之类的，我倒是觉得马原毛概之类的倒是挺有意思的，想起来了看一看，一看就是半本书，还停不下来，确实是因为其中包含了很多的解决问题的方法，很多的哲学的思考，很多的看了让人感到心情极其振奋的思想。</p>
-<p>昨晚失眠到了三点多，今天又是八点起的，中午居然还没睡，中午摸了一下脸颊下巴两侧又是张出了痘痘，懊恼，我怎么就这么运气不好哦，要是生物有写代码那么容易就好了。</p>
-<p>前路漫漫，读书作伴。</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-        <tag>生物化学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>表观遗传学期末</title>
     <url>/2022/2048236357.html</url>
     <content><![CDATA[<h2
@@ -7586,6 +7502,96 @@ cell HiC、CHIA-PET、In situ Hi-C、Capture-C</li>
       </tags>
   </entry>
   <entry>
+    <title>杂聊6</title>
+    <url>/2022/1781028612.html</url>
+    <content><![CDATA[<p>我没有那么专注了，是的。</p>
+<p>最近处于一种不太专注的状态，又或许我已经处于这个状态很长时间了，但是现在才发现这件事情，感觉给自己的生活造成了有好大一部分的困扰，还是记录一下吧。</p>
+<p>大概已经是一年多了，我可能处于同一时间做多件事情，我尤其清晰的记得，去年年底的时候，那时候还是台式机，我可以开着terminal炼丹，然后开着LOL，然后旁边的手机还放着柯南，键盘上面半盖着一本小说，大概是处于一心四用。当然这样子的事情还是有很多的，只是最近觉得，这样子效率很低，而且我在事后感觉不到满足感了，这个是给我很大打击的地方。</p>
+<p>我尤其清晰的记得，上初中的时候，我悄悄的溜出家门，然后小跑跑到距离家有一段距离的黑网吧，然后开一台机器，开机就选择英雄联盟，丝毫没有其他选择，我很清晰的记得我的卡特琳娜开启死亡莲花拿到五杀推平对方基地之后，我长舒口气，然后习惯摇了摇脖子，才发现背后有人，转身过去才发现是我爸在那儿站着。事后问网吧老板，老板说我爸已经站了十多分钟了，但是我全然没有知觉，我的注意力十分集中，集中于那唯一的一点英雄联盟。</p>
+<p>后来到了高中的做题家，我也觉得自己是十分专注的，尤其是数据物理和英语，全神贯注，老师从我身边走过并且把后一排谈恋爱的同学抓走我也没有感觉，下课了才听同桌说后排上课时候手拉手被德育室老师带走请家长了，又或是我跑步踢球的时候，我感受到的是一种全神贯注的精神。</p>
+<p>我觉得大一的时候我还好，因为那个时候我的生活相当的单调，还没有那么多成年人的焦虑，顶多是隔壁ACM群看到大佬很猛拿了牌子但是我居然题目都看不懂的那种焦虑，但是相对还好。</p>
+<p>大二的时候也还行，但是我觉得毛病就是从那个时候开始的，那时候我开始分心了，在同学们都在好好学习生物化学和分子生物学的时候，我一个劲儿的在搞机器学习深度学习之类的，然后后来又开始做开发，前端后端为主。然后后来真的去了校队做开发，我觉得那个时候应该是一个开始吧。</p>
+<p>大概的一个表现就是，手头写着写着代码，然后突然拿起手机刷一会儿群聊里面的信息，看看各位大佬吹牛逼，唠闲嗑，逛逛知乎，刷刷B站，然后被队长看到，然后被骂一顿，然后把手机放下继续写码，虽然后来开发的软件拿了金奖还拿了最佳软件提名，但是后来我似乎变得更加不再专注了。</p>
+<p>大概后来就是考研了，考研的时候也不专注，本来时间也不多，错过了保研，然后觉得自己考研也是考生物相关的，觉得自己并不是那么喜欢生物，随机开始去各个厂子面试，也拿到了很不错的offer，多的三四十万，少的一二十万，最终真的拿到offer之后，才回去考研了。</p>
+<p>真正留给考研的时间也不到一个月，但是即便这样也是早上十点多去，然后中午回去睡个午觉到三四点，然后去图书馆看书到五六点，然后吃饭罢了，然后晚上再看到十点左右就回去了，当然，在图书馆也不完全是看书，也会打些手游，看看图书馆的美女，发现图书馆的美女确实很多，也确实看了挺长时间就是了，所以导致专业课考的十分烂，我甚至都没有把书给看完，虽然是很薄的一本书，但是确实没有看完，所幸凭借着自己的计算机相关的知识调剂去了遗传学读书。</p>
+<p>大概是上周吧，有那么一个时刻，我电脑挂着网课，iPad开着C++阅读，手机开着B站，键盘上放着《遗传学》，手里拿着手柄看着switch打塞尔达，网课没有听进去，C++特性没看进去，B站的乐子我也没有享受到，本来要复习的《遗传学》也是化成泡沫，更可气的是，手里塞尔达的神庙试炼也没有通过。我把心分拆成多个碎片，终于是一事无成。</p>
+<p>我觉得我的欲望太大了，或者又不是很大，只是我一和别人对比就会觉得自己什么也不会。有人炼丹还是研一刚刚开学就发了CNS，但是我的炼丹水平远远没有那么高；有人弹的一手好琴，我当年学的钢琴现在几乎全部忘记了；有人会跳舞，而且也是男孩子，而且跳的特别好，但是我不行，我也没有坚持；有的人很会打篮球，我也不会，想学，却觉得自己不会打然后再学也是耽误别人；羽毛球也没有室友打得好；游泳以前还很好，但是得了肺炎之后明显觉得体力下降，现在也只是游个半场；晚上想要跑步却又想到自己要增重，犹犹豫豫；每天给自己订了背单词的KPI，却总是不能早起然后拖到晚上。还有好多其他的事情，觉得自己真的是十分的废物。</p>
+<p>牢骚就发到现在，现在，开始看C++，然后背单词，然后看书，然后跑步，然后睡觉，就这样吧，再过一段时间我再记录些。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>杂聊</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>讲讲各个编程语言的特点</title>
+    <url>/2022/1075637985.html</url>
+    <content><![CDATA[<p>目前呢，市面上主流的编程语言有
+PHP、Java、Python、C、C++、JavaScript等，这些语言呢也是各有千秋，今天呢，就用简短的话语细数一下他们的特点。</p>
+<p>PHP：没有优点</p>
+<p>Java：库多，库多，库多</p>
+<p>Python：语法清楚，语法清楚，语法清楚</p>
+<p>C：能操纵底层，能细粒度优化性能</p>
+<p>C++：啥都有，啥都有，啥都有</p>
+<span id="more"></span>
+<p>汇编： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425165909.png"
+alt="20220425165909" /></p>
+<p>C语言： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425165936.png"
+alt="20220425165936" /></p>
+<p>Java： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425165949.png"
+alt="20220425165949" /></p>
+<p>C#： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170016.png"
+alt="20220425170016" /></p>
+<p>PHP： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170031.png"
+alt="20220425170031" /></p>
+<p>Python： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170044.png"
+alt="20220425170044" /></p>
+<p>Go： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170105.png"
+alt="20220425170105" /></p>
+<p>Haskell： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170119.png"
+alt="20220425170119" /></p>
+<p>Lisp： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170138.png"
+alt="20220425170138" /></p>
+<p>最后是 C++： <img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/讲讲各个编程语言的特点/20220425170152.png"
+alt="20220425170152" /></p>
+]]></content>
+      <tags>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>身体是革命的本钱</title>
+    <url>/2022/3627254244.html</url>
+    <content><![CDATA[<p>最开始感到身体不适的时候，大概是在六月初，那时候觉得右下腹隐隐不适，但是并不疼痛，我一直以为是肝脏出了问题，随机买了护肝片，然后减少了熬夜。起初还是有一些效果，不适程度减少了很多，但是不到一周的时间又开始了，那是我正在做俯卧撑的时候，毕业的那段时间是每天一百个俯卧撑，那天俯卧撑的时候，突然觉得右胸猛的一痛，就像是要被撕裂了一般，随机停止了，然后上床休息。这便是已经六月中了。</p>
+<p>之后便是毕业典礼之类类的事情，这时候大概一直右胸下部都有一种异物感，还是觉得是肝脏的问题，于是去校医院做了肝胆检查，检查结果表示一切正常，所以觉得，是不是健身练的太多了，导致肌肉拉伸了？虽然那个部位肌肉确实没有怎么练到，但是确实就没有继续往下面检查。</p>
+<p>时间到了28号，毕业前往深圳，去华大实习，师兄给安排了食宿，然后自己去办理入职，入职需要入职体检，随机去了医院进行体检，血常规没有什么问题，检查心率的时候当时心率达到了116，医生说让做个心电图，这是上午的时候。下午体检结果出来，医生说我X光有问题，肺部有密集的阴影，需要做个CT进行深度检查，然后赶忙去做了CT，然后又去做了心电图，心电图倒是一切正常，还是往常的窦性心律，还有个右束支什么的东西，倒是青少年常见问题了。</p>
+<p>拿到CT结果已经是体检第二天的事情了，可以很清楚的看到我的肺部几乎四分之一都被感染了，医生问我痛不痛，我倒是没有觉得有痛感，只是觉得有异物感。也不知道这身体素质是好还是坏，说他好吧，他年纪轻轻染了肺炎，说他差吧，这么大的验证正常人早就疼晕过去了，他偏偏好端端的，要不是体检查出来了，估计这身体还能再挺一个月。</p>
+<p>医生说我情况已经很严重了，但是从CT来看确实也没有积液，当时便是建议我住院，可惜我深圳没有医保，还是回家好好治疗吧。出CT结果的那天下午定了回家的车票，第二天早上七点多到家了，然后回家吃了妈妈做的早饭，赶忙去了医院，直接找到了呼吸内科，医生一看我的CT结果哦，立即给我安排了住院，好运的事情是当时医院里面空闲床位还是蛮多的，于是住院相关的工作安排的还是比较容易的。</p>
+<p>接下来便是住院的生活了，开始的两天发烧不断，吃了退烧药后便是没有再发烧了，之后便是每日的抗生素输入，每天输液三次，早上九点钟一次输液，下午四点一次，晚上十二点一次，三次输液，使得抗生素在我身体里面一直流动着，住院住了半个月，然后开了药，八月的时候身体仍然感觉不是那么好，去复查发现没有什么问题，后来又去做了CT，确实炎症已经完全消除了，但是粘膜之类的还没有完全修复，还会咳嗽有痰。</p>
+<p>最近又嗝气，又开了一些脾胃的中药，大概又要喝药到开学了。</p>
+<p>这段时间真的好难受啊，什么东西都学不进去，不可避免的发烧，感到身体急躁，虽然也是把R语言过了一遍，然后又把英语捡了回来，也算是逐渐步入正轨了吧，希望之后不要再有疾病了，身体真的是十分影响我的生活工作和学习。身体是革命的本钱啊。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>疾病</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>返校3周，国科大加重了我的精神内耗</title>
     <url>/2022/4038513713.html</url>
     <content><![CDATA[<p>今天北大出入校改成自动报备了，本科同学们在约饭，我说我在坐牢去不了。</p>
@@ -7601,6 +7607,20 @@ cell HiC、CHIA-PET、In situ Hi-C、Capture-C</li>
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>这个生化怎么这么多啊</title>
+    <url>/2021/887319650.html</url>
+    <content><![CDATA[<p>复习考研，第一门难啃的课就是生物化学，三本书，将近两千页的内容，全是字，淦，怎么背的会哦，当年就是生物化学没有学好，才落得现在没得保研，只能呆呆地考研，谁知道考研也需要学生物化学！淦，我心态炸裂。</p>
+<span id="more"></span>
+<p>但其实看看也还挺不错的，确实感觉到自己的脑袋里关于生物化学的好多东西都是并不是很清楚，虽然是做过很多的实验，但是好多实验的原理也是在重新开始看书后才真正了解。（对于我大学时期做过的实验，也许我真的了解的也就是操作系统，数据结构之类的了）但是到现在也才看到三百多页是真的心情很不好，确实感觉到自己对于生物这个需要花费很大功夫来背诵的科目感到不是很舒服。关键这东西也不是什么马原毛概之类的，我倒是觉得马原毛概之类的倒是挺有意思的，想起来了看一看，一看就是半本书，还停不下来，确实是因为其中包含了很多的解决问题的方法，很多的哲学的思考，很多的看了让人感到心情极其振奋的思想。</p>
+<p>昨晚失眠到了三点多，今天又是八点起的，中午居然还没睡，中午摸了一下脸颊下巴两侧又是张出了痘痘，懊恼，我怎么就这么运气不好哦，要是生物有写代码那么容易就好了。</p>
+<p>前路漫漫，读书作伴。</p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+        <tag>生物化学</tag>
       </tags>
   </entry>
   <entry>
@@ -7635,26 +7655,6 @@ even if 讨厌我。如果可以的话，希望你能回复。”我的第一反
       <tags>
         <tag>生活</tag>
         <tag>情感</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>身体是革命的本钱</title>
-    <url>/2022/3627254244.html</url>
-    <content><![CDATA[<p>最开始感到身体不适的时候，大概是在六月初，那时候觉得右下腹隐隐不适，但是并不疼痛，我一直以为是肝脏出了问题，随机买了护肝片，然后减少了熬夜。起初还是有一些效果，不适程度减少了很多，但是不到一周的时间又开始了，那是我正在做俯卧撑的时候，毕业的那段时间是每天一百个俯卧撑，那天俯卧撑的时候，突然觉得右胸猛的一痛，就像是要被撕裂了一般，随机停止了，然后上床休息。这便是已经六月中了。</p>
-<p>之后便是毕业典礼之类类的事情，这时候大概一直右胸下部都有一种异物感，还是觉得是肝脏的问题，于是去校医院做了肝胆检查，检查结果表示一切正常，所以觉得，是不是健身练的太多了，导致肌肉拉伸了？虽然那个部位肌肉确实没有怎么练到，但是确实就没有继续往下面检查。</p>
-<p>时间到了28号，毕业前往深圳，去华大实习，师兄给安排了食宿，然后自己去办理入职，入职需要入职体检，随机去了医院进行体检，血常规没有什么问题，检查心率的时候当时心率达到了116，医生说让做个心电图，这是上午的时候。下午体检结果出来，医生说我X光有问题，肺部有密集的阴影，需要做个CT进行深度检查，然后赶忙去做了CT，然后又去做了心电图，心电图倒是一切正常，还是往常的窦性心律，还有个右束支什么的东西，倒是青少年常见问题了。</p>
-<p>拿到CT结果已经是体检第二天的事情了，可以很清楚的看到我的肺部几乎四分之一都被感染了，医生问我痛不痛，我倒是没有觉得有痛感，只是觉得有异物感。也不知道这身体素质是好还是坏，说他好吧，他年纪轻轻染了肺炎，说他差吧，这么大的验证正常人早就疼晕过去了，他偏偏好端端的，要不是体检查出来了，估计这身体还能再挺一个月。</p>
-<p>医生说我情况已经很严重了，但是从CT来看确实也没有积液，当时便是建议我住院，可惜我深圳没有医保，还是回家好好治疗吧。出CT结果的那天下午定了回家的车票，第二天早上七点多到家了，然后回家吃了妈妈做的早饭，赶忙去了医院，直接找到了呼吸内科，医生一看我的CT结果哦，立即给我安排了住院，好运的事情是当时医院里面空闲床位还是蛮多的，于是住院相关的工作安排的还是比较容易的。</p>
-<p>接下来便是住院的生活了，开始的两天发烧不断，吃了退烧药后便是没有再发烧了，之后便是每日的抗生素输入，每天输液三次，早上九点钟一次输液，下午四点一次，晚上十二点一次，三次输液，使得抗生素在我身体里面一直流动着，住院住了半个月，然后开了药，八月的时候身体仍然感觉不是那么好，去复查发现没有什么问题，后来又去做了CT，确实炎症已经完全消除了，但是粘膜之类的还没有完全修复，还会咳嗽有痰。</p>
-<p>最近又嗝气，又开了一些脾胃的中药，大概又要喝药到开学了。</p>
-<p>这段时间真的好难受啊，什么东西都学不进去，不可避免的发烧，感到身体急躁，虽然也是把R语言过了一遍，然后又把英语捡了回来，也算是逐渐步入正轨了吧，希望之后不要再有疾病了，身体真的是十分影响我的生活工作和学习。身体是革命的本钱啊。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>疾病</tag>
       </tags>
   </entry>
   <entry>
