@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>zepoch&#39;s site</title>
+  <icon>https://www.zepoch.cc/icon.png</icon>
+  <subtitle>记录我的工作学习与生活</subtitle>
+  <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
+  
+  <link href="https://www.zepoch.cc/"/>
+  <updated>2023-03-27T12:42:51.072Z</updated>
+  <id>https://www.zepoch.cc/</id>
+  
+  <author>
+    <name>zepoch</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>作科学汇报时候如何不像孩子那样漫谈</title>
+    <link href="https://www.zepoch.cc/2023/2424108561.html"/>
+    <id>https://www.zepoch.cc/2023/2424108561.html</id>
+    <published>2023-03-27T08:35:55.000Z</published>
+    <updated>2023-03-27T12:42:51.072Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我有了一个新导师：我那两岁半的外孙。就像很多小孩子一样，也不管有没有人听懂，一直在不停的说话。
+我突然意识到，如果一个蹒跚学步的孩子这样使用语言，那么我作为一名教授别人做汇报的教练所关注的科学汇报本身可能过于详细和难以理解也就不足为奇了。在许多的科学汇报中，如同孩子一般的</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="汇报" scheme="https://www.zepoch.cc/tags/%E6%B1%87%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写一个小脚本</title>
+    <link href="https://www.zepoch.cc/2023/2262097032.html"/>
+    <id>https://www.zepoch.cc/2023/2262097032.html</id>
+    <published>2023-03-13T08:44:42.000Z</published>
+    <updated>2023-03-13T09:17:03.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近上课，有一门课有一部分网课，这部分网课其实已经学过了，但是老师还是让看，看就看呗，原以为直接挂着就行了，但是发现这个网站每隔几分钟就会弹出窗口，需要点击才能继续观看。可是呢，我还有别的任务，于是便写了一个小脚本，使得可以实现自动刷课。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://www.zepoch.cc/tags/JavaScript/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬行动物中由单细胞转录组揭示的大脑皮层，海马和皮层细胞类型的进化</title>
+    <link href="https://www.zepoch.cc/2023/1344738173.html"/>
+    <id>https://www.zepoch.cc/2023/1344738173.html</id>
+    <published>2023-03-07T12:15:33.000Z</published>
+    <updated>2023-03-07T13:40:33.468Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是读的第一篇的关于不同物种脑比较的文章，进行了较为精细的阅读，故作此记录。&lt;a
+href=&quot;https://pubmed.ncbi.nlm.nih.gov/29724907/&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="论文" scheme="https://www.zepoch.cc/tags/%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为何有人害怕chatgpt</title>
+    <link href="https://www.zepoch.cc/2023/2307022770.html"/>
+    <id>https://www.zepoch.cc/2023/2307022770.html</id>
+    <published>2023-03-07T08:14:11.000Z</published>
+    <updated>2023-03-07T08:16:01.859Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我觉得当我们在讨论所有的chatgpt的问题的时候，我们需要想清楚的是：我们要的到底是AI，是人工智能，还是一个不会反抗的、可以被无限剥削的机器奴隶。我认为这个才是所谓人工智能社会学的一个元问题。而要真正理解这个问题，我们就必须回到AI被生产出来的社会环境当中才能够找到答案</summary>
+        
+      
+    
+    
+    
+    <category term="杂聊" scheme="https://www.zepoch.cc/categories/%E6%9D%82%E8%81%8A/"/>
+    
+    
+    <category term="CHATGPT" scheme="https://www.zepoch.cc/tags/CHATGPT/"/>
+    
+    <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
+    
+    <category term="人工智能" scheme="https://www.zepoch.cc/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="AI" scheme="https://www.zepoch.cc/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pip install fa2</title>
+    <link href="https://www.zepoch.cc/2023/36631468.html"/>
+    <id>https://www.zepoch.cc/2023/36631468.html</id>
+    <published>2023-02-20T04:32:04.000Z</published>
+    <updated>2023-02-20T06:00:01.355Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在学习&lt;a
+href=&quot;https://github.com/scverse/scanpy&quot;&gt;scanpy&lt;/a&gt;，读&lt;a
+href=&quot;https://scanpy.readthedocs.io/en/stable/&quot;&gt;scanpy文档&lt;/a&gt;的&lt;a
+href=&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何写好你的科学故事</title>
+    <link href="https://www.zepoch.cc/2022/542253658.html"/>
+    <id>https://www.zepoch.cc/2022/542253658.html</id>
+    <published>2022-12-08T06:25:44.000Z</published>
+    <updated>2022-12-08T10:41:06.220Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="科研" scheme="https://www.zepoch.cc/tags/%E7%A7%91%E7%A0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>表观遗传学期末</title>
+    <link href="https://www.zepoch.cc/2022/2048236357.html"/>
+    <id>https://www.zepoch.cc/2022/2048236357.html</id>
+    <published>2022-11-24T13:44:43.000Z</published>
+    <updated>2022-11-30T05:58:29.989Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2
+id=&quot;表观遗传学概念分子机制及表观遗传经典现象&quot;&gt;1.表观遗传学概念，分子机制，及表观遗传经典现象&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;概念：&lt;/strong&gt;
+是指在DNA序列不发生改变的情况下，基因表达发生可遗传变异的现象&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分子机制</summary>
+        
+      
+    
+    
+    
+    <category term="表观遗传学" scheme="https://www.zepoch.cc/categories/%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0%E5%AD%A6/"/>
+    
+    
+    <category term="表观遗传学" scheme="https://www.zepoch.cc/tags/%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂聊6</title>
+    <link href="https://www.zepoch.cc/2022/1781028612.html"/>
+    <id>https://www.zepoch.cc/2022/1781028612.html</id>
+    <published>2022-11-05T11:43:09.000Z</published>
+    <updated>2022-11-05T11:50:03.314Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我没有那么专注了，是的。&lt;/p&gt;
+&lt;p&gt;最近处于一种不太专注的状态，又或许我已经处于这个状态很长时间了，但是现在才发现这件事情，感觉给自己的生活造成了有好大一部分的困扰，还是记录一下吧。&lt;/p&gt;
+&lt;p&gt;大概已经是一年多了，我可能处于同一时间做多件事情，我尤其清晰的记得，</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂聊5</title>
+    <link href="https://www.zepoch.cc/2022/4079027902.html"/>
+    <id>https://www.zepoch.cc/2022/4079027902.html</id>
+    <published>2022-10-22T07:34:32.000Z</published>
+    <updated>2022-10-22T08:38:34.161Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;又是一个月过去，十一仿佛就在昨日，然后劈里啪啦的，就跑走了三个星期，只能说感受不到自己做了什么，学到了什么，所以觉得落差感比较大。而且博客也是很久没写了，进行稍微长一点的叙述就会显得我的逻辑比较混乱。&lt;/p&gt;
+&lt;p&gt;今天应该是还有很多的ddl的，比如刚刚开辟的Python</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="碎碎念" scheme="https://www.zepoch.cc/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>返校3周，国科大加重了我的精神内耗</title>
+    <link href="https://www.zepoch.cc/2022/4038513713.html"/>
+    <id>https://www.zepoch.cc/2022/4038513713.html</id>
+    <published>2022-09-16T05:52:51.000Z</published>
+    <updated>2022-09-17T05:54:18.868Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天北大出入校改成自动报备了，本科同学们在约饭，我说我在坐牢去不了。&lt;/p&gt;
+&lt;p&gt;我想起上周中秋节，老师说出校只能当天去当天回，在外过夜需要自费隔离三天，可能是担心我半夜着凉。看了眼怀密线每晚6点的末班车，毅然鸽了同学。假期一结束，又说在外过夜不用隔离了。&lt;/p&gt;
+&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>那些直男优等生真的不配谈恋爱</title>
+    <link href="https://www.zepoch.cc/2022/2442764367.html"/>
+    <id>https://www.zepoch.cc/2022/2442764367.html</id>
+    <published>2022-09-11T06:09:43.000Z</published>
+    <updated>2022-09-17T06:14:29.815Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我和大多数男孩一样，没能遗传父亲的优点，老小子一辈子话太多，把我的话匣子也说尽。恋爱交友不同于读书，话少害得我狼狈不堪。14岁，学校里开始流传一些坏学生偷尝禁果的留言。我这种书呆子会皱起眉头却又忍不住偷听细节，但对我来说，恋爱挺远的。&lt;/p&gt;
+&lt;p&gt;我很在意我们的副班长，</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="情感" scheme="https://www.zepoch.cc/tags/%E6%83%85%E6%84%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习-支持向量机</title>
+    <link href="https://www.zepoch.cc/2022/917828124.html"/>
+    <id>https://www.zepoch.cc/2022/917828124.html</id>
+    <published>2022-08-19T11:51:29.000Z</published>
+    <updated>2022-08-19T16:53:53.019Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;支持向量机总体是由一个合页损失函数和一个核函数组成&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819195408.png&quot;
+alt=&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习-逻辑回归</title>
+    <link href="https://www.zepoch.cc/2022/2694928426.html"/>
+    <id>https://www.zepoch.cc/2022/2694928426.html</id>
+    <published>2022-08-18T12:05:48.000Z</published>
+    <updated>2022-08-18T13:56:19.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;接着上篇博客继续，我们发现，概率生成模型最终推导函数，其本质还是寻找参数w和b，所以可以设置一个函数，直接来寻找最优的w和b&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习-概率生成模型</title>
+    <link href="https://www.zepoch.cc/2022/925661245.html"/>
+    <id>https://www.zepoch.cc/2022/925661245.html</id>
+    <published>2022-08-17T15:17:14.000Z</published>
+    <updated>2022-08-17T16:58:14.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习-梯度下降的优化</title>
+    <link href="https://www.zepoch.cc/2022/3163358201.html"/>
+    <id>https://www.zepoch.cc/2022/3163358201.html</id>
+    <published>2022-08-16T05:13:32.000Z</published>
+    <updated>2022-08-16T10:00:00.300Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在回归中，我们需要解决下面的优化问题，即使得Loss函数尽可能的小 &lt;span
+class=&quot;math display&quot;&gt;\[
+\theta^*=arg\min L(\theta),L:loss</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="梯度下降" scheme="https://www.zepoch.cc/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习-回归</title>
+    <link href="https://www.zepoch.cc/2022/1247504268.html"/>
+    <id>https://www.zepoch.cc/2022/1247504268.html</id>
+    <published>2022-08-15T09:32:12.000Z</published>
+    <updated>2022-08-15T12:55:22.924Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;此次学习的课程为李宏毅机器学习，之前学过一遍吴恩达的课程，只可惜当时没记笔记，且近些时候没有写代码，逐渐疏忽了，故选择李宏毅再进行新一遍的学习，所谓温故而知新。&lt;/p&gt;
+&lt;p&gt;回归是我们通常会使用的机器学习中的一类，比如日常中的我们的身高预测，股票预测等等，这些都可以看作为粗略的回归。&lt;/p&gt;
+&lt;h2 id=&quot;举一个例子&quot;&gt;举一个例子&lt;/h2&gt;
+&lt;p&gt;小时候我们会玩一个叫赛尔号的游戏，游戏里有各种各样的精力，就好比我们捕捉到了一只雷伊，然后我们可以向雷伊投经验值，让他升级，这只雷伊会有一个攻击力，我们想要预测雷伊的各种各样的属性与其攻击力之间的关系。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>身体是革命的本钱</title>
+    <link href="https://www.zepoch.cc/2022/3627254244.html"/>
+    <id>https://www.zepoch.cc/2022/3627254244.html</id>
+    <published>2022-08-13T08:09:54.000Z</published>
+    <updated>2022-08-13T10:05:30.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最开始感到身体不适的时候，大概是在六月初，那时候觉得右下腹隐隐不适，但是并不疼痛，我一直以为是肝脏出了问题，随机买了护肝片，然后减少了熬夜。起初还是有一些效果，不适程度减少了很多，但是不到一周的时间又开始了，那是我正在做俯卧撑的时候，毕业的那段时间是每天一百个俯卧撑，那天俯</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="疾病" scheme="https://www.zepoch.cc/tags/%E7%96%BE%E7%97%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>再见小破电</title>
+    <link href="https://www.zepoch.cc/2022/3640031914.html"/>
+    <id>https://www.zepoch.cc/2022/3640031914.html</id>
+    <published>2022-06-15T13:17:15.000Z</published>
+    <updated>2022-06-15T13:21:21.596Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;感谢成电，我爱成电，这是我四年本科生涯的经历所能给予成电的评价。&lt;/p&gt;
+&lt;p&gt;我本身并不是很想分主题写，但是又害怕自己错过一些部分，为了让自己逻辑更为通顺，我将从下面这些方面叙说我的四年。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="毕业" scheme="https://www.zepoch.cc/tags/%E6%AF%95%E4%B8%9A/"/>
+    
+    <category term="成电" scheme="https://www.zepoch.cc/tags/%E6%88%90%E7%94%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>讲讲各个编程语言的特点</title>
+    <link href="https://www.zepoch.cc/2022/1075637985.html"/>
+    <id>https://www.zepoch.cc/2022/1075637985.html</id>
+    <published>2022-04-25T08:46:41.000Z</published>
+    <updated>2022-04-25T10:13:28.456Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;目前呢，市面上主流的编程语言有
+PHP、Java、Python、C、C++、JavaScript等，这些语言呢也是各有千秋，今天呢，就用简短的话语细数一下他们的特点。&lt;/p&gt;
+&lt;p&gt;PHP：没有优点&lt;/p&gt;
+&lt;p&gt;Java：库多，库多，库多&lt;/p&gt;
+&lt;p&gt;Python：语法清楚，语法清楚，语法清楚&lt;/p&gt;
+&lt;p&gt;C：能操纵底层，能细粒度优化性能&lt;/p&gt;
+&lt;p&gt;C++：啥都有，啥都有，啥都有&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="编程" scheme="https://www.zepoch.cc/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于 pandoc exited with code null 的解决方案</title>
+    <link href="https://www.zepoch.cc/2022/2213706848.html"/>
+    <id>https://www.zepoch.cc/2022/2213706848.html</id>
+    <published>2022-04-09T12:19:55.000Z</published>
+    <updated>2022-04-11T05:02:43.884Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天在写博客的时候，渲染的时候发生了一些问题，主要报错如下&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;ERROR&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;hexo-renderer-pandoc&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; pandoc exited with code null.&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;看了一些博主的方案，也进行了尝试，但是结果并不是很好，但是自己经过摸索还是解决了，便是来写一下相关的解决方案。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://www.zepoch.cc/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
