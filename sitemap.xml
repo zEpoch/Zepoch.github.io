@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.zepoch.cc/draft/%E9%82%A3%E4%BA%9B%E7%9B%B4%E7%94%B7%E7%9C%9F%E7%9A%84%E4%B8%8D%E9%85%8D%E8%B0%88%E6%81%8B%E7%88%B1.html</loc>
+    <loc>https://www.zepoch.cc/2022/2442764367.html</loc>
     
     <lastmod>2022-09-17</lastmod>
     
@@ -880,6 +880,13 @@
   
   <url>
     <loc>https://www.zepoch.cc/tags/%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6/</loc>
+    <lastmod>2023-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zepoch.cc/tags/%E6%83%85%E6%84%9F/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

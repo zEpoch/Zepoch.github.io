@@ -299,6 +299,34 @@ id=&quot;表观遗传学概念分子机制及表观遗传经典现象&quot;&gt;1
   </entry>
   
   <entry>
+    <title>那些直男优等生真的不配谈恋爱</title>
+    <link href="https://www.zepoch.cc/2022/2442764367.html"/>
+    <id>https://www.zepoch.cc/2022/2442764367.html</id>
+    <published>2022-09-11T06:09:43.000Z</published>
+    <updated>2022-09-17T06:14:29.815Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我和大多数男孩一样，没能遗传父亲的优点，老小子一辈子话太多，把我的话匣子也说尽。恋爱交友不同于读书，话少害得我狼狈不堪。14岁，学校里开始流传一些坏学生偷尝禁果的留言。我这种书呆子会皱起眉头却又忍不住偷听细节，但对我来说，恋爱挺远的。&lt;/p&gt;
+&lt;p&gt;我很在意我们的副班长，</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="情感" scheme="https://www.zepoch.cc/tags/%E6%83%85%E6%84%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习-支持向量机</title>
     <link href="https://www.zepoch.cc/2022/917828124.html"/>
     <id>https://www.zepoch.cc/2022/917828124.html</id>
@@ -525,33 +553,6 @@ PHP、Java、Python、C、C++、JavaScript等，这些语言呢也是各有千�
     
     
     <category term="Hexo" scheme="https://www.zepoch.cc/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tensorflow入门</title>
-    <link href="https://www.zepoch.cc/2022/3652601009.html"/>
-    <id>https://www.zepoch.cc/2022/3652601009.html</id>
-    <published>2022-04-09T04:16:40.000Z</published>
-    <updated>2022-04-09T08:35:58.073Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;首先是 tensorflow 及其相关包的安装，作者本人使用的是
-miniconda，安装命令如下&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;conda create -n &lt;span class=&quot;token string&quot;&gt;&#39;tensorflow&#39;&lt;/span&gt;
-activate tensorflow
-conda &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -c conda-forge tensorflow
-conda &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; scikit-learn
-conda &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -c conda-forge pandas
-conda &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -c conda-forge matplotlib
-conda &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -c conda-forge seaborn&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</summary>
-    
-    
-    
-    
-    <category term="tensorflow" scheme="https://www.zepoch.cc/tags/tensorflow/"/>
-    
-    <category term="Python" scheme="https://www.zepoch.cc/tags/Python/"/>
     
   </entry>
   
