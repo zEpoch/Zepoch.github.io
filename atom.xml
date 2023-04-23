@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-03-27T12:42:51.072Z</updated>
+  <updated>2023-04-23T08:05:43.895Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何将rds转为h5ad</title>
+    <link href="https://www.zepoch.cc/2023/3539500839.html"/>
+    <id>https://www.zepoch.cc/2023/3539500839.html</id>
+    <published>2023-04-23T02:10:03.000Z</published>
+    <updated>2023-04-23T08:05:43.895Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在进行单细胞或是空间组数据分析的时候，有的人喜欢使用 R
+语言进行分析，有的同学喜欢使用 Python
+进行分析，但是两个语言分析所使用的文件有所不同，R 语言通常保存的为 rds
+文件，Python 通常保存的为</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Seurat" scheme="https://www.zepoch.cc/tags/Seurat/"/>
+    
+    <category term="Scanpy" scheme="https://www.zepoch.cc/tags/Scanpy/"/>
+    
+  </entry>
   
   <entry>
     <title>作科学汇报时候如何不像孩子那样漫谈</title>
@@ -534,25 +564,6 @@ PHP、Java、Python、C、C++、JavaScript等，这些语言呢也是各有千�
     
     
     <category term="编程" scheme="https://www.zepoch.cc/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于 pandoc exited with code null 的解决方案</title>
-    <link href="https://www.zepoch.cc/2022/2213706848.html"/>
-    <id>https://www.zepoch.cc/2022/2213706848.html</id>
-    <published>2022-04-09T12:19:55.000Z</published>
-    <updated>2022-04-11T05:02:43.884Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;今天在写博客的时候，渲染的时候发生了一些问题，主要报错如下&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;ERROR&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;hexo-renderer-pandoc&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; pandoc exited with code null.&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;看了一些博主的方案，也进行了尝试，但是结果并不是很好，但是自己经过摸索还是解决了，便是来写一下相关的解决方案。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Hexo" scheme="https://www.zepoch.cc/tags/Hexo/"/>
     
   </entry>
   
