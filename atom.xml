@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-04-23T08:05:43.895Z</updated>
+  <updated>2023-06-07T10:08:03.791Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>how to run Spatial ID</title>
+    <link href="https://www.zepoch.cc/2023/3439187702.html"/>
+    <id>https://www.zepoch.cc/2023/3439187702.html</id>
+    <published>2023-06-07T10:05:40.000Z</published>
+    <updated>2023-06-07T10:08:03.791Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;before you start to run the program, you should make something
+installed.&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    
+    <category term="Spatial ID" scheme="https://www.zepoch.cc/tags/Spatial-ID/"/>
+    
+    <category term="genomics" scheme="https://www.zepoch.cc/tags/genomics/"/>
+    
+  </entry>
   
   <entry>
     <title>如何将rds转为h5ad</title>
@@ -541,29 +570,6 @@ class=&quot;math display&quot;&gt;\[
     <category term="毕业" scheme="https://www.zepoch.cc/tags/%E6%AF%95%E4%B8%9A/"/>
     
     <category term="成电" scheme="https://www.zepoch.cc/tags/%E6%88%90%E7%94%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>讲讲各个编程语言的特点</title>
-    <link href="https://www.zepoch.cc/2022/1075637985.html"/>
-    <id>https://www.zepoch.cc/2022/1075637985.html</id>
-    <published>2022-04-25T08:46:41.000Z</published>
-    <updated>2022-04-25T10:13:28.456Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;目前呢，市面上主流的编程语言有
-PHP、Java、Python、C、C++、JavaScript等，这些语言呢也是各有千秋，今天呢，就用简短的话语细数一下他们的特点。&lt;/p&gt;
-&lt;p&gt;PHP：没有优点&lt;/p&gt;
-&lt;p&gt;Java：库多，库多，库多&lt;/p&gt;
-&lt;p&gt;Python：语法清楚，语法清楚，语法清楚&lt;/p&gt;
-&lt;p&gt;C：能操纵底层，能细粒度优化性能&lt;/p&gt;
-&lt;p&gt;C++：啥都有，啥都有，啥都有&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="编程" scheme="https://www.zepoch.cc/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
