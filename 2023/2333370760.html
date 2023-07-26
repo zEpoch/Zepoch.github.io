@@ -1,0 +1,342 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>如何在stomics平台使用spateo圈细胞 | zepoch's site</title><meta name="keywords" content="spateo,spatial transcriptomics"><meta name="author" content="zepoch"><meta name="copyright" content="zepoch"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="时空云平台（STOmics Cloud）是以时空为特色的多组学数据分析平台，可以管理和分析多组学数据。 STOmics Cloud以项目为核心，用户可快速将数据和工具整合到项目，实现分析过程可追溯，结果可复现，知识可分享，项目可协作，形成项目分析体系。并通过一个用户友好的门户，提供灵活易于使用的无代码标准和高级分析，高分辨率可视化分析，以及个性化的分析服务，任何注册登录的用户可以轻松在平台上">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在stomics平台使用spateo圈细胞">
+<meta property="og:url" content="https://www.zepoch.cc/2023/2333370760.html">
+<meta property="og:site_name" content="zepoch&#39;s site">
+<meta property="og:description" content="时空云平台（STOmics Cloud）是以时空为特色的多组学数据分析平台，可以管理和分析多组学数据。 STOmics Cloud以项目为核心，用户可快速将数据和工具整合到项目，实现分析过程可追溯，结果可复现，知识可分享，项目可协作，形成项目分析体系。并通过一个用户友好的门户，提供灵活易于使用的无代码标准和高级分析，高分辨率可视化分析，以及个性化的分析服务，任何注册登录的用户可以轻松在平台上">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2023-07-26T03:28:14.000Z">
+<meta property="article:modified_time" content="2023-07-26T07:09:50.404Z">
+<meta property="article:author" content="zepoch">
+<meta property="article:tag" content="spateo">
+<meta property="article:tag" content="spatial transcriptomics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://www.zepoch.cc/2023/2333370760"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="AXddQAUftQD7NDjBUlQvw5LWu1x_A1uNpdVqI8c_3J0"/><meta name="baidu-site-verification" content="code-wVE0OwLLU2"/><meta name="bing_site_verification" content="154CD85FDB00EA195DB3F8F193CE78BE"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '如何在stomics平台使用spateo圈细胞',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: false,
+  postUpdate: '2023-07-26 15:09:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="zepoch's site" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">59</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">zepoch's site</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">如何在stomics平台使用spateo圈细胞</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-26T03:28:14.000Z" title="发表于 2023-07-26 11:28:14">2023-07-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-26T07:09:50.404Z" title="更新于 2023-07-26 15:09:50">2023-07-26</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">34k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="如何在stomics平台使用spateo圈细胞"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div><article class="post-content" id="article-container"><p><a
+target="_blank" rel="noopener" href="https://www.stomics.tech/products/BioinfoTools/STOmicsCloud">时空云平台（STOmics
+Cloud）</a>是以时空为特色的多组学数据分析平台，可以管理和分析多组学数据。
+STOmics
+Cloud以项目为核心，用户可快速将数据和工具整合到项目，实现分析过程可追溯，结果可复现，知识可分享，项目可协作，形成项目分析体系。并通过一个用户友好的门户，提供灵活易于使用的无代码标准和高级分析，高分辨率可视化分析，以及个性化的分析服务，任何注册登录的用户可以轻松在平台上访问，分析，使用和共享数据和工具。</p>
+<p>总体来说，STOmics
+平台是一个很出色的多组学的数据分析平台，但是仍然有一些不足，STOmics
+在做数据分析的时候无法连接外部网络，如果说我们需要用到一些外部的模型或是其他资源的时候，则是会遇到十分大的阻碍，尤其是当我们调用
+keras
+的某些模型的时候，是需要进行联网下载的，那我们就需要对源码进行一些修改。</p>
+<p><a target="_blank" rel="noopener" href="https://spateo-release.readthedocs.io/en/latest/">Spateo</a>
+利用 Stereo-seq 的超高空间分辨率、大视野和高 RNA
+捕获灵敏度，通过核染色和基于 RNA
+信号的细胞分割实现单细胞分辨率空间转录组学。Spateo
+还提供了空间约束聚类的新方法，以识别连续的组织域，空间感知差异分析以揭示空间基因表达热点和模块，以及复杂的配体-受体相互作用。</p>
+<p>首先我们需要在 STOmics
+上构建镜像，通过测试，以下镜像构建代码是有较为不错的效果，基础镜像选择为<code>Python 3 and R image</code>，也可以采用已经构建好的
+spateo_zt
+镜像。镜像使用需要在自己的工作目录创建<code>/data/work/.keras/models</code>和<code>/data/work/.cellpose/models</code>文件夹。</p>
+<p>stardist需要下载 <a
+target="_blank" rel="noopener" href="https://github.com/stardist/stardist-models/releases/download/v0.1/python_2D_versatile_fluo.zip">python_2D_versatile_fluo.zip</a>
+并且改名为 <code>2D_versatile_fluo.zip</code>，放置于
+<code>/data/work/.keras/models/StarDist2D/2D_versatile_fluo/2D_versatile_fluo.zip</code>。cellpose需要下载
+<a
+target="_blank" rel="noopener" href="https://www.cellpose.org/models/nucleitorch_0">nucleitorch_0</a>
+和 <a
+target="_blank" rel="noopener" href="https://www.cellpose.org/models/size_nucleitorch_0.npy">size_nucleitorch_0.npy</a>
+放置于 <code>/data/work/.cellpose/models/nucleitorch_0</code>
+和<code>/data/work/.cellpose/models/size_nucleitorch_0.npy</code>。deepcell需要下载
+<a
+target="_blank" rel="noopener" href="https://deepcell-data.s3-us-west-1.amazonaws.com/saved-models/NuclearSegmentation-75.tar.gz">NuclearSegmentation-75.tar.gz</a>
+并且改名为 <code>NuclearSegmentation.tgz</code>，放置于
+<code>/data/work/.keras/models/NuclearSegmentation.tgz</code>
+之后便可进行正常的圈细胞。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/opt/software/python/bin/python3.8 -m pip <span class="token function">install</span> --upgrade pip
+pip <span class="token function">install</span> scanpy
+pip <span class="token function">install</span> spateo-release
+pip <span class="token function">install</span> <span class="token assign-left variable">tensorflow</span><span class="token operator">==</span><span class="token number">2.12</span>.0
+pip <span class="token function">install</span> stardist
+pip <span class="token function">install</span> cellpose
+pip <span class="token function">install</span> DeepCell
+<span class="token function">sed</span> -i <span class="token string">'214a \ \ \ \ cache_dir="/data/work/.keras"'</span> /opt/software/python/lib/python3.8/site-packages/keras/utils/data_utils.py
+<span class="token function">sed</span> -i <span class="token string">'221a \ \ \ \ datadir_base="/data/work/.keras"'</span> /opt/software/python/lib/python3.8/site-packages/keras/utils/data_utils.py
+<span class="token function">sed</span> -i <span class="token string">'17a MODEL_DIR = pathlib.Path("/data/work/.cellpose/models")'</span> /opt/software/python/lib/python3.8/site-packages/cellpose/models.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>构建镜像完成之后便是可以使用空间组芯片数据gem和空间组拍照数据tif进行圈细胞。我写的代码如下所示</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">cellbin_spateo</span><span class="token punctuation">(</span>gem<span class="token punctuation">,</span> tif<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    adata <span class="token operator">=</span> st<span class="token punctuation">.</span>io<span class="token punctuation">.</span>read_bgi_agg<span class="token punctuation">(</span>
+        <span class="token string">'../data/'</span><span class="token operator">+</span>gem<span class="token punctuation">,</span> <span class="token string">'../data/'</span><span class="token operator">+</span>tif<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    name <span class="token operator">=</span> gem<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    
+    <span class="token comment">## stain mask</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>mask_nuclei_from_stain<span class="token punctuation">(</span>adata<span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain_mask'</span><span class="token punctuation">,</span> save_show_or_return <span class="token operator">=</span> <span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/01.stain_mask/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## watershed_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>find_peaks_from_mask<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>watershed<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'watershed_labels'</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'watershed_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/02.watershed_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## stardist_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>stardist<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> tilesize<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> equalize<span class="token operator">=</span><span class="token number">2.0</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'stardist_labels'</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stardist_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/03.stardist_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## augmented_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>augment_labels<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'watershed_labels'</span><span class="token punctuation">,</span> <span class="token string">'stardist_labels'</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'augmented_labels'</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/04.augmented_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">##</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>mask_cells_from_stain<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'stain_cell_mask'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>watershed<span class="token punctuation">(</span>
+        adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span>
+        mask_layer<span class="token operator">=</span><span class="token string">'stain_cell_mask'</span><span class="token punctuation">,</span>
+        markers_layer<span class="token operator">=</span><span class="token string">'augmented_labels'</span><span class="token punctuation">,</span>
+        out_layer<span class="token operator">=</span><span class="token string">'cell_labels'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    
+    <span class="token comment">## </span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'cell_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/05.cell_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## expand_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>expand_labels<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels'</span><span class="token punctuation">,</span> distance<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> max_area<span class="token operator">=</span><span class="token number">1600</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_900/06.augmented_labels_expanded/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## label adata</span>
+    adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'../Spateo/area_1600/07.labeled_adata/'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'.h5ad'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## final adata</span>
+    cell_adata <span class="token operator">=</span> st<span class="token punctuation">.</span>io<span class="token punctuation">.</span>read_bgi<span class="token punctuation">(</span>
+        <span class="token string">'../data/'</span><span class="token operator">+</span>gem<span class="token punctuation">,</span>
+        segmentation_adata<span class="token operator">=</span>adata<span class="token punctuation">,</span>
+        labels_layer<span class="token operator">=</span><span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    cell_adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'../Spateo/area_1600/08.final_adata/'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'.h5ad'</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用上述代码则可以正常在 STOmics
+平台上进行圈细胞。获得单细胞分辨率的空间组的数据。需要注意的是我们的拍照的
+tif 数据是需要和 gem
+数据的空间位置对应上的。那么应该如何对应呢？这里使用师兄 liaokuo
+的代码，生成由 gem 文件生成的灰度图，将灰度图放置于 PhotoShop
+中作为底图，然后将 tif
+图与灰度图手动配准（因为自动配准效果不好），导出以
+灰度图大小画布为底的、调整过的 tif
+图片，然后将此图片拿去与gem文件做圈细胞。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># author: liaokuo</span>
+<span class="token comment"># time: 2022/4/1</span>
+
+<span class="token comment"># this is to generate grey graphic from spatial RNA.</span>
+<span class="token comment"># create_greyplot.py input_file_path out_put_directory</span>
+
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> os
+inpath<span class="token operator">=</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+outpath<span class="token operator">=</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
+os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span>outpath<span class="token punctuation">)</span> <span class="token comment"># change the working directory</span>
+<span class="token builtin">file</span><span class="token operator">=</span>inpath<span class="token punctuation">.</span>rsplit<span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+name<span class="token operator">=</span><span class="token builtin">file</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+<span class="token keyword">def</span> <span class="token function">mRNA_image_load</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> gray_factor<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    cbs <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>path<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">,</span>comment<span class="token operator">=</span><span class="token string">'#'</span><span class="token punctuation">)</span> <span class="token comment"># therefore, the input file must be a clear txt or csv file.</span>
+    cbs<span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'_'</span> <span class="token operator">+</span> cbs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>
+    cbs2 <span class="token operator">=</span> cbs<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">,</span> <span class="token string">'UMICount'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token keyword">if</span> <span class="token string">'UMICount'</span> <span class="token keyword">in</span> cbs<span class="token punctuation">.</span>columns <span class="token keyword">else</span> cbs<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">,</span> <span class="token string">'MIDCount'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token comment"># there must be careful.</span>
+    cbs2 <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    cbs2<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+    cbs2<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+    <span class="token comment">#cbs2['x'] -= cbs2['x'].min()</span>
+    <span class="token comment">#cbs2['y'] -= cbs2['y'].min()</span>
+    h <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    w <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    mtx <span class="token operator">=</span> cbs2<span class="token punctuation">.</span>pivot_table<span class="token punctuation">(</span>values<span class="token operator">=</span><span class="token string">'coor'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token string">'x'</span><span class="token punctuation">,</span> columns<span class="token operator">=</span><span class="token string">'y'</span><span class="token punctuation">,</span> aggfunc<span class="token operator">=</span><span class="token string">'sum'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>h<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i <span class="token keyword">not</span> <span class="token keyword">in</span> mtx<span class="token punctuation">.</span>index<span class="token punctuation">:</span>
+            mtx<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> j <span class="token keyword">not</span> <span class="token keyword">in</span> mtx<span class="token punctuation">.</span>columns<span class="token punctuation">:</span>
+            mtx<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+    mtx <span class="token operator">=</span> mtx<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+    mtx <span class="token operator">=</span> mtx <span class="token operator">*</span> gray_factor
+    mtx<span class="token punctuation">[</span>mtx<span class="token operator">></span><span class="token number">255</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">255</span>
+    mtx <span class="token operator">=</span> mtx<span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span><span class="token punctuation">.</span>values
+    <span class="token keyword">return</span> mtx
+
+
+
+
+<span class="token comment"># get the grey scale matrix</span>
+mtx<span class="token operator">=</span>mRNA_image_load<span class="token punctuation">(</span>path<span class="token operator">=</span>inpath<span class="token punctuation">)</span>
+data<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>mtx<span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_grey.csv"</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># draw grep scale plot in format of png</span>
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+im <span class="token operator">=</span> Image<span class="token punctuation">.</span>fromarray<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment"># image object should be an array in 0-255</span>
+im <span class="token operator">=</span> im<span class="token punctuation">.</span>convert<span class="token punctuation">(</span><span class="token string">'L'</span><span class="token punctuation">)</span><span class="token comment"># L means grey scale, while RGB means color scale</span>
+im<span class="token punctuation">.</span>save<span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_grey.png"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">zepoch</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.zepoch.cc/2023/2333370760.html">https://www.zepoch.cc/2023/2333370760.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.zepoch.cc" target="_blank">zepoch's site</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/spateo/">spateo</a><a class="post-meta__tags" href="/tags/spatial-transcriptomics/">spatial transcriptomics</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/3439187702.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">how to run Spatial ID</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">zepoch</div><div class="author-info__description">一个每天进步的全栈工程师，记录我的工作学习与生活</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">59</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zepoch"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zepoch" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zhotoa@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/2333370760.html" title="如何在stomics平台使用spateo圈细胞">如何在stomics平台使用spateo圈细胞</a><time datetime="2023-07-26T03:28:14.000Z" title="发表于 2023-07-26 11:28:14">2023-07-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/3439187702.html" title="how to run Spatial ID">how to run Spatial ID</a><time datetime="2023-06-07T10:05:40.000Z" title="发表于 2023-06-07 18:05:40">2023-06-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/3539500839.html" title="如何将rds转为h5ad">如何将rds转为h5ad</a><time datetime="2023-04-23T02:10:03.000Z" title="发表于 2023-04-23 10:10:03">2023-04-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/2424108561.html" title="作科学汇报时候如何不像孩子那样漫谈">作科学汇报时候如何不像孩子那样漫谈</a><time datetime="2023-03-27T08:35:55.000Z" title="发表于 2023-03-27 16:35:55">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/2262097032.html" title="写一个小脚本">写一个小脚本</a><time datetime="2023-03-13T08:44:42.000Z" title="发表于 2023-03-13 16:44:42">2023-03-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By zepoch</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'WspkUq7TuRDz5tk68Ry6TSa1-gzGzoHsz',
+      appKey: 'xz4SYcXtJNP1hns8iBFAlhHT',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>
+            window.imageLazyLoadSetting = {
+                isSPA: true,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>
