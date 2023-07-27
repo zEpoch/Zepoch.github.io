@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-07-26T07:09:50.404Z</updated>
+  <updated>2023-07-27T11:12:06.809Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用空间转录组文件gem生成相应的灰度图</title>
+    <link href="https://www.zepoch.cc/2023/394364691.html"/>
+    <id>https://www.zepoch.cc/2023/394364691.html</id>
+    <published>2023-07-27T11:01:01.000Z</published>
+    <updated>2023-07-27T11:12:06.809Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一般我们在进行圈细胞之前需要将基因在空间上的表达情况绘制出来，同时与拍照的TIF图片进行对应，在我的上篇博客里面用了一位师兄的代码，但是却发现其执行效率过于低下，经常一张芯片要运行四五个小时。故自己写了新的架构，将速度提升了数百倍。代码如下所示：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/categories/spatial-transcriptomics/"/>
+    
+    
+    <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/tags/spatial-transcriptomics/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在stomics平台使用spateo圈细胞</title>
@@ -40,9 +66,9 @@ STOmics</summary>
     <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/categories/spatial-transcriptomics/"/>
     
     
-    <category term="spateo" scheme="https://www.zepoch.cc/tags/spateo/"/>
-    
     <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/tags/spatial-transcriptomics/"/>
+    
+    <category term="spateo" scheme="https://www.zepoch.cc/tags/spateo/"/>
     
   </entry>
   
@@ -550,28 +576,6 @@ class=&quot;math display&quot;&gt;\[
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
     
     <category term="疾病" scheme="https://www.zepoch.cc/tags/%E7%96%BE%E7%97%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再见小破电</title>
-    <link href="https://www.zepoch.cc/2022/3640031914.html"/>
-    <id>https://www.zepoch.cc/2022/3640031914.html</id>
-    <published>2022-06-15T13:17:15.000Z</published>
-    <updated>2022-06-15T13:21:21.596Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;感谢成电，我爱成电，这是我四年本科生涯的经历所能给予成电的评价。&lt;/p&gt;
-&lt;p&gt;我本身并不是很想分主题写，但是又害怕自己错过一些部分，为了让自己逻辑更为通顺，我将从下面这些方面叙说我的四年。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="毕业" scheme="https://www.zepoch.cc/tags/%E6%AF%95%E4%B8%9A/"/>
-    
-    <category term="成电" scheme="https://www.zepoch.cc/tags/%E6%88%90%E7%94%B5/"/>
     
   </entry>
   
