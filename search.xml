@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/1243066710.html</url>
+    <content><![CDATA[<p>终于呢，又是开通了我的博客，之所以是说终于，是因为之前也是开通过，但是呢，因为各种各样原因逐渐搁置，所以便是逐渐落下了博客的更新。</p>
+<p>现在突然就想记录点什么了，希望能够记录下去吧。</p>
+<p>Hexo&amp;Next.Pisces 重启，采用的 <a href="https://hexo.io/">Hexo</a>
+开通的博客，<a href="https://theme-next.js.org/">NexT - Theme for
+Hexo</a> 作为主题。</p>
+<p>以后呢，会记录一下我的工作、学习与生活，会分享生活亦或是学习的点点滴滴，也不要再将这个站点落下了。</p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>5815. 扣分后的最大得分</title>
     <url>/2021/864291102.html</url>
     <content><![CDATA[<p>今天呢，上午还算是比较有空的，便是参加了<a
@@ -104,20 +118,6 @@ src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-202107181423167
       <tags>
         <tag>LeetCode</tag>
         <tag>动态规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/1243066710.html</url>
-    <content><![CDATA[<p>终于呢，又是开通了我的博客，之所以是说终于，是因为之前也是开通过，但是呢，因为各种各样原因逐渐搁置，所以便是逐渐落下了博客的更新。</p>
-<p>现在突然就想记录点什么了，希望能够记录下去吧。</p>
-<p>Hexo&amp;Next.Pisces 重启，采用的 <a href="https://hexo.io/">Hexo</a>
-开通的博客，<a href="https://theme-next.js.org/">NexT - Theme for
-Hexo</a> 作为主题。</p>
-<p>以后呢，会记录一下我的工作、学习与生活，会分享生活亦或是学习的点点滴滴，也不要再将这个站点落下了。</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -410,49 +410,6 @@ e.preventDefault()</p></li>
       <tags>
         <tag>JavaScript</tag>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pip install fa2</title>
-    <url>/2023/36631468.html</url>
-    <content><![CDATA[<p>最近在学习<a
-href="https://github.com/scverse/scanpy">scanpy</a>，读<a
-href="https://scanpy.readthedocs.io/en/stable/">scanpy文档</a>的<a
-href="https://scanpy-tutorials.readthedocs.io/en/latest/index.html">toturial</a>部分的
-<a
-href="https://scanpy-tutorials.readthedocs.io/en/latest/paga-paul15.html">Trajectory
-inference for hematopoiesis in mouse</a>
-部分的时候，出现了一个错误，在我的 jupyter notebook
-运行的时候，出现了一个 warning</p>
-<pre class="line-numbers language-a" data-language="a"><code class="language-a">WARNING: Package &#39;fa2&#39; is not installed, falling back to layout &#39;fr&#39;.To use the faster and better ForceAtlas2 layout, install package &#39;fa2&#39; (&#96;pip install fa2&#96;).<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220132521.png"
-alt="20230220132521" /></p>
-<p>这个warning会导致我之后绘制的图片与文档中的原图有区别，在执行命令<code>sc.pl.draw_graph(adata, color='paul15_clusters', legend_loc='on data')</code>的时候，可以看到，左边是源文档的图片，右边是我画出来的图片</p>
-<div class="fj-gallery"><p><imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134938.png"alt="源文档图片" /> <imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134917.png"alt="我的图片" /></p>
-          </div>
-<p>那么便是需要修复这个问题，于是去安装
-fa2，<code>pip  install fa2</code>，但是出现报错，大概是编译的时候出现了一些问题</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">note: This error originates from a subprocess, and is likely not a problem with pip.
-error: legacy-install-failure<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>于是去问了原作者，得到了新的解决方案，在python3.10版本下的安装方式如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">git clone https<span class="token punctuation">:</span><span class="token operator">//</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>bhargavchippada<span class="token operator">/</span>forceatlas2
-cd forceatlas2
-<span class="token comment"># having build dependencies installed</span>
-pip install <span class="token punctuation">.</span> <span class="token operator">-</span><span class="token operator">-</span>user<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在python3.10的环境下进行编译安装，即可完成，那么完成了安装之后，我们再次重启内核，再次运行分析，可以看到我们的图片和原始文档的图片基本一致</p>
-<div class="fj-gallery"><p><imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134938.png"alt="源文档图片" /> <imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220135725.png"alt="20230220135725" /></p>
-          </div>
-<p>调整一下字体等设置，再进行绘制，就完全一样了</p>
-<div class="fj-gallery"><p><imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134938.png"alt="源文档图片" /> <imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220135912.png"alt="20230220135912" /></p>
-          </div>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>scanpy</tag>
       </tags>
   </entry>
   <entry>
@@ -1278,38 +1235,46 @@ transfer<span class="token punctuation">(</span>spatial_adata<span class="token 
       </tags>
   </entry>
   <entry>
-    <title>不要死，也不要孤独的生活</title>
-    <url>/2021/3084145281.html</url>
-    <content><![CDATA[<p>打开新闻首页，密密麻麻的标题，独唱团大卖了，北京公交自燃了，贾宏声跳楼了。</p>
-<p>贾宏声是谁？这名字似乎听过，然而完全没印象了。点开新闻，说是周迅前男友，一博客说他从楼下跳下，砸坏了一辆车，口气好象很心痛那车。另一博客开始呼吁社会关心明星心理健康……</p>
-<p>还是不知道贾宏声是谁，也不想知道。每天死的人太多了，我关心不过来。</p>
-<span id="more"></span>
-<p>又在网上乱逛，打开另一个门户，又看到这新闻，看来他终于红了。点开，突然看到了一张照片和一段话。</p>
-<p>我又一次梦见了那条龙，他盘在屋顶上，两只眼睛死死的盯着我，他问我你是谁？我说我是贾宏声，他说贾宏声又是谁?我说贾宏声毕业于中央戏剧学院，是个演员，热爱摇滚乐，爱列侬和罗伯特普兰特，曾经想成为个名伟大的演员，也想组建一支伟大的乐队。他说你什么都不是，就是一个人，你爱吃面条，鸡蛋，爱穿时髦的衣服，可以哭也可以笑，受不了的时候还可以求人。我问他我为什么在这呢?他说这是对你的惩罚，因为你身上恶的东西太多了，必须把这些恶的东西清理出去，你才能彻底干净。我问他我干净了吗？他没有回答，两只眼睛还是死死的盯着我，然后就飞走了，你就是一个人你就是一个人一个人你就是一个人你就是一个人。</p>
-<p>看到这双死死瞪着的眼睛，我突然想起这个人是谁了。</p>
-<p>很早的时候，听过这段话，是中央六台放的电影《昨天》。那是一个关于……我不知道应该怎么介绍这主题……关于一个精神病人的故事？我只知道那里面贾宏声就叫贾宏声，他电影中的父母也是他真正的父母，他演得是他的昨天，是他自己，是真实的故事。</p>
-<p>那是一部让人看完心里很难平静的电影，因为这电影和其他电影不一样，完全不娱乐，而且看着很窝心。你看到了某种真实，在荒诞下的真实，一个不正常的人，做着不正常的事，有着完全不正常的心理。他活的与世界格格不入，他想追求一些东西，但他自己也不知道那是什么，结果自己和自己较劲，自己痛苦，而且搞得周围的人都痛苦，越爱他的人越痛苦。</p>
-<p>这种人当然不是主流，他们就是典型的极少数一小撮。这种人中有极少数一小撮在死后会被称为伟大的艺术家，作品被无数富商追捧，卖到上千万上亿，被奉为经典。而在他们活着的时候，会被送进精神病院，一部分被改造好后和常人无异，另一部分没有被改造好死在某个角落里。</p>
-<p>他们走到哪里都是病人。中国容不了他们，世界也容不了。也许他们唯一的价值就是去死，然后让人想起原来还有这么一个人，拍过这么一部电影。</p>
-<p>当然，贾宏声还拍过很多正常的片子，比如《银蛇谋杀案》之类，在他还正常的时候，在一部正常的娱乐片中演了一个正常的变态杀手。这是网上能找到的仅有剧照。导演居然是李少红。</p>
-<p>如果后来他没病，也许现在他会很有名，像当年他们那一代影视圈里的人，很多都成名成家了。他会继续演很多正常的片子，然后他再跳楼时，会比现在更惊哗——当然，他也不会再跳楼了。</p>
-<p>《昨天》是我唯一看过的贾宏声的作品。他还拍过《苏州河》，我也看过，但我不认为那是他的作品。</p>
-<p>《昨天》其实是张杨导演的，但我还是坚持认为，那是一部贾宏声的电影。</p>
-<p>对张杨来说，那只是部电影，可以冠个《中国病人》的名字拿去参加国际电影节得奖，但对于贾宏声来说，那不是电影，他就是那个病人。有人能给他拍记录片去拿奖，却没有人能治好他。</p>
-<p>张杨从来不下地狱，他拐个弯就上天堂了，他对我说，你下地狱就够了。</p>
-<p>——贾宏声</p>
-<p>贾宏声死了，大部分人都不知道他是谁。当天的新闻热点不是它，是韩寒的杂志，被无数人寄与“文学复兴”厚望而畅销的独唱团。看着贾宏声的照片，突然觉得他们其实有点像，同样带着和一切死磕的反社会姿态、同样被不齿者斥为装逼犯，但不同的是一个跳下去了，一个正走向声名与事业的顶峰。</p>
-<p>韩寒很幸运，早生二十年，以他的叛逆，很可能也被父母强制改造，或因为考不上大学，而沦落在某个角落，到他四十岁的时候，大概也会长成这个样子，无人问津，被当成另类，瞪着双眼，要和这个社会死磕。</p>
-<p>但他生活在一个商业的时代，他成为了一群人的代言人，并且这群人愿意为了他的代言而买他的书，让他致富。</p>
-<p>同一时刻，觉得表演都是骗人的，耻于谈钱，不愿拍商业电影，于是被人遗忘的上一代愤青贾宏声孤独死去，在死后媒体介绍的也不是他的电影，而是和某些女星的绯闻。在网上搜索《昨天》，搜不到这部电影。如果不是他死去，人们也不会再想起这部电影。</p>
-<p>四十三岁时的韩寒会是什么样，希望他那时不会孤独。</p>
-<p>《独唱团》上市了，贾宏声死了。将来不会再有人迷恋列农，也很少再有人知道他和列宁的区别。那些迷着摇滚、写着诗歌，喝着啤酒，谈论着后现代主义，活在八十年代的人，有的上了天堂，有的下了地狱，他们的时代，已经消亡。</p>
-<p>原文链接：<a href="https://movie.douban.com/review/3425047/">不要死
-也不要孤独的生活（昨天）影评 (douban.com)</a></p>
-<p>作者：今何在</p>
+    <title>pip install fa2</title>
+    <url>/2023/36631468.html</url>
+    <content><![CDATA[<p>最近在学习<a
+href="https://github.com/scverse/scanpy">scanpy</a>，读<a
+href="https://scanpy.readthedocs.io/en/stable/">scanpy文档</a>的<a
+href="https://scanpy-tutorials.readthedocs.io/en/latest/index.html">toturial</a>部分的
+<a
+href="https://scanpy-tutorials.readthedocs.io/en/latest/paga-paul15.html">Trajectory
+inference for hematopoiesis in mouse</a>
+部分的时候，出现了一个错误，在我的 jupyter notebook
+运行的时候，出现了一个 warning</p>
+<pre class="line-numbers language-a" data-language="a"><code class="language-a">WARNING: Package &#39;fa2&#39; is not installed, falling back to layout &#39;fr&#39;.To use the faster and better ForceAtlas2 layout, install package &#39;fa2&#39; (&#96;pip install fa2&#96;).<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220132521.png"
+alt="20230220132521" /></p>
+<p>这个warning会导致我之后绘制的图片与文档中的原图有区别，在执行命令<code>sc.pl.draw_graph(adata, color='paul15_clusters', legend_loc='on data')</code>的时候，可以看到，左边是源文档的图片，右边是我画出来的图片</p>
+<div class="fj-gallery"><p><imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134938.png"alt="源文档图片" /> <imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134917.png"alt="我的图片" /></p>
+          </div>
+<p>那么便是需要修复这个问题，于是去安装
+fa2，<code>pip  install fa2</code>，但是出现报错，大概是编译的时候出现了一些问题</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">note: This error originates from a subprocess, and is likely not a problem with pip.
+error: legacy-install-failure<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>于是去问了原作者，得到了新的解决方案，在python3.10版本下的安装方式如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">git clone https<span class="token punctuation">:</span><span class="token operator">//</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>bhargavchippada<span class="token operator">/</span>forceatlas2
+cd forceatlas2
+<span class="token comment"># having build dependencies installed</span>
+pip install <span class="token punctuation">.</span> <span class="token operator">-</span><span class="token operator">-</span>user<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在python3.10的环境下进行编译安装，即可完成，那么完成了安装之后，我们再次重启内核，再次运行分析，可以看到我们的图片和原始文档的图片基本一致</p>
+<div class="fj-gallery"><p><imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134938.png"alt="源文档图片" /> <imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220135725.png"alt="20230220135725" /></p>
+          </div>
+<p>调整一下字体等设置，再进行绘制，就完全一样了</p>
+<div class="fj-gallery"><p><imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220134938.png"alt="源文档图片" /> <imgsrc="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/pip_install_fa2/20230220135912.png"alt="20230220135912" /></p>
+          </div>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
       <tags>
-        <tag>影评</tag>
+        <tag>技术</tag>
+        <tag>scanpy</tag>
       </tags>
   </entry>
   <entry>
@@ -1423,6 +1388,41 @@ future，一个失业的或者说无工作的未来是不可避免的。这是�
       </tags>
   </entry>
   <entry>
+    <title>不要死，也不要孤独的生活</title>
+    <url>/2021/3084145281.html</url>
+    <content><![CDATA[<p>打开新闻首页，密密麻麻的标题，独唱团大卖了，北京公交自燃了，贾宏声跳楼了。</p>
+<p>贾宏声是谁？这名字似乎听过，然而完全没印象了。点开新闻，说是周迅前男友，一博客说他从楼下跳下，砸坏了一辆车，口气好象很心痛那车。另一博客开始呼吁社会关心明星心理健康……</p>
+<p>还是不知道贾宏声是谁，也不想知道。每天死的人太多了，我关心不过来。</p>
+<span id="more"></span>
+<p>又在网上乱逛，打开另一个门户，又看到这新闻，看来他终于红了。点开，突然看到了一张照片和一段话。</p>
+<p>我又一次梦见了那条龙，他盘在屋顶上，两只眼睛死死的盯着我，他问我你是谁？我说我是贾宏声，他说贾宏声又是谁?我说贾宏声毕业于中央戏剧学院，是个演员，热爱摇滚乐，爱列侬和罗伯特普兰特，曾经想成为个名伟大的演员，也想组建一支伟大的乐队。他说你什么都不是，就是一个人，你爱吃面条，鸡蛋，爱穿时髦的衣服，可以哭也可以笑，受不了的时候还可以求人。我问他我为什么在这呢?他说这是对你的惩罚，因为你身上恶的东西太多了，必须把这些恶的东西清理出去，你才能彻底干净。我问他我干净了吗？他没有回答，两只眼睛还是死死的盯着我，然后就飞走了，你就是一个人你就是一个人一个人你就是一个人你就是一个人。</p>
+<p>看到这双死死瞪着的眼睛，我突然想起这个人是谁了。</p>
+<p>很早的时候，听过这段话，是中央六台放的电影《昨天》。那是一个关于……我不知道应该怎么介绍这主题……关于一个精神病人的故事？我只知道那里面贾宏声就叫贾宏声，他电影中的父母也是他真正的父母，他演得是他的昨天，是他自己，是真实的故事。</p>
+<p>那是一部让人看完心里很难平静的电影，因为这电影和其他电影不一样，完全不娱乐，而且看着很窝心。你看到了某种真实，在荒诞下的真实，一个不正常的人，做着不正常的事，有着完全不正常的心理。他活的与世界格格不入，他想追求一些东西，但他自己也不知道那是什么，结果自己和自己较劲，自己痛苦，而且搞得周围的人都痛苦，越爱他的人越痛苦。</p>
+<p>这种人当然不是主流，他们就是典型的极少数一小撮。这种人中有极少数一小撮在死后会被称为伟大的艺术家，作品被无数富商追捧，卖到上千万上亿，被奉为经典。而在他们活着的时候，会被送进精神病院，一部分被改造好后和常人无异，另一部分没有被改造好死在某个角落里。</p>
+<p>他们走到哪里都是病人。中国容不了他们，世界也容不了。也许他们唯一的价值就是去死，然后让人想起原来还有这么一个人，拍过这么一部电影。</p>
+<p>当然，贾宏声还拍过很多正常的片子，比如《银蛇谋杀案》之类，在他还正常的时候，在一部正常的娱乐片中演了一个正常的变态杀手。这是网上能找到的仅有剧照。导演居然是李少红。</p>
+<p>如果后来他没病，也许现在他会很有名，像当年他们那一代影视圈里的人，很多都成名成家了。他会继续演很多正常的片子，然后他再跳楼时，会比现在更惊哗——当然，他也不会再跳楼了。</p>
+<p>《昨天》是我唯一看过的贾宏声的作品。他还拍过《苏州河》，我也看过，但我不认为那是他的作品。</p>
+<p>《昨天》其实是张杨导演的，但我还是坚持认为，那是一部贾宏声的电影。</p>
+<p>对张杨来说，那只是部电影，可以冠个《中国病人》的名字拿去参加国际电影节得奖，但对于贾宏声来说，那不是电影，他就是那个病人。有人能给他拍记录片去拿奖，却没有人能治好他。</p>
+<p>张杨从来不下地狱，他拐个弯就上天堂了，他对我说，你下地狱就够了。</p>
+<p>——贾宏声</p>
+<p>贾宏声死了，大部分人都不知道他是谁。当天的新闻热点不是它，是韩寒的杂志，被无数人寄与“文学复兴”厚望而畅销的独唱团。看着贾宏声的照片，突然觉得他们其实有点像，同样带着和一切死磕的反社会姿态、同样被不齿者斥为装逼犯，但不同的是一个跳下去了，一个正走向声名与事业的顶峰。</p>
+<p>韩寒很幸运，早生二十年，以他的叛逆，很可能也被父母强制改造，或因为考不上大学，而沦落在某个角落，到他四十岁的时候，大概也会长成这个样子，无人问津，被当成另类，瞪着双眼，要和这个社会死磕。</p>
+<p>但他生活在一个商业的时代，他成为了一群人的代言人，并且这群人愿意为了他的代言而买他的书，让他致富。</p>
+<p>同一时刻，觉得表演都是骗人的，耻于谈钱，不愿拍商业电影，于是被人遗忘的上一代愤青贾宏声孤独死去，在死后媒体介绍的也不是他的电影，而是和某些女星的绯闻。在网上搜索《昨天》，搜不到这部电影。如果不是他死去，人们也不会再想起这部电影。</p>
+<p>四十三岁时的韩寒会是什么样，希望他那时不会孤独。</p>
+<p>《独唱团》上市了，贾宏声死了。将来不会再有人迷恋列农，也很少再有人知道他和列宁的区别。那些迷着摇滚、写着诗歌，喝着啤酒，谈论着后现代主义，活在八十年代的人，有的上了天堂，有的下了地狱，他们的时代，已经消亡。</p>
+<p>原文链接：<a href="https://movie.douban.com/review/3425047/">不要死
+也不要孤独的生活（昨天）影评 (douban.com)</a></p>
+<p>作者：今何在</p>
+]]></content>
+      <tags>
+        <tag>影评</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>作科学汇报时候如何不像孩子那样漫谈</title>
     <url>/2023/2424108561.html</url>
     <content><![CDATA[<p>我有了一个新导师：我那两岁半的外孙。就像很多小孩子一样，也不管有没有人听懂，一直在不停的说话。
@@ -1451,61 +1451,6 @@ future，一个失业的或者说无工作的未来是不可避免的。这是�
       <tags>
         <tag>技术</tag>
         <tag>汇报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用空间转录组文件gem生成相应的灰度图</title>
-    <url>/2023/394364691.html</url>
-    <content><![CDATA[<p>一般我们在进行圈细胞之前需要将基因在空间上的表达情况绘制出来，同时与拍照的TIF图片进行对应，在我的上篇博客里面用了一位师兄的代码，但是却发现其执行效率过于低下，经常一张芯片要运行四五个小时。故自己写了新的架构，将速度提升了数百倍。代码如下所示：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">
-<span class="token comment"># import spateo as st</span>
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">from</span> scipy<span class="token punctuation">.</span>sparse <span class="token keyword">import</span> csr_matrix
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> skimage
-<span class="token keyword">import</span> cv2
-
-<span class="token triple-quoted-string string">'''
-log setting
-'''</span>
-<span class="token keyword">import</span> logging
-log <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span><span class="token string">'Console'</span><span class="token punctuation">)</span>
-log<span class="token punctuation">.</span>setLevel<span class="token punctuation">(</span>logging<span class="token punctuation">.</span>DEBUG<span class="token punctuation">)</span>
-console_handler <span class="token operator">=</span> logging<span class="token punctuation">.</span>StreamHandler<span class="token punctuation">(</span><span class="token punctuation">)</span> 
-console_handler<span class="token punctuation">.</span>setLevel<span class="token punctuation">(</span>logging<span class="token punctuation">.</span>DEBUG<span class="token punctuation">)</span>
-formatter <span class="token operator">=</span> logging<span class="token punctuation">.</span>Formatter<span class="token punctuation">(</span><span class="token string">'%(asctime)s - %(name)s - %(levelname)s - %(message)s'</span><span class="token punctuation">)</span>
-console_handler<span class="token punctuation">.</span>setFormatter<span class="token punctuation">(</span>formatter<span class="token punctuation">)</span>
-log<span class="token punctuation">.</span>addHandler<span class="token punctuation">(</span>console_handler<span class="token punctuation">)</span>
-
-<span class="token keyword">def</span> <span class="token function">generate_geneExpression_png</span><span class="token punctuation">(</span>
-    gem_file_path<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> 
-    save_path<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token triple-quoted-string string">'''
-    这里的 gem_file_path 指的是你的 gem 文件地址 如 ~/gem/***.gem.gz
-    save_path 指的是保存灰度图的文件地址，如 ~/geneExpression/***.png
-    '''</span>
-    log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'start read gem file'</span><span class="token punctuation">)</span>
-    gem_file <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>gem_file_path<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">,</span>comment<span class="token operator">=</span><span class="token string">'#'</span><span class="token punctuation">)</span>
-    
-    x<span class="token punctuation">,</span> y <span class="token operator">=</span> gem_file<span class="token punctuation">[</span><span class="token string">"x"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">,</span> gem_file<span class="token punctuation">[</span><span class="token string">"y"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values
-    shape <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>y<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
-    
-    log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'matrix generating'</span><span class="token punctuation">)</span>
-    X <span class="token operator">=</span> csr_matrix<span class="token punctuation">(</span><span class="token punctuation">(</span>gem_file<span class="token punctuation">[</span><span class="token string">"MIDCount"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> shape<span class="token operator">=</span>shape<span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint16<span class="token punctuation">)</span>
-    mtx <span class="token operator">=</span> X<span class="token punctuation">.</span>todense<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>
-    mtx_ <span class="token operator">=</span> skimage<span class="token punctuation">.</span>color<span class="token punctuation">.</span>gray2rgb<span class="token punctuation">(</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>mtx<span class="token punctuation">)</span><span class="token punctuation">)</span>
-    
-    log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'matrix ploting'</span><span class="token punctuation">)</span>
-    plt<span class="token punctuation">.</span>imsave<span class="token punctuation">(</span>save_path<span class="token punctuation">,</span> mtx_<span class="token punctuation">)</span>
-    <span class="token keyword">return</span> mtx_<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>spatial transcriptomics</category>
-      </categories>
-      <tags>
-        <tag>spatial transcriptomics</tag>
       </tags>
   </entry>
   <entry>
@@ -1954,338 +1899,58 @@ platforms, through my excellent results word of mouth marketing.</p>
       </tags>
   </entry>
   <entry>
-    <title>关于Git</title>
-    <url>/2022/3494410286.html</url>
-    <content><![CDATA[<h2 id="版本控制">版本控制</h2>
-<blockquote>
-<p>版本控制（Revision
-control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。</p>
-</blockquote>
-<ul>
-<li>实现跨区域多人协同开发</li>
-<li>追踪和记载一个或者多个文件的历史记录</li>
-<li>组织和保护你的源代码和文档</li>
-<li>统计工作量</li>
-<li>并行开发、提高开发效率</li>
-<li>跟踪记录整个软件的开发过程</li>
-<li>减轻开发人员的负担，节省时间，同时降低人为错误</li>
-</ul>
-<p>简单说就是用于管理多人协同开发项目的技术。 <span id="more"></span>
-没有进行版本控制或者版本控制本身缺乏正确的流程管理，在软件开发过程中将会引入很多问题，如软件代码的一致性、软件内容的冗余、软件过程的事物性、软件开发过程中的并发性、软件源代码的安全性，以及软件的整合等问题。</p>
-<p>无论是工作还是学习，或者是自己做笔记，都经历过这样一个阶段！我们就迫切需要一个版本控制工具！</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123191030.png"
-alt="20220123191030" /></p>
-<blockquote>
-<p>常见的版本控制工具</p>
-</blockquote>
-<p>主流的版本控制器有如下这些：</p>
-<ul>
-<li>Git</li>
-<li>SVN（Subversion）</li>
-<li>CVS（Concurrent Versions System）</li>
-<li>VSS（Microsoft Visual SourceSafe）</li>
-<li>TFS（Team Foundation Server）</li>
-<li>Visual Studio Online</li>
-</ul>
-<p>版本控制产品非常的多（Perforce、Rational ClearCase、RCS（GNU Revision
-Control System）、Serena
-Dimensions、SVK、BitKeeper、Monotone、Bazaar、Mercurial、SourceGear
-Vault），现在影响力最大且使用最广泛的是Git与SVN</p>
-<h3 id="版本控制分类">版本控制分类</h3>
-<h4 id="本地版本控制">1、本地版本控制</h4>
-<p>记录文件每次的更新，可以对每个版本做一个快照，或是记录补丁文件，适合个人用，如RCS。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123191654.png"
-alt="20220123191654" /> 图片</p>
-<h4 id="集中版本控制-svn">2、集中版本控制 SVN</h4>
-<p>所有的版本数据都保存在服务器上，协同开发者从服务器上同步更新或上传自己的修改</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192220.png"
-alt="20220123192220" /></p>
-<p>所有的版本数据都存在服务器上，用户的本地只有自己以前所同步的版本，如果不连网的话，用户就看不到历史版本，也无法切换版本验证问题，或在不同分支工作。而且，所有数据都保存在单一的服务器上，有很大的风险这个服务器会损坏，这样就会丢失所有的数据，当然可以定期备份。代表产品：SVN、CVS、VSS</p>
-<h4 id="分布式版本控制-git">3、分布式版本控制 Git</h4>
-<p>每个人都拥有全部的代码，具有安全隐患。</p>
-<p>所有版本信息仓库全部同步到本地的每个用户，这样就可以在本地查看所有版本历史，可以离线在本地提交，只需在连网时push到相应的服务器或其他用户那里。由于每个用户那里保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但这增加了本地存储空间的占用。
-不会因为服务器损坏或者网络问题，造成不能工作的情况！</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192640.png"
-alt="20220123192640" /></p>
-<h4 id="git与svn的主要区别">Git与SVN的主要区别</h4>
-<p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192819.png"
-alt="20220123192819" /></p>
-<p>Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件。</p>
-<p>Git是目前世界上最先进的分布式版本控制系统。</p>
-<h2 id="git的历史">Git的历史</h2>
-<p>同生活中的许多伟大事物一样，Git
-诞生于一个极富纷争大举创新的年代。</p>
-<p>Linux 内核开源项目有着为数众广的参与者。绝大多数的 Linux
-内核维护工作都花在了提交补丁和保存归档的繁琐事务上(1991－2002年间)。到
-2002 年，整个项目组开始启用一个专有的分布式版本控制系统 BitKeeper
-来管理和维护代码。</p>
-<p>Linux社区中存在很多的大佬！破解研究 BitKeeper ！</p>
-<p>到了 2005 年，开发 BitKeeper 的商业公司同 Linux
-内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper
-的权力。这就迫使 Linux 开源社区(特别是 Linux 的缔造者 Linus
-Torvalds)基于使用 BitKeeper
-时的经验教训，开发出自己的版本系统。（2周左右！） 也就是后来的 Git。</p>
-<p><strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p>
-<p>Git是免费、开源的，最初Git是为辅助 Linux 内核开发的，来替代
-BitKeeper！</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192959.png"
-alt="20220123192959" /></p>
-<p>Linux和Git之父李纳斯·托沃兹（Linus Benedict Torvalds）1969、芬兰</p>
-<h2 id="git环境配置">Git环境配置</h2>
-<h3 id="软件下载">软件下载</h3>
-<p>打开 <a
-href="https://git-scm.com/">Git官网</a>，下载Git对应操作系统的版本。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/图片.png"
-alt="图片" /></p>
-<p>下载对应的版本即可安装。</p>
-<h3 id="启动git">启动Git</h3>
-<p>安装成功后在开始菜单中会有Git项，菜单下有3个程序：任意文件夹下右键也可以看到对应的程序！</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123194614.png"
-alt="20220123194614" /></p>
-<p><strong>Git
-Bash</strong>：Unix与Linux风格的命令行，使用最多，推荐最多</p>
-<p><strong>Git CMD</strong>：Windows风格的命令行</p>
-<p><strong>Git
-GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
-<h3 id="常用的linux命令">常用的Linux命令</h3>
-<blockquote>
-<p>1）、cd : 改变目录。<br />
-2）、cd . . 回退到上一个目录，直接cd进入默认目录<br />
-3）、pwd : 显示当前所在的目录路径。<br />
-4）、ls(ll):
-都是列出当前目录中的所有文件，只不过ll(两个ll)列出的内容更为详细。<br />
-5）、touch : 新建一个文件 如 touch index.js
-就会在当前目录下新建一个index.js文件。<br />
-6）、rm: 删除一个文件, rm index.js 就会把index.js文件删除。<br />
-7）、mkdir: 新建一个目录,就是新建一个文件夹。<br />
-8）、rm -r : 删除一个文件夹, rm -r src 删除src目录，rm -rf /
-切勿在Linux中尝试！删除电脑中全部文件！<br />
-9）、mv 移动文件, mv index.html src index.html 是我们要移动的文件, src
-是目标文件夹,当然, 这样写,必须保证文件和目标文件夹在同一目录下。<br />
-10）、reset 重新初始化终端/清屏。<br />
-11）、clear 清屏。<br />
-12）、history 查看命令历史。<br />
-13）、help 帮助。<br />
-14）、exit 退出。<br />
-15）、#表示注释</p>
-</blockquote>
-<h3 id="git配置">Git配置</h3>
-<p>所有的配置文件，其实都保存在本地！</p>
-<p>查看配置 git config -l</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123195605.png"
-alt="20220123195605" /></p>
-<p>查看不同级别的配置文件：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#查看系统config</span>
-<span class="token function">git</span> config --system --list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123195715.png"
-alt="20220123195715" /></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#查看当前用户（global）配置</span>
-<span class="token function">git</span> config --global  --list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123195901.png"
-alt="20220123195901" /></p>
-<h3 id="git相关的配置文件">Git相关的配置文件</h3>
-<p>1）、Git：Git 安装目录下的 gitconfig --system 系统级</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124103424.png"
-alt="20220124103424" /></p>
-<p>2）、C: .gitconfig 只适用于当前登录用户的配置 --global 全局</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124103604.png"
-alt="20220124103604" /></p>
-<p>这里可以直接编辑配置文件，通过命令设置后会响应到这里。</p>
-<p>设置用户名与邮箱（用户标识，必要）
-当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"zepoch"</span>  <span class="token comment">#名称</span>
-<span class="token function">git</span> config --global user.email <span class="token number">1654306546</span>@qq.com   <span class="token comment">#邮箱</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>只需要做一次这个设置，如果你传递了--global
-选项，因为Git将总是会使用该信息来处理你在系统中所做的一切操作。如果你希望在一个特定的项目中使用不同的名称或e-mail地址，你可以在该项目中运行该命令而不要--global选项。总之--global为全局配置，不加为某个项目的特定配置。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124103901.png"
-alt="20220124103901" /></p>
-<h2 id="git基本理论重要">Git基本理论（重要）</h2>
-<h3 id="三个区域">三个区域</h3>
-<p>Git本地有三个工作区域：工作目录（Working
-Directory）、暂存区(Stage/Index)、资源库(Repository或Git
-Directory)。如果在加上远程的git仓库(Remote
-Directory)就可以分为四个工作区域。文件在这四个区域之间的转换关系如下：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124104259.png"
-alt="20220124104259" /></p>
-<ul>
-<li>Workspace：工作区，就是你平时存放项目代码的地方<br />
-</li>
-<li>Index /
-Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息<br />
-</li>
-<li>Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本<br />
-</li>
-<li>Remote：远程仓库，托管代码的服务器，可以简单的认为是你项目组中的一台电脑用于远程数据交换</li>
-</ul>
-<p>本地的三个区域确切的说应该是git仓库中HEAD指向的版本：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124104818.png"
-alt="20220124104818" /></p>
-<ul>
-<li>Directory：使用Git管理的一个目录，也就是一个仓库，包含我们的工作空间和Git的管理空间。<br />
-</li>
-<li>WorkSpace：需要通过Git进行版本控制的目录和文件，这些目录和文件组成了工作空间。<br />
-</li>
-<li>.git：存放Git管理信息的目录，初始化仓库的时候自动创建。<br />
-</li>
-<li>Index/Stage：暂存区，或者叫待提交更新区，在提交进入repo之前，我们可以把所有的更新放在暂存区。<br />
-</li>
-<li>Local
-Repo：本地仓库，一个存放在本地的版本库；HEAD会只是当前的开发分支（branch）。<br />
-</li>
-<li>Stash：隐藏，是一个工作状态保存栈，用于保存/恢复WorkSpace中的临时状态。</li>
-</ul>
-<h3 id="工作流程">工作流程</h3>
-<p>git的工作流程一般是这样的：</p>
-<p>1、在工作目录中添加、修改文件；</p>
-<p>2、将需要进行版本管理的文件放入暂存区域；</p>
-<p>3、将暂存区域的文件提交到git仓库。</p>
-<p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed)</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124105100.png"
-alt="20220124105100" /></p>
-<h2 id="git项目搭建">Git项目搭建</h2>
-<h3 id="创建工作目录与常用指令">创建工作目录与常用指令</h3>
-<p>工作目录（WorkSpace)一般就是你希望Git帮助你管理的文件夹，可以是你项目的目录，也可以是一个空目录，建议不要有中文。</p>
-<p>日常使用只要记住下图6个命令：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124153928.png"
-alt="20220124153928" /></p>
-<h3 id="本地仓库搭建">本地仓库搭建</h3>
-<p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库。</p>
-<p>1、创建全新的仓库，需要用GIT管理的项目的根目录执行：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#在当前目录新建一个Git代码库</span>
-$ <span class="token function">git</span> init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>2、执行后可以看到，仅仅在项目目录多出了一个.git目录，关于版本等的所有信息都在这个目录里面。</p>
-<h3 id="克隆远程仓库">克隆远程仓库</h3>
-<p>1、另一种方式是克隆远程目录，由于是将远程服务器上的仓库完全镜像一份至本地！</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#克隆一个项目和它的整个代码历史(版本信息)</span>
-$ <span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>  <span class="token comment"># &lt;https://gitee.com/kuangstudy/openclass.git></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>2、去 gitee 或者 github 上克隆一个测试！</p>
-<h2 id="git文件操作">Git文件操作</h2>
-<h3 id="文件的四种状态">文件的四种状态</h3>
-<p>版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。</p>
-<ul>
-<li>Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库,
-不参与版本控制. 通过 <strong>git add</strong> 状态变为
-<strong>Staged</strong>.<br />
-</li>
-<li>Unmodify: 文件已经入库, 未修改,
-即版本库中的文件快照内容与文件夹中完全一致. 这种类型的文件有两种去处,
-如果它被修改, 而变为 <strong>Modified</strong>. 如果使用 <strong>git
-rm</strong> 移出版本库, 则成为 <strong>Untracked</strong> 文件<br />
-</li>
-<li>Modified: 文件已修改, 仅仅是修改, 并没有进行其他的操作.
-这个文件也有两个去处, 通过 <strong>git add</strong> 可进入暂存
-<strong>staged</strong> 状态, 使用 <strong>git checkout</strong>
-则丢弃修改过, 返回到 <strong>unmodify</strong> 状态, 这个 <strong>git
-checkout</strong> 即从库中取出文件, 覆盖当前修改 !</li>
-<li>Staged: 暂存状态. 执行 <strong>git commit</strong>
-则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为
-<strong>Unmodify</strong> 状态. 执行 <strong>git reset HEAD
-filename</strong> 取消暂存, 文件状态为 <strong>Modified</strong></li>
-</ul>
-<h3 id="查看文件状态">查看文件状态</h3>
-<p>上面说文件有4种状态，通过如下命令可以查看到文件的状态：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#查看指定文件状态</span>
-<span class="token function">git</span> status <span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
+    <title>使用空间转录组文件gem生成相应的灰度图</title>
+    <url>/2023/394364691.html</url>
+    <content><![CDATA[<p>一般我们在进行圈细胞之前需要将基因在空间上的表达情况绘制出来，同时与拍照的TIF图片进行对应，在我的上篇博客里面用了一位师兄的代码，但是却发现其执行效率过于低下，经常一张芯片要运行四五个小时。故自己写了新的架构，将速度提升了数百倍。代码如下所示：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">
+<span class="token comment"># import spateo as st</span>
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> scipy<span class="token punctuation">.</span>sparse <span class="token keyword">import</span> csr_matrix
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> skimage
+<span class="token keyword">import</span> cv2
 
-<span class="token comment">#查看所有文件状态</span>
-<span class="token function">git</span> status
+<span class="token triple-quoted-string string">'''
+log setting
+'''</span>
+<span class="token keyword">import</span> logging
+log <span class="token operator">=</span> logging<span class="token punctuation">.</span>getLogger<span class="token punctuation">(</span><span class="token string">'Console'</span><span class="token punctuation">)</span>
+log<span class="token punctuation">.</span>setLevel<span class="token punctuation">(</span>logging<span class="token punctuation">.</span>DEBUG<span class="token punctuation">)</span>
+console_handler <span class="token operator">=</span> logging<span class="token punctuation">.</span>StreamHandler<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+console_handler<span class="token punctuation">.</span>setLevel<span class="token punctuation">(</span>logging<span class="token punctuation">.</span>DEBUG<span class="token punctuation">)</span>
+formatter <span class="token operator">=</span> logging<span class="token punctuation">.</span>Formatter<span class="token punctuation">(</span><span class="token string">'%(asctime)s - %(name)s - %(levelname)s - %(message)s'</span><span class="token punctuation">)</span>
+console_handler<span class="token punctuation">.</span>setFormatter<span class="token punctuation">(</span>formatter<span class="token punctuation">)</span>
+log<span class="token punctuation">.</span>addHandler<span class="token punctuation">(</span>console_handler<span class="token punctuation">)</span>
 
-<span class="token comment"># git add .                  添加所有文件到暂存区</span>
-
-<span class="token comment"># git commit -m "消息内容"    提交暂存区中的内容到本地仓库 -m 提交信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="忽略文件">忽略文件</h3>
-<p>有些时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</p>
-<p>在主目录下建立".gitignore"文件，此文件有如下规则：</p>
-<ol type="1">
-<li><p>忽略文件中的空行或以井号（#）开始的行将会被忽略。</p></li>
-<li><p>可以使用Linux通配符。例如：星号（*）代表任意多个字符，问号（？）代表一个字符，方括号（[abc]）代表可选字符范围，大括号（{string1,string2,...}）代表可选的字符串等。</p></li>
-<li><p>如果名称的最前面有一个感叹号（!），表示例外规则，将不被忽略。</p></li>
-<li><p>如果名称的最前面是一个路径分隔符（/），表示要忽略的文件在此目录下，而子目录中的文件不忽略。</p></li>
-<li><p>如果名称的最后面是一个路径分隔符（/），表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）。</p>
-<p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 为注释</span>
-*.txt        <span class="token comment">#忽略所有 .txt结尾的文件,这样的话上传就不会被选中！</span>
-<span class="token operator">!</span>lib.txt     <span class="token comment">#但lib.txt除外</span>
-/temp        <span class="token comment">#仅忽略项目根目录下的TODO文件,不包括其它目录temp</span>
-build/       <span class="token comment">#忽略build/目录下的所有文件</span>
-doc/*.txt    <span class="token comment">#会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p></li>
-</ol>
-<h2 id="使用码云">使用码云</h2>
-<ol type="1">
-<li><p>注册登录码云，完善个人信息<br />
-</p></li>
-<li><p>设置本机绑定SSH公钥，实现免密码登录</p>
-<p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 进入 C:\Users\Administrator\.ssh 目录</span>
-
-<span class="token comment"># 生成公钥</span>
-
-$ ssh-keygen -t rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124162203.png"
-alt="20220124162203" /></p></li>
-<li><p>将公钥信息public key 添加到码云账户中即可。<br />
-</p></li>
-<li><p>使用码云创建一个自己的仓库。</p></li>
-<li><p>许可证：开源是否可以随意转载，开源但是不能商业使用，不能转载，...</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124161637.png"
-alt="20220124161637" /></p></li>
-</ol>
-<h2 id="说明git分支">说明：GIT分支</h2>
-<p>分支在GIT中相对较难，分支就是科幻电影里面的平行宇宙，如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，我们就需要处理一些问题了。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124163332.png"
-alt="20220124163332" /></p>
-<p>git分支中常用指令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">
-<span class="token comment"># 列出所有本地分支</span>
-$ <span class="token function">git</span> branch
-
-<span class="token comment"># 列出所有远程分支</span>
-$ <span class="token function">git</span> branch -r
-
-<span class="token comment"># 新建一个分支，但依然停留在当前分支</span>
-$ <span class="token function">git</span> branch <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-
-<span class="token comment"># 新建一个分支，并切换到该分支</span>
-$ <span class="token function">git</span> checkout -b <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-<span class="token comment"># 合并指定分支到当前分支</span>
-$ <span class="token function">git</span> merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-<span class="token comment"># 删除分支</span>
-$ <span class="token function">git</span> branch -d <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-
-<span class="token comment"># 删除远程分支</span>
-$ <span class="token function">git</span> push origin --delete <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
-$ <span class="token function">git</span> branch -dr <span class="token punctuation">[</span>remote/branch<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果同一个文件在合并分支时都被修改了则会引起冲突：解决的办法是我们可以修改冲突文件后重新提交。选择要保留他的代码还是你的代码。</p>
-<p>main
-主分支应该非常稳定，用来发布新版本，一般情况下不允许在上面工作，工作一般情况下在新建的
-dev
-分支上工作，工作完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支
-main 上来。</p>
+<span class="token keyword">def</span> <span class="token function">generate_geneExpression_png</span><span class="token punctuation">(</span>
+    gem_file_path<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> 
+    save_path<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''
+    这里的 gem_file_path 指的是你的 gem 文件地址 如 ~/gem/***.gem.gz
+    save_path 指的是保存灰度图的文件地址，如 ~/geneExpression/***.png
+    '''</span>
+    log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'start read gem file'</span><span class="token punctuation">)</span>
+    gem_file <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>gem_file_path<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">,</span>comment<span class="token operator">=</span><span class="token string">'#'</span><span class="token punctuation">)</span>
+    
+    x<span class="token punctuation">,</span> y <span class="token operator">=</span> gem_file<span class="token punctuation">[</span><span class="token string">"x"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">,</span> gem_file<span class="token punctuation">[</span><span class="token string">"y"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values
+    shape <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>y<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    
+    log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'matrix generating'</span><span class="token punctuation">)</span>
+    X <span class="token operator">=</span> csr_matrix<span class="token punctuation">(</span><span class="token punctuation">(</span>gem_file<span class="token punctuation">[</span><span class="token string">"MIDCount"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> shape<span class="token operator">=</span>shape<span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint16<span class="token punctuation">)</span>
+    mtx <span class="token operator">=</span> X<span class="token punctuation">.</span>todense<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>
+    mtx_ <span class="token operator">=</span> skimage<span class="token punctuation">.</span>color<span class="token punctuation">.</span>gray2rgb<span class="token punctuation">(</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>mtx<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    
+    log<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'matrix ploting'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>imsave<span class="token punctuation">(</span>save_path<span class="token punctuation">,</span> mtx_<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> mtx_<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 ]]></content>
+      <categories>
+        <category>spatial transcriptomics</category>
+      </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>spatial transcriptomics</tag>
       </tags>
   </entry>
   <entry>
@@ -2677,6 +2342,375 @@ alt="20220126181427" /></p>
       <tags>
         <tag>npm</tag>
         <tag>yarn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Git</title>
+    <url>/2022/3494410286.html</url>
+    <content><![CDATA[<h2 id="版本控制">版本控制</h2>
+<blockquote>
+<p>版本控制（Revision
+control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。</p>
+</blockquote>
+<ul>
+<li>实现跨区域多人协同开发</li>
+<li>追踪和记载一个或者多个文件的历史记录</li>
+<li>组织和保护你的源代码和文档</li>
+<li>统计工作量</li>
+<li>并行开发、提高开发效率</li>
+<li>跟踪记录整个软件的开发过程</li>
+<li>减轻开发人员的负担，节省时间，同时降低人为错误</li>
+</ul>
+<p>简单说就是用于管理多人协同开发项目的技术。 <span id="more"></span>
+没有进行版本控制或者版本控制本身缺乏正确的流程管理，在软件开发过程中将会引入很多问题，如软件代码的一致性、软件内容的冗余、软件过程的事物性、软件开发过程中的并发性、软件源代码的安全性，以及软件的整合等问题。</p>
+<p>无论是工作还是学习，或者是自己做笔记，都经历过这样一个阶段！我们就迫切需要一个版本控制工具！</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123191030.png"
+alt="20220123191030" /></p>
+<blockquote>
+<p>常见的版本控制工具</p>
+</blockquote>
+<p>主流的版本控制器有如下这些：</p>
+<ul>
+<li>Git</li>
+<li>SVN（Subversion）</li>
+<li>CVS（Concurrent Versions System）</li>
+<li>VSS（Microsoft Visual SourceSafe）</li>
+<li>TFS（Team Foundation Server）</li>
+<li>Visual Studio Online</li>
+</ul>
+<p>版本控制产品非常的多（Perforce、Rational ClearCase、RCS（GNU Revision
+Control System）、Serena
+Dimensions、SVK、BitKeeper、Monotone、Bazaar、Mercurial、SourceGear
+Vault），现在影响力最大且使用最广泛的是Git与SVN</p>
+<h3 id="版本控制分类">版本控制分类</h3>
+<h4 id="本地版本控制">1、本地版本控制</h4>
+<p>记录文件每次的更新，可以对每个版本做一个快照，或是记录补丁文件，适合个人用，如RCS。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123191654.png"
+alt="20220123191654" /> 图片</p>
+<h4 id="集中版本控制-svn">2、集中版本控制 SVN</h4>
+<p>所有的版本数据都保存在服务器上，协同开发者从服务器上同步更新或上传自己的修改</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192220.png"
+alt="20220123192220" /></p>
+<p>所有的版本数据都存在服务器上，用户的本地只有自己以前所同步的版本，如果不连网的话，用户就看不到历史版本，也无法切换版本验证问题，或在不同分支工作。而且，所有数据都保存在单一的服务器上，有很大的风险这个服务器会损坏，这样就会丢失所有的数据，当然可以定期备份。代表产品：SVN、CVS、VSS</p>
+<h4 id="分布式版本控制-git">3、分布式版本控制 Git</h4>
+<p>每个人都拥有全部的代码，具有安全隐患。</p>
+<p>所有版本信息仓库全部同步到本地的每个用户，这样就可以在本地查看所有版本历史，可以离线在本地提交，只需在连网时push到相应的服务器或其他用户那里。由于每个用户那里保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但这增加了本地存储空间的占用。
+不会因为服务器损坏或者网络问题，造成不能工作的情况！</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192640.png"
+alt="20220123192640" /></p>
+<h4 id="git与svn的主要区别">Git与SVN的主要区别</h4>
+<p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192819.png"
+alt="20220123192819" /></p>
+<p>Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件。</p>
+<p>Git是目前世界上最先进的分布式版本控制系统。</p>
+<h2 id="git的历史">Git的历史</h2>
+<p>同生活中的许多伟大事物一样，Git
+诞生于一个极富纷争大举创新的年代。</p>
+<p>Linux 内核开源项目有着为数众广的参与者。绝大多数的 Linux
+内核维护工作都花在了提交补丁和保存归档的繁琐事务上(1991－2002年间)。到
+2002 年，整个项目组开始启用一个专有的分布式版本控制系统 BitKeeper
+来管理和维护代码。</p>
+<p>Linux社区中存在很多的大佬！破解研究 BitKeeper ！</p>
+<p>到了 2005 年，开发 BitKeeper 的商业公司同 Linux
+内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper
+的权力。这就迫使 Linux 开源社区(特别是 Linux 的缔造者 Linus
+Torvalds)基于使用 BitKeeper
+时的经验教训，开发出自己的版本系统。（2周左右！） 也就是后来的 Git。</p>
+<p><strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p>
+<p>Git是免费、开源的，最初Git是为辅助 Linux 内核开发的，来替代
+BitKeeper！</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123192959.png"
+alt="20220123192959" /></p>
+<p>Linux和Git之父李纳斯·托沃兹（Linus Benedict Torvalds）1969、芬兰</p>
+<h2 id="git环境配置">Git环境配置</h2>
+<h3 id="软件下载">软件下载</h3>
+<p>打开 <a
+href="https://git-scm.com/">Git官网</a>，下载Git对应操作系统的版本。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/图片.png"
+alt="图片" /></p>
+<p>下载对应的版本即可安装。</p>
+<h3 id="启动git">启动Git</h3>
+<p>安装成功后在开始菜单中会有Git项，菜单下有3个程序：任意文件夹下右键也可以看到对应的程序！</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123194614.png"
+alt="20220123194614" /></p>
+<p><strong>Git
+Bash</strong>：Unix与Linux风格的命令行，使用最多，推荐最多</p>
+<p><strong>Git CMD</strong>：Windows风格的命令行</p>
+<p><strong>Git
+GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
+<h3 id="常用的linux命令">常用的Linux命令</h3>
+<blockquote>
+<p>1）、cd : 改变目录。<br />
+2）、cd . . 回退到上一个目录，直接cd进入默认目录<br />
+3）、pwd : 显示当前所在的目录路径。<br />
+4）、ls(ll):
+都是列出当前目录中的所有文件，只不过ll(两个ll)列出的内容更为详细。<br />
+5）、touch : 新建一个文件 如 touch index.js
+就会在当前目录下新建一个index.js文件。<br />
+6）、rm: 删除一个文件, rm index.js 就会把index.js文件删除。<br />
+7）、mkdir: 新建一个目录,就是新建一个文件夹。<br />
+8）、rm -r : 删除一个文件夹, rm -r src 删除src目录，rm -rf /
+切勿在Linux中尝试！删除电脑中全部文件！<br />
+9）、mv 移动文件, mv index.html src index.html 是我们要移动的文件, src
+是目标文件夹,当然, 这样写,必须保证文件和目标文件夹在同一目录下。<br />
+10）、reset 重新初始化终端/清屏。<br />
+11）、clear 清屏。<br />
+12）、history 查看命令历史。<br />
+13）、help 帮助。<br />
+14）、exit 退出。<br />
+15）、#表示注释</p>
+</blockquote>
+<h3 id="git配置">Git配置</h3>
+<p>所有的配置文件，其实都保存在本地！</p>
+<p>查看配置 git config -l</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123195605.png"
+alt="20220123195605" /></p>
+<p>查看不同级别的配置文件：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#查看系统config</span>
+<span class="token function">git</span> config --system --list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123195715.png"
+alt="20220123195715" /></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#查看当前用户（global）配置</span>
+<span class="token function">git</span> config --global  --list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220123195901.png"
+alt="20220123195901" /></p>
+<h3 id="git相关的配置文件">Git相关的配置文件</h3>
+<p>1）、Git：Git 安装目录下的 gitconfig --system 系统级</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124103424.png"
+alt="20220124103424" /></p>
+<p>2）、C: .gitconfig 只适用于当前登录用户的配置 --global 全局</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124103604.png"
+alt="20220124103604" /></p>
+<p>这里可以直接编辑配置文件，通过命令设置后会响应到这里。</p>
+<p>设置用户名与邮箱（用户标识，必要）
+当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"zepoch"</span>  <span class="token comment">#名称</span>
+<span class="token function">git</span> config --global user.email <span class="token number">1654306546</span>@qq.com   <span class="token comment">#邮箱</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>只需要做一次这个设置，如果你传递了--global
+选项，因为Git将总是会使用该信息来处理你在系统中所做的一切操作。如果你希望在一个特定的项目中使用不同的名称或e-mail地址，你可以在该项目中运行该命令而不要--global选项。总之--global为全局配置，不加为某个项目的特定配置。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124103901.png"
+alt="20220124103901" /></p>
+<h2 id="git基本理论重要">Git基本理论（重要）</h2>
+<h3 id="三个区域">三个区域</h3>
+<p>Git本地有三个工作区域：工作目录（Working
+Directory）、暂存区(Stage/Index)、资源库(Repository或Git
+Directory)。如果在加上远程的git仓库(Remote
+Directory)就可以分为四个工作区域。文件在这四个区域之间的转换关系如下：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124104259.png"
+alt="20220124104259" /></p>
+<ul>
+<li>Workspace：工作区，就是你平时存放项目代码的地方<br />
+</li>
+<li>Index /
+Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息<br />
+</li>
+<li>Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本<br />
+</li>
+<li>Remote：远程仓库，托管代码的服务器，可以简单的认为是你项目组中的一台电脑用于远程数据交换</li>
+</ul>
+<p>本地的三个区域确切的说应该是git仓库中HEAD指向的版本：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124104818.png"
+alt="20220124104818" /></p>
+<ul>
+<li>Directory：使用Git管理的一个目录，也就是一个仓库，包含我们的工作空间和Git的管理空间。<br />
+</li>
+<li>WorkSpace：需要通过Git进行版本控制的目录和文件，这些目录和文件组成了工作空间。<br />
+</li>
+<li>.git：存放Git管理信息的目录，初始化仓库的时候自动创建。<br />
+</li>
+<li>Index/Stage：暂存区，或者叫待提交更新区，在提交进入repo之前，我们可以把所有的更新放在暂存区。<br />
+</li>
+<li>Local
+Repo：本地仓库，一个存放在本地的版本库；HEAD会只是当前的开发分支（branch）。<br />
+</li>
+<li>Stash：隐藏，是一个工作状态保存栈，用于保存/恢复WorkSpace中的临时状态。</li>
+</ul>
+<h3 id="工作流程">工作流程</h3>
+<p>git的工作流程一般是这样的：</p>
+<p>1、在工作目录中添加、修改文件；</p>
+<p>2、将需要进行版本管理的文件放入暂存区域；</p>
+<p>3、将暂存区域的文件提交到git仓库。</p>
+<p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed)</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124105100.png"
+alt="20220124105100" /></p>
+<h2 id="git项目搭建">Git项目搭建</h2>
+<h3 id="创建工作目录与常用指令">创建工作目录与常用指令</h3>
+<p>工作目录（WorkSpace)一般就是你希望Git帮助你管理的文件夹，可以是你项目的目录，也可以是一个空目录，建议不要有中文。</p>
+<p>日常使用只要记住下图6个命令：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124153928.png"
+alt="20220124153928" /></p>
+<h3 id="本地仓库搭建">本地仓库搭建</h3>
+<p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库。</p>
+<p>1、创建全新的仓库，需要用GIT管理的项目的根目录执行：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#在当前目录新建一个Git代码库</span>
+$ <span class="token function">git</span> init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>2、执行后可以看到，仅仅在项目目录多出了一个.git目录，关于版本等的所有信息都在这个目录里面。</p>
+<h3 id="克隆远程仓库">克隆远程仓库</h3>
+<p>1、另一种方式是克隆远程目录，由于是将远程服务器上的仓库完全镜像一份至本地！</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#克隆一个项目和它的整个代码历史(版本信息)</span>
+$ <span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>  <span class="token comment"># &lt;https://gitee.com/kuangstudy/openclass.git></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>2、去 gitee 或者 github 上克隆一个测试！</p>
+<h2 id="git文件操作">Git文件操作</h2>
+<h3 id="文件的四种状态">文件的四种状态</h3>
+<p>版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。</p>
+<ul>
+<li>Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库,
+不参与版本控制. 通过 <strong>git add</strong> 状态变为
+<strong>Staged</strong>.<br />
+</li>
+<li>Unmodify: 文件已经入库, 未修改,
+即版本库中的文件快照内容与文件夹中完全一致. 这种类型的文件有两种去处,
+如果它被修改, 而变为 <strong>Modified</strong>. 如果使用 <strong>git
+rm</strong> 移出版本库, 则成为 <strong>Untracked</strong> 文件<br />
+</li>
+<li>Modified: 文件已修改, 仅仅是修改, 并没有进行其他的操作.
+这个文件也有两个去处, 通过 <strong>git add</strong> 可进入暂存
+<strong>staged</strong> 状态, 使用 <strong>git checkout</strong>
+则丢弃修改过, 返回到 <strong>unmodify</strong> 状态, 这个 <strong>git
+checkout</strong> 即从库中取出文件, 覆盖当前修改 !</li>
+<li>Staged: 暂存状态. 执行 <strong>git commit</strong>
+则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为
+<strong>Unmodify</strong> 状态. 执行 <strong>git reset HEAD
+filename</strong> 取消暂存, 文件状态为 <strong>Modified</strong></li>
+</ul>
+<h3 id="查看文件状态">查看文件状态</h3>
+<p>上面说文件有4种状态，通过如下命令可以查看到文件的状态：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#查看指定文件状态</span>
+<span class="token function">git</span> status <span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
+
+<span class="token comment">#查看所有文件状态</span>
+<span class="token function">git</span> status
+
+<span class="token comment"># git add .                  添加所有文件到暂存区</span>
+
+<span class="token comment"># git commit -m "消息内容"    提交暂存区中的内容到本地仓库 -m 提交信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="忽略文件">忽略文件</h3>
+<p>有些时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</p>
+<p>在主目录下建立".gitignore"文件，此文件有如下规则：</p>
+<ol type="1">
+<li><p>忽略文件中的空行或以井号（#）开始的行将会被忽略。</p></li>
+<li><p>可以使用Linux通配符。例如：星号（*）代表任意多个字符，问号（？）代表一个字符，方括号（[abc]）代表可选字符范围，大括号（{string1,string2,...}）代表可选的字符串等。</p></li>
+<li><p>如果名称的最前面有一个感叹号（!），表示例外规则，将不被忽略。</p></li>
+<li><p>如果名称的最前面是一个路径分隔符（/），表示要忽略的文件在此目录下，而子目录中的文件不忽略。</p></li>
+<li><p>如果名称的最后面是一个路径分隔符（/），表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）。</p>
+<p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 为注释</span>
+*.txt        <span class="token comment">#忽略所有 .txt结尾的文件,这样的话上传就不会被选中！</span>
+<span class="token operator">!</span>lib.txt     <span class="token comment">#但lib.txt除外</span>
+/temp        <span class="token comment">#仅忽略项目根目录下的TODO文件,不包括其它目录temp</span>
+build/       <span class="token comment">#忽略build/目录下的所有文件</span>
+doc/*.txt    <span class="token comment">#会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p></li>
+</ol>
+<h2 id="使用码云">使用码云</h2>
+<ol type="1">
+<li><p>注册登录码云，完善个人信息<br />
+</p></li>
+<li><p>设置本机绑定SSH公钥，实现免密码登录</p>
+<p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 进入 C:\Users\Administrator\.ssh 目录</span>
+
+<span class="token comment"># 生成公钥</span>
+
+$ ssh-keygen -t rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124162203.png"
+alt="20220124162203" /></p></li>
+<li><p>将公钥信息public key 添加到码云账户中即可。<br />
+</p></li>
+<li><p>使用码云创建一个自己的仓库。</p></li>
+<li><p>许可证：开源是否可以随意转载，开源但是不能商业使用，不能转载，...</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124161637.png"
+alt="20220124161637" /></p></li>
+</ol>
+<h2 id="说明git分支">说明：GIT分支</h2>
+<p>分支在GIT中相对较难，分支就是科幻电影里面的平行宇宙，如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，我们就需要处理一些问题了。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/关于Git/20220124163332.png"
+alt="20220124163332" /></p>
+<p>git分支中常用指令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">
+<span class="token comment"># 列出所有本地分支</span>
+$ <span class="token function">git</span> branch
+
+<span class="token comment"># 列出所有远程分支</span>
+$ <span class="token function">git</span> branch -r
+
+<span class="token comment"># 新建一个分支，但依然停留在当前分支</span>
+$ <span class="token function">git</span> branch <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个分支，并切换到该分支</span>
+$ <span class="token function">git</span> checkout -b <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 合并指定分支到当前分支</span>
+$ <span class="token function">git</span> merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除分支</span>
+$ <span class="token function">git</span> branch -d <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除远程分支</span>
+$ <span class="token function">git</span> push origin --delete <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+$ <span class="token function">git</span> branch -dr <span class="token punctuation">[</span>remote/branch<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果同一个文件在合并分支时都被修改了则会引起冲突：解决的办法是我们可以修改冲突文件后重新提交。选择要保留他的代码还是你的代码。</p>
+<p>main
+主分支应该非常稳定，用来发布新版本，一般情况下不允许在上面工作，工作一般情况下在新建的
+dev
+分支上工作，工作完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支
+main 上来。</p>
+]]></content>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于 pandoc exited with code null 的解决方案</title>
+    <url>/2022/2213706848.html</url>
+    <content><![CDATA[<p>今天在写博客的时候，渲染的时候发生了一些问题，主要报错如下</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>ERROR<span class="token punctuation">]</span><span class="token punctuation">[</span>hexo-renderer-pandoc<span class="token punctuation">]</span> pandoc exited with code null.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>看了一些博主的方案，也进行了尝试，但是结果并不是很好，但是自己经过摸索还是解决了，便是来写一下相关的解决方案。</p>
+<span id="more"></span>
+<p>第一种是将 <code>hexo-renderer-pandoc</code> 卸载</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> remove --save hexo-renderer-pandoc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>但是呢，卸载之后，hexo 的渲染器就需要重新装配，不符合我的需求。</p>
+<p>第二种则是在 Linux 之下的的一个官方的<a
+href="https://github.com/pandoc/pandoc-action-example#simple-usage">解决方法</a>：</p>
+<pre class="line-numbers language-none"><code class="language-none">name: Simple Usage
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: docker:&#x2F;&#x2F;pandoc&#x2F;core:2.9
+        with:
+          args: &quot;--help&quot; # gets appended to pandoc command<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>第三种就是我大概摸索到的一个方法，即下载
+<code>pandoc</code>，因为我是 windows，然后 push 到 github
+进行部署的。下载地址如下： <a
+href="https://github.com/jgm/pandoc/releases">Releases · jgm/pandoc
+(github.com)</a></p>
+<p>安装之后重新开启命令行进行部署即可。</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -3095,6 +3129,50 @@ F5</li>
       </tags>
   </entry>
   <entry>
+    <title>写一个小脚本</title>
+    <url>/2023/2262097032.html</url>
+    <content><![CDATA[<p>最近上课，有一门课有一部分网课，这部分网课其实已经学过了，但是老师还是让看，看就看呗，原以为直接挂着就行了，但是发现这个网站每隔几分钟就会弹出窗口，需要点击才能继续观看。可是呢，我还有别的任务，于是便写了一个小脚本，使得可以实现自动刷课。</p>
+<h2 id="找到弹出窗口">找到弹出窗口</h2>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165022.png"
+alt="20230313165022" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165137.png"
+alt="20230313165137" /></p>
+<p>通过检查元素可以看到，class name 为 btn-ok btn
+的只在弹出窗口中出现。</p>
+<h2 id="整理思路写脚本">整理思路写脚本</h2>
+<p>那么只要这个元素出现，选中这个元素，再添加一个 click 事件便可。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e <span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这样便是完成了点击函数，但是还需要添加一个事件，那就是让这个函数一直运行着，一直检测着，便可以使用
+setInterval() 方法。</p>
+<p>全代码如下，其中的 60000 为每隔一分钟执行一次。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token string">"click_btn_ok()"</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>再见小破电</title>
     <url>/2022/3640031914.html</url>
     <content><![CDATA[<p>感谢成电，我爱成电，这是我四年本科生涯的经历所能给予成电的评价。</p>
@@ -3130,311 +3208,6 @@ robomaster，后来去参加机器人班笔试直接就没给进。大概就是�
         <tag>生活</tag>
         <tag>毕业</tag>
         <tag>成电</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于 pandoc exited with code null 的解决方案</title>
-    <url>/2022/2213706848.html</url>
-    <content><![CDATA[<p>今天在写博客的时候，渲染的时候发生了一些问题，主要报错如下</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>ERROR<span class="token punctuation">]</span><span class="token punctuation">[</span>hexo-renderer-pandoc<span class="token punctuation">]</span> pandoc exited with code null.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>看了一些博主的方案，也进行了尝试，但是结果并不是很好，但是自己经过摸索还是解决了，便是来写一下相关的解决方案。</p>
-<span id="more"></span>
-<p>第一种是将 <code>hexo-renderer-pandoc</code> 卸载</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> remove --save hexo-renderer-pandoc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>但是呢，卸载之后，hexo 的渲染器就需要重新装配，不符合我的需求。</p>
-<p>第二种则是在 Linux 之下的的一个官方的<a
-href="https://github.com/pandoc/pandoc-action-example#simple-usage">解决方法</a>：</p>
-<pre class="line-numbers language-none"><code class="language-none">name: Simple Usage
-
-on: push
-
-jobs:
-  convert_via_pandoc:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: docker:&#x2F;&#x2F;pandoc&#x2F;core:2.9
-        with:
-          args: &quot;--help&quot; # gets appended to pandoc command<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>第三种就是我大概摸索到的一个方法，即下载
-<code>pandoc</code>，因为我是 windows，然后 push 到 github
-进行部署的。下载地址如下： <a
-href="https://github.com/jgm/pandoc/releases">Releases · jgm/pandoc
-(github.com)</a></p>
-<p>安装之后重新开启命令行进行部署即可。</p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何在stomics平台使用spateo圈细胞</title>
-    <url>/2023/2333370760.html</url>
-    <content><![CDATA[<p><a
-href="https://www.stomics.tech/products/BioinfoTools/STOmicsCloud">时空云平台（STOmics
-Cloud）</a>是以时空为特色的多组学数据分析平台，可以管理和分析多组学数据。
-STOmics
-Cloud以项目为核心，用户可快速将数据和工具整合到项目，实现分析过程可追溯，结果可复现，知识可分享，项目可协作，形成项目分析体系。并通过一个用户友好的门户，提供灵活易于使用的无代码标准和高级分析，高分辨率可视化分析，以及个性化的分析服务，任何注册登录的用户可以轻松在平台上访问，分析，使用和共享数据和工具。</p>
-<p>总体来说，STOmics
-平台是一个很出色的多组学的数据分析平台，但是仍然有一些不足，STOmics
-在做数据分析的时候无法连接外部网络，如果说我们需要用到一些外部的模型或是其他资源的时候，则是会遇到十分大的阻碍，尤其是当我们调用
-keras
-的某些模型的时候，是需要进行联网下载的，那我们就需要对源码进行一些修改。</p>
-<p><a href="https://spateo-release.readthedocs.io/en/latest/">Spateo</a>
-利用 Stereo-seq 的超高空间分辨率、大视野和高 RNA
-捕获灵敏度，通过核染色和基于 RNA
-信号的细胞分割实现单细胞分辨率空间转录组学。Spateo
-还提供了空间约束聚类的新方法，以识别连续的组织域，空间感知差异分析以揭示空间基因表达热点和模块，以及复杂的配体-受体相互作用。</p>
-<p>首先我们需要在 STOmics
-上构建镜像，通过测试，以下镜像构建代码是有较为不错的效果，基础镜像选择为<code>Python 3 and R image</code>，也可以采用已经构建好的
-spateo_zt
-镜像。镜像使用需要在自己的工作目录创建<code>/data/work/.keras/models</code>和<code>/data/work/.cellpose/models</code>文件夹。</p>
-<p>stardist需要下载 <a
-href="https://github.com/stardist/stardist-models/releases/download/v0.1/python_2D_versatile_fluo.zip">python_2D_versatile_fluo.zip</a>
-并且改名为 <code>2D_versatile_fluo.zip</code>，放置于
-<code>/data/work/.keras/models/StarDist2D/2D_versatile_fluo/2D_versatile_fluo.zip</code>。cellpose需要下载
-<a
-href="https://www.cellpose.org/models/nucleitorch_0">nucleitorch_0</a>
-和 <a
-href="https://www.cellpose.org/models/size_nucleitorch_0.npy">size_nucleitorch_0.npy</a>
-放置于 <code>/data/work/.cellpose/models/nucleitorch_0</code>
-和<code>/data/work/.cellpose/models/size_nucleitorch_0.npy</code>。deepcell需要下载
-<a
-href="https://deepcell-data.s3-us-west-1.amazonaws.com/saved-models/NuclearSegmentation-75.tar.gz">NuclearSegmentation-75.tar.gz</a>
-并且改名为 <code>NuclearSegmentation.tgz</code>，放置于
-<code>/data/work/.keras/models/NuclearSegmentation.tgz</code>
-之后便可进行正常的圈细胞。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/opt/software/python/bin/python3.8 -m pip <span class="token function">install</span> --upgrade pip
-pip <span class="token function">install</span> scanpy
-pip <span class="token function">install</span> spateo-release
-pip <span class="token function">install</span> <span class="token assign-left variable">tensorflow</span><span class="token operator">==</span><span class="token number">2.12</span>.0
-pip <span class="token function">install</span> stardist
-pip <span class="token function">install</span> cellpose
-pip <span class="token function">install</span> DeepCell
-<span class="token function">sed</span> -i <span class="token string">'214a \ \ \ \ cache_dir="/data/work/.keras"'</span> /opt/software/python/lib/python3.8/site-packages/keras/utils/data_utils.py
-<span class="token function">sed</span> -i <span class="token string">'221a \ \ \ \ datadir_base="/data/work/.keras"'</span> /opt/software/python/lib/python3.8/site-packages/keras/utils/data_utils.py
-<span class="token function">sed</span> -i <span class="token string">'17a MODEL_DIR = pathlib.Path("/data/work/.cellpose/models")'</span> /opt/software/python/lib/python3.8/site-packages/cellpose/models.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>构建镜像完成之后便是可以使用空间组芯片数据gem和空间组拍照数据tif进行圈细胞。我写的代码如下所示</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">cellbin_spateo</span><span class="token punctuation">(</span>gem<span class="token punctuation">,</span> tif<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    adata <span class="token operator">=</span> st<span class="token punctuation">.</span>io<span class="token punctuation">.</span>read_bgi_agg<span class="token punctuation">(</span>
-        <span class="token string">'../data/'</span><span class="token operator">+</span>gem<span class="token punctuation">,</span> <span class="token string">'../data/'</span><span class="token operator">+</span>tif<span class="token punctuation">,</span>
-    <span class="token punctuation">)</span>
-    name <span class="token operator">=</span> gem<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-    
-    <span class="token comment">## stain mask</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>mask_nuclei_from_stain<span class="token punctuation">(</span>adata<span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain_mask'</span><span class="token punctuation">,</span> save_show_or_return <span class="token operator">=</span> <span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/01.stain_mask/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">## watershed_labels</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>find_peaks_from_mask<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>watershed<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'watershed_labels'</span><span class="token punctuation">)</span>
-    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'watershed_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/02.watershed_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">## stardist_labels</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>stardist<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> tilesize<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> equalize<span class="token operator">=</span><span class="token number">2.0</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'stardist_labels'</span><span class="token punctuation">)</span>
-    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stardist_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/03.stardist_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">## augmented_labels</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>augment_labels<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'watershed_labels'</span><span class="token punctuation">,</span> <span class="token string">'stardist_labels'</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'augmented_labels'</span><span class="token punctuation">)</span>
-    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/04.augmented_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">##</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>mask_cells_from_stain<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'stain_cell_mask'</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>watershed<span class="token punctuation">(</span>
-        adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span>
-        mask_layer<span class="token operator">=</span><span class="token string">'stain_cell_mask'</span><span class="token punctuation">,</span>
-        markers_layer<span class="token operator">=</span><span class="token string">'augmented_labels'</span><span class="token punctuation">,</span>
-        out_layer<span class="token operator">=</span><span class="token string">'cell_labels'</span><span class="token punctuation">,</span>
-    <span class="token punctuation">)</span>
-    
-    <span class="token comment">## </span>
-    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'cell_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_1600/05.cell_labels/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">## expand_labels</span>
-    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>expand_labels<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels'</span><span class="token punctuation">,</span> distance<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> max_area<span class="token operator">=</span><span class="token number">1600</span><span class="token punctuation">)</span>
-    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
-    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span><span class="token string">'../Spateo/area_900/06.augmented_labels_expanded/'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">## label adata</span>
-    adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'../Spateo/area_1600/07.labeled_adata/'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'.h5ad'</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">## final adata</span>
-    cell_adata <span class="token operator">=</span> st<span class="token punctuation">.</span>io<span class="token punctuation">.</span>read_bgi<span class="token punctuation">(</span>
-        <span class="token string">'../data/'</span><span class="token operator">+</span>gem<span class="token punctuation">,</span>
-        segmentation_adata<span class="token operator">=</span>adata<span class="token punctuation">,</span>
-        labels_layer<span class="token operator">=</span><span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">,</span>
-    <span class="token punctuation">)</span>
-    cell_adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'../Spateo/area_1600/08.final_adata/'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'.h5ad'</span><span class="token punctuation">)</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>使用上述代码则可以正常在 STOmics
-平台上进行圈细胞。获得单细胞分辨率的空间组的数据。需要注意的是我们的拍照的
-tif 数据是需要和 gem
-数据的空间位置对应上的。那么应该如何对应呢？这里使用师兄 liaokuo
-的代码，生成由 gem 文件生成的灰度图，将灰度图放置于 PhotoShop
-中作为底图，然后将 tif
-图与灰度图手动配准（因为自动配准效果不好），导出以
-灰度图大小画布为底的、调整过的 tif
-图片，然后将此图片拿去与gem文件做圈细胞。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># author: liaokuo</span>
-<span class="token comment"># time: 2022/4/1</span>
-
-<span class="token comment"># this is to generate grey graphic from spatial RNA.</span>
-<span class="token comment"># create_greyplot.py input_file_path out_put_directory</span>
-
-<span class="token keyword">import</span> sys
-<span class="token keyword">import</span> os
-inpath<span class="token operator">=</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
-outpath<span class="token operator">=</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
-os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span>outpath<span class="token punctuation">)</span> <span class="token comment"># change the working directory</span>
-<span class="token builtin">file</span><span class="token operator">=</span>inpath<span class="token punctuation">.</span>rsplit<span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
-name<span class="token operator">=</span><span class="token builtin">file</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-
-<span class="token keyword">def</span> <span class="token function">mRNA_image_load</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> gray_factor<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    cbs <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>path<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">,</span>comment<span class="token operator">=</span><span class="token string">'#'</span><span class="token punctuation">)</span> <span class="token comment"># therefore, the input file must be a clear txt or csv file.</span>
-    cbs<span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'_'</span> <span class="token operator">+</span> cbs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>
-    cbs2 <span class="token operator">=</span> cbs<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">,</span> <span class="token string">'UMICount'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token keyword">if</span> <span class="token string">'UMICount'</span> <span class="token keyword">in</span> cbs<span class="token punctuation">.</span>columns <span class="token keyword">else</span> cbs<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">,</span> <span class="token string">'MIDCount'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token comment"># there must be careful.</span>
-    cbs2 <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    cbs2<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
-    cbs2<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
-    <span class="token comment">#cbs2['x'] -= cbs2['x'].min()</span>
-    <span class="token comment">#cbs2['y'] -= cbs2['y'].min()</span>
-    h <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    w <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    mtx <span class="token operator">=</span> cbs2<span class="token punctuation">.</span>pivot_table<span class="token punctuation">(</span>values<span class="token operator">=</span><span class="token string">'coor'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token string">'x'</span><span class="token punctuation">,</span> columns<span class="token operator">=</span><span class="token string">'y'</span><span class="token punctuation">,</span> aggfunc<span class="token operator">=</span><span class="token string">'sum'</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>h<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">if</span> i <span class="token keyword">not</span> <span class="token keyword">in</span> mtx<span class="token punctuation">.</span>index<span class="token punctuation">:</span>
-            mtx<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
-    <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">if</span> j <span class="token keyword">not</span> <span class="token keyword">in</span> mtx<span class="token punctuation">.</span>columns<span class="token punctuation">:</span>
-            mtx<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
-    mtx <span class="token operator">=</span> mtx<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
-    mtx <span class="token operator">=</span> mtx <span class="token operator">*</span> gray_factor
-    mtx<span class="token punctuation">[</span>mtx<span class="token operator">></span><span class="token number">255</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">255</span>
-    mtx <span class="token operator">=</span> mtx<span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span><span class="token punctuation">.</span>values
-    <span class="token keyword">return</span> mtx
-
-
-
-
-<span class="token comment"># get the grey scale matrix</span>
-mtx<span class="token operator">=</span>mRNA_image_load<span class="token punctuation">(</span>path<span class="token operator">=</span>inpath<span class="token punctuation">)</span>
-data<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>mtx<span class="token punctuation">)</span>
-data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_grey.csv"</span><span class="token punctuation">)</span>
-
-
-<span class="token comment"># draw grep scale plot in format of png</span>
-<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
-im <span class="token operator">=</span> Image<span class="token punctuation">.</span>fromarray<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment"># image object should be an array in 0-255</span>
-im <span class="token operator">=</span> im<span class="token punctuation">.</span>convert<span class="token punctuation">(</span><span class="token string">'L'</span><span class="token punctuation">)</span><span class="token comment"># L means grey scale, while RGB means color scale</span>
-im<span class="token punctuation">.</span>save<span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_grey.png"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>spatial transcriptomics</category>
-      </categories>
-      <tags>
-        <tag>spatial transcriptomics</tag>
-        <tag>spateo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>138.复制带随机指针的链表</title>
-    <url>/2021/3186910758.html</url>
-    <content><![CDATA[<p><a
-href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">今天的力扣题目</a>的难度是中等，但是实际上做起来却感到稍微有些难。好吧，其实是因为俺太菜了嘤嘤嘤。题干如下：</p>
-<span id="more"></span>
-<blockquote>
-<p>给你一个长度为 n 的链表，每个节点包含一个额外增加的随机指针 random
-，该指针可以指向链表中的任何节点或空节点。</p>
-<p>构造这个链表的 深拷贝。 深拷贝应该正好由 n 个 全新
-节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
-指针和 random
-指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。复制链表中的指针都不应指向原链表中的节点
-。</p>
-<p>例如，如果原链表中有 X 和 Y 两个节点，其中 X.random --&gt; Y
-。那么在复制链表中对应的两个节点 x 和 y ，同样有 x.random --&gt; y
-。</p>
-<p>返回复制链表的头节点。</p>
-<p>用一个由 n 个节点组成的链表来表示输入/输出中的链表。每个节点用一个
-[val, random_index] 表示：</p>
-<p>val：一个表示 Node.val 的整数。
-random_index：随机指针指向的节点索引（范围从 0 到
-n-1）；如果不指向任何节点，则为 null 。 你的代码 只 接受原链表的头节点
-head 作为传入参数。</p>
-</blockquote>
-<p>示例：</p>
-<blockquote>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/e1.png"
-alt="e1" /></p>
-<p>输入：head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
-输出：[[7,null],[13,0],[11,4],[10,2],[1,0]]</p>
-</blockquote>
-<p>对于链表 <span
-class="math inline">\(A-&gt;B-&gt;C\)</span>，我们可以将其拆分为 <span
-class="math inline">\(A-&gt;A&#39;-&gt;B-&gt;B&#39;-&gt;C-&gt;C&#39;\)</span>。对于任意一个节点
-<span class="math inline">\(S\)</span>，其拷贝节点 <span
-class="math inline">\(S&#39;\)</span> 即为其后继节点，那么现在就可以将
-<span class="math inline">\(S&#39;\)</span> 的随机节点指向 <span
-class="math inline">\(S.random.next\)</span>，即 <span
-class="math inline">\(p.next.random =
-p.random.next\)</span>，之后将拷贝链与原链分离开来。图示如下（<a
-href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/solution/fu-zhi-dai-sui-ji-zhi-zhen-de-lian-biao-rblsf/">图源</a>）：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/1.png"
-alt="1" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/2.png"
-alt="2" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/3.png"
-alt="3" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/4.png"
-alt="4" /></p>
-<p>代码如下</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> <span class="token builtin">next</span><span class="token punctuation">:</span> <span class="token string">'Node'</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> random<span class="token punctuation">:</span> <span class="token string">'Node'</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        self<span class="token punctuation">.</span>val <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-        self<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> <span class="token builtin">next</span>
-        self<span class="token punctuation">.</span>random <span class="token operator">=</span> random
-
-
-<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">copyRandomList</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">:</span> <span class="token string">'Node'</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token string">'Node'</span><span class="token punctuation">:</span>
-        <span class="token keyword">if</span> <span class="token keyword">not</span> head<span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token boolean">None</span>
-        p <span class="token operator">=</span> head
-        <span class="token keyword">while</span> p<span class="token punctuation">:</span>
-            new_node <span class="token operator">=</span> Node<span class="token punctuation">(</span>p<span class="token punctuation">.</span>val<span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">)</span>
-            new_node<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span>
-            p<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> new_node
-            p <span class="token operator">=</span> new_node<span class="token punctuation">.</span><span class="token builtin">next</span>
-        p <span class="token operator">=</span> head
-        <span class="token keyword">while</span> p<span class="token punctuation">:</span>
-            <span class="token keyword">if</span> p<span class="token punctuation">.</span>random<span class="token punctuation">:</span>
-                p<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>random <span class="token operator">=</span> p<span class="token punctuation">.</span>random<span class="token punctuation">.</span><span class="token builtin">next</span>
-            p <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span>
-        
-        p <span class="token operator">=</span> head
-        dummy <span class="token operator">=</span> Node<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">)</span>
-        cur <span class="token operator">=</span> dummy
-        <span class="token keyword">while</span> p<span class="token punctuation">:</span>
-            cur<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span>
-            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span><span class="token builtin">next</span>
-            p<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> cur<span class="token punctuation">.</span><span class="token builtin">next</span>
-            p <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span>
-        <span class="token keyword">return</span> dummy<span class="token punctuation">.</span><span class="token builtin">next</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <tags>
-        <tag>LeetCode</tag>
-        <tag>搜索</tag>
-        <tag>哈希表</tag>
       </tags>
   </entry>
   <entry>
@@ -4190,6 +3963,101 @@ href="https://www.mozilla.org/css/base/content.css">mozilla官方属性顺序推
       </tags>
   </entry>
   <entry>
+    <title>138.复制带随机指针的链表</title>
+    <url>/2021/3186910758.html</url>
+    <content><![CDATA[<p><a
+href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">今天的力扣题目</a>的难度是中等，但是实际上做起来却感到稍微有些难。好吧，其实是因为俺太菜了嘤嘤嘤。题干如下：</p>
+<span id="more"></span>
+<blockquote>
+<p>给你一个长度为 n 的链表，每个节点包含一个额外增加的随机指针 random
+，该指针可以指向链表中的任何节点或空节点。</p>
+<p>构造这个链表的 深拷贝。 深拷贝应该正好由 n 个 全新
+节点组成，其中每个新节点的值都设为其对应的原节点的值。新节点的 next
+指针和 random
+指针也都应指向复制链表中的新节点，并使原链表和复制链表中的这些指针能够表示相同的链表状态。复制链表中的指针都不应指向原链表中的节点
+。</p>
+<p>例如，如果原链表中有 X 和 Y 两个节点，其中 X.random --&gt; Y
+。那么在复制链表中对应的两个节点 x 和 y ，同样有 x.random --&gt; y
+。</p>
+<p>返回复制链表的头节点。</p>
+<p>用一个由 n 个节点组成的链表来表示输入/输出中的链表。每个节点用一个
+[val, random_index] 表示：</p>
+<p>val：一个表示 Node.val 的整数。
+random_index：随机指针指向的节点索引（范围从 0 到
+n-1）；如果不指向任何节点，则为 null 。 你的代码 只 接受原链表的头节点
+head 作为传入参数。</p>
+</blockquote>
+<p>示例：</p>
+<blockquote>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/e1.png"
+alt="e1" /></p>
+<p>输入：head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+输出：[[7,null],[13,0],[11,4],[10,2],[1,0]]</p>
+</blockquote>
+<p>对于链表 <span
+class="math inline">\(A-&gt;B-&gt;C\)</span>，我们可以将其拆分为 <span
+class="math inline">\(A-&gt;A&#39;-&gt;B-&gt;B&#39;-&gt;C-&gt;C&#39;\)</span>。对于任意一个节点
+<span class="math inline">\(S\)</span>，其拷贝节点 <span
+class="math inline">\(S&#39;\)</span> 即为其后继节点，那么现在就可以将
+<span class="math inline">\(S&#39;\)</span> 的随机节点指向 <span
+class="math inline">\(S.random.next\)</span>，即 <span
+class="math inline">\(p.next.random =
+p.random.next\)</span>，之后将拷贝链与原链分离开来。图示如下（<a
+href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/solution/fu-zhi-dai-sui-ji-zhi-zhen-de-lian-biao-rblsf/">图源</a>）：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/1.png"
+alt="1" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/2.png"
+alt="2" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/3.png"
+alt="3" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/138.%20%E5%A4%8D%E5%88%B6%E5%B8%A6%E9%9A%8F%E6%9C%BA%E6%8C%87%E9%92%88%E7%9A%84%E9%93%BE%E8%A1%A8/4.png"
+alt="4" /></p>
+<p>代码如下</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> <span class="token builtin">next</span><span class="token punctuation">:</span> <span class="token string">'Node'</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> random<span class="token punctuation">:</span> <span class="token string">'Node'</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>val <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> <span class="token builtin">next</span>
+        self<span class="token punctuation">.</span>random <span class="token operator">=</span> random
+
+
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">copyRandomList</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">:</span> <span class="token string">'Node'</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token string">'Node'</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> head<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+        p <span class="token operator">=</span> head
+        <span class="token keyword">while</span> p<span class="token punctuation">:</span>
+            new_node <span class="token operator">=</span> Node<span class="token punctuation">(</span>p<span class="token punctuation">.</span>val<span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+            new_node<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span>
+            p<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> new_node
+            p <span class="token operator">=</span> new_node<span class="token punctuation">.</span><span class="token builtin">next</span>
+        p <span class="token operator">=</span> head
+        <span class="token keyword">while</span> p<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> p<span class="token punctuation">.</span>random<span class="token punctuation">:</span>
+                p<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>random <span class="token operator">=</span> p<span class="token punctuation">.</span>random<span class="token punctuation">.</span><span class="token builtin">next</span>
+            p <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span>
+        
+        p <span class="token operator">=</span> head
+        dummy <span class="token operator">=</span> Node<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">,</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+        cur <span class="token operator">=</span> dummy
+        <span class="token keyword">while</span> p<span class="token punctuation">:</span>
+            cur<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span>
+            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span><span class="token builtin">next</span>
+            p<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> cur<span class="token punctuation">.</span><span class="token builtin">next</span>
+            p <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token builtin">next</span>
+        <span class="token keyword">return</span> dummy<span class="token punctuation">.</span><span class="token builtin">next</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <tags>
+        <tag>LeetCode</tag>
+        <tag>搜索</tag>
+        <tag>哈希表</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何写好你的科学故事</title>
     <url>/2022/542253658.html</url>
     <content><![CDATA[<h2 id="摘要">摘要</h2>
@@ -4393,47 +4261,266 @@ Word®）拆分屏幕并滚动文本，找到摘要中需要的关键点</p>
       </tags>
   </entry>
   <entry>
-    <title>写一个小脚本</title>
-    <url>/2023/2262097032.html</url>
-    <content><![CDATA[<p>最近上课，有一门课有一部分网课，这部分网课其实已经学过了，但是老师还是让看，看就看呗，原以为直接挂着就行了，但是发现这个网站每隔几分钟就会弹出窗口，需要点击才能继续观看。可是呢，我还有别的任务，于是便写了一个小脚本，使得可以实现自动刷课。</p>
-<h2 id="找到弹出窗口">找到弹出窗口</h2>
+    <title>好玩的 Github</title>
+    <url>/2021/246677465.html</url>
+    <content><![CDATA[<p>前年的时候，做过一些 <a
+href="https://github.com/zEpoch/next-beautify">Hexo Next
+主题的美化</a>，后来再上传的时候，就一股脑全部上传上去了，当然也没那么傻，倒是还是删掉了
+node_modules 后再上传的，但是却是没有删掉 package.json，后来呢，Github
+就经常提醒我有安全问题。</p>
 <p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165022.png"
-alt="20230313165022" /></p>
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142124146.png"
+alt="image-20210719142124146" /></p>
+<p>打开一看，好家伙，全都是依赖警报</p>
+<span id="more"></span>
 <p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/写一个小脚本/20230313165137.png"
-alt="20230313165137" /></p>
-<p>通过检查元素可以看到，class name 为 btn-ok btn
-的只在弹出窗口中出现。</p>
-<h2 id="整理思路写脚本">整理思路写脚本</h2>
-<p>那么只要这个元素出现，选中这个元素，再添加一个 click 事件便可。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
-    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e <span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这样便是完成了点击函数，但是还需要添加一个事件，那就是让这个函数一直运行着，一直检测着，便可以使用
-setInterval() 方法。</p>
-<p>全代码如下，其中的 60000 为每隔一分钟执行一次。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">click_btn_ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
-    document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'btn-ok btn'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'弹出窗口，已经点击'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'没有弹出窗口'</span><span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token string">"click_btn_ok()"</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142440142.png"
+alt="image-20210719142440142" /></p>
+<p>然后细看一下会发现大都是依赖要进行升级了。</p>
+<p><img src= "/%E5%9B%BE%E7%89%87%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD" data-lazy-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142707537.png" alt="image-20210719142707537" style="zoom:100%;" /></p>
+<p>好在 Github
+还是很舒服的，可以直接在线更改升级，还有个小机器人帮你升级。美滋滋</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142825189.png"
+alt="image-20210719142825189" /></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何在stomics平台使用spateo圈细胞</title>
+    <url>/2023/2333370760.html</url>
+    <content><![CDATA[<p><a
+href="https://www.stomics.tech/products/BioinfoTools/STOmicsCloud">时空云平台（STOmics
+Cloud）</a>是以时空为特色的多组学数据分析平台，可以管理和分析多组学数据。
+STOmics
+Cloud以项目为核心，用户可快速将数据和工具整合到项目，实现分析过程可追溯，结果可复现，知识可分享，项目可协作，形成项目分析体系。并通过一个用户友好的门户，提供灵活易于使用的无代码标准和高级分析，高分辨率可视化分析，以及个性化的分析服务，任何注册登录的用户可以轻松在平台上访问，分析，使用和共享数据和工具。</p>
+<p>总体来说，STOmics
+平台是一个很出色的多组学的数据分析平台，但是仍然有一些不足，STOmics
+在做数据分析的时候无法连接外部网络，如果说我们需要用到一些外部的模型或是其他资源的时候，则是会遇到十分大的阻碍，尤其是当我们调用
+keras
+的某些模型的时候，是需要进行联网下载的，那我们就需要对源码进行一些修改。</p>
+<p><a href="https://spateo-release.readthedocs.io/en/latest/">Spateo</a>
+利用 Stereo-seq 的超高空间分辨率、大视野和高 RNA
+捕获灵敏度，通过核染色和基于 RNA
+信号的细胞分割实现单细胞分辨率空间转录组学。Spateo
+还提供了空间约束聚类的新方法，以识别连续的组织域，空间感知差异分析以揭示空间基因表达热点和模块，以及复杂的配体-受体相互作用。</p>
+<p>首先我们需要在 STOmics
+上构建镜像，通过测试，以下镜像构建代码是有较为不错的效果，基础镜像选择为<code>Python 3 and R image</code>，也可以采用已经构建好的
+spateo_zt
+镜像。镜像使用需要在自己的工作目录创建<code>/data/work/.keras/models</code>和<code>/data/work/.cellpose/models</code>文件夹。</p>
+<p>stardist需要下载 <a
+href="https://github.com/stardist/stardist-models/releases/download/v0.1/python_2D_versatile_fluo.zip">python_2D_versatile_fluo.zip</a>
+并且改名为 <code>2D_versatile_fluo.zip</code>，放置于
+<code>/data/work/.keras/models/StarDist2D/2D_versatile_fluo/2D_versatile_fluo.zip</code>。cellpose需要下载
+<a
+href="https://www.cellpose.org/models/nucleitorch_0">nucleitorch_0</a>
+和 <a
+href="https://www.cellpose.org/models/size_nucleitorch_0.npy">size_nucleitorch_0.npy</a>
+放置于 <code>/data/work/.cellpose/models/nucleitorch_0</code>
+和<code>/data/work/.cellpose/models/size_nucleitorch_0.npy</code>。deepcell需要下载
+<a
+href="https://deepcell-data.s3-us-west-1.amazonaws.com/saved-models/NuclearSegmentation-75.tar.gz">NuclearSegmentation-75.tar.gz</a>
+并且改名为 <code>NuclearSegmentation.tgz</code>，放置于
+<code>/data/work/.keras/models/NuclearSegmentation.tgz</code>
+之后便可进行正常的圈细胞。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/opt/software/python/bin/python3.8 -m pip <span class="token function">install</span> --upgrade pip
+pip <span class="token function">install</span> scanpy
+pip <span class="token function">install</span> spateo-release
+pip <span class="token function">install</span> <span class="token assign-left variable">tensorflow</span><span class="token operator">==</span><span class="token number">2.12</span>.0
+pip <span class="token function">install</span> stardist
+pip <span class="token function">install</span> cellpose
+pip <span class="token function">install</span> DeepCell
+<span class="token function">sed</span> -i <span class="token string">'214a \ \ \ \ cache_dir="/data/work/.keras"'</span> /opt/software/python/lib/python3.8/site-packages/keras/utils/data_utils.py
+<span class="token function">sed</span> -i <span class="token string">'221a \ \ \ \ datadir_base="/data/work/.keras"'</span> /opt/software/python/lib/python3.8/site-packages/keras/utils/data_utils.py
+<span class="token function">sed</span> -i <span class="token string">'17a MODEL_DIR = pathlib.Path("/data/work/.cellpose/models")'</span> /opt/software/python/lib/python3.8/site-packages/cellpose/models.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>构建镜像完成之后便是可以使用空间组芯片数据gem和空间组拍照数据tif进行圈细胞。我写的代码如下所示</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">cellbin_spateo</span><span class="token punctuation">(</span>gem_path<span class="token punctuation">,</span> ssDNA_path<span class="token punctuation">,</span> save_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    
+    adata <span class="token operator">=</span> st<span class="token punctuation">.</span>io<span class="token punctuation">.</span>read_bgi_agg<span class="token punctuation">(</span>
+        gem_path<span class="token punctuation">,</span> ssDNA_path<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    
+    name <span class="token operator">=</span> gem_path<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    
+    <span class="token comment">## stain mask</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>mask_nuclei_from_stain<span class="token punctuation">(</span>adata<span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain_mask'</span><span class="token punctuation">,</span> save_show_or_return <span class="token operator">=</span> <span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span>save_path <span class="token operator">+</span> <span class="token string">'01.stain_mask_'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## watershed_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>find_peaks_from_mask<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>watershed<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'watershed_labels'</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'watershed_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span>save_path <span class="token operator">+</span> <span class="token string">'02.watershed_labels_'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## stardist_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>stardist<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> tilesize<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> equalize<span class="token operator">=</span><span class="token number">2.0</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'stardist_labels'</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stardist_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span>save_path <span class="token operator">+</span> <span class="token string">'03.stardist_labels_'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## augmented_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>augment_labels<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'watershed_labels'</span><span class="token punctuation">,</span> <span class="token string">'stardist_labels'</span><span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'augmented_labels'</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span>save_path <span class="token operator">+</span> <span class="token string">'04.augmented_labels_'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">##</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>mask_cells_from_stain<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> out_layer<span class="token operator">=</span><span class="token string">'stain_cell_mask'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>watershed<span class="token punctuation">(</span>
+        adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span>
+        mask_layer<span class="token operator">=</span><span class="token string">'stain_cell_mask'</span><span class="token punctuation">,</span>
+        markers_layer<span class="token operator">=</span><span class="token string">'augmented_labels'</span><span class="token punctuation">,</span>
+        out_layer<span class="token operator">=</span><span class="token string">'cell_labels'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    
+    <span class="token comment">## </span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'cell_labels'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span>save_path <span class="token operator">+</span> <span class="token string">'05.cell_labels_'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## expand_labels</span>
+    st<span class="token punctuation">.</span>cs<span class="token punctuation">.</span>expand_labels<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels'</span><span class="token punctuation">,</span> distance<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> max_area<span class="token operator">=</span><span class="token number">1600</span><span class="token punctuation">)</span>
+    fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'stain'</span><span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'return'</span><span class="token punctuation">)</span>
+    st<span class="token punctuation">.</span>pl<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>adata<span class="token punctuation">,</span> <span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> save_show_or_return<span class="token operator">=</span><span class="token string">'save'</span><span class="token punctuation">,</span> save_kwargs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'path'</span><span class="token punctuation">:</span>save_path <span class="token operator">+</span> <span class="token string">'06.augmented_labels_expanded_'</span> <span class="token operator">+</span> name<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## label adata</span>
+    adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span>save_path <span class="token operator">+</span> <span class="token string">'07.labeled_adata_'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'.h5ad'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">## final adata</span>
+    cell_adata <span class="token operator">=</span> st<span class="token punctuation">.</span>io<span class="token punctuation">.</span>read_bgi<span class="token punctuation">(</span>
+        gem_path<span class="token punctuation">,</span>
+        segmentation_adata<span class="token operator">=</span>adata<span class="token punctuation">,</span>
+        labels_layer<span class="token operator">=</span><span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    cell_adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span>save_path <span class="token operator">+</span> <span class="token string">'08.final_adata_'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'.h5ad'</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用上述代码则可以正常在 STOmics
+平台上进行圈细胞。获得单细胞分辨率的空间组的数据。需要注意的是我们的拍照的
+tif 数据是需要和 gem
+数据的空间位置对应上的。那么应该如何对应呢？这里使用师兄 liaokuo
+的代码，生成由 gem 文件生成的灰度图，将灰度图放置于 PhotoShop
+中作为底图，然后将 tif
+图与灰度图手动配准（因为自动配准效果不好），导出以
+灰度图大小画布为底的、调整过的 tif
+图片，然后将此图片拿去与gem文件做圈细胞。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># author: liaokuo</span>
+<span class="token comment"># time: 2022/4/1</span>
+
+<span class="token comment"># this is to generate grey graphic from spatial RNA.</span>
+<span class="token comment"># create_greyplot.py input_file_path out_put_directory</span>
+
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> os
+inpath<span class="token operator">=</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+outpath<span class="token operator">=</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
+os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span>outpath<span class="token punctuation">)</span> <span class="token comment"># change the working directory</span>
+<span class="token builtin">file</span><span class="token operator">=</span>inpath<span class="token punctuation">.</span>rsplit<span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+name<span class="token operator">=</span><span class="token builtin">file</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+<span class="token keyword">def</span> <span class="token function">mRNA_image_load</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> gray_factor<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    cbs <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>path<span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">,</span>comment<span class="token operator">=</span><span class="token string">'#'</span><span class="token punctuation">)</span> <span class="token comment"># therefore, the input file must be a clear txt or csv file.</span>
+    cbs<span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'_'</span> <span class="token operator">+</span> cbs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>
+    cbs2 <span class="token operator">=</span> cbs<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">,</span> <span class="token string">'UMICount'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token keyword">if</span> <span class="token string">'UMICount'</span> <span class="token keyword">in</span> cbs<span class="token punctuation">.</span>columns <span class="token keyword">else</span> cbs<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">,</span> <span class="token string">'MIDCount'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token comment"># there must be careful.</span>
+    cbs2 <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'coor'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reset_index<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    cbs2<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+    cbs2<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'_'</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+    <span class="token comment">#cbs2['x'] -= cbs2['x'].min()</span>
+    <span class="token comment">#cbs2['y'] -= cbs2['y'].min()</span>
+    h <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    w <span class="token operator">=</span> cbs2<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    mtx <span class="token operator">=</span> cbs2<span class="token punctuation">.</span>pivot_table<span class="token punctuation">(</span>values<span class="token operator">=</span><span class="token string">'coor'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token string">'x'</span><span class="token punctuation">,</span> columns<span class="token operator">=</span><span class="token string">'y'</span><span class="token punctuation">,</span> aggfunc<span class="token operator">=</span><span class="token string">'sum'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>h<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> i <span class="token keyword">not</span> <span class="token keyword">in</span> mtx<span class="token punctuation">.</span>index<span class="token punctuation">:</span>
+            mtx<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>w<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> j <span class="token keyword">not</span> <span class="token keyword">in</span> mtx<span class="token punctuation">.</span>columns<span class="token punctuation">:</span>
+            mtx<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+    mtx <span class="token operator">=</span> mtx<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+    mtx <span class="token operator">=</span> mtx <span class="token operator">*</span> gray_factor
+    mtx<span class="token punctuation">[</span>mtx<span class="token operator">></span><span class="token number">255</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">255</span>
+    mtx <span class="token operator">=</span> mtx<span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span><span class="token punctuation">.</span>values
+    <span class="token keyword">return</span> mtx
+
+
+
+
+<span class="token comment"># get the grey scale matrix</span>
+mtx<span class="token operator">=</span>mRNA_image_load<span class="token punctuation">(</span>path<span class="token operator">=</span>inpath<span class="token punctuation">)</span>
+data<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>mtx<span class="token punctuation">)</span>
+data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_grey.csv"</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># draw grep scale plot in format of png</span>
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+im <span class="token operator">=</span> Image<span class="token punctuation">.</span>fromarray<span class="token punctuation">(</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment"># image object should be an array in 0-255</span>
+im <span class="token operator">=</span> im<span class="token punctuation">.</span>convert<span class="token punctuation">(</span><span class="token string">'L'</span><span class="token punctuation">)</span><span class="token comment"># L means grey scale, while RGB means color scale</span>
+im<span class="token punctuation">.</span>save<span class="token punctuation">(</span>name<span class="token operator">+</span><span class="token string">"_grey.png"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>spatial transcriptomics</category>
+      </categories>
+      <tags>
+        <tag>spatial transcriptomics</tag>
+        <tag>spateo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何将rds转为h5ad</title>
+    <url>/2023/3539500839.html</url>
+    <content><![CDATA[<p>在进行单细胞或是空间组数据分析的时候，有的人喜欢使用 R
+语言进行分析，有的同学喜欢使用 Python
+进行分析，但是两个语言分析所使用的文件有所不同，R 语言通常保存的为 rds
+文件，Python 通常保存的为 h5ad
+文件，如果是多人合作分析的时候，往往需要将文件进行格式转换，这通常是一件较为麻烦的事情，看到过有使用
+SeuratDisk 和 SeuratData 等 R 语言包进行转换的程序，但是由于本人 R
+语言环境等等的问题，总是无法安装，故想了一个新的方法来进行格式转换，教程如下。</p>
+<p>首先是将 rds 文件中的信息提取出来。</p>
+<pre class="line-numbers language-R" data-language="R"><code class="language-R">library(Seurat)
+# 读取 rds 文件信息
+rds_file &#x3D; readRDS(&quot;rds_file.rds&quot;)
+rds_file<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>An object of class Seurat<br> 38153 features across 9567 samples
+within 2 assays<br> Active assay: Spatial (19082 features, 0 variable
+features)<br> 1 other assay present: SCT<br> 2 dimensional reductions
+calculated: pca, umap<br> 1 image present: slice1<br></p>
+</blockquote>
+<p>可以看到，我现在用的是 SCT matrix，所以可以进行读取，保存为 csv
+格式，包括元数据等等</p>
+<pre class="line-numbers language-R" data-language="R"><code class="language-R">write.csv(rds_file@meta.data, &#39;rds_file@meta.data.csv&#39;)
+write.csv(rds_file@assays$Spatial@data, &#39;rds_file@assays$Spatial@data.csv&#39;)
+write.csv(rds_file@assays$SCT@data, &#39;rds_file@assays$SCT@data.csv&#39;)
+write.csv(rds_file@assays$SCT@data, &#39;rds_file@assays$SCT@data.csv&#39;)
+write.csv(rownames(rds_file),&#39;rownames(rds_file).csv&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>那么便是得到的 rds 元数据的所有数据了，接下来需要进行读取，使用
+anndata 进行读取</p>
+<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import matplotlib.patches as mpatches
+import scanpy as sc
+import pandas as pd
+import numpy as np
+from anndata import AnnData
+import torch
+from scipy.sparse import csr_matrix
+
+adata_X &#x3D; pd.read_csv(&quot;rds_file@assays$Spatial@data.csv&quot;,index_col&#x3D;0)
+adata_X &#x3D; adata_X.transpose()
+adata_X &#x3D; csr_matrix(adata_X)
+adata_obs &#x3D; pd.read_csv(&quot;rds_file.data.csv&quot;,index_col&#x3D;0)
+adata_var &#x3D; pd.read_csv(&quot;rownames(rds_file).csv&quot;,index_col&#x3D;0)
+adata_var &#x3D; pd.DataFrame(index &#x3D; [i for i in adata_var[&#39;x&#39;]])
+adata &#x3D; sc.AnnData(X &#x3D; adata_X, obs&#x3D;adata_obs, var &#x3D; adata_var)
+adata.write(&#39;result.h5ad&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>那么便是得到了保存了所有 rds 数据的 h5ad 文件。</p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-        <tag>技术</tag>
+        <tag>Seurat</tag>
+        <tag>Scanpy</tag>
       </tags>
   </entry>
   <entry>
@@ -4496,47 +4583,16 @@ alt="司机师傅的车牌号" /></p>
       </tags>
   </entry>
   <entry>
-    <title>好玩的 Github</title>
-    <url>/2021/246677465.html</url>
-    <content><![CDATA[<p>前年的时候，做过一些 <a
-href="https://github.com/zEpoch/next-beautify">Hexo Next
-主题的美化</a>，后来再上传的时候，就一股脑全部上传上去了，当然也没那么傻，倒是还是删掉了
-node_modules 后再上传的，但是却是没有删掉 package.json，后来呢，Github
-就经常提醒我有安全问题。</p>
+    <title>我们把你们想得太好了</title>
+    <url>/2021/1333461694.html</url>
+    <content><![CDATA[<p>“我们把你们想的太好了，我们认为你们会遵守基本的外交礼节”，有些话，原封不动，换个国家名，他居然还能用</p>
 <p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142124146.png"
-alt="image-20210719142124146" /></p>
-<p>打开一看，好家伙，全都是依赖警报</p>
-<span id="more"></span>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142440142.png"
-alt="image-20210719142440142" /></p>
-<p>然后细看一下会发现大都是依赖要进行升级了。</p>
-<p><img src= "/%E5%9B%BE%E7%89%87%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD" data-lazy-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142707537.png" alt="image-20210719142707537" style="zoom:100%;" /></p>
-<p>好在 Github
-还是很舒服的，可以直接在线更改升级，还有个小机器人帮你升级。美滋滋</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/img/image-20210719142825189.png"
-alt="image-20210719142825189" /></p>
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E5%BE%97%E5%A4%AA%E5%A5%BD%E4%BA%86/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E7%9A%84%E5%A4%AA%E5%A5%BD%E4%BA%86.png"
+alt="我们把你们想的太好了" /></p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
+        <tag>东京奥运会</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>我的星座分析</title>
-    <url>/2021/1421664595.html</url>
-    <content><![CDATA[<p>你对自己的认知其实没别人说那么的感性，因为自己干很多事情都有目的性，所以你潜意识认为一切的感性都是建立在理性的基础之上的，但其实并没有这么简单，你潜意识里的理性，其实也是建立在更深的一层感性的基础上，也就是第三层，一般你对自己的了解只停留在第一层，也就是认为自己是一个超级感性的人。</p>
-<p>比如，你见了一个很好看的人，非常心动，一会儿的时间就脑补了和他的一生，然后自己沉浸在自己的世界里感性，这是第一层的感性。</p>
-<p>随后就开始在现实中去根据自己刚刚幻想完后的余温再去想要做什么，要让自己变成什么样来去达到自己之前幻想的一个目的，这个过程就是你对自己理性方面的认知，虽然自己会代入真感情到里面去，但有的你会以对自己的了解然后明确这是一份站在理性基础上的一份感性，也就是第二层。</p>
-<p><span id="more"></span></p>
-<p>而其实你如果认为自己很聪明的话，对自己的认知停留在第二层的话，其实就是容易会对除了自己有目的性的人以外的人，造成不好的印象，也就是你会针对自己的目的，明确的去让一个人走进他五彩缤纷的情感世界，而所用的方式，在其他人眼里是不喜欢的，也就是好多人说你作什么的，而一个有理性基础的人，如果感性的话，也多多少少会照顾一下其他人的想法。</p>
-<p>但你不会，是因为你已经想到了这点，所以进行了一种选择，就是不理会。这也就是你思想世界的第三层，就是我以我的感性来决定理性的选择，然后再在这个理性的选择上去感性，你以为我不知道我这样会引来厌恶？怎么可能，你是十二星座的终点，思想境界的顶流，只是你把所有精力都用在了刀刃上，这样才更有助于达成目的，不去在意别人的感受就是因为自己太懂，自己懂自己没办法照顾所有人的感受，自己没空照顾，自己也不喜欢照顾，自己也不必照顾，说就说呗，我就觉得说我的人挺low的，我会无语不过我的感情永远清澈透明。</p>
-<p>你思想的第三层就是在自己喜欢的想法上，感性的情绪中，建立的一种选择，所以你就会做很多别人想做却不敢做的事情，这点客观来说其实已经吸引了所有人（除了被受影响的人）不过客观来说，就算是保守派，看到你这类太过于厉害的狠角色也会有敬意吧（除了戾气重的人）</p>
-<p>你要的只有功成名就，自己可以舍弃的东西太多了，只要自己喜欢，就可以无底线无理由的去追求，你是个聪明人，却还是选择了这样的一条路，选择了一条充满浪漫气氛的独木桥。</p>
-<p>你的心，敏感又强大、坚定又脆弱，这是两种心态，又融为一颗心，你的内心就是会互相追逐，互相打气，在一片小小天地中就能看到一个丰富的浪漫世界</p>
-]]></content>
   </entry>
   <entry>
     <title>战争的目的在于消灭战争</title>
@@ -5115,16 +5171,18 @@ alt="20220130225239" /></p>
       </tags>
   </entry>
   <entry>
-    <title>我们把你们想得太好了</title>
-    <url>/2021/1333461694.html</url>
-    <content><![CDATA[<p>“我们把你们想的太好了，我们认为你们会遵守基本的外交礼节”，有些话，原封不动，换个国家名，他居然还能用</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E5%BE%97%E5%A4%AA%E5%A5%BD%E4%BA%86/%E6%88%91%E4%BB%AC%E6%8A%8A%E4%BD%A0%E4%BB%AC%E6%83%B3%E7%9A%84%E5%A4%AA%E5%A5%BD%E4%BA%86.png"
-alt="我们把你们想的太好了" /></p>
+    <title>我的星座分析</title>
+    <url>/2021/1421664595.html</url>
+    <content><![CDATA[<p>你对自己的认知其实没别人说那么的感性，因为自己干很多事情都有目的性，所以你潜意识认为一切的感性都是建立在理性的基础之上的，但其实并没有这么简单，你潜意识里的理性，其实也是建立在更深的一层感性的基础上，也就是第三层，一般你对自己的了解只停留在第一层，也就是认为自己是一个超级感性的人。</p>
+<p>比如，你见了一个很好看的人，非常心动，一会儿的时间就脑补了和他的一生，然后自己沉浸在自己的世界里感性，这是第一层的感性。</p>
+<p>随后就开始在现实中去根据自己刚刚幻想完后的余温再去想要做什么，要让自己变成什么样来去达到自己之前幻想的一个目的，这个过程就是你对自己理性方面的认知，虽然自己会代入真感情到里面去，但有的你会以对自己的了解然后明确这是一份站在理性基础上的一份感性，也就是第二层。</p>
+<p><span id="more"></span></p>
+<p>而其实你如果认为自己很聪明的话，对自己的认知停留在第二层的话，其实就是容易会对除了自己有目的性的人以外的人，造成不好的印象，也就是你会针对自己的目的，明确的去让一个人走进他五彩缤纷的情感世界，而所用的方式，在其他人眼里是不喜欢的，也就是好多人说你作什么的，而一个有理性基础的人，如果感性的话，也多多少少会照顾一下其他人的想法。</p>
+<p>但你不会，是因为你已经想到了这点，所以进行了一种选择，就是不理会。这也就是你思想世界的第三层，就是我以我的感性来决定理性的选择，然后再在这个理性的选择上去感性，你以为我不知道我这样会引来厌恶？怎么可能，你是十二星座的终点，思想境界的顶流，只是你把所有精力都用在了刀刃上，这样才更有助于达成目的，不去在意别人的感受就是因为自己太懂，自己懂自己没办法照顾所有人的感受，自己没空照顾，自己也不喜欢照顾，自己也不必照顾，说就说呗，我就觉得说我的人挺low的，我会无语不过我的感情永远清澈透明。</p>
+<p>你思想的第三层就是在自己喜欢的想法上，感性的情绪中，建立的一种选择，所以你就会做很多别人想做却不敢做的事情，这点客观来说其实已经吸引了所有人（除了被受影响的人）不过客观来说，就算是保守派，看到你这类太过于厉害的狠角色也会有敬意吧（除了戾气重的人）</p>
+<p>你要的只有功成名就，自己可以舍弃的东西太多了，只要自己喜欢，就可以无底线无理由的去追求，你是个聪明人，却还是选择了这样的一条路，选择了一条充满浪漫气氛的独木桥。</p>
+<p>你的心，敏感又强大、坚定又脆弱，这是两种心态，又融为一颗心，你的内心就是会互相追逐，互相打气，在一片小小天地中就能看到一个丰富的浪漫世界</p>
 ]]></content>
-      <tags>
-        <tag>东京奥运会</tag>
-      </tags>
   </entry>
   <entry>
     <title>机器学习-回归</title>
@@ -6943,62 +7001,6 @@ ans_y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></spa
       </tags>
   </entry>
   <entry>
-    <title>如何将rds转为h5ad</title>
-    <url>/2023/3539500839.html</url>
-    <content><![CDATA[<p>在进行单细胞或是空间组数据分析的时候，有的人喜欢使用 R
-语言进行分析，有的同学喜欢使用 Python
-进行分析，但是两个语言分析所使用的文件有所不同，R 语言通常保存的为 rds
-文件，Python 通常保存的为 h5ad
-文件，如果是多人合作分析的时候，往往需要将文件进行格式转换，这通常是一件较为麻烦的事情，看到过有使用
-SeuratDisk 和 SeuratData 等 R 语言包进行转换的程序，但是由于本人 R
-语言环境等等的问题，总是无法安装，故想了一个新的方法来进行格式转换，教程如下。</p>
-<p>首先是将 rds 文件中的信息提取出来。</p>
-<pre class="line-numbers language-R" data-language="R"><code class="language-R">library(Seurat)
-# 读取 rds 文件信息
-rds_file &#x3D; readRDS(&quot;rds_file.rds&quot;)
-rds_file<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>An object of class Seurat<br> 38153 features across 9567 samples
-within 2 assays<br> Active assay: Spatial (19082 features, 0 variable
-features)<br> 1 other assay present: SCT<br> 2 dimensional reductions
-calculated: pca, umap<br> 1 image present: slice1<br></p>
-</blockquote>
-<p>可以看到，我现在用的是 SCT matrix，所以可以进行读取，保存为 csv
-格式，包括元数据等等</p>
-<pre class="line-numbers language-R" data-language="R"><code class="language-R">write.csv(rds_file@meta.data, &#39;rds_file@meta.data.csv&#39;)
-write.csv(rds_file@assays$Spatial@data, &#39;rds_file@assays$Spatial@data.csv&#39;)
-write.csv(rds_file@assays$SCT@data, &#39;rds_file@assays$SCT@data.csv&#39;)
-write.csv(rds_file@assays$SCT@data, &#39;rds_file@assays$SCT@data.csv&#39;)
-write.csv(rownames(rds_file),&#39;rownames(rds_file).csv&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>那么便是得到的 rds 元数据的所有数据了，接下来需要进行读取，使用
-anndata 进行读取</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import matplotlib.patches as mpatches
-import scanpy as sc
-import pandas as pd
-import numpy as np
-from anndata import AnnData
-import torch
-from scipy.sparse import csr_matrix
-
-adata_X &#x3D; pd.read_csv(&quot;rds_file@assays$Spatial@data.csv&quot;,index_col&#x3D;0)
-adata_X &#x3D; adata_X.transpose()
-adata_X &#x3D; csr_matrix(adata_X)
-adata_obs &#x3D; pd.read_csv(&quot;rds_file.data.csv&quot;,index_col&#x3D;0)
-adata_var &#x3D; pd.read_csv(&quot;rownames(rds_file).csv&quot;,index_col&#x3D;0)
-adata_var &#x3D; pd.DataFrame(index &#x3D; [i for i in adata_var[&#39;x&#39;]])
-adata &#x3D; sc.AnnData(X &#x3D; adata_X, obs&#x3D;adata_obs, var &#x3D; adata_var)
-adata.write(&#39;result.h5ad&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>那么便是得到了保存了所有 rds 数据的 h5ad 文件。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Seurat</tag>
-        <tag>Scanpy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>机器学习-支持向量机</title>
     <url>/2022/917828124.html</url>
     <content><![CDATA[<p>支持向量机总体是由一个合页损失函数和一个核函数组成</p>
@@ -7252,124 +7254,6 @@ alt="20220819234350" /></p>
       </tags>
   </entry>
   <entry>
-    <title>机器学习-概率生成模型</title>
-    <url>/2022/925661245.html</url>
-    <content><![CDATA[<h2 id="理论基础">理论基础</h2>
-<p>概率生成模型，是概率统计和机器学习中的一类重要模型，指一系列用于随机生成可观测数据的模型。假设有两类数据，每一类都有若干个样本；概率生成模型认为每一类数据都服从某一种分布，如高斯分布；从两类训练数据中得到两个高斯分布的密度函数，具体的是获得均值和方差两个参数；测试样本输入到其中一个高斯分布函数，得到的概率值若大于0.5，则说明该样本属于该类，否则属于另一类。</p>
-<p>生成模型可以和贝叶斯概率公式进行结合，用于分类问题。原始贝叶斯概率公式为：</p>
-<p><span class="math display">\[
-P(A|B)=\frac{P(B|A)P(A)}{P(B)} \tag{1}
-\]</span></p>
-<p>对于一个<span
-class="math inline">\(2\times2\)</span>的分类则有下图所述的贝叶斯分类</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-梯度下降的优化/20220817235221.png"
-alt="20220817235221" /></p>
-<p>在上图中，训练数据中有两个类别；每个类别下有5个样本，我们想要知道新的测试样本<span
-class="math inline">\(x\)</span>属于<span
-class="math inline">\(C1\)</span>的可能性。根据贝叶斯概率公式可以得到上图片所示的概率公式。其中，<span
-class="math inline">\(P(C1)\)</span>和<span
-class="math inline">\(P(C2)\)</span>表示在训练数据中，随机采样得到<span
-class="math inline">\(C1\)</span>或者C2的概率，即两个类别在训练数据中所占的比重。分母项<span
-class="math inline">\(P(x)\)</span>表示生成数据x的概率，此处可以由生成模型计算得到；</p>
-<p><span class="math display">\[
-P(x) = P(x|C1)P(C1) + P(x|C2)P(C2)
-\]</span></p>
-<p>因为有两个类别，每个类别下的数据具有不同的规律，服从不同的分布，都有可能生成数据<span
-class="math inline">\(x\)</span>，所以相加得到生成<span
-class="math inline">\(x\)</span>的概率。<span
-class="math inline">\(P(C1)\)</span>和<span
-class="math inline">\(P(C2)\)</span>可以由训练数据中的统计结果计算得到。</p>
-<p>接下来是计算<span class="math inline">\(P(x|C1)\)</span>和<span
-class="math inline">\(P(x|C2)\)</span>，我们一般是采用最大似然估计来计算。</p>
-<p>给定一个概率分布D，假定其概率密度函数（连续分布）或概率聚集函数（离散分布）为<span
-class="math inline">\(f_D\)</span>，以及一个分布参数<span
-class="math inline">\(θ\)</span>，我们可以从这个分布中抽出一个具有n个值的采样<span
-class="math inline">\(X_1,X_2,...,X_n\)</span>，通过利用<span
-class="math inline">\(f_D\)</span>，我们就能计算出其概率：</p>
-<p><span class="math display">\[
-P=(x_1,x_2,...,x_n)=f_D(x_1,x_2,...,x_n|\theta)
-\]</span></p>
-<p>但是，我们可能不知道θ的值，尽管我们知道这些采样数据来自于分布D。那么我们如何才能估计出θ呢？一个自然的想法是从这个分布中抽出一个具有n个值的采样<span
-class="math inline">\(X_1,X_2,...,X_n\)</span>，然后用这些采样数据来估计θ。
-要在数学上实现最大似然估计法，我们首先要定义可能性：</p>
-<p><span class="math display">\[
-lik(\theta)=f_D(x_1,x_2,...,x_n|\theta)
-\]</span></p>
-<p>并且在<span
-class="math inline">\(θ\)</span>的所有取值上，使这个函数最大化。这个使可能性最大的值即被称为θ的最大似然估计。</p>
-<h2 id="实例">实例</h2>
-<p>在此进行一个宝可梦类别的分类工作：我们使用两个类别的宝可梦构成训练数据，分别是水系（Water）和正常系（Normal），数据构成如下：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001409.png"
-alt="20220818001409" /></p>
-<p>根据贝叶斯概率公式，计算P(x|C1)和P(x|C2)。分析每个类别下的数据分布规律，计算新的测试数据x分别由每个类别的数据模型生成的概率。</p>
-<p>每个宝可梦，有两个特征属性 Defence 和 SP
-Defence，假设数据的分布符合高斯分布。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001903.png"
-alt="20220818001903" /></p>
-<p>接着由极大似然估计法，计算得到高斯分布的参数，即均值和标准差。</p>
-<ul>
-<li>均值表征的是各维变量的中心</li>
-<li>协方差矩阵的对角线上的两个元素，决定了整个高斯曲面在某一维度上的“跨度”，方差越大，“跨度”越大</li>
-<li>协方差矩阵的斜对角线上面的两个元素，表征的是各维变量之间的相关性，其数值大于零说明x与y呈正相关，其值越大，正相关程度越大，小于零则是负相关，否则则是不相关</li>
-</ul>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002328.png"
-alt="20220818002328" /></p>
-<p>接着，使用贝叶斯概率公式进行分类</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002949.png"
-alt="20220818002949" /></p>
-<p>测试数据上的准确率为47%，效果很差。使用更多特征之后，准确率为54%</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003049.png"
-alt="20220818003049" /></p>
-<p>那么则需要对模型进行调整，也就是调整高斯分布的均值和标准差</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003814.png"
-alt="20220818003814" /></p>
-<p>这里使水系宝可梦和普通系宝可梦使用一个标准差矩阵，计算方式为其二者加权平均，使其准确率得到了一定的提升。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004759.png"
-alt="20220818004759" /></p>
-<h2 id="总结">总结</h2>
-<p>概率生成模型进行分类问题的三个步骤如下：</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004913.png"
-alt="20220818004913" /></p>
-<h2 id="后续">后续</h2>
-<p>之前我们有贝叶斯的公式，那么能够将其进行简化呢？</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005111.png"
-alt="20220818005111" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005153.png"
-alt="20220818005153" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005212.png"
-alt="20220818005212" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005227.png"
-alt="20220818005227" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005307.png"
-alt="20220818005307" /></p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005609.png"
-alt="20220818005609" /></p>
-<p>经过最终的化简计算可以知道，概率生成模型的本质是寻找参数w和b。如果我们直接进行参数w和b的求解，是不是就可以简化前面那么复杂的计算过程呢？那么请看下一篇博客吧。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>机器学习-梯度下降的优化</title>
     <url>/2022/3163358201.html</url>
     <content><![CDATA[<p>在回归中，我们需要解决下面的优化问题，即使得Loss函数尽可能的小 <span
@@ -7516,40 +7400,121 @@ alt="20220818215308" /></p>
       </tags>
   </entry>
   <entry>
-    <title>杂聊2</title>
-    <url>/2021/1220239800.html</url>
-    <content><![CDATA[<p>早上八点，起床，下了床墨迹了一会儿，醒醒了脑子，再一看时间，已经八点四十了，呕吼，穿上袜子穿上鞋，刷个牙，洗把脸，再抹一曾润肤乳，完事。</p>
-<p>九点，下楼去食堂吃饭，磨磨唧唧到食堂又是五分钟后了，所幸还有饭，一个鸡蛋一个大饼一杯豆浆，肉蛋奶都有了，吃完饭回到寝室就是九点四十了。</p>
-<span id="more"></span>
-<p>为什么今天没有直接去图书馆呢？因为今天有个面试，什么面试呢？腾讯的一个面试，为什么会有这么一个面试呢？因为有个老哥让我扫了个二维码，我扫完二维码，填了姓名学习院校后居然就成功投递了简历，然后笔试都没有就收到了鹅厂的面试邀请，我也挺懵的，其实也还好，可以面试一下看看自己有多菜。</p>
+    <title>机器学习-概率生成模型</title>
+    <url>/2022/925661245.html</url>
+    <content><![CDATA[<h2 id="理论基础">理论基础</h2>
+<p>概率生成模型，是概率统计和机器学习中的一类重要模型，指一系列用于随机生成可观测数据的模型。假设有两类数据，每一类都有若干个样本；概率生成模型认为每一类数据都服从某一种分布，如高斯分布；从两类训练数据中得到两个高斯分布的密度函数，具体的是获得均值和方差两个参数；测试样本输入到其中一个高斯分布函数，得到的概率值若大于0.5，则说明该样本属于该类，否则属于另一类。</p>
+<p>生成模型可以和贝叶斯概率公式进行结合，用于分类问题。原始贝叶斯概率公式为：</p>
+<p><span class="math display">\[
+P(A|B)=\frac{P(B|A)P(A)}{P(B)} \tag{1}
+\]</span></p>
+<p>对于一个<span
+class="math inline">\(2\times2\)</span>的分类则有下图所述的贝叶斯分类</p>
 <p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811225211599.png"
-alt="image-20210811225211599" /></p>
-<p>九点四十，到了宿舍，打开力扣，看了一下水友讲的鹅厂大概会面试的题，又做了一遍，再打开
-B 站，又看了一会儿 <a href="https://space.bilibili.com/415434293">Pink
-老师</a>的前端课程，磨叽磨叽就到了十一点。</p>
-<p>十一点，开始面试，十一点刚到就打开了面试窗口，但是 hr
-没有来，于是就等了 23
-秒，她终于来了，而且还是个声音十分温柔的姐姐，希望是个姐姐吧，不然我的心态会出问题的。接下来半个小时，我和这位声音十分甜美的姐姐度过了愉快的一段时间（是的）。</p>
-<p>十一点半，面试结束去吃饭。</p>
-<p>十二点，吃完了饭悠悠哉哉去图书馆。</p>
-<p>十二点二十三，来到了图书馆找了个位子坐下，去接了杯水，打开了手机，点开了打麻将。我当时心里想的是，我赢一局就去学习，然后打到了两点二十七，一局没赢，我心态炸裂。</p>
-<p>两点二十七，我看了一眼时间，距离图书馆关门只有两个半小时了，也该学习了。于是乎，打开课本，怒学两个半小时，去吃饭。</p>
-<p>五点二十，来到食堂吃饭。</p>
-<p>五点四十五，吃完饭回到了宿舍，打开电脑，打开
-wegame，打开英雄联盟。下了一局棋，没赢，不开心两局，那就排位吧，排位都是用的提莫，很舒服，七秒一个蘑菇，满地图都是蘑菇，人在上路补着兵就拿了
-ad 的人头，很开心，两局都赢了，很开心，看了一眼时间，七点四十七。</p>
-<p>七点四十七，去活动室看书。</p>
-<p>九点半，出门健身，锻炼身体，今晚练了腹部和背部，感觉还挺舒服。</p>
-<p>十点三十三，回到寝室，看了一眼面试结果，挂了。为什么挂了，因为我投的前端，刚刚学了两天的前端，感觉还行，主要是面试的姐姐说话真的是好温柔，就像是恋爱的感觉，虽然我单身了二十年，准备洗洗睡觉。</p>
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-梯度下降的优化/20220817235221.png"
+alt="20220817235221" /></p>
+<p>在上图中，训练数据中有两个类别；每个类别下有5个样本，我们想要知道新的测试样本<span
+class="math inline">\(x\)</span>属于<span
+class="math inline">\(C1\)</span>的可能性。根据贝叶斯概率公式可以得到上图片所示的概率公式。其中，<span
+class="math inline">\(P(C1)\)</span>和<span
+class="math inline">\(P(C2)\)</span>表示在训练数据中，随机采样得到<span
+class="math inline">\(C1\)</span>或者C2的概率，即两个类别在训练数据中所占的比重。分母项<span
+class="math inline">\(P(x)\)</span>表示生成数据x的概率，此处可以由生成模型计算得到；</p>
+<p><span class="math display">\[
+P(x) = P(x|C1)P(C1) + P(x|C2)P(C2)
+\]</span></p>
+<p>因为有两个类别，每个类别下的数据具有不同的规律，服从不同的分布，都有可能生成数据<span
+class="math inline">\(x\)</span>，所以相加得到生成<span
+class="math inline">\(x\)</span>的概率。<span
+class="math inline">\(P(C1)\)</span>和<span
+class="math inline">\(P(C2)\)</span>可以由训练数据中的统计结果计算得到。</p>
+<p>接下来是计算<span class="math inline">\(P(x|C1)\)</span>和<span
+class="math inline">\(P(x|C2)\)</span>，我们一般是采用最大似然估计来计算。</p>
+<p>给定一个概率分布D，假定其概率密度函数（连续分布）或概率聚集函数（离散分布）为<span
+class="math inline">\(f_D\)</span>，以及一个分布参数<span
+class="math inline">\(θ\)</span>，我们可以从这个分布中抽出一个具有n个值的采样<span
+class="math inline">\(X_1,X_2,...,X_n\)</span>，通过利用<span
+class="math inline">\(f_D\)</span>，我们就能计算出其概率：</p>
+<p><span class="math display">\[
+P=(x_1,x_2,...,x_n)=f_D(x_1,x_2,...,x_n|\theta)
+\]</span></p>
+<p>但是，我们可能不知道θ的值，尽管我们知道这些采样数据来自于分布D。那么我们如何才能估计出θ呢？一个自然的想法是从这个分布中抽出一个具有n个值的采样<span
+class="math inline">\(X_1,X_2,...,X_n\)</span>，然后用这些采样数据来估计θ。
+要在数学上实现最大似然估计法，我们首先要定义可能性：</p>
+<p><span class="math display">\[
+lik(\theta)=f_D(x_1,x_2,...,x_n|\theta)
+\]</span></p>
+<p>并且在<span
+class="math inline">\(θ\)</span>的所有取值上，使这个函数最大化。这个使可能性最大的值即被称为θ的最大似然估计。</p>
+<h2 id="实例">实例</h2>
+<p>在此进行一个宝可梦类别的分类工作：我们使用两个类别的宝可梦构成训练数据，分别是水系（Water）和正常系（Normal），数据构成如下：</p>
 <p><img
-src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811230426475.png"
-alt="image-20210811230426475" /></p>
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001409.png"
+alt="20220818001409" /></p>
+<p>根据贝叶斯概率公式，计算P(x|C1)和P(x|C2)。分析每个类别下的数据分布规律，计算新的测试数据x分别由每个类别的数据模型生成的概率。</p>
+<p>每个宝可梦，有两个特征属性 Defence 和 SP
+Defence，假设数据的分布符合高斯分布。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818001903.png"
+alt="20220818001903" /></p>
+<p>接着由极大似然估计法，计算得到高斯分布的参数，即均值和标准差。</p>
+<ul>
+<li>均值表征的是各维变量的中心</li>
+<li>协方差矩阵的对角线上的两个元素，决定了整个高斯曲面在某一维度上的“跨度”，方差越大，“跨度”越大</li>
+<li>协方差矩阵的斜对角线上面的两个元素，表征的是各维变量之间的相关性，其数值大于零说明x与y呈正相关，其值越大，正相关程度越大，小于零则是负相关，否则则是不相关</li>
+</ul>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002328.png"
+alt="20220818002328" /></p>
+<p>接着，使用贝叶斯概率公式进行分类</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818002949.png"
+alt="20220818002949" /></p>
+<p>测试数据上的准确率为47%，效果很差。使用更多特征之后，准确率为54%</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003049.png"
+alt="20220818003049" /></p>
+<p>那么则需要对模型进行调整，也就是调整高斯分布的均值和标准差</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818003814.png"
+alt="20220818003814" /></p>
+<p>这里使水系宝可梦和普通系宝可梦使用一个标准差矩阵，计算方式为其二者加权平均，使其准确率得到了一定的提升。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004759.png"
+alt="20220818004759" /></p>
+<h2 id="总结">总结</h2>
+<p>概率生成模型进行分类问题的三个步骤如下：</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818004913.png"
+alt="20220818004913" /></p>
+<h2 id="后续">后续</h2>
+<p>之前我们有贝叶斯的公式，那么能够将其进行简化呢？</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005111.png"
+alt="20220818005111" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005153.png"
+alt="20220818005153" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005212.png"
+alt="20220818005212" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005227.png"
+alt="20220818005227" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005307.png"
+alt="20220818005307" /></p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-概率生成模型/20220818005609.png"
+alt="20220818005609" /></p>
+<p>经过最终的化简计算可以知道，概率生成模型的本质是寻找参数w和b。如果我们直接进行参数w和b的求解，是不是就可以简化前面那么复杂的计算过程呢？那么请看下一篇博客吧。</p>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
       <tags>
-        <tag>生活</tag>
-        <tag>考研日记</tag>
-        <tag>日记</tag>
+        <tag>技术</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -7584,6 +7549,60 @@ href="https://github.com/zEpoch/webStart">zEpoch/webStart
       </tags>
   </entry>
   <entry>
+    <title>杂聊2</title>
+    <url>/2021/1220239800.html</url>
+    <content><![CDATA[<p>早上八点，起床，下了床墨迹了一会儿，醒醒了脑子，再一看时间，已经八点四十了，呕吼，穿上袜子穿上鞋，刷个牙，洗把脸，再抹一曾润肤乳，完事。</p>
+<p>九点，下楼去食堂吃饭，磨磨唧唧到食堂又是五分钟后了，所幸还有饭，一个鸡蛋一个大饼一杯豆浆，肉蛋奶都有了，吃完饭回到寝室就是九点四十了。</p>
+<span id="more"></span>
+<p>为什么今天没有直接去图书馆呢？因为今天有个面试，什么面试呢？腾讯的一个面试，为什么会有这么一个面试呢？因为有个老哥让我扫了个二维码，我扫完二维码，填了姓名学习院校后居然就成功投递了简历，然后笔试都没有就收到了鹅厂的面试邀请，我也挺懵的，其实也还好，可以面试一下看看自己有多菜。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811225211599.png"
+alt="image-20210811225211599" /></p>
+<p>九点四十，到了宿舍，打开力扣，看了一下水友讲的鹅厂大概会面试的题，又做了一遍，再打开
+B 站，又看了一会儿 <a href="https://space.bilibili.com/415434293">Pink
+老师</a>的前端课程，磨叽磨叽就到了十一点。</p>
+<p>十一点，开始面试，十一点刚到就打开了面试窗口，但是 hr
+没有来，于是就等了 23
+秒，她终于来了，而且还是个声音十分温柔的姐姐，希望是个姐姐吧，不然我的心态会出问题的。接下来半个小时，我和这位声音十分甜美的姐姐度过了愉快的一段时间（是的）。</p>
+<p>十一点半，面试结束去吃饭。</p>
+<p>十二点，吃完了饭悠悠哉哉去图书馆。</p>
+<p>十二点二十三，来到了图书馆找了个位子坐下，去接了杯水，打开了手机，点开了打麻将。我当时心里想的是，我赢一局就去学习，然后打到了两点二十七，一局没赢，我心态炸裂。</p>
+<p>两点二十七，我看了一眼时间，距离图书馆关门只有两个半小时了，也该学习了。于是乎，打开课本，怒学两个半小时，去吃饭。</p>
+<p>五点二十，来到食堂吃饭。</p>
+<p>五点四十五，吃完饭回到了宿舍，打开电脑，打开
+wegame，打开英雄联盟。下了一局棋，没赢，不开心两局，那就排位吧，排位都是用的提莫，很舒服，七秒一个蘑菇，满地图都是蘑菇，人在上路补着兵就拿了
+ad 的人头，很开心，两局都赢了，很开心，看了一眼时间，七点四十七。</p>
+<p>七点四十七，去活动室看书。</p>
+<p>九点半，出门健身，锻炼身体，今晚练了腹部和背部，感觉还挺舒服。</p>
+<p>十点三十三，回到寝室，看了一眼面试结果，挂了。为什么挂了，因为我投的前端，刚刚学了两天的前端，感觉还行，主要是面试的姐姐说话真的是好温柔，就像是恋爱的感觉，虽然我单身了二十年，准备洗洗睡觉。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/%E6%91%B8%E9%B1%BC%E6%97%A5%E8%AE%B0%EF%BC%882%EF%BC%89/image-20210811230426475.png"
+alt="image-20210811230426475" /></p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+        <tag>日记</tag>
+        <tag>考研日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杂聊3</title>
+    <url>/2021/4026992349.html</url>
+    <content><![CDATA[<p>本来呢，暑假的计划是要读习的，奈何之前的毛选一还没读完，便是摸摸索索地读了毛选一，但也读的并不是很多，最重要地实践论和矛盾论倒是还没有看。</p>
+<p>这毛选读起来是真的有意思，很多东西，修修改改，放到现在，依旧是可以用的，对于中国社会各阶层地分析，将近一百年过去了，中国的阶层中，也就是文中的“地主阶级和买办阶级”换了一种形式存在了下来，有人称其为“人民富豪”之类的。</p>
+<span id="more"></span>
+<p>这两年，天下并不太平，工薪阶层声讨“人民富豪”之类的呼声越来越高，<code>其势如暴风骤雨，迅猛异常，无论什么大的力量都将压抑不住。他们将冲决一切束缚他们的罗网，朝着解放生产力的路上迅跑。一切帝国主义、军阀、贪官污吏、土豪劣绅，都将被他们葬入坟墓。</code>很大一部分原因出在某些人屁股背离了无产阶级的穷人，凡是反抗最力、乱子闹得最大的地方，都是那些“人民富豪”为恶最甚的地方。农民、工人的眼睛，全然没有错的。谁个劣，谁个不劣，谁个最甚，谁个稍次，谁个惩办要严，谁个处罚从轻，农民、工人都有极明白的计算，罚不当罪的极少。</p>
+<p>没有调查就没有发言权，这一点也是很重要的一件事情，尤其是在目前的互联网浪潮中。大多数人上网发表观点其实是所谓的情绪的宣泄，<code>看到一点表面，一个枝节，就指手画脚地说这也不对，那也错误</code>，而非通过调查查明某些事情，得到一手真实有效的证据，然后经过深思熟虑的分析，得到某些结论，这显然是不对的。离开实际调查就要产生唯心的阶级估量和唯心的工作指导，
+那么，它的结果，不是机会主义，便是盲动主义。</p>
+<p>关心群众的生活问题，我觉得这一点，现在做的十分好，我是国家级贫困县出身的人，我能看到的是当地的政府工作人员对于当地的很多事情都是十分负责、尽心的。去年是扶贫大年，好多乡政府都想办法带动当地的村民去创业实现长久致富，这都是让当地人感到很开心的事情。前些日子家里发了大水，同志们都是和群众打成一片齐心抗洪的，没有一个人说不理会群众之类的，一个都没有。</p>
+<p>关于毛对战争的理解，除了战争本身外，我最敬佩的便是其中对未来的指导：<code>人类社会进步到消灭了阶级，消灭了国家，到了那时，什么战争也没有了，反革命战争没有了，革命战争也没有了，非正义战争没有了，正义战争也没有了，这就是人类的永久和平的时代。我们研究革命战争的规律，出发于我们要求消灭一切战争的志愿，这是区别我们共产党人和一切剥削阶级的界线。</code>这个便是我们无产阶级要为之奋斗一生的目标。</p>
+]]></content>
+      <tags>
+        <tag>毛选</tag>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>杂聊4</title>
     <url>/2021/1842364004.html</url>
     <content><![CDATA[<p>呕吼，突然就过去了一个月，上一次更新博客还是上一次（确实）。那就回顾一下这个月做了些什么、发生了些什么吧。</p>
@@ -7604,20 +7623,20 @@ href="https://github.com/zEpoch/webStart">zEpoch/webStart
       </tags>
   </entry>
   <entry>
-    <title>杂聊3</title>
-    <url>/2021/4026992349.html</url>
-    <content><![CDATA[<p>本来呢，暑假的计划是要读习的，奈何之前的毛选一还没读完，便是摸摸索索地读了毛选一，但也读的并不是很多，最重要地实践论和矛盾论倒是还没有看。</p>
-<p>这毛选读起来是真的有意思，很多东西，修修改改，放到现在，依旧是可以用的，对于中国社会各阶层地分析，将近一百年过去了，中国的阶层中，也就是文中的“地主阶级和买办阶级”换了一种形式存在了下来，有人称其为“人民富豪”之类的。</p>
-<span id="more"></span>
-<p>这两年，天下并不太平，工薪阶层声讨“人民富豪”之类的呼声越来越高，<code>其势如暴风骤雨，迅猛异常，无论什么大的力量都将压抑不住。他们将冲决一切束缚他们的罗网，朝着解放生产力的路上迅跑。一切帝国主义、军阀、贪官污吏、土豪劣绅，都将被他们葬入坟墓。</code>很大一部分原因出在某些人屁股背离了无产阶级的穷人，凡是反抗最力、乱子闹得最大的地方，都是那些“人民富豪”为恶最甚的地方。农民、工人的眼睛，全然没有错的。谁个劣，谁个不劣，谁个最甚，谁个稍次，谁个惩办要严，谁个处罚从轻，农民、工人都有极明白的计算，罚不当罪的极少。</p>
-<p>没有调查就没有发言权，这一点也是很重要的一件事情，尤其是在目前的互联网浪潮中。大多数人上网发表观点其实是所谓的情绪的宣泄，<code>看到一点表面，一个枝节，就指手画脚地说这也不对，那也错误</code>，而非通过调查查明某些事情，得到一手真实有效的证据，然后经过深思熟虑的分析，得到某些结论，这显然是不对的。离开实际调查就要产生唯心的阶级估量和唯心的工作指导，
-那么，它的结果，不是机会主义，便是盲动主义。</p>
-<p>关心群众的生活问题，我觉得这一点，现在做的十分好，我是国家级贫困县出身的人，我能看到的是当地的政府工作人员对于当地的很多事情都是十分负责、尽心的。去年是扶贫大年，好多乡政府都想办法带动当地的村民去创业实现长久致富，这都是让当地人感到很开心的事情。前些日子家里发了大水，同志们都是和群众打成一片齐心抗洪的，没有一个人说不理会群众之类的，一个都没有。</p>
-<p>关于毛对战争的理解，除了战争本身外，我最敬佩的便是其中对未来的指导：<code>人类社会进步到消灭了阶级，消灭了国家，到了那时，什么战争也没有了，反革命战争没有了，革命战争也没有了，非正义战争没有了，正义战争也没有了，这就是人类的永久和平的时代。我们研究革命战争的规律，出发于我们要求消灭一切战争的志愿，这是区别我们共产党人和一切剥削阶级的界线。</code>这个便是我们无产阶级要为之奋斗一生的目标。</p>
+    <title>杂聊5</title>
+    <url>/2022/4079027902.html</url>
+    <content><![CDATA[<p>又是一个月过去，十一仿佛就在昨日，然后劈里啪啦的，就跑走了三个星期，只能说感受不到自己做了什么，学到了什么，所以觉得落差感比较大。而且博客也是很久没写了，进行稍微长一点的叙述就会显得我的逻辑比较混乱。</p>
+<p>今天应该是还有很多的ddl的，比如刚刚开辟的Python_70_Project，想做一个稍微大一些的Python导学项目，然后大概也是每天写个几十行那个样子；比如还要重温C++，这是很久之前学习的了，现在写起来也是逐渐手生，根本写不下去，于是乎重新打开黑马，又开始无聊又有趣的学习之路，希望之后能把硬件做起来吧，要学习一下老学长，成为一名稍微全栈一些的孩子。</p>
+<p>目前上课的状态大概就是，老师讲自己领域内最为前言的工作，讲他们自己做的实验的思路、流程，以及相关的一些延申，这两周大概也有课陆续要结课了，大概就是政治课和一门选修课，政治课的pre文稿刚刚交了上去，这门选修课大概就是临时做一个数模之类的。</p>
+<p>生物统计学的作业到现在还没做，明明26号就是ddl了，居然自己还在玩。前些日子入手了一只switch，到现在已经玩了快三十个小时了，平均每天三小时吧大概，按照晚上十点下课，到宿舍十点半，开始玩，接着到一点半，然后再收拾收拾睡觉觉就是两点了，虽然作业还没做，明天的课程还没有预习，今天的课程也没有复习，但是还是要睡觉觉，
+毕竟第二天还有早八，刚刚打开了B站，挺多UP主也都更新了，自己还没看，然后十二点多开始看，看到了现在，本来打算今天下午做几道英语题，结果时间又被荒废掉了，一会儿还约了人去打羽毛球，属于是最佳拖延王了。</p>
+<p>文献倒是看了一些，但是这一周进展颇为缓慢，还是要抓紧时间干活儿啊，时间不等人啊。</p>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
       <tags>
-        <tag>毛选</tag>
-        <tag>日记</tag>
+        <tag>碎碎念</tag>
       </tags>
   </entry>
   <entry>
@@ -7642,23 +7661,6 @@ href="https://github.com/zEpoch/webStart">zEpoch/webStart
       </categories>
       <tags>
         <tag>杂聊</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杂聊5</title>
-    <url>/2022/4079027902.html</url>
-    <content><![CDATA[<p>又是一个月过去，十一仿佛就在昨日，然后劈里啪啦的，就跑走了三个星期，只能说感受不到自己做了什么，学到了什么，所以觉得落差感比较大。而且博客也是很久没写了，进行稍微长一点的叙述就会显得我的逻辑比较混乱。</p>
-<p>今天应该是还有很多的ddl的，比如刚刚开辟的Python_70_Project，想做一个稍微大一些的Python导学项目，然后大概也是每天写个几十行那个样子；比如还要重温C++，这是很久之前学习的了，现在写起来也是逐渐手生，根本写不下去，于是乎重新打开黑马，又开始无聊又有趣的学习之路，希望之后能把硬件做起来吧，要学习一下老学长，成为一名稍微全栈一些的孩子。</p>
-<p>目前上课的状态大概就是，老师讲自己领域内最为前言的工作，讲他们自己做的实验的思路、流程，以及相关的一些延申，这两周大概也有课陆续要结课了，大概就是政治课和一门选修课，政治课的pre文稿刚刚交了上去，这门选修课大概就是临时做一个数模之类的。</p>
-<p>生物统计学的作业到现在还没做，明明26号就是ddl了，居然自己还在玩。前些日子入手了一只switch，到现在已经玩了快三十个小时了，平均每天三小时吧大概，按照晚上十点下课，到宿舍十点半，开始玩，接着到一点半，然后再收拾收拾睡觉觉就是两点了，虽然作业还没做，明天的课程还没有预习，今天的课程也没有复习，但是还是要睡觉觉，
-毕竟第二天还有早八，刚刚打开了B站，挺多UP主也都更新了，自己还没看，然后十二点多开始看，看到了现在，本来打算今天下午做几道英语题，结果时间又被荒废掉了，一会儿还约了人去打羽毛球，属于是最佳拖延王了。</p>
-<p>文献倒是看了一些，但是这一周进展颇为缓慢，还是要抓紧时间干活儿啊，时间不等人啊。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
       </tags>
   </entry>
   <entry>
@@ -8068,26 +8070,6 @@ cell HiC、CHIA-PET、In situ Hi-C、Capture-C</li>
       </tags>
   </entry>
   <entry>
-    <title>身体是革命的本钱</title>
-    <url>/2022/3627254244.html</url>
-    <content><![CDATA[<p>最开始感到身体不适的时候，大概是在六月初，那时候觉得右下腹隐隐不适，但是并不疼痛，我一直以为是肝脏出了问题，随机买了护肝片，然后减少了熬夜。起初还是有一些效果，不适程度减少了很多，但是不到一周的时间又开始了，那是我正在做俯卧撑的时候，毕业的那段时间是每天一百个俯卧撑，那天俯卧撑的时候，突然觉得右胸猛的一痛，就像是要被撕裂了一般，随机停止了，然后上床休息。这便是已经六月中了。</p>
-<p>之后便是毕业典礼之类类的事情，这时候大概一直右胸下部都有一种异物感，还是觉得是肝脏的问题，于是去校医院做了肝胆检查，检查结果表示一切正常，所以觉得，是不是健身练的太多了，导致肌肉拉伸了？虽然那个部位肌肉确实没有怎么练到，但是确实就没有继续往下面检查。</p>
-<p>时间到了28号，毕业前往深圳，去华大实习，师兄给安排了食宿，然后自己去办理入职，入职需要入职体检，随机去了医院进行体检，血常规没有什么问题，检查心率的时候当时心率达到了116，医生说让做个心电图，这是上午的时候。下午体检结果出来，医生说我X光有问题，肺部有密集的阴影，需要做个CT进行深度检查，然后赶忙去做了CT，然后又去做了心电图，心电图倒是一切正常，还是往常的窦性心律，还有个右束支什么的东西，倒是青少年常见问题了。</p>
-<p>拿到CT结果已经是体检第二天的事情了，可以很清楚的看到我的肺部几乎四分之一都被感染了，医生问我痛不痛，我倒是没有觉得有痛感，只是觉得有异物感。也不知道这身体素质是好还是坏，说他好吧，他年纪轻轻染了肺炎，说他差吧，这么大的验证正常人早就疼晕过去了，他偏偏好端端的，要不是体检查出来了，估计这身体还能再挺一个月。</p>
-<p>医生说我情况已经很严重了，但是从CT来看确实也没有积液，当时便是建议我住院，可惜我深圳没有医保，还是回家好好治疗吧。出CT结果的那天下午定了回家的车票，第二天早上七点多到家了，然后回家吃了妈妈做的早饭，赶忙去了医院，直接找到了呼吸内科，医生一看我的CT结果哦，立即给我安排了住院，好运的事情是当时医院里面空闲床位还是蛮多的，于是住院相关的工作安排的还是比较容易的。</p>
-<p>接下来便是住院的生活了，开始的两天发烧不断，吃了退烧药后便是没有再发烧了，之后便是每日的抗生素输入，每天输液三次，早上九点钟一次输液，下午四点一次，晚上十二点一次，三次输液，使得抗生素在我身体里面一直流动着，住院住了半个月，然后开了药，八月的时候身体仍然感觉不是那么好，去复查发现没有什么问题，后来又去做了CT，确实炎症已经完全消除了，但是粘膜之类的还没有完全修复，还会咳嗽有痰。</p>
-<p>最近又嗝气，又开了一些脾胃的中药，大概又要喝药到开学了。</p>
-<p>这段时间真的好难受啊，什么东西都学不进去，不可避免的发烧，感到身体急躁，虽然也是把R语言过了一遍，然后又把英语捡了回来，也算是逐渐步入正轨了吧，希望之后不要再有疾病了，身体真的是十分影响我的生活工作和学习。身体是革命的本钱啊。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>疾病</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>讲讲各个编程语言的特点</title>
     <url>/2022/1075637985.html</url>
     <content><![CDATA[<p>目前呢，市面上主流的编程语言有
@@ -8163,6 +8145,26 @@ alt="20220425170152" /></p>
       <tags>
         <tag>生活</tag>
         <tag>生物化学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>身体是革命的本钱</title>
+    <url>/2022/3627254244.html</url>
+    <content><![CDATA[<p>最开始感到身体不适的时候，大概是在六月初，那时候觉得右下腹隐隐不适，但是并不疼痛，我一直以为是肝脏出了问题，随机买了护肝片，然后减少了熬夜。起初还是有一些效果，不适程度减少了很多，但是不到一周的时间又开始了，那是我正在做俯卧撑的时候，毕业的那段时间是每天一百个俯卧撑，那天俯卧撑的时候，突然觉得右胸猛的一痛，就像是要被撕裂了一般，随机停止了，然后上床休息。这便是已经六月中了。</p>
+<p>之后便是毕业典礼之类类的事情，这时候大概一直右胸下部都有一种异物感，还是觉得是肝脏的问题，于是去校医院做了肝胆检查，检查结果表示一切正常，所以觉得，是不是健身练的太多了，导致肌肉拉伸了？虽然那个部位肌肉确实没有怎么练到，但是确实就没有继续往下面检查。</p>
+<p>时间到了28号，毕业前往深圳，去华大实习，师兄给安排了食宿，然后自己去办理入职，入职需要入职体检，随机去了医院进行体检，血常规没有什么问题，检查心率的时候当时心率达到了116，医生说让做个心电图，这是上午的时候。下午体检结果出来，医生说我X光有问题，肺部有密集的阴影，需要做个CT进行深度检查，然后赶忙去做了CT，然后又去做了心电图，心电图倒是一切正常，还是往常的窦性心律，还有个右束支什么的东西，倒是青少年常见问题了。</p>
+<p>拿到CT结果已经是体检第二天的事情了，可以很清楚的看到我的肺部几乎四分之一都被感染了，医生问我痛不痛，我倒是没有觉得有痛感，只是觉得有异物感。也不知道这身体素质是好还是坏，说他好吧，他年纪轻轻染了肺炎，说他差吧，这么大的验证正常人早就疼晕过去了，他偏偏好端端的，要不是体检查出来了，估计这身体还能再挺一个月。</p>
+<p>医生说我情况已经很严重了，但是从CT来看确实也没有积液，当时便是建议我住院，可惜我深圳没有医保，还是回家好好治疗吧。出CT结果的那天下午定了回家的车票，第二天早上七点多到家了，然后回家吃了妈妈做的早饭，赶忙去了医院，直接找到了呼吸内科，医生一看我的CT结果哦，立即给我安排了住院，好运的事情是当时医院里面空闲床位还是蛮多的，于是住院相关的工作安排的还是比较容易的。</p>
+<p>接下来便是住院的生活了，开始的两天发烧不断，吃了退烧药后便是没有再发烧了，之后便是每日的抗生素输入，每天输液三次，早上九点钟一次输液，下午四点一次，晚上十二点一次，三次输液，使得抗生素在我身体里面一直流动着，住院住了半个月，然后开了药，八月的时候身体仍然感觉不是那么好，去复查发现没有什么问题，后来又去做了CT，确实炎症已经完全消除了，但是粘膜之类的还没有完全修复，还会咳嗽有痰。</p>
+<p>最近又嗝气，又开了一些脾胃的中药，大概又要喝药到开学了。</p>
+<p>这段时间真的好难受啊，什么东西都学不进去，不可避免的发烧，感到身体急躁，虽然也是把R语言过了一遍，然后又把英语捡了回来，也算是逐渐步入正轨了吧，希望之后不要再有疾病了，身体真的是十分影响我的生活工作和学习。身体是革命的本钱啊。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>疾病</tag>
       </tags>
   </entry>
   <entry>
