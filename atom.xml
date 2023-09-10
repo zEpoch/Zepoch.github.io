@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-07-27T11:12:45.539Z</updated>
+  <updated>2023-09-10T14:55:03.421Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>杂料7</title>
+    <link href="https://www.zepoch.cc/2023/2239161542.html"/>
+    <id>https://www.zepoch.cc/2023/2239161542.html</id>
+    <published>2023-09-10T13:19:56.000Z</published>
+    <updated>2023-09-10T14:55:03.421Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;又是好久没有写博客了，应该还是写一写记录一下我的生活的，我的记忆感觉比以前差了很多，记录下来总归是好的事情，也许我还能再回顾一下，总觉得要把自己的博客捋的清晰一下，在生活的栏目里面要少讲一些科研或是正经的工作故事，这里就是纯粹的、枯燥的、无聊的、单调的我的生活故事。&lt;/p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>使用空间转录组文件gem生成相应的灰度图</title>
@@ -549,33 +574,6 @@ class=&quot;math display&quot;&gt;\[
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>身体是革命的本钱</title>
-    <link href="https://www.zepoch.cc/2022/3627254244.html"/>
-    <id>https://www.zepoch.cc/2022/3627254244.html</id>
-    <published>2022-08-13T08:09:54.000Z</published>
-    <updated>2022-08-13T10:05:30.603Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最开始感到身体不适的时候，大概是在六月初，那时候觉得右下腹隐隐不适，但是并不疼痛，我一直以为是肝脏出了问题，随机买了护肝片，然后减少了熬夜。起初还是有一些效果，不适程度减少了很多，但是不到一周的时间又开始了，那是我正在做俯卧撑的时候，毕业的那段时间是每天一百个俯卧撑，那天俯</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="疾病" scheme="https://www.zepoch.cc/tags/%E7%96%BE%E7%97%85/"/>
     
   </entry>
   
