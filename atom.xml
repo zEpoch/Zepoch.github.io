@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-09-10T14:58:22.197Z</updated>
+  <updated>2023-10-18T15:34:11.768Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scanpy多张图绘制于一张</title>
+    <link href="https://www.zepoch.cc/2023/2146294005.html"/>
+    <id>https://www.zepoch.cc/2023/2146294005.html</id>
+    <published>2023-10-18T15:29:55.000Z</published>
+    <updated>2023-10-18T15:34:11.768Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当我们一次有多个数据，而且我们想要使用scanpy绘制umap图，或是spatial图的时候，大多数人一次只是绘制一个umap图或是一个spatial图在一个png或是一个pdf上面，对于我们可视化来说可能并没有那么轻便，于是需要做一些调整，借助于matplotlib的内参</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
+    
+    <category term="python" scheme="https://www.zepoch.cc/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>杂聊7</title>
@@ -549,31 +578,6 @@ class=&quot;math display&quot;&gt;\[
     <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="梯度下降" scheme="https://www.zepoch.cc/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习-回归</title>
-    <link href="https://www.zepoch.cc/2022/1247504268.html"/>
-    <id>https://www.zepoch.cc/2022/1247504268.html</id>
-    <published>2022-08-15T09:32:12.000Z</published>
-    <updated>2022-08-15T12:55:22.924Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
-&lt;p&gt;此次学习的课程为李宏毅机器学习，之前学过一遍吴恩达的课程，只可惜当时没记笔记，且近些时候没有写代码，逐渐疏忽了，故选择李宏毅再进行新一遍的学习，所谓温故而知新。&lt;/p&gt;
-&lt;p&gt;回归是我们通常会使用的机器学习中的一类，比如日常中的我们的身高预测，股票预测等等，这些都可以看作为粗略的回归。&lt;/p&gt;
-&lt;h2 id=&quot;举一个例子&quot;&gt;举一个例子&lt;/h2&gt;
-&lt;p&gt;小时候我们会玩一个叫赛尔号的游戏，游戏里有各种各样的精力，就好比我们捕捉到了一只雷伊，然后我们可以向雷伊投经验值，让他升级，这只雷伊会有一个攻击力，我们想要预测雷伊的各种各样的属性与其攻击力之间的关系。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
