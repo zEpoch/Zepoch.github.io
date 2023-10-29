@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-10-18T15:34:11.768Z</updated>
+  <updated>2023-10-29T15:07:39.948Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>杂聊8</title>
+    <link href="https://www.zepoch.cc/2023/2375055875.html"/>
+    <id>https://www.zepoch.cc/2023/2375055875.html</id>
+    <published>2023-10-29T14:27:06.000Z</published>
+    <updated>2023-10-29T15:07:39.948Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;以后尽量是可以做到每天的快乐生活当天记录下来，我的记忆会慢慢遗忘掉一些内容，记录下来或许能够让我减少遗忘。&lt;/p&gt;
+&lt;p&gt;今天是周日，所以又是我外出走走的日子，今天是和朋友们一起去西湖边的吴山景区附近走走，爬爬山。是要早起的，但是也并没起的很早，只得是草草吃了饭，甚至还是</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>scanpy多张图绘制于一张</title>
     <link href="https://www.zepoch.cc/2023/2146294005.html"/>
     <id>https://www.zepoch.cc/2023/2146294005.html</id>
     <published>2023-10-18T15:29:55.000Z</published>
-    <updated>2023-10-18T15:34:11.768Z</updated>
+    <updated>2023-10-18T15:34:38.163Z</updated>
     
     
       
@@ -547,37 +573,6 @@ alt=&quot;</summary>
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习-梯度下降的优化</title>
-    <link href="https://www.zepoch.cc/2022/3163358201.html"/>
-    <id>https://www.zepoch.cc/2022/3163358201.html</id>
-    <published>2022-08-16T05:13:32.000Z</published>
-    <updated>2022-08-16T10:00:00.300Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在回归中，我们需要解决下面的优化问题，即使得Loss函数尽可能的小 &lt;span
-class=&quot;math display&quot;&gt;\[
-\theta^*=arg\min L(\theta),L:loss</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="梯度下降" scheme="https://www.zepoch.cc/tags/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/"/>
     
   </entry>
   
