@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-11-13T12:45:27.843Z</updated>
+  <updated>2023-11-13T12:45:59.026Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zepoch.cc/2023/581620572.html"/>
     <id>https://www.zepoch.cc/2023/581620572.html</id>
     <published>2023-11-13T09:44:27.000Z</published>
-    <updated>2023-11-13T12:45:27.843Z</updated>
+    <updated>2023-11-13T12:45:59.026Z</updated>
     
     
       
@@ -40,6 +40,33 @@
     
     
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂聊9</title>
+    <link href="https://www.zepoch.cc/2023/4204219029.html"/>
+    <id>https://www.zepoch.cc/2023/4204219029.html</id>
+    <published>2023-11-12T12:51:12.000Z</published>
+    <updated>2023-11-13T13:16:53.720Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;醒来已然是九点多了，磨磨蹭蹭，拉屎撒尿，洗洗刷刷，就到了十点，想着上午去游泳，于是便速速又把屋子收拾了一下，发现了好多之前早就要扔掉，但是没有扔掉的事物。比如自己之前用完的洗发水空瓶子，某天夜晚吃烧烤顺便买的一瓶快乐水，好多月之前吃完的锅巴的盒子，以及平时擦桌子，擦鼻涕，擦</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
     
   </entry>
   
@@ -545,34 +572,6 @@ id=&quot;表观遗传学概念分子机制及表观遗传经典现象&quot;&gt;1
     
     
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习-支持向量机</title>
-    <link href="https://www.zepoch.cc/2022/917828124.html"/>
-    <id>https://www.zepoch.cc/2022/917828124.html</id>
-    <published>2022-08-19T11:51:29.000Z</published>
-    <updated>2022-08-19T16:53:53.019Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;支持向量机总体是由一个合页损失函数和一个核函数组成&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://cdn.jsdelivr.net/gh/zEpoch/imageHome@main/blog/机器学习-支持向量机/20220819195408.png&quot;
-alt=&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
