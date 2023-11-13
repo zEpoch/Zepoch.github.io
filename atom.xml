@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-11-02T08:16:43.077Z</updated>
+  <updated>2023-11-13T12:45:27.843Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>rds与h5ad的相互转换</title>
+    <link href="https://www.zepoch.cc/2023/581620572.html"/>
+    <id>https://www.zepoch.cc/2023/581620572.html</id>
+    <published>2023-11-13T09:44:27.000Z</published>
+    <updated>2023-11-13T12:45:27.843Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;之前做过一个 rds 转 h5ad
+的教程，现在看来发现有些过于繁琐，且随着时间的发展，也有了更好的方法的出现，所以这里再写一个教程。&lt;/p&gt;
+&lt;p&gt;新的工具包是 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>使用GTF和fasta生成每个geneid对应最长的fasta序列</title>
@@ -214,7 +241,7 @@ installed.&lt;/p&gt;
     <link href="https://www.zepoch.cc/2023/3539500839.html"/>
     <id>https://www.zepoch.cc/2023/3539500839.html</id>
     <published>2023-04-23T02:10:03.000Z</published>
-    <updated>2023-04-23T08:05:43.895Z</updated>
+    <updated>2023-11-13T09:43:43.989Z</updated>
     
     
       
@@ -544,34 +571,6 @@ alt=&quot;</summary>
     
     <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-    <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习-逻辑回归</title>
-    <link href="https://www.zepoch.cc/2022/2694928426.html"/>
-    <id>https://www.zepoch.cc/2022/2694928426.html</id>
-    <published>2022-08-18T12:05:48.000Z</published>
-    <updated>2022-08-18T13:56:19.390Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;接着上篇博客继续，我们发现，概率生成模型最终推导函数，其本质还是寻找参数w和b，所以可以设置一个函数，直接来寻找最优的w和b&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;math</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="机器学习" scheme="https://www.zepoch.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
