@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-11-13T12:45:59.026Z</updated>
+  <updated>2023-11-14T07:49:36.563Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单细胞随机采样</title>
+    <link href="https://www.zepoch.cc/2023/3969475204.html"/>
+    <id>https://www.zepoch.cc/2023/3969475204.html</id>
+    <published>2023-11-14T07:39:39.000Z</published>
+    <updated>2023-11-14T07:49:36.563Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近单细胞图谱越来越多的涌现，我们经常要用到别人产出的超级高质量的单细胞与自己测的细胞进行比较分析，但是图谱往往具有非常多的细胞数量，正常的计算设备无法带动，以最近发表的Science专刊的单细胞数据为例，动辄便是三四百万的单细胞量级，这个时候我们就需要对数据进行随机采样，</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
+    
+  </entry>
   
   <entry>
     <title>rds与h5ad的相互转换</title>
@@ -48,7 +75,7 @@
     <link href="https://www.zepoch.cc/2023/4204219029.html"/>
     <id>https://www.zepoch.cc/2023/4204219029.html</id>
     <published>2023-11-12T12:51:12.000Z</published>
-    <updated>2023-11-13T13:16:53.720Z</updated>
+    <updated>2023-11-13T13:17:16.059Z</updated>
     
     
       
@@ -374,9 +401,9 @@ href=&quot;https://pubmed.ncbi.nlm.nih.gov/29724907/&quot;&gt;原文链接&lt;/a
     
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="论文" scheme="https://www.zepoch.cc/tags/%E8%AE%BA%E6%96%87/"/>
-    
     <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
+    
+    <category term="论文" scheme="https://www.zepoch.cc/tags/%E8%AE%BA%E6%96%87/"/>
     
   </entry>
   
@@ -545,33 +572,6 @@ id=&quot;表观遗传学概念分子机制及表观遗传经典现象&quot;&gt;1
     
     
     <category term="碎碎念" scheme="https://www.zepoch.cc/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>返校3周，国科大加重了我的精神内耗</title>
-    <link href="https://www.zepoch.cc/2022/4038513713.html"/>
-    <id>https://www.zepoch.cc/2022/4038513713.html</id>
-    <published>2022-09-16T05:52:51.000Z</published>
-    <updated>2022-09-17T05:54:18.868Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;今天北大出入校改成自动报备了，本科同学们在约饭，我说我在坐牢去不了。&lt;/p&gt;
-&lt;p&gt;我想起上周中秋节，老师说出校只能当天去当天回，在外过夜需要自费隔离三天，可能是担心我半夜着凉。看了眼怀密线每晚6点的末班车，毅然鸽了同学。假期一结束，又说在外过夜不用隔离了。&lt;/p&gt;
-&lt;</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
