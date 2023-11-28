@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-11-14T07:50:53.670Z</updated>
+  <updated>2023-11-28T09:45:35.042Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spatial transcriptomics 3d visualization</title>
+    <link href="https://www.zepoch.cc/2023/2340017484.html"/>
+    <id>https://www.zepoch.cc/2023/2340017484.html</id>
+    <published>2023-11-28T09:39:10.000Z</published>
+    <updated>2023-11-28T09:45:35.042Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;With development of spatial transfriptomics, we can get the spatial
+information of gene expression. However, the data is 2D, and it is</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>单细胞随机采样</title>
@@ -546,32 +572,6 @@ id=&quot;表观遗传学概念分子机制及表观遗传经典现象&quot;&gt;1
     
     
     <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂聊5</title>
-    <link href="https://www.zepoch.cc/2022/4079027902.html"/>
-    <id>https://www.zepoch.cc/2022/4079027902.html</id>
-    <published>2022-10-22T07:34:32.000Z</published>
-    <updated>2022-10-22T08:38:34.161Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;又是一个月过去，十一仿佛就在昨日，然后劈里啪啦的，就跑走了三个星期，只能说感受不到自己做了什么，学到了什么，所以觉得落差感比较大。而且博客也是很久没写了，进行稍微长一点的叙述就会显得我的逻辑比较混乱。&lt;/p&gt;
-&lt;p&gt;今天应该是还有很多的ddl的，比如刚刚开辟的Python</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="碎碎念" scheme="https://www.zepoch.cc/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
