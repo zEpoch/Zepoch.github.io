@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-11-28T09:45:35.042Z</updated>
+  <updated>2023-11-30T03:29:58.746Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>杂聊10</title>
+    <link href="https://www.zepoch.cc/2023/3164448168.html"/>
+    <id>https://www.zepoch.cc/2023/3164448168.html</id>
+    <published>2023-11-30T03:12:59.000Z</published>
+    <updated>2023-11-30T03:29:58.746Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;回顾一下昨天。&lt;/p&gt;
+&lt;p&gt;昨天是周三，是要开组会的日子，但是我起晚了，醒来一看手机已然是九点半了，想来他们是已经开始会议了，我却还在被窝，究其原因还是昨晚的熬夜，但这就是另外一回事情了。&lt;/p&gt;
+&lt;p&gt;起来也没洗漱，也没去那家我常去买早餐的包子铺，穿上衣服匆匆的来了</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>spatial transcriptomics 3d visualization</title>
     <link href="https://www.zepoch.cc/2023/2340017484.html"/>
     <id>https://www.zepoch.cc/2023/2340017484.html</id>
     <published>2023-11-28T09:39:10.000Z</published>
-    <updated>2023-11-28T09:45:35.042Z</updated>
+    <updated>2023-11-28T09:46:52.177Z</updated>
     
     
       
@@ -396,9 +423,9 @@ installed.&lt;/p&gt;
     <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="JavaScript" scheme="https://www.zepoch.cc/tags/JavaScript/"/>
-    
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="JavaScript" scheme="https://www.zepoch.cc/tags/JavaScript/"/>
     
   </entry>
   
@@ -545,33 +572,6 @@ id=&quot;表观遗传学概念分子机制及表观遗传经典现象&quot;&gt;1
     
     
     <category term="表观遗传学" scheme="https://www.zepoch.cc/tags/%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂聊6</title>
-    <link href="https://www.zepoch.cc/2022/1781028612.html"/>
-    <id>https://www.zepoch.cc/2022/1781028612.html</id>
-    <published>2022-11-05T11:43:09.000Z</published>
-    <updated>2022-11-05T11:50:03.314Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;我没有那么专注了，是的。&lt;/p&gt;
-&lt;p&gt;最近处于一种不太专注的状态，又或许我已经处于这个状态很长时间了，但是现在才发现这件事情，感觉给自己的生活造成了有好大一部分的困扰，还是记录一下吧。&lt;/p&gt;
-&lt;p&gt;大概已经是一年多了，我可能处于同一时间做多件事情，我尤其清晰的记得，</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
     
   </entry>
   
