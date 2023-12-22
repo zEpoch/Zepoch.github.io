@@ -8634,4 +8634,82 @@ alt="image-20210717151100839" /></p>
         <tag>Hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>空间转录组不同binsize之间迁移注释</title>
+    <url>/2023/3357301420.html</url>
+    <content><![CDATA[<p>在做空间转录组分析的时候，我们大多数会使用两种类型的数据，一种是bin100，bin50此类的数据，还有一种则是cellbin的数据，通常我们会使用
+bin100/bin50 这样子的数据去做区域的注释，而 cellbin
+的数据则是通过单细胞映射空间组，得到细胞类型的数据。但是这两种数据之间的迁移注释是一个问题，因为他们的分辨率不一样，所以我们需要将他们进行迁移注释，让
+cellbin 的数据注释上脑区的信息。</p>
+<p>首先要明确的是，我们的 bin100/bin50 的数据都是由同一个空间组的 gem
+之类的文件生成的，要保证其基准坐标保持不变，这样子才能进行迁移注释。</p>
+<p>但是基准不变的话，其实从 bin100 映射到 bin50 与 bin100 映射到 cellbin
+其实原理是一样的，都是将 bin100 的数据映射到 bin50 或者 cellbin
+的数据上，所以我们可以直接使用 bin100 的数据去做迁移注释。</p>
+<p>首先，bin100 的每个 spots 都有一个坐标，但是实际上 bin100 应该是要有
+100<em>100 个坐标的，所以我们就需要将其还原回到 100</em>100
+的坐标上，这样子才能进行迁移注释，就像图片一样填满了整个背景板，那么这个时候，我们再拿出
+bin50 或者 cellbin 的坐标数据，就可以将 bin100 的数据映射到 bin50 或者
+cellbin 的数据上，这样子就完成了迁移注释。</p>
+<p>但实际上这样子还是会有一些问题，比如某些细胞在两个bin100的正中间，或是其他的一些边界问题，还有很多的其他情况，这些我也没有考虑，笔者总体上觉得大多数的细胞映射还是没有太大问题的。代码如下所示：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">bin100_2_bin50</span><span class="token punctuation">(</span>bin50_file_path<span class="token punctuation">,</span> bin100_file_path<span class="token punctuation">,</span> bin100_anno<span class="token punctuation">,</span> bin50_anno<span class="token punctuation">,</span> add_x<span class="token punctuation">,</span> add_y<span class="token punctuation">,</span> bin50_save_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 没有脑区注释</span>
+    adata_bin50 <span class="token operator">=</span> sc<span class="token punctuation">.</span>read<span class="token punctuation">(</span>bin50_file_path<span class="token punctuation">)</span>
+    
+    <span class="token comment"># 有脑区注释的数据</span>
+    adata_bin100 <span class="token operator">=</span> sc<span class="token punctuation">.</span>read<span class="token punctuation">(</span>bin100_file_path<span class="token punctuation">)</span>
+    
+    <span class="token comment"># 构建映射字典 region_1 = 1</span>
+    dic <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>bin100<span class="token punctuation">.</span>obs<span class="token punctuation">[</span>bin100_anno<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        dic<span class="token punctuation">[</span><span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>bin100<span class="token punctuation">.</span>obs<span class="token punctuation">[</span>bin100_anno<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span>
+
+    <span class="token comment"># 将每个脑区变换成为 数字 id</span>
+    celltype <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    refined <span class="token operator">=</span> bin100<span class="token punctuation">.</span>obs<span class="token punctuation">[</span>bin100_anno<span class="token punctuation">]</span><span class="token punctuation">.</span>tolist<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    celltype <span class="token operator">=</span> <span class="token punctuation">[</span>dic<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> refined<span class="token punctuation">]</span>
+    
+    <span class="token comment"># 构建大图，并且填写上 id，指脑区信息</span>
+    x<span class="token punctuation">,</span> y <span class="token operator">=</span> adata_bin100<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> adata_bin100<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span>
+    shape <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">,</span>y<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">)</span>
+    X <span class="token operator">=</span> csr_matrix<span class="token punctuation">(</span><span class="token punctuation">(</span>celltype<span class="token punctuation">,</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> shape<span class="token operator">=</span>shape<span class="token punctuation">)</span>
+    X <span class="token operator">=</span> X<span class="token punctuation">.</span>toarray<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    obs <span class="token operator">=</span> adata_bin100<span class="token punctuation">.</span>obs
+
+    <span class="token comment"># 求出 长度</span>
+    bin100_spot_len <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>adata_bin100<span class="token punctuation">)</span>
+    
+    <span class="token comment"># 转为 bin1 形式，将脑区信息补全</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>bin100_spot_len<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        X<span class="token punctuation">[</span>obs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">:</span>obs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">50</span><span class="token punctuation">,</span> obs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">:</span>obs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">50</span><span class="token punctuation">]</span> <span class="token operator">=</span> X<span class="token punctuation">[</span>obs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>obs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span>
+    
+    <span class="token comment"># 脑区映射信息</span>
+    dic_reverse <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+    <span class="token keyword">for</span> index<span class="token punctuation">,</span>val <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>dic<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        dic_reverse<span class="token punctuation">[</span>index<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> val
+    dic_reverse<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'others'</span>
+    
+    bin50_spot_len <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>adata_bin50<span class="token punctuation">)</span>
+    
+    t <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>bin50_spot_len<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        t<span class="token punctuation">.</span>append<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">(</span>adata_bin50<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">(</span>adata_bin50<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    
+    adata_bin50_region_type <span class="token operator">=</span> <span class="token punctuation">[</span>dic_reverse<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> t<span class="token punctuation">]</span>
+    
+    adata_bin50<span class="token punctuation">.</span>obs<span class="token punctuation">[</span>bin50_anno<span class="token punctuation">]</span> <span class="token operator">=</span> adata_bin50_region_type
+    adata_bin50<span class="token punctuation">.</span>obs<span class="token punctuation">[</span>bin50_anno<span class="token punctuation">]</span> <span class="token operator">=</span> adata_bin50<span class="token punctuation">.</span>obs<span class="token punctuation">[</span>bin50_anno<span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'category'</span><span class="token punctuation">)</span>
+    
+    adata<span class="token punctuation">.</span>write<span class="token punctuation">(</span>bin50_save_path<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>欢迎各位评论留言</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
 </search>

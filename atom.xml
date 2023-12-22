@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-11-30T15:54:16.786Z</updated>
+  <updated>2023-12-22T13:35:41.524Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>空间转录组不同binsize之间迁移注释</title>
+    <link href="https://www.zepoch.cc/2023/3357301420.html"/>
+    <id>https://www.zepoch.cc/2023/3357301420.html</id>
+    <published>2023-12-21T03:03:38.000Z</published>
+    <updated>2023-12-22T13:35:41.524Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在做空间转录组分析的时候，我们大多数会使用两种类型的数据，一种是bin100，bin50此类的数据，还有一种则是cellbin的数据，通常我们会使用
+bin100/bin50 这样子的数据去做区域的注释，而</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>杂聊11</title>
     <link href="https://www.zepoch.cc/2023/3415905598.html"/>
     <id>https://www.zepoch.cc/2023/3415905598.html</id>
     <published>2023-11-30T15:26:28.000Z</published>
-    <updated>2023-11-30T15:54:16.786Z</updated>
+    <updated>2023-11-30T15:54:41.249Z</updated>
     
     
       
@@ -545,31 +571,6 @@ href=&quot;</summary>
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何写好你的科学故事</title>
-    <link href="https://www.zepoch.cc/2022/542253658.html"/>
-    <id>https://www.zepoch.cc/2022/542253658.html</id>
-    <published>2022-12-08T06:25:44.000Z</published>
-    <updated>2022-12-08T10:41:06.220Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="科研" scheme="https://www.zepoch.cc/tags/%E7%A7%91%E7%A0%94/"/>
     
   </entry>
   
