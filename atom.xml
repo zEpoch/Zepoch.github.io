@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-12-29T03:14:13.792Z</updated>
+  <updated>2023-12-29T03:29:56.041Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Calculate the complexity of cells in a region</title>
+    <link href="https://www.zepoch.cc/2023/2669081178.html"/>
+    <id>https://www.zepoch.cc/2023/2669081178.html</id>
+    <published>2023-12-29T03:26:11.000Z</published>
+    <updated>2023-12-29T03:29:56.041Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;In some spatial group atlas articles, we often see a picture, which
+is to calculate the complexity of cells in a region. We take an</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+  </entry>
+  
+  <entry>
     <title>计算某个区域中细胞的复杂性</title>
     <link href="https://www.zepoch.cc/2023/959813387.html"/>
     <id>https://www.zepoch.cc/2023/959813387.html</id>
     <published>2023-12-29T02:55:57.000Z</published>
-    <updated>2023-12-29T03:14:13.792Z</updated>
+    <updated>2023-12-29T03:15:30.747Z</updated>
     
     
       
@@ -42,9 +68,9 @@ spatial transcriptome reveals</summary>
     <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -542,37 +568,6 @@ href=&quot;https://pubmed.ncbi.nlm.nih.gov/29724907/&quot;&gt;原文链接&lt;/a
     <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
     
     <category term="论文" scheme="https://www.zepoch.cc/tags/%E8%AE%BA%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为何有人害怕chatgpt</title>
-    <link href="https://www.zepoch.cc/2023/2307022770.html"/>
-    <id>https://www.zepoch.cc/2023/2307022770.html</id>
-    <published>2023-03-07T08:14:11.000Z</published>
-    <updated>2023-03-07T08:16:01.859Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;我觉得当我们在讨论所有的chatgpt的问题的时候，我们需要想清楚的是：我们要的到底是AI，是人工智能，还是一个不会反抗的、可以被无限剥削的机器奴隶。我认为这个才是所谓人工智能社会学的一个元问题。而要真正理解这个问题，我们就必须回到AI被生产出来的社会环境当中才能够找到答案</summary>
-        
-      
-    
-    
-    
-    <category term="杂聊" scheme="https://www.zepoch.cc/categories/%E6%9D%82%E8%81%8A/"/>
-    
-    
-    <category term="CHATGPT" scheme="https://www.zepoch.cc/tags/CHATGPT/"/>
-    
-    <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
-    
-    <category term="人工智能" scheme="https://www.zepoch.cc/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="AI" scheme="https://www.zepoch.cc/tags/AI/"/>
     
   </entry>
   
