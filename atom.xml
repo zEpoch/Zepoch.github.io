@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-12-23T09:30:08.024Z</updated>
+  <updated>2023-12-29T03:14:13.792Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算某个区域中细胞的复杂性</title>
+    <link href="https://www.zepoch.cc/2023/959813387.html"/>
+    <id>https://www.zepoch.cc/2023/959813387.html</id>
+    <published>2023-12-29T02:55:57.000Z</published>
+    <updated>2023-12-29T03:14:13.792Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在某系空间组图谱文章中，我们经常会看到一种图片，是去计算某个区域中细胞的复杂性，我们以今年在
+Cell
+上发表的一篇文章为例，来看看如何计算某个区域中细胞的复杂性。文章名字为Single-cell
+spatial transcriptome reveals</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+  </entry>
   
   <entry>
     <title>空间转录组不同binsize之间迁移注释</title>
@@ -541,36 +573,6 @@ href=&quot;https://pubmed.ncbi.nlm.nih.gov/29724907/&quot;&gt;原文链接&lt;/a
     <category term="人工智能" scheme="https://www.zepoch.cc/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
     <category term="AI" scheme="https://www.zepoch.cc/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pip install fa2</title>
-    <link href="https://www.zepoch.cc/2023/36631468.html"/>
-    <id>https://www.zepoch.cc/2023/36631468.html</id>
-    <published>2023-02-20T04:32:04.000Z</published>
-    <updated>2023-02-20T06:00:01.355Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最近在学习&lt;a
-href=&quot;https://github.com/scverse/scanpy&quot;&gt;scanpy&lt;/a&gt;，读&lt;a
-href=&quot;https://scanpy.readthedocs.io/en/stable/&quot;&gt;scanpy文档&lt;/a&gt;的&lt;a
-href=&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
     
   </entry>
   
