@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2023-12-29T03:29:56.041Z</updated>
+  <updated>2024-01-01T11:51:58.506Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>月度消费总结1</title>
+    <link href="https://www.zepoch.cc/2024/179608785.html"/>
+    <id>https://www.zepoch.cc/2024/179608785.html</id>
+    <published>2024-01-01T11:27:42.000Z</published>
+    <updated>2024-01-01T11:51:58.506Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;人的消费情况，是一个很好的反映人生活状态的指标。消费情况的好坏，直接影响到人的生活质量。所以决定对自己的消费情况进行总结，以此来反映自己的生活状态。&lt;/p&gt;
+&lt;p&gt;买衣服和吃饭的消费居于较高的位置。</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Calculate the complexity of cells in a region</title>
     <link href="https://www.zepoch.cc/2023/2669081178.html"/>
     <id>https://www.zepoch.cc/2023/2669081178.html</id>
     <published>2023-12-29T03:26:11.000Z</published>
-    <updated>2023-12-29T03:29:56.041Z</updated>
+    <updated>2023-12-29T03:30:22.398Z</updated>
     
     
       
@@ -537,37 +563,6 @@ installed.&lt;/p&gt;
     <category term="JavaScript" scheme="https://www.zepoch.cc/tags/JavaScript/"/>
     
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>爬行动物中由单细胞转录组揭示的大脑皮层，海马和皮层细胞类型的进化</title>
-    <link href="https://www.zepoch.cc/2023/1344738173.html"/>
-    <id>https://www.zepoch.cc/2023/1344738173.html</id>
-    <published>2023-03-07T12:15:33.000Z</published>
-    <updated>2023-03-07T13:40:33.468Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这是读的第一篇的关于不同物种脑比较的文章，进行了较为精细的阅读，故作此记录。&lt;a
-href=&quot;https://pubmed.ncbi.nlm.nih.gov/29724907/&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
-    
-    <category term="论文" scheme="https://www.zepoch.cc/tags/%E8%AE%BA%E6%96%87/"/>
     
   </entry>
   
