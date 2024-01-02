@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-01T11:51:58.506Z</updated>
+  <updated>2024-01-02T13:16:09.894Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>各区域不同细胞类型的统计</title>
+    <link href="https://www.zepoch.cc/2024/4104152713.html"/>
+    <id>https://www.zepoch.cc/2024/4104152713.html</id>
+    <published>2024-01-02T12:23:57.000Z</published>
+    <updated>2024-01-02T13:16:09.894Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在处理空间组的数据的时候，很多情况下，我们会根据解剖学知识给某些地方进行区域注释；这块区域的细胞类型则是通过单细胞映射空间组进行的，再进行了手动赋予区域信息以及迁移映射了细胞类型信息之后，则需要对这些进行进行一些可视化以及一些统计分析。&lt;/p&gt;
+&lt;p&gt;可视化的代码如下，为</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>月度消费总结1</title>
     <link href="https://www.zepoch.cc/2024/179608785.html"/>
     <id>https://www.zepoch.cc/2024/179608785.html</id>
     <published>2024-01-01T11:27:42.000Z</published>
-    <updated>2024-01-01T11:51:58.506Z</updated>
+    <updated>2024-01-01T11:53:44.824Z</updated>
     
     
       
@@ -535,34 +565,6 @@ installed.&lt;/p&gt;
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="汇报" scheme="https://www.zepoch.cc/tags/%E6%B1%87%E6%8A%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>写一个小脚本</title>
-    <link href="https://www.zepoch.cc/2023/2262097032.html"/>
-    <id>https://www.zepoch.cc/2023/2262097032.html</id>
-    <published>2023-03-13T08:44:42.000Z</published>
-    <updated>2023-03-13T09:17:03.366Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最近上课，有一门课有一部分网课，这部分网课其实已经学过了，但是老师还是让看，看就看呗，原以为直接挂着就行了，但是发现这个网站每隔几分钟就会弹出窗口，需要点击才能继续观看。可是呢，我还有别的任务，于是便写了一个小脚本，使得可以实现自动刷课。&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://www.zepoch.cc/tags/JavaScript/"/>
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
