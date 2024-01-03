@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-03T02:59:38.953Z</updated>
+  <updated>2024-01-03T13:42:04.063Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算某个区域中细胞的复杂性(2)</title>
+    <link href="https://www.zepoch.cc/2024/37434737.html"/>
+    <id>https://www.zepoch.cc/2024/37434737.html</id>
+    <published>2024-01-03T13:25:23.000Z</published>
+    <updated>2024-01-03T13:42:04.063Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;上一篇帖子提到了猴脑文章中&lt;a
+href=&quot;https://www.zepoch.cc/2023/959813387.html&quot;&gt;某个区域中细胞复杂性的计算&lt;/a&gt;，后面又看到一张图，才是发现自己的计算少了一些东西，这里补充一下。&lt;/p&gt;
+&lt;p&gt;在原文的图四中还有一个图</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>spatial Transcription region deg genemodule heatmap GO analysis</title>
@@ -534,35 +565,6 @@ STOmics</summary>
     <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/tags/spatial-transcriptomics/"/>
     
     <category term="spateo" scheme="https://www.zepoch.cc/tags/spateo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>how to run Spatial ID</title>
-    <link href="https://www.zepoch.cc/2023/3439187702.html"/>
-    <id>https://www.zepoch.cc/2023/3439187702.html</id>
-    <published>2023-06-07T10:05:40.000Z</published>
-    <updated>2023-06-07T10:08:35.881Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;before you start to run the program, you should make something
-installed.&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
-    
-    
-    <category term="Spatial ID" scheme="https://www.zepoch.cc/tags/Spatial-ID/"/>
-    
-    <category term="genomics" scheme="https://www.zepoch.cc/tags/genomics/"/>
     
   </entry>
   

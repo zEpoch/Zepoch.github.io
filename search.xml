@@ -10430,4 +10430,130 @@ alt="image-20210717151100839" /></p>
         <tag>Hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>计算某个区域中细胞的复杂性(2)</title>
+    <url>/2024/37434737.html</url>
+    <content><![CDATA[<p>上一篇帖子提到了猴脑文章中<a
+href="https://www.zepoch.cc/2023/959813387.html">某个区域中细胞复杂性的计算</a>，后面又看到一张图，才是发现自己的计算少了一些东西，这里补充一下。</p>
+<p>在原文的图四中还有一个图片，讲述了较为详细的计算过程，如下图所示：</p>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/calculate_neighborhood_complexity/20240103212841.png"
+alt="20240103212841" /></p>
+<p>首先是复杂性的获得，我的上一篇相关的博客已经讲了，但是那篇博客的问题也是在于此，我是直接获得了复杂性，把其他的信息都丢掉了，KD树的缺陷也在于此，于是不得已在此进行重构：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 首先是包的引入，这里可能有很多包都是不需要的，但是我懒得删了，就这样吧</span>
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">from</span> scipy<span class="token punctuation">.</span>spatial<span class="token punctuation">.</span>distance <span class="token keyword">import</span> cdist
+<span class="token keyword">import</span> anndata <span class="token keyword">as</span> ad
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> collections <span class="token keyword">import</span> Counter
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>ticker <span class="token keyword">import</span> FuncFormatter
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>colors <span class="token keyword">import</span> ListedColormap
+<span class="token keyword">from</span> operator <span class="token keyword">import</span> itemgetter<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>然后是计算函数的定义：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Function to calculate the neighborhood complexity</span>
+<span class="token keyword">def</span> <span class="token function">calculate_neighborhood_complexity</span><span class="token punctuation">(</span>coordinates<span class="token punctuation">,</span> cell_types<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''
+    coordinates: 细胞的坐标 list
+    cell_types: 细胞的类型 list
+    '''</span>
+    num_cells <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>coordinates<span class="token punctuation">)</span>
+    unique_cell_types <span class="token operator">=</span> np<span class="token punctuation">.</span>unique<span class="token punctuation">(</span>cell_types<span class="token punctuation">)</span>
+    num_cell_types <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>unique_cell_types<span class="token punctuation">)</span>
+
+    cell_type_indices <span class="token operator">=</span> <span class="token punctuation">&#123;</span>cell_type<span class="token punctuation">:</span> i <span class="token keyword">for</span> i<span class="token punctuation">,</span> cell_type <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>unique_cell_types<span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
+
+    complexity_matrix <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>num_cells<span class="token punctuation">,</span> num_cell_types<span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>num_cells<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        center_cell_type <span class="token operator">=</span> cell_types<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        center_coord <span class="token operator">=</span> coordinates<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+
+        distances <span class="token operator">=</span> cdist<span class="token punctuation">(</span><span class="token punctuation">[</span>center_coord<span class="token punctuation">]</span><span class="token punctuation">,</span> coordinates<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        neighborhood_indices <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>distances <span class="token operator">&lt;=</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>  <span class="token comment"># 100 mm = 200 pixels</span>
+
+        neighborhood_cell_types <span class="token operator">=</span> cell_types<span class="token punctuation">[</span>neighborhood_indices<span class="token punctuation">]</span>
+
+        unique_clusters<span class="token punctuation">,</span> cluster_counts <span class="token operator">=</span> np<span class="token punctuation">.</span>unique<span class="token punctuation">(</span>neighborhood_cell_types<span class="token punctuation">,</span> return_counts<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        
+        <span class="token keyword">for</span> cell_type<span class="token punctuation">,</span> count <span class="token keyword">in</span> <span class="token builtin">zip</span><span class="token punctuation">(</span>unique_clusters<span class="token punctuation">,</span> cluster_counts<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            column_index <span class="token operator">=</span> cell_type_indices<span class="token punctuation">[</span>cell_type<span class="token punctuation">]</span>
+            complexity_matrix<span class="token punctuation">[</span>i<span class="token punctuation">,</span> column_index<span class="token punctuation">]</span> <span class="token operator">+=</span> count
+    complexity_matrix <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>complexity_matrix<span class="token punctuation">,</span> columns<span class="token operator">=</span>unique_cell_types<span class="token punctuation">,</span> <span class="token punctuation">)</span>
+    complexity <span class="token operator">=</span> <span class="token punctuation">(</span>complexity_matrix <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+    complexity_matrix<span class="token punctuation">[</span><span class="token string">'complexity'</span><span class="token punctuation">]</span> <span class="token operator">=</span> complexity
+    complexity_matrix<span class="token punctuation">[</span><span class="token string">'cell_types'</span><span class="token punctuation">]</span> <span class="token operator">=</span> cell_types
+    <span class="token keyword">return</span> complexity_matrix
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如何使用呢？如下所示：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">adata <span class="token operator">=</span> ad<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token string">'/data/cellbin_transAnno.h5ad'</span><span class="token punctuation">)</span>
+<span class="token comment"># adata.obsm['spatial'] 中存储的是每一个细胞的空间坐标信息</span>
+<span class="token comment"># adata.obs['celltype'] 中存储的是每一个细胞的细胞类型注释信息</span>
+coordinates <span class="token operator">=</span> adata_temp<span class="token punctuation">.</span>obsm<span class="token punctuation">[</span><span class="token string">'spatial'</span><span class="token punctuation">]</span>
+cell_types <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>adata_temp<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'celltype'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>tolist<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+complexity_matrix  <span class="token operator">=</span> calculate_neighborhood_complexity<span class="token punctuation">(</span>coordinates<span class="token punctuation">,</span> cell_types<span class="token punctuation">)</span>
+complexity_matrix<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'/data/complexity_matrix.csv'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这里的 complexity_matrix 是一个 pandas 的 DataFrame，不会用 python
+画图的友友可以保存为 csv 文件，然后用 R 语言画图，本人不是很会使用 R
+语言，所以就不提供 R 语言的代码了，dataframe
+概览如下所示，每一行为一个细胞，每一列为一个细胞类型，最后两列为每个细胞的复杂性和细胞类型，中间的值为
+distances 在 200 之内的 某个细胞类型的数量。</p>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/calculate_neighborhood_complexity/20240103213700.png"
+alt="20240103213700" /></p>
+<p>本人绘图的代码如下所示</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">adata_temp <span class="token operator">=</span> adata
+coordinates <span class="token operator">=</span> adata_temp<span class="token punctuation">.</span>obsm<span class="token punctuation">[</span><span class="token string">'spatial'</span><span class="token punctuation">]</span>
+cell_types <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>adata_temp<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'celltype'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>tolist<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+complexity_matrix  <span class="token operator">=</span> calculate_neighborhood_complexity<span class="token punctuation">(</span>coordinates<span class="token punctuation">,</span> cell_types<span class="token punctuation">)</span>
+
+<span class="token comment"># 选取自己感兴趣的区域/细胞类型</span>
+ex <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'X1'</span><span class="token punctuation">,</span> <span class="token string">'X2'</span><span class="token punctuation">,</span> <span class="token string">'X3'</span><span class="token punctuation">]</span>
+
+
+
+complexity_matrix <span class="token operator">=</span> complexity_matrix<span class="token punctuation">[</span>complexity_matrix<span class="token punctuation">[</span><span class="token string">'cell_types'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>isin<span class="token punctuation">(</span>ex<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> j <span class="token keyword">in</span> ex<span class="token punctuation">:</span>
+    temp <span class="token operator">=</span> complexity_matrix<span class="token punctuation">[</span>complexity_matrix<span class="token punctuation">[</span><span class="token string">'cell_types'</span><span class="token punctuation">]</span> <span class="token operator">==</span> j<span class="token punctuation">]</span>
+    <span class="token comment"># category = temp['cell_types'].tolist()</span>
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token operator">></span><span class="token number">0</span><span class="token punctuation">:</span>
+
+        neighborhood_complexities <span class="token operator">=</span> temp<span class="token punctuation">[</span><span class="token string">'complexity'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>tolist<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+        sns<span class="token punctuation">.</span>kdeplot<span class="token punctuation">(</span>neighborhood_complexities<span class="token punctuation">,</span> cumulative<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">,</span> label<span class="token operator">=</span>j<span class="token punctuation">,</span> color <span class="token operator">=</span> celltypes_colors<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">continue</span>
+
+ax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">'Neighborhood Complexity'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">'Probability (%)'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">'ALL Neighborhood Complexity Distribution'</span><span class="token punctuation">)</span>
+<span class="token comment"># Position the legend on the outside right</span>
+ax<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'upper left'</span><span class="token punctuation">,</span> bbox_to_anchor<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1.02</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ax<span class="token punctuation">.</span>yaxis<span class="token punctuation">.</span>set_major_formatter<span class="token punctuation">(</span>FuncFormatter<span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">,</span> _<span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f'</span><span class="token interpolation"><span class="token punctuation">&#123;</span>x<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">:</span><span class="token format-spec">.0f</span><span class="token punctuation">&#125;</span></span><span class="token string">'</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>xaxis<span class="token punctuation">.</span>set_major_locator<span class="token punctuation">(</span>plt<span class="token punctuation">.</span>MaxNLocator<span class="token punctuation">(</span>integer<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>tight_layout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'Neighborhood_Complexity_Distribution.pdf'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>绘图结果如下所示：</p>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/calculate_neighborhood_complexity/20240103214132.png"
+alt="20240103214132" /></p>
+<p>以上</p>
+]]></content>
+      <categories>
+        <category>tech</category>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>tech</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
 </search>
