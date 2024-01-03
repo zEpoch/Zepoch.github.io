@@ -704,13 +704,6 @@
 
   
   <url>
-    <loc>https://www.zepoch.cc/tags/tech/</loc>
-    <lastmod>2024-01-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.zepoch.cc/tags/LeetCode/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -725,7 +718,7 @@
   </url>
   
   <url>
-    <loc>https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://www.zepoch.cc/tags/tech/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -746,6 +739,13 @@
   </url>
   
   <url>
+    <loc>https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.zepoch.cc/tags/JavaScript/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -754,6 +754,20 @@
   
   <url>
     <loc>https://www.zepoch.cc/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zepoch.cc/tags/Spatial-ID/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zepoch.cc/tags/genomics/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -775,20 +789,6 @@
   
   <url>
     <loc>https://www.zepoch.cc/tags/scanpy/</loc>
-    <lastmod>2024-01-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.zepoch.cc/tags/Spatial-ID/</loc>
-    <lastmod>2024-01-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.zepoch.cc/tags/genomics/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -865,14 +865,14 @@
   </url>
   
   <url>
-    <loc>https://www.zepoch.cc/tags/spatial-transcriptomics/</loc>
+    <loc>https://www.zepoch.cc/tags/AJAX/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.zepoch.cc/tags/AJAX/</loc>
+    <loc>https://www.zepoch.cc/tags/spatial-transcriptomics/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -886,14 +886,14 @@
   </url>
   
   <url>
-    <loc>https://www.zepoch.cc/tags/this/</loc>
+    <loc>https://www.zepoch.cc/tags/Coursera/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.zepoch.cc/tags/Coursera/</loc>
+    <loc>https://www.zepoch.cc/tags/this/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
