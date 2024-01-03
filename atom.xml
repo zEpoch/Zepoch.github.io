@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-02T13:16:09.894Z</updated>
+  <updated>2024-01-03T02:59:01.359Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>spatial Transcription region deg genemodule heatmap GO analysis</title>
+    <link href="https://www.zepoch.cc/2024/87416160.html"/>
+    <id>https://www.zepoch.cc/2024/87416160.html</id>
+    <published>2024-01-03T02:50:03.000Z</published>
+    <updated>2024-01-03T02:59:01.359Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;After the spatial transcriptome is annotated manually, the regional
+annotation information of the spatial group is obtained. At this</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>空间组deg genemodule heatmap go分析</title>
+    <link href="https://www.zepoch.cc/2024/397295361.html"/>
+    <id>https://www.zepoch.cc/2024/397295361.html</id>
+    <published>2024-01-03T02:19:37.000Z</published>
+    <updated>2024-01-03T02:48:06.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;空间转录组通过手动划区注释之后，得到空间组的区域注释信息，这个时候我们便是想要得到其差异表达基因的功能注释信息，这里并没有能够通用的脚本，本人仅是提供一种思路，供大家参考。&lt;/p&gt;
+&lt;p&gt;由于我们的空间组的数据大都是 anndata 的</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>各区域不同细胞类型的统计</title>
     <link href="https://www.zepoch.cc/2024/4104152713.html"/>
     <id>https://www.zepoch.cc/2024/4104152713.html</id>
     <published>2024-01-02T12:23:57.000Z</published>
-    <updated>2024-01-02T13:16:09.894Z</updated>
+    <updated>2024-01-02T13:16:41.420Z</updated>
     
     
       
@@ -507,64 +563,6 @@ installed.&lt;/p&gt;
     <category term="Spatial ID" scheme="https://www.zepoch.cc/tags/Spatial-ID/"/>
     
     <category term="genomics" scheme="https://www.zepoch.cc/tags/genomics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何将rds转为h5ad</title>
-    <link href="https://www.zepoch.cc/2023/3539500839.html"/>
-    <id>https://www.zepoch.cc/2023/3539500839.html</id>
-    <published>2023-04-23T02:10:03.000Z</published>
-    <updated>2023-11-13T09:43:43.989Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在进行单细胞或是空间组数据分析的时候，有的人喜欢使用 R
-语言进行分析，有的同学喜欢使用 Python
-进行分析，但是两个语言分析所使用的文件有所不同，R 语言通常保存的为 rds
-文件，Python 通常保存的为</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Seurat" scheme="https://www.zepoch.cc/tags/Seurat/"/>
-    
-    <category term="Scanpy" scheme="https://www.zepoch.cc/tags/Scanpy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>作科学汇报时候如何不像孩子那样漫谈</title>
-    <link href="https://www.zepoch.cc/2023/2424108561.html"/>
-    <id>https://www.zepoch.cc/2023/2424108561.html</id>
-    <published>2023-03-27T08:35:55.000Z</published>
-    <updated>2023-03-27T12:42:51.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;我有了一个新导师：我那两岁半的外孙。就像很多小孩子一样，也不管有没有人听懂，一直在不停的说话。
-我突然意识到，如果一个蹒跚学步的孩子这样使用语言，那么我作为一名教授别人做汇报的教练所关注的科学汇报本身可能过于详细和难以理解也就不足为奇了。在许多的科学汇报中，如同孩子一般的</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="汇报" scheme="https://www.zepoch.cc/tags/%E6%B1%87%E6%8A%A5/"/>
     
   </entry>
   
