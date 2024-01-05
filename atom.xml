@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-03T13:42:20.542Z</updated>
+  <updated>2024-01-04T10:05:24.686Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>杂聊12</title>
+    <link href="https://www.zepoch.cc/2024/1385415812.html"/>
+    <id>https://www.zepoch.cc/2024/1385415812.html</id>
+    <published>2024-01-04T09:45:21.000Z</published>
+    <updated>2024-01-04T10:05:24.686Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;昨天抽了些时间对博客进行了一些优化，主要是对 butterfly
+主题进行升级，由原先的 4.1.1 升级到了现在的 4.12.0。&lt;/p&gt;
+&lt;p&gt;之后对主题进行了一些个性化的修改，包括不限于：header</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>计算某个区域中细胞的复杂性(2)</title>
@@ -535,36 +562,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     
     
     <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/tags/spatial-transcriptomics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在stomics平台使用spateo圈细胞</title>
-    <link href="https://www.zepoch.cc/2023/2333370760.html"/>
-    <id>https://www.zepoch.cc/2023/2333370760.html</id>
-    <published>2023-07-26T03:28:14.000Z</published>
-    <updated>2023-07-27T11:35:41.821Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a
-href=&quot;https://www.stomics.tech/products/BioinfoTools/STOmicsCloud&quot;&gt;时空云平台（STOmics
-Cloud）&lt;/a&gt;是以时空为特色的多组学数据分析平台，可以管理和分析多组学数据。
-STOmics</summary>
-        
-      
-    
-    
-    
-    <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/categories/spatial-transcriptomics/"/>
-    
-    
-    <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/tags/spatial-transcriptomics/"/>
-    
-    <category term="spateo" scheme="https://www.zepoch.cc/tags/spateo/"/>
     
   </entry>
   
