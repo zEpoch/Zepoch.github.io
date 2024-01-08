@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-04T10:05:24.686Z</updated>
+  <updated>2024-01-08T12:40:10.155Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我的2024 OKR</title>
+    <link href="https://www.zepoch.cc/2024/4152237971.html"/>
+    <id>https://www.zepoch.cc/2024/4152237971.html</id>
+    <published>2024-01-08T11:44:42.000Z</published>
+    <updated>2024-01-08T12:40:10.155Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天要给自己设定一些 OKR。&lt;/p&gt;
+&lt;p&gt;目标是设定一个定性的时间内目标（通常是一个季度）。关键的结果是由量化指标形式呈现的，用来衡量在这段时间结束时是否达到了目标。&lt;/p&gt;
+&lt;p&gt;1.完成 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>杂聊12</title>
     <link href="https://www.zepoch.cc/2024/1385415812.html"/>
     <id>https://www.zepoch.cc/2024/1385415812.html</id>
     <published>2024-01-04T09:45:21.000Z</published>
-    <updated>2024-01-04T10:05:24.686Z</updated>
+    <updated>2024-01-08T12:44:37.916Z</updated>
     
     
       
@@ -536,32 +563,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     
     
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用空间转录组文件gem生成相应的灰度图</title>
-    <link href="https://www.zepoch.cc/2023/394364691.html"/>
-    <id>https://www.zepoch.cc/2023/394364691.html</id>
-    <published>2023-07-27T11:01:01.000Z</published>
-    <updated>2023-07-27T11:12:45.539Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;一般我们在进行圈细胞之前需要将基因在空间上的表达情况绘制出来，同时与拍照的TIF图片进行对应，在我的上篇博客里面用了一位师兄的代码，但是却发现其执行效率过于低下，经常一张芯片要运行四五个小时。故自己写了新的架构，将速度提升了数百倍。代码如下所示：&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/categories/spatial-transcriptomics/"/>
-    
-    
-    <category term="spatial transcriptomics" scheme="https://www.zepoch.cc/tags/spatial-transcriptomics/"/>
     
   </entry>
   
