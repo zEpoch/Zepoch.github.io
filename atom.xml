@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-08T12:58:55.030Z</updated>
+  <updated>2024-01-16T09:58:35.190Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>换一种空间组的圈细胞可视化方式</title>
+    <link href="https://www.zepoch.cc/2024/1334308350.html"/>
+    <id>https://www.zepoch.cc/2024/1334308350.html</id>
+    <published>2024-01-16T08:13:23.000Z</published>
+    <updated>2024-01-16T09:58:35.190Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大多数文章在进行空间转录组细胞可视化的时候，通常会使用 square bin
+或是 cellbin，但是究其展示本质，其实还是 square
+bin，比如下面的这种，每个细胞的呈现形式是一个</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/categories/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+  </entry>
   
   <entry>
     <title>我的2024 OKR</title>
@@ -538,31 +567,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
     
     <category term="python" scheme="https://www.zepoch.cc/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂聊7</title>
-    <link href="https://www.zepoch.cc/2023/2239161542.html"/>
-    <id>https://www.zepoch.cc/2023/2239161542.html</id>
-    <published>2023-09-10T13:19:56.000Z</published>
-    <updated>2023-09-10T14:58:22.197Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;又是好久没有写博客了，应该还是写一写记录一下我的生活的，我的记忆感觉比以前差了很多，记录下来总归是好的事情，也许我还能再回顾一下，总觉得要把自己的博客捋的清晰一下，在生活的栏目里面要少讲一些科研或是正经的工作故事，这里就是纯粹的、枯燥的、无聊的、单调的我的生活故事。&lt;/p&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   

@@ -10613,4 +10613,129 @@ alt="20240103214132" /></p>
         <tag>疾病</tag>
       </tags>
   </entry>
+  <entry>
+    <title>换一种空间组的圈细胞可视化方式</title>
+    <url>/2024/1334308350.html</url>
+    <content><![CDATA[<p>大多数文章在进行空间转录组细胞可视化的时候，通常会使用 square bin
+或是 cellbin，但是究其展示本质，其实还是 square
+bin，比如下面的这种，每个细胞的呈现形式是一个 spot_size
+固定为某个值的点。</p>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/换一种空间组的圈细胞可视化方式/20240116172928.png"
+alt="20240116172928" /></p>
+<p>但是有的文章的可视化就做的非常好，每个细胞不仅能够显示细胞形态，也能够显示细胞类型，比如这一种：</p>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/换一种空间组的圈细胞可视化方式/20240116174324.png"
+alt="20240116174324" /></p>
+<p>那这样子的效果要如何绘制呢？我的理解是每个细胞的label，对应圈细胞结果上的一群细胞覆盖的像素点，然后这些像素点都被打上细胞label，对圈细胞结果分析之后，可视化的时候，把每个细胞对应的label的像素点绘制上不同的颜色。</p>
+<p>代码如下所示</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> scanpy <span class="token keyword">as</span> sc
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> anndata <span class="token keyword">as</span> ad
+<span class="token keyword">from</span> scipy<span class="token punctuation">.</span>sparse <span class="token keyword">import</span> csr_matrix
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
+
+<span class="token comment"># 这里的 cellbin 是你用来分析的 cellbin 数据，甚至迁移了细胞类型的数据</span>
+cellbin <span class="token operator">=</span> ad<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token string">'/data/work/07.3d/Result/Spateo/0112/slices/20.h5ad'</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+AnnData object with n_obs × n_vars = 19415 × 17887
+    obs: 'area', 'x', 'y', 'region', 'n_counts', 'slices', 'batch', 'celltype', 'celltype_main', 'celltype_main_sub', 'z'
+    uns: 'celltype_colors', 'celltype_main_colors', 'celltype_main_sub_colors', 'data_unit', 'region_colors'
+    obsm: '3d_align_spatial', '3d_align_spatial_confine', 'Nonrigid_align_spatial', 'Rigid_align_spatial', 'X_umap', 'align_spatial', 'bbox', 'spatial'
+'''</span>
+
+<span class="token comment"># 我的 cellbin index 做一下预处理，大部分人不需要</span>
+cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">.</span>index <span class="token operator">=</span> <span class="token punctuation">[</span>i<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">.</span>index<span class="token punctuation">.</span>tolist<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 使用 spateo 圈细胞的时候的中间 label 文件</span>
+adata <span class="token operator">=</span> ad<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token string">'/data/work/01.Cellbin/02.Result/20/0804/Slice_20_labeled.h5ad'</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+AnnData object with n_obs × n_vars = 14162 × 15326
+    uns: '__type', 'pp', 'spatial'
+    layers: 'augment_labels', 'augmented_labels_expanded', 'stain', 'stain_distances', 'stain_markers', 'stain_mask', 'watershed_labels'
+'''</span>
+<span class="token comment"># layer 中的 augmented_labels_expanded 是我来圈细胞的 layer，接下来就会用这个作为我画 single cell 图的图片底板</span>
+
+<span class="token comment"># 取出图片底板</span>
+image <span class="token operator">=</span> adata<span class="token punctuation">.</span>layers<span class="token punctuation">[</span><span class="token string">'augmented_labels_expanded'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 清除内存</span>
+<span class="token keyword">del</span> adata
+
+<span class="token comment"># 查询 image 中的细胞数目</span>
+uni <span class="token operator">=</span> np<span class="token punctuation">.</span>unique<span class="token punctuation">(</span>image<span class="token punctuation">)</span>
+
+<span class="token comment"># image_g 为在 cellbin 中的细胞 index</span>
+image_g <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> uni<span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token keyword">in</span> cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">.</span>index<span class="token punctuation">:</span>
+        <span class="token keyword">continue</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        image_g<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+<span class="token comment"># 将不在  cellbin 中的细胞的值归为 0 </span>
+control <span class="token operator">=</span> np<span class="token punctuation">.</span>isin<span class="token punctuation">(</span>image<span class="token punctuation">,</span> image_g<span class="token punctuation">)</span>
+control <span class="token operator">=</span> <span class="token operator">~</span>control
+image <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>control<span class="token punctuation">,</span> image<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 重新计数</span>
+new_uni <span class="token operator">=</span> np<span class="token punctuation">.</span>unique<span class="token punctuation">(</span>image<span class="token punctuation">)</span>
+dic <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+
+<span class="token comment"># 防止乱码</span>
+k <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>new_uni<span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">set</span><span class="token punctuation">(</span>cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">[</span><span class="token string">'celltype'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    dic<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> k
+    k<span class="token operator">+=</span><span class="token number">1</span>
+    
+index <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">.</span>index<span class="token punctuation">.</span>tolist<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 你用来存储你的 每一个细胞类型的 color 的地方</span>
+color <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>cellbin<span class="token punctuation">.</span>uns<span class="token punctuation">[</span><span class="token string">'celltype_colors'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 转换器</span>
+<span class="token keyword">def</span> <span class="token function">Hex_to_RGB</span><span class="token punctuation">(</span><span class="token builtin">hex</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    r <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">hex</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span>
+    g <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">hex</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span>
+    b <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">hex</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span>
+    rgb <span class="token operator">=</span> <span class="token punctuation">(</span>r<span class="token punctuation">,</span>g<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> rgb
+
+<span class="token comment"># 着色 dict</span>
+color_dict <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    <span class="token number">0</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>       <span class="token comment"># 黑色</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">for</span> i<span class="token punctuation">,</span>index <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>dic<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    color_dict<span class="token punctuation">[</span>dic<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> Hex_to_RGB<span class="token punctuation">(</span>color<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 进行着色</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">.</span>index<span class="token punctuation">:</span>
+    region <span class="token operator">=</span> cellbin<span class="token punctuation">.</span>obs<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>celltype
+    reigon_id <span class="token operator">=</span> dic<span class="token punctuation">[</span>region<span class="token punctuation">]</span>
+    image<span class="token punctuation">[</span>image<span class="token operator">==</span><span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> reigon_id
+
+height<span class="token punctuation">,</span> width <span class="token operator">=</span> image<span class="token punctuation">.</span>shape
+image_data <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>height<span class="token punctuation">,</span> width<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>
+
+<span class="token comment"># 根据字典中的映射将数组中的值转换为RGB颜色</span>
+<span class="token keyword">for</span> value<span class="token punctuation">,</span> color <span class="token keyword">in</span> color_dict<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    image_data<span class="token punctuation">[</span>image <span class="token operator">==</span> value<span class="token punctuation">]</span> <span class="token operator">=</span> color
+
+<span class="token comment"># 创建图像</span>
+image_save <span class="token operator">=</span> Image<span class="token punctuation">.</span>fromarray<span class="token punctuation">(</span>image_data<span class="token punctuation">)</span>
+
+<span class="token comment"># 保存图像</span>
+image_save<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'/data/work/07.3d/Script/0116/2.png'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>tech</category>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>tech</tag>
+      </tags>
+  </entry>
 </search>
