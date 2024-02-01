@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-18T08:11:39.283Z</updated>
+  <updated>2024-01-18T08:11:57.898Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.zepoch.cc/2024/2334324323.html"/>
     <id>https://www.zepoch.cc/2024/2334324323.html</id>
     <published>2024-01-18T07:55:04.000Z</published>
-    <updated>2024-01-18T08:11:39.283Z</updated>
+    <updated>2024-01-18T08:11:57.898Z</updated>
     
     
       
@@ -71,33 +71,6 @@ bin，比如下面的这种，每个细胞的呈现形式是一个</summary>
     
     
     <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的2024 OKR</title>
-    <link href="https://www.zepoch.cc/2024/4152237971.html"/>
-    <id>https://www.zepoch.cc/2024/4152237971.html</id>
-    <published>2024-01-08T11:44:42.000Z</published>
-    <updated>2024-01-08T12:58:55.030Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;今天要给自己设定一些 OKR。&lt;/p&gt;
-&lt;p&gt;目标是设定一个定性的时间内目标（通常是一个季度）。关键的结果是由量化指标形式呈现的，用来衡量在这段时间结束时是否达到了目标。&lt;/p&gt;
-&lt;p&gt;1.完成 &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -153,9 +126,9 @@ href=&quot;https://www.zepoch.cc/2023/959813387.html&quot;&gt;某个区域中细
     <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -209,9 +182,9 @@ annotation information of the spatial group is obtained. At this</summary>
     <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -239,9 +212,9 @@ annotation information of the spatial group is obtained. At this</summary>
     <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -323,9 +296,9 @@ spatial transcriptome reveals</summary>
     <category term="技术" scheme="https://www.zepoch.cc/categories/tech/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="tech" scheme="https://www.zepoch.cc/tags/tech/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -567,6 +540,35 @@ information of gene expression. However, the data is 2D, and it is</summary>
     
     
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scanpy多张图绘制于一张</title>
+    <link href="https://www.zepoch.cc/2023/2146294005.html"/>
+    <id>https://www.zepoch.cc/2023/2146294005.html</id>
+    <published>2023-10-18T15:29:55.000Z</published>
+    <updated>2023-10-18T15:34:38.163Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;当我们一次有多个数据，而且我们想要使用scanpy绘制umap图，或是spatial图的时候，大多数人一次只是绘制一个umap图或是一个spatial图在一个png或是一个pdf上面，对于我们可视化来说可能并没有那么轻便，于是需要做一些调整，借助于matplotlib的内参</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
+    
+    <category term="python" scheme="https://www.zepoch.cc/tags/python/"/>
     
   </entry>
   
