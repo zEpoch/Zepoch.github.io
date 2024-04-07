@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-01-18T08:11:57.898Z</updated>
+  <updated>2024-04-07T07:22:40.196Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录一下hexo的博客迁移（物理）</title>
+    <link href="https://www.zepoch.cc/2024/1030812923.html"/>
+    <id>https://www.zepoch.cc/2024/1030812923.html</id>
+    <published>2024-04-07T12:00:00.000Z</published>
+    <updated>2024-04-07T07:22:40.196Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;换了新的电脑，一直以来自己的博客撰写的地址都是在电脑上面，自己的博客是基于hexo搭建的，所以需要将博客的文件迁移到新的电脑上面，这里记录一下迁移的过程。&lt;/p&gt;
+&lt;p&gt;直接把</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>换一种UMAP的可视化方式</title>
@@ -540,35 +566,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     
     
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>scanpy多张图绘制于一张</title>
-    <link href="https://www.zepoch.cc/2023/2146294005.html"/>
-    <id>https://www.zepoch.cc/2023/2146294005.html</id>
-    <published>2023-10-18T15:29:55.000Z</published>
-    <updated>2023-10-18T15:34:38.163Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;当我们一次有多个数据，而且我们想要使用scanpy绘制umap图，或是spatial图的时候，大多数人一次只是绘制一个umap图或是一个spatial图在一个png或是一个pdf上面，对于我们可视化来说可能并没有那么轻便，于是需要做一些调整，借助于matplotlib的内参</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="scanpy" scheme="https://www.zepoch.cc/tags/scanpy/"/>
-    
-    <category term="python" scheme="https://www.zepoch.cc/tags/python/"/>
     
   </entry>
   
