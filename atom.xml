@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-04-07T07:22:40.196Z</updated>
+  <updated>2024-05-09T09:05:28.188Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sceasy转h5ad到rds之后基因名字消失的解决方案</title>
+    <link href="https://www.zepoch.cc/2024/3578944600.html"/>
+    <id>https://www.zepoch.cc/2024/3578944600.html</id>
+    <published>2024-05-09T08:44:12.000Z</published>
+    <updated>2024-05-09T09:05:28.188Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在做各种各样的物种的单细胞数据清洗，在清洗到某个数据的时候，用sceasy转格式从h5ad到rds，发现了一个问题，基因名字消失了。&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://raw.githubusercontent.com/zEpoch/imageHom</summary>
+        
+      
+    
+    
+    
+    <category term="生物信息" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/"/>
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="组学" scheme="https://www.zepoch.cc/tags/%E7%BB%84%E5%AD%A6/"/>
+    
+    <category term="sceasy" scheme="https://www.zepoch.cc/tags/sceasy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Transformer from 0 to 1</title>
+    <link href="https://www.zepoch.cc/2024/956785006.html"/>
+    <id>https://www.zepoch.cc/2024/956785006.html</id>
+    <published>2024-05-06T09:55:25.000Z</published>
+    <updated>2024-05-06T09:55:58.628Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">
+</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Transformer" scheme="https://www.zepoch.cc/tags/Transformer/"/>
+    
+    <category term="NLP" scheme="https://www.zepoch.cc/tags/NLP/"/>
+    
+  </entry>
   
   <entry>
     <title>记录一下hexo的博客迁移（物理）</title>
@@ -512,60 +573,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
     
     <category term="杂聊" scheme="https://www.zepoch.cc/tags/%E6%9D%82%E8%81%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用GTF和fasta生成每个geneid对应最长的fasta序列</title>
-    <link href="https://www.zepoch.cc/2023/2709315503.html"/>
-    <id>https://www.zepoch.cc/2023/2709315503.html</id>
-    <published>2023-11-02T08:04:08.000Z</published>
-    <updated>2023-11-02T08:16:43.077Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在进行单细胞测序的时候，我们通常最后得到的是 cell*geneid 的 matrix
-文件，有时候我们需要 geneid 以及 geneid 对应的 fasta
-序列数据，这就需要让我们做一些处理。&lt;/p&gt;
-&lt;p&gt;我们所需的文件是 gtf 文件和</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂聊8</title>
-    <link href="https://www.zepoch.cc/2023/2375055875.html"/>
-    <id>https://www.zepoch.cc/2023/2375055875.html</id>
-    <published>2023-10-29T14:27:06.000Z</published>
-    <updated>2023-10-29T15:08:10.477Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;以后尽量是可以做到每天的快乐生活当天记录下来，我的记忆会慢慢遗忘掉一些内容，记录下来或许能够让我减少遗忘。&lt;/p&gt;
-&lt;p&gt;今天是周日，所以又是我外出走走的日子，今天是和朋友们一起去西湖边的吴山景区附近走走，爬爬山。是要早起的，但是也并没起的很早，只得是草草吃了饭，甚至还是</summary>
-        
-      
-    
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
