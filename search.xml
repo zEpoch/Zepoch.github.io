@@ -2248,20 +2248,6 @@ python /data/work/17.Script/addgenemodule/6.py <span class="token parameter vari
       </tags>
   </entry>
   <entry>
-    <title>Transformer from 0 to 1</title>
-    <url>/2024/956785006.html</url>
-    <content><![CDATA[
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>Transformer</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>sceasy转h5ad到rds之后基因名字消失的解决方案</title>
     <url>/2024/3578944600.html</url>
     <content><![CDATA[<p>最近在做各种各样的物种的单细胞数据清洗，在清洗到某个数据的时候，用sceasy转格式从h5ad到rds，发现了一个问题，基因名字消失了。</p>
@@ -10873,6 +10859,111 @@ alt="image-20210717151100839" /></p>
       </categories>
       <tags>
         <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Transformer架构</title>
+    <url>/2024/956785006.html</url>
+    <content><![CDATA[<h2 id="transformer模型的应用">Transformer模型的应用</h2>
+<ul>
+<li>基于seq2seq架构的transformer模型可以完成NLP领域研究的典型任务，如机器翻译，文本生成等。同时又可以构建预训练语言模型，用于不同任务的迁移学习。</li>
+<li>在之后的架构分析中，我们将假设使用Transformer模型架构处理从一种语言文本到另外一种语言文本的翻译工作，因此很多命名方式遵循NLP中的规则。如：Embedding层将被称作文本嵌入层，Embedding层产生的张量被称为词嵌入张量，其最后一维被称为词向量等。</li>
+</ul>
+<h2 id="transformer总体架构图">Transformer总体架构图</h2>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/Transformer架构/20240715173347.png"
+alt="Transformer总体架构图" /></p>
+<h3 id="transformer总体架构">Transformer总体架构</h3>
+<ul>
+<li>输入部分</li>
+<li>输出部分</li>
+<li>编码器部分</li>
+<li>解码器部分</li>
+</ul>
+<h3 id="输入部分包含">输入部分包含</h3>
+<ul>
+<li>源文本嵌入层及其位置编码器</li>
+<li>目标文本嵌入层及其位置编码器</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/Transformer架构/20240715173541.png"
+alt="20240715173541" /></p>
+<h3 id="输出部分包含">输出部分包含</h3>
+<ul>
+<li>线性层</li>
+<li>softmax层</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/Transformer架构/20240715173616.png"
+alt="20240715173616" /></p>
+<h3 id="编码器部分">编码器部分</h3>
+<ul>
+<li>由N个编码器堆叠而成</li>
+<li>每个编码器层由两个子层连接结构组成</li>
+<li>第一个子层连接结构包括一个多头自注意力子层和规范化层以及一个残差连接</li>
+<li>第二个子层连接结构包括一个前馈全连接子层和规范化层以及一个残差连接</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/Transformer架构/20240715182338.png"
+alt="20240715182338" /></p>
+<h3 id="解码器部分">解码器部分</h3>
+<ul>
+<li>由N个解码器层堆叠而成</li>
+<li>每个解码器层由三个子层连接结构组成</li>
+<li>第一个子层连接结构包括一个多头自注意力子层和规范层以及一个残差连接</li>
+<li>第二个子层连接结构包括一个多头注意力子层和规范化以及一个残差连接</li>
+<li>第三个子层连接结构包括一个前馈全连接子层和规范化层以及一个残差连接</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/zEpoch/imageHome/main/blog/Transformer架构/20240715183308.png"
+alt="20240715183308" /></p>
+<h2 id="小结">小结</h2>
+<ul>
+<li>概述了Transformer模型的作用：
+<ul>
+<li>基于seq2seq架构的transformer模型可以完成NLP领域研究的典型任务，如机器翻译，文本生成。同时又可以构建预训练语言模型，用于不同任务的迁移学习。</li>
+</ul></li>
+<li>Transformer总体架构可分为四个部分：
+<ul>
+<li>输入部分</li>
+<li>输出部分</li>
+<li>编码器部分</li>
+<li>解码器部分</li>
+</ul></li>
+<li>输入部分包含：
+<ul>
+<li>源文本嵌入层及其位置编码器</li>
+<li>目标文本嵌入层及其位置编码器</li>
+</ul></li>
+<li>输出部分包含：
+<ul>
+<li>线性层</li>
+<li>softmax处理器</li>
+</ul></li>
+<li>编码器部分：
+<ul>
+<li>由N个编码器层堆叠而成</li>
+<li>每个编码器层由两个子层连接结构组成</li>
+<li>第一个子层连接结构包括一个多头自注意力子层和规范化层以及一个残差连接</li>
+<li>第二个子层连接结构包括一个前馈全连接子层以及一个残差连接</li>
+</ul></li>
+<li>解码器部分：
+<ul>
+<li>由N个解码器层堆叠而成</li>
+<li>每个解码器层由三个子层连接结构组成</li>
+<li>第一个子层连接结构包括一个多头自注意力子层和规范化层以及一个残差连接</li>
+<li>第二个子层连接结构包括一个多头注意力子层和规范化层以及一个残差连接</li>
+<li>第三个子层连接结构包括一个前馈全连接子层和规范化层以及一个残差连接</li>
+</ul></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Transformer</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
 </search>
