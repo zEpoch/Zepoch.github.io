@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-12-10T17:53:56.492Z</updated>
+  <updated>2024-12-31T07:39:24.850Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>&#39;辛顿的冬与春&#39;</title>
+    <title>2024 年记</title>
+    <link href="https://www.zepoch.cc/2024/4091785240.html"/>
+    <id>https://www.zepoch.cc/2024/4091785240.html</id>
+    <published>2024-12-31T06:34:19.000Z</published>
+    <updated>2024-12-31T07:39:24.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;看到 Obsidian 的 CEO Steph Ango 写过</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>辛顿的冬与春</title>
     <link href="https://www.zepoch.cc/2024/3145240405.html"/>
     <id>https://www.zepoch.cc/2024/3145240405.html</id>
     <published>2024-12-10T04:47:49.000Z</published>
-    <updated>2024-12-10T17:53:56.492Z</updated>
+    <updated>2024-12-31T06:37:17.952Z</updated>
     
     
       
@@ -544,33 +569,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>rds与h5ad的相互转换</title>
-    <link href="https://www.zepoch.cc/2023/581620572.html"/>
-    <id>https://www.zepoch.cc/2023/581620572.html</id>
-    <published>2023-11-13T09:44:27.000Z</published>
-    <updated>2023-11-13T12:45:59.026Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;之前做过一个 rds 转 h5ad
-的教程，现在看来发现有些过于繁琐，且随着时间的发展，也有了更好的方法的出现，所以这里再写一个教程。&lt;/p&gt;
-&lt;p&gt;新的工具包是 &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
