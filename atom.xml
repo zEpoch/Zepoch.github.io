@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2024-12-31T07:39:24.850Z</updated>
+  <updated>2025-01-01T02:50:43.442Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为什么给你全奖免费读博？科学研究是什么？</title>
+    <link href="https://www.zepoch.cc/2025/3896675102.html"/>
+    <id>https://www.zepoch.cc/2025/3896675102.html</id>
+    <published>2025-01-01T02:47:27.000Z</published>
+    <updated>2025-01-01T02:50:43.442Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前言：2024 年诺贝尔化学奖授予了 David Baker、Demis Hassabis 和 John
+Jumper。&lt;em&gt;一半授予 David Baker
+以表彰其在计算蛋白质设计方面的贡献&lt;/em&gt;，他成功构建了全新的蛋白质；另一半授予
+Demis</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>2024 年记</title>
@@ -542,33 +566,6 @@ information of gene expression. However, the data is 2D, and it is</summary>
     
     
     <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单细胞随机采样</title>
-    <link href="https://www.zepoch.cc/2023/3969475204.html"/>
-    <id>https://www.zepoch.cc/2023/3969475204.html</id>
-    <published>2023-11-14T07:39:39.000Z</published>
-    <updated>2023-11-14T07:50:53.670Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;最近单细胞图谱越来越多的涌现，我们经常要用到别人产出的超级高质量的单细胞与自己测的细胞进行比较分析，但是图谱往往具有非常多的细胞数量，正常的计算设备无法带动，以最近发表的Science专刊的单细胞数据为例，动辄便是三四百万的单细胞量级，这个时候我们就需要对数据进行随机采样，</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="单细胞" scheme="https://www.zepoch.cc/tags/%E5%8D%95%E7%BB%86%E8%83%9E/"/>
     
   </entry>
   
