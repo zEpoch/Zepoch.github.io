@@ -6,7 +6,7 @@
   <link href="https://www.zepoch.cc/atom.xml" rel="self"/>
   
   <link href="https://www.zepoch.cc/"/>
-  <updated>2025-01-01T02:50:43.442Z</updated>
+  <updated>2025-01-22T02:40:17.105Z</updated>
   <id>https://www.zepoch.cc/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>随想1</title>
+    <link href="https://www.zepoch.cc/2025/172910752.html"/>
+    <id>https://www.zepoch.cc/2025/172910752.html</id>
+    <published>2025-01-22T02:39:14.000Z</published>
+    <updated>2025-01-22T02:40:17.105Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在所有生物中，唯有DNA可以通过遗传传递给后代继承某些特征。一旦DNA发生改变，它所有的后代都将继承改变后的DNA。转基因技术就是通过修改DNA来执行创造一个新的生物的指令，这些指令是以某种方式编程在DNA双螺旋结构里面的。&lt;/p&gt;
+&lt;p&gt;我有个程序员朋友，他喜欢从0开始</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>为什么给你全奖免费读博？科学研究是什么？</title>
     <link href="https://www.zepoch.cc/2025/3896675102.html"/>
     <id>https://www.zepoch.cc/2025/3896675102.html</id>
     <published>2025-01-01T02:47:27.000Z</published>
-    <updated>2025-01-01T02:50:43.442Z</updated>
+    <updated>2025-01-01T02:50:52.743Z</updated>
     
     
       
@@ -540,32 +566,6 @@ bin100/bin50 这样子的数据去做区域的注释，而</summary>
     
     
     <category term="生活" scheme="https://www.zepoch.cc/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>spatial transcriptomics 3d visualization</title>
-    <link href="https://www.zepoch.cc/2023/2340017484.html"/>
-    <id>https://www.zepoch.cc/2023/2340017484.html</id>
-    <published>2023-11-28T09:39:10.000Z</published>
-    <updated>2023-11-28T09:46:52.177Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;With development of spatial transfriptomics, we can get the spatial
-information of gene expression. However, the data is 2D, and it is</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="技术" scheme="https://www.zepoch.cc/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
